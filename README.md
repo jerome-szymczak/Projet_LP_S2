@@ -12,7 +12,7 @@ Le réseau doit permettre *a minima* de connecter des machines virtuelles géré
 
 Les solutions déjà existantes (les interfaces `vmnet` de VMware, [libvirt](https://libvirt.org), script `lxc-net`, etc.) seront étudiés, comparées et documentées. L'idée initial du projet est juste de simplifier le déploiement d'une solution simple : un pont réseau avec un service DNS et DHCP disponible sur ce pont pour les différentes machines qui s'y connectent.
 
-Si le travail avance suffisament vite une version IPv6 sera envisagée.
+Si le travail avance suffisament vite une version pour un environnement hôte Windows ou une version IPv6 sera envisagée.
 
 # Projet CGIR
 
