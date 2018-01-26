@@ -1,0 +1,4 @@
+- Recherche sur les hyperviseur existant
+- Doc simple pour virtualbox
+- Résumé la doc paquet
+- Coup d’oeil à lxc-net
