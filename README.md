@@ -30,7 +30,7 @@ Le projet est géré en respectant quelques [règles](local/regles.md).
 
 - [`bin`](bin) contient les scripts et programmes créées ainsi que les outils utilisés
 - [`doc`](doc) contient des documentations
-- [`projet`](projet) contient les informations relatifs au déroulement du projet
+- [`local`](local) contient les informations relatifs au déroulement du projet
 
 # Droits
 
