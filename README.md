@@ -2,9 +2,15 @@
 
 Il s'agit de construire une architecture réseau IPv4 permettant à des machines virtuelles de communiquer de manière transparente entre elles, avec la machine physique qui les héberge ainsi qu'avec les machines du segment réseau sur lequel est intégré la machine physique.
 
-L'architecture doit être déployable sur une machine physique [Debian](https://www.debian.org) via l'installation d'un paquet au format Debian. Elle doit permettre d'accéder à tous les ports des machines virtuelles sans être obligé de mettre en place des redirections de ports.
+L'objectif est de pouvoir effectuer des TP d'administration système utilisant plusieurs machines (en mode *serveur* ou *poste de travail*) sur le même réseau sans trop de difficulté pour l'étape de construction des machines, mais en conservant un minimum de flexibilité (accès extérieur, manipulation des interfaces des machines de TP).
+
+L'architecture doit être déployable sur une machine physique [Debian](https://www.debian.org) via l'installation d'un paquet au format Debian. Elle doit permettre d'accéder à tous les ports des machines virtuelles sans être obligé de mettre en place des redirections de ports. Les seuls accès `root` qu'elle doit nécessiter sont au moment de son installation et de l'installation des outils de virtualisation. Un utilisateur standard doit être capable de créer et démarrer des machines virtuelles sans droit d'administration.
 
 Le réseau doit permettre *a minima* de connecter des machines virtuelles gérées par [VirtualBox](https://www.virtualbox.org/). L'objectif étant de permettre au final de pouvoir y connecter des machines virtuelles gérées par [VMware Workstation Player](https://www.vmware.com/products/workstation-player.html), [QEMU](https://www.qemu.org)/[KVM](http://www.linux-kvm.org) ainsi que des containers Linux [LXC](https://linuxcontainers.org).
+
+À défaut d'une automatisation complète par la fourniture de commande de création de machine virtuelle adéquates, des explications simples permettant à un utilisateur de créer et connecter sa machine virtuelle à ce réseau doivent être fournies sous la forme de documentation adaptée à chaque cas gérés.
+
+Les solutions déjà existantes (les interfaces `vmnet` de VMware, [libvirt](https://libvirt.org), script `lxc-net`, etc.) seront étudiés, comparées et documentées. L'idée initial du projet est juste de simplifier le déploiement d'une solution simple : un pont réseau avec un service DNS et DHCP disponible sur ce pont pour les différentes machines qui s'y connectent.
 
 Si le travail avance suffisament vite une version IPv6 sera envisagée.
 
