@@ -1,3 +1,0 @@
-- Recherche sur les hyperviseur existants [Hyperviseur](lien vers hyperviseur)
-- Documentation pour Virtualbox simplifié
-- 
