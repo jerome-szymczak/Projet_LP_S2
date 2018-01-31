@@ -3,8 +3,8 @@
 Ce document a été créer pour éviter les conflits lors des push sur le git et permettre une meilleur organisation du travail. 
 N'oubliez pas de mettre votre nom pour savoir sur quel sujet vous êtes en train de travailler.
 
-- TODO les choses à faire
-- DOING les choses en train d'être faites
+- TODO : les choses à faire
+- DOING : les choses en train d'être faites
 - DONE : les choses terminé 
 
 ## TODO
@@ -17,7 +17,6 @@ N'oubliez pas de mettre votre nom pour savoir sur quel sujet vous êtes en train
 ## DOING
 
 - Documentation pour Virtualbox simplifié // Salecki
--  
 
 ## DONE
 
