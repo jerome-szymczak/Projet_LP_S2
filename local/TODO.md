@@ -1,9 +1,17 @@
+# TODO List
+
+Ce document a été créer pour éviter les conflits lors des push sur le git et permettre une meilleur organisation du travail. 
+N'oubliez pas de mettre votre nom pour savoir sur quel sujet vous êtes en train de travailler.
+
+- TODO les choses à faire
+- DOING les choses en train d'être faites
+- DONE : les choses terminé 
+
 ## TODO
 
 - Recherche des différents type de réseau
 - Résumé la doc paquet
 - Coup d’oeil à lxc-net
-- Réorganiser tout en md
 - Faire un document simple sur le fonctionnement des fichiers md
 
 ## DOING
@@ -14,4 +22,5 @@
 ## DONE
 
 - Recherche sur les hyperviseur existants [Hyperviseur](local/tmp/Recherche_Hyperviseur.md) // Gerard
+- Réorganiser tout en md // Gerard
 - Condensé des racourcis disponible sur VirtualBox // Herbaut
