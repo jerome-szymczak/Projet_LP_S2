@@ -17,3 +17,6 @@ KVM est une instance de QEMU, grâce à son module KQEMU, il permet d'exécuter 
 
 ## LXC
 
+## Comparatif des différents hyperviseurs
+
+[Comparatif](local/tmp/img/comparatif.png)
