@@ -1,4 +1,5 @@
-- Recherche sur les hyperviseur existant
-- Doc simple pour virtualbox
+- Recherche des différents type de réseau
 - Résumé la doc paquet
 - Coup d’oeil à lxc-net
+- Réorganiser tout en .md
+- 
