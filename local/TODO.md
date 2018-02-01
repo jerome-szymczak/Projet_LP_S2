@@ -20,6 +20,6 @@ N'oubliez pas de mettre votre nom pour savoir sur quel sujet vous êtes en train
 ## DONE
 
 - Recherche sur les hyperviseur existants [Hyperviseur](local/tmp/Recherche_Hyperviseur.md)  **Gerard**
-- Réorganiser tout en md // Gerard
+- Réorganiser tout en md **Gerard**
 - Condensé des racourcis disponible sur VirtualBox **Herbaut**
 - Faire un document simple sur le fonctionnement des fichiers md **Beaufils**
