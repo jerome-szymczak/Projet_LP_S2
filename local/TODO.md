@@ -11,15 +11,15 @@ N'oubliez pas de mettre votre nom pour savoir sur quel sujet vous êtes en train
 
 - Recherche des différents type de réseau
 - Coup d’oeil à lxc-net
-- Faire un document simple sur le fonctionnement des fichiers md
 
 ## DOING
 
-- Résumé la doc paquet //Szymczak
-- Documentation pour Virtualbox simplifié // Salecki
+- Résumé la doc paquet **Szymczak**
+- Documentation pour Virtualbox simplifié  **Salecki**
 
 ## DONE
 
-- Recherche sur les hyperviseur existants [Hyperviseur](local/tmp/Recherche_Hyperviseur.md) // Gerard
+- Recherche sur les hyperviseur existants [Hyperviseur](local/tmp/Recherche_Hyperviseur.md)  **Gerard**
 - Réorganiser tout en md // Gerard
-- Condensé des racourcis disponible sur VirtualBox // Herbaut
+- Condensé des racourcis disponible sur VirtualBox **Herbaut**
+- Faire un document simple sur le fonctionnement des fichiers md **Beaufils**
