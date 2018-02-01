@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Convertit un fichier markdown en une présentation via LaTeX/Beamer
-# Copyright (C) 2016-2017 Bruno BEAUFILS
+# Copyright (C) 2016-2018 Bruno BEAUFILS
 #
 # usage: md2beamer [OPTIONS] SOURCE [FICHIERS-INCLUS...] 
 #
@@ -69,6 +69,7 @@
 # versions GNU des commandes UNIX classiques.
 
 # TODO: expliciter extensions markdown supportées
+# TODO: ajouter option pour inclure fichiers
 
 # DETAILS TECHNIQUES
 #
