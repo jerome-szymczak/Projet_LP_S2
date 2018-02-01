@@ -16,6 +16,7 @@ N'oubliez pas de mettre votre nom pour savoir sur quel sujet vous êtes en train
 
 ## DOING
 
+- Résumé la doc paquet //Szymczak
 - Documentation pour Virtualbox simplifié // Salecki
 
 ## DONE
