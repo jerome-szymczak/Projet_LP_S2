@@ -3,6 +3,10 @@ title: md2beamer
 author:
 - Bruno BEAUFILS
 date: 16 mars 2017
+logo:
+- file: logo-cgir
+  width: .15
+- file: logo-univ-lille
 ...
 
 # Introduction
@@ -108,7 +112,14 @@ Elle est décrite en détails ailleurs (cf liens de cette diapo)
 ![Texte alternatif pour HTML](img/tex-friendly-zone.svg)
 
 
-## Les images avec `md2beamer`
+## Markdown : images
+
+`![Texte alternatif pour HTML](img/tex-friendly-zone.svg)`
+
+![Texte alternatif pour HTML](img/tex-friendly-zone.svg)
+
+
+## `md2beamer` : images
 
 - centre les images horizontalement 
 - ajuste la largeur automatiquement (attention à la hauteur, cf diapo précédente)
@@ -124,10 +135,10 @@ Elle est décrite en détails ailleurs (cf liens de cette diapo)
 
 ![Tux](img/tux.svg)
 
-Une diapo nommé `{.plain}` n'a pas de titre ni de pied de page
+Une diapo nommé `{.plain}` n'a ni titre, ni pied de page
 
 
-## Les tableaux avec `md2beamer`
+## `md2beamer` : tableaux
 
 - Un support très basique des tableaux est inclus
     - utilisation de l'option `pipe_tables` de `pandoc`
@@ -139,30 +150,43 @@ Une diapo nommé `{.plain}` n'a pas de titre ni de pied de page
 | `beamer`   | jeux de balisage LaTeX pour la composition de présentation  |
 
 
-## Utilisation de `md2beamer`
-
-**Comportement par défaut**
+## `md2beamer` : réglages `pandoc` utilisés
 
 - les diapositives sont les élements de niveau 2
-    - modifiable avec l'option `-s`
     - niveaux supérieurs sont les sections du diaporama
     - niveaux inférieurs sont des blocs 
-- plusieurs thèmes inclus 
-    - choix du thème via l'option `-t`
-- le document doit commencer par un bloc [YAML](http://yaml.org/)
-    - méta-données du document (titre, auteurs, date)
+    - modifiable avec l'option `-s`
 
-**Extensions activées**
+    . . .
 
 - affichage incrémental
 
-    > - pause via une ligne de trois points `. . .`
-    > - des items de listes dans des blocs de citations `> -`
+    > - pause via un paragraphe avec une ligne de trois points
+    > 
+    >         . . .
+    > 
+    > - des items de listes dans des blocs de citations
+    > 
+    >         > -
 
-. . .
+    . . .
+    
+- le document peut commencer par un bloc [YAML](http://yaml.org/)
+    - `title`, `subtitle`, `author`, `date`
+    - `logo` :  logos sur la page de titre 
+        - `file` : fichier sans extension
+        - `width` : largeur en pourcentage (<1) de largeur diapo (0.1 par défaut)
+        - `nl` : passage à la ligne après le logo
 
-**Documentation**
 
-    md2beamer -h
+## `md2beamer` : utilisation
 
-Lire la section *Structuring the slide show* de `pandoc(1)` aide vraiment
+- plusieurs thèmes inclus 
+    - choix du thème via l'option `-t`
+    - par défaut thème `ulille`
+- documentation
+    - intégrée
+
+            md2beamer -h
+
+    - lire la section *Structuring the slide show* de `pandoc(1)` aide vraiment

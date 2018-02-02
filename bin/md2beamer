@@ -877,6 +877,18 @@ $endif$
 $if(author)$
 \author{$for(author)$$author$$sep$ \and $endfor$}
 $endif$
+$if(logo)$
+\titlegraphic{\rule{2em}{0cm}%
+$for(logo)$
+$if(logo.width)$
+\includegraphics[width=$logo.width$\columnwidth]{$logo.file$}%
+$else$
+\includegraphics[width=.1\columnwidth]{$logo.file$}%
+$endif$
+\rule{2em}{0cm}$if(logo.nl)$\par\medskip\rule{2em}{0cm}$endif$%
+$endfor$
+}
+$endif$
 \date{$date$}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
