@@ -14,12 +14,12 @@ N'oubliez pas de mettre votre nom pour savoir sur quel sujet vous êtes en train
 
 ## DOING
 
-- Résumé la doc paquet **Szymczak**
+- Résumé la doc paquet **Szymczak** **Gerard**
 - Documentation pour Virtualbox simplifié  **Salecki**
 
 ## DONE
 
 - Recherche sur les hyperviseur existants [Hyperviseur](local/tmp/Recherche_Hyperviseur.md)  **Gerard**
 - Réorganiser tout en md **Gerard**
-- Condensé des racourcis disponible sur VirtualBox [racourcis_virtualbox](local/tmp/Racourcis_VirtualBox.md)**Herbaut**
+- Condensé des racourcis disponible sur VirtualBox [racourcis_virtualbox](local/tmp/Racourcis_VirtualBox.md) **Herbaut**
 - Faire un document simple sur le fonctionnement des fichiers md [modele-diaporama](local/modele-diaporama.md) **Beaufils**
