@@ -1,6 +1,25 @@
 # Recherche sur les paquets Debian
 
-Dans un paquet débian on peut trouver au minimum deux dossiers un 'DEBIAN' et un 'usr'.
+Le paquet nécessaire pour faire ses propre paquets est dpkg. Le programme dpkg-deb qui est contenu dans le paquet dpkg est le programme qui construit un fichier .deb . Cependant, ne vous inquiétez pas, le paquet est installé par défaut sur votre Debian.
+
+
+## l'Arborescence d'un paquet Debian
+- myscript/
+    - DEBIAN/
+	    - control (fichier décrivant les informations relatives à notre paquet)
+        - postinst (script exécuté après l'installation du paquet)
+        - postrm (script exécuté après la désinstallation du paquet)
+        - md5sums (permet la vérification de l'intégralité des données récupérées)
+    - usr/
+        - bin/
+            - myscript (notre script, exposé ci-dessus)
+        - share/
+            -doc/
+                - README (informations relatives à l'utilisation de myscript)
+                - copyright 
+                - changelog (changements apportés par rapport à la dernière version)
+                - changelog.Debian (idem, mais seulement pour le paquet Debian)
+
 
 ## Le dossier DEBIAN 
 - un fichier control
@@ -18,5 +37,6 @@ C'est un fichier principal de contrôle qui contient un certain nombre de champs
 		- suggest : liste des paquets qui pourraient être utile
 		- priority : l'importance du paquet pour le système(pour nous optional)
 		- homepage : l'adresse du site internet
-- un fichier md5sums
-	C'est un fichier qui permet la vérification de l'intégralité des données récupérées.
+
+## Voici un exemple de paquet simple 
+[mon-paquet](local/tmp/myecho)
