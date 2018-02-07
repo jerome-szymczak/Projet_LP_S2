@@ -1,0 +1,8 @@
+Package: myecho
+Version: 1.0
+Section: base
+Priority: optional
+Architecture: all
+Depends: bash
+Maintainer: Mr Gerard <MrGerard@roidumonde.com>
+Description: Echoes the content of /home/<you>/.myecho_content
