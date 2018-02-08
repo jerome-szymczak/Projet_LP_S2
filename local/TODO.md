@@ -9,13 +9,13 @@ N'oubliez pas de mettre votre nom pour savoir sur quel sujet vous êtes en train
 
 ## TODO
 
-- Recherche des différents type de réseau
 - Coup d’oeil à lxc-net
+- Faire une preuve que lxc-net fonctionne
+- Explication sur le fonctionnement du paquet bridge-utils
 
 ## DOING
 
-- Résumé la doc paquet **Szymczak** **Gerard**
-- Documentation pour Virtualbox simplifié  **Salecki**
+- Recherche sur la carte reseau VirtualBox  **Salecki**
 
 ## DONE
 
@@ -23,4 +23,6 @@ N'oubliez pas de mettre votre nom pour savoir sur quel sujet vous êtes en train
 - Réorganiser tout en md **Gerard**
 - Condensé des racourcis disponible sur VirtualBox [racourcis_virtualbox](local/tmp/Racourcis_VirtualBox.md) **Herbaut**
 - Faire un document simple sur le fonctionnement des fichiers md [modele-diaporama](local/modele-diaporama.md) **Beaufils**
+- Recherche des différents type de réseau [type-reseau-vbox](local/tmp/type-reseau-vbox.md) **Salecki**
 - [Documentation](local/compte-rendu/cr-2018-02-09-hebdo.md) simple pour la création de paquet(sans dépendance) **Gerard**
+- Création d'un simple paquet Debian[paquet](local/tmp/myecho) ** Gerard**
