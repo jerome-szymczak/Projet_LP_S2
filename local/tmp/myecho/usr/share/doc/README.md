@@ -11,13 +11,23 @@ dpkg-deb --build myecho # Vous affiche normalement ceci "dpkg-deb: building pack
 dpkg -i myecho.deb 
 ~~~
 
+- Pour vérifier que la paquet a bien été installé
+~~~
+ls /usr/bin/ | grep myecho    ou    dpkg -l myecho
+~~~
+
 - Pour executer la commande
 ~~~
 myecho
 ~~~
 
 - Pour désintaller le paquet
-*on n'a pas encore trouvé la solution car le --remove est en conflit avec le --purge quand on execute*
 ~~~
-dpkg --remove --purge myecho
+apt-get remove myecho
 ~~~
+
+- Pour vérifier que la suppression a bien été effectué
+~~~
+ls /usr/bin/ | grep myecho    ou    dpkg -l myecho
+~~~
+

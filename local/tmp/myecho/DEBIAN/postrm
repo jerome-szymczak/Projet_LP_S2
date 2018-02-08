@@ -1,3 +1,2 @@
 #!/bin/bash
-
-rm ~/.myecho_content
+echo "postrm : script execute apres la suppression"

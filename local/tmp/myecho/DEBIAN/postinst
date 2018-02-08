@@ -1,4 +1,2 @@
 #!/bin/bash
-
-touch ~/.myecho_content
-echo "HELLO WORLD" > ~/.myecho_content
+echo "postinst : script execute apres l'installation"
