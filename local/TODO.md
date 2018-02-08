@@ -23,4 +23,4 @@ N'oubliez pas de mettre votre nom pour savoir sur quel sujet vous êtes en train
 - Réorganiser tout en md **Gerard**
 - Condensé des racourcis disponible sur VirtualBox [racourcis_virtualbox](local/tmp/Racourcis_VirtualBox.md) **Herbaut**
 - Faire un document simple sur le fonctionnement des fichiers md [modele-diaporama](local/modele-diaporama.md) **Beaufils**
-- [Documentation](local/compte-rendu/cr-2018-02-09-hebdo.md) simple pour la création de paquet(sans dépendance)
+- [Documentation](local/compte-rendu/cr-2018-02-09-hebdo.md) simple pour la création de paquet(sans dépendance) **Gerard**
