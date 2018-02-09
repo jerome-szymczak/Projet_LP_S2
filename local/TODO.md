@@ -9,13 +9,12 @@ N'oubliez pas de mettre votre nom pour savoir sur quel sujet vous êtes en train
 
 ## TODO
 
-- Coup d’oeil à lxc-net
-- Faire une preuve que lxc-net fonctionne
 - Explication sur le fonctionnement du paquet bridge-utils
 
 ## DOING
 
 - Recherche sur la carte reseau VirtualBox  **Salecki**
+- Preuve de fonctionnement de lxc-net **Dusart**
 
 ## DONE
 
@@ -25,4 +24,4 @@ N'oubliez pas de mettre votre nom pour savoir sur quel sujet vous êtes en train
 - Faire un document simple sur le fonctionnement des fichiers md [modele-diaporama](local/modele-diaporama.md) **Beaufils**
 - Recherche des différents type de réseau [type-reseau-vbox](local/tmp/type-reseau-vbox.md) **Salecki**
 - [Documentation](local/compte-rendu/cr-2018-02-09-hebdo.md) simple pour la création de paquet(sans dépendance) **Gerard**
-- Création d'un simple paquet Debian[paquet](local/tmp/myecho) ** Gerard**
+- Création d'un simple paquet Debian[paquet](local/tmp/myecho) **Gerard**
