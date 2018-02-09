@@ -17,6 +17,10 @@ KVM est une instance de QEMU, grâce à son module KQEMU, il permet d'exécuter 
 
 ## LXC
 
+## Proxmox
+Proxmox Virtual Environment est un logiciel libre de virtualisation, plus précisément un hyperviseur de machines virtuelles. Proxmox permet donc de monter facilement un serveur de virtualisation dont l'administration se fera via une interface web.
+Proxmox VE installe les outils complets du système d'exploitation et de gestion en 3 à 5 minutes (dépend du matériel utilisé).
+C'est une solution de virtualisation "bare metal". Le terme de « bare metal » (metal nu) signifie que vous commencez à partir d'un serveur vide et qu'il n'y a donc nul besoin d'installer un système d'exploitation auparavant.
 ## Comparatif des différents hyperviseurs
 
 [Comparatif](local/tmp/img/comparatif.png)
