@@ -16,7 +16,6 @@ N'oubliez pas de mettre votre nom pour savoir sur quel sujet vous êtes en train
 ## DOING
 
 - Recherche sur la carte reseau VirtualBox  **Salecki**
-- Preuve de fonctionnement de lxc-net **Dusart**
 - Recherche sur les solutions déjà existantes **Gerard**
 - Recheche sur la création du carte réseau **Szymczak**
 
