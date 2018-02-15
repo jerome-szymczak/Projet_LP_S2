@@ -19,14 +19,13 @@
 ###sources
 
 **vmnet** 
-	- http://g.urroz.online.fr/doc/ch03s02.html
-	- 
+    - http://g.urroz.online.fr/doc/ch03s02.html
 **libvirt**
-	- https://libvirt.org/
+    - https://libvirt.org/
 **lxc-net** 
-	- https://wiki.debian.org/fr/LXC/SimpleBridge 
-	- http://tech.novapost.fr/lxc-demystification.html
+    - https://wiki.debian.org/fr/LXC/SimpleBridge 
+    - http://tech.novapost.fr/lxc-demystification.html
 **TUN/TAP** 
-	- https://www.inetdoc.net/guides/vm/vm.network.tun-tap.html
-	- http://debian-facile.org/doc:reseau:interfaces:tapbridge
+    - https://www.inetdoc.net/guides/vm/vm.network.tun-tap.html
+    - http://debian-facile.org/doc:reseau:interfaces:tapbridge
 
