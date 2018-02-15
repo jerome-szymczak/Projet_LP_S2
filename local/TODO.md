@@ -10,6 +10,8 @@ N'oubliez pas de mettre votre nom pour savoir sur quel sujet vous êtes en train
 ## TODO
 
 - Explication sur le fonctionnement du paquet bridge-utils
+- Faire un document résumant l'ensemble des recherches
+- Une réunion pour choisir une solution
 
 ## DOING
 
