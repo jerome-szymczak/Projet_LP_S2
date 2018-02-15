@@ -12,6 +12,7 @@ N'oubliez pas de mettre votre nom pour savoir sur quel sujet vous êtes en train
 - Explication sur le fonctionnement du paquet bridge-utils
 - Faire un document résumant l'ensemble des recherches
 - Une réunion pour choisir une solution
+- Réunion 16/02 à 15h pour choisir une solution
 
 ## DOING
 
