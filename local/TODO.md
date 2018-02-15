@@ -17,11 +17,12 @@ N'oubliez pas de mettre votre nom pour savoir sur quel sujet vous êtes en train
 
 - Recherche sur la carte reseau VirtualBox  **Salecki**
 - Preuve de fonctionnement de lxc-net **Dusart**
+- Recherche sur les solutions déjà existantes **Gerard**
+- Recheche sur la création du carte réseau **Szymczak**
 
 ## DONE
 
 - Recherche sur les hyperviseur existants [Hyperviseur](local/tmp/Recherche_Hyperviseur.md)  **Gerard**
-- Réorganiser tout en md **Gerard**
 - Condensé des racourcis disponible sur VirtualBox [racourcis_virtualbox](local/tmp/Racourcis_VirtualBox.md) **Herbaut**
 - Faire un document simple sur le fonctionnement des fichiers md [modele-diaporama](local/modele-diaporama.md) **Beaufils**
 - Recherche des différents type de réseau [type-reseau-vbox](local/tmp/type-reseau-vbox.md) **Salecki**
