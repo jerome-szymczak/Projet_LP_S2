@@ -24,6 +24,8 @@ parler de brctl, choix retenu, avantages et inconvéniants
 
 **libvirt**
 - https://libvirt.org/
+- https://wiki.libvirt.org/page/Main_Page
+- https://wiki.libvirt.org/page/VirtualNetworking
 
 **lxc-net** 
 - https://wiki.debian.org/fr/LXC/SimpleBridge 
