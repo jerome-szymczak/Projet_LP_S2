@@ -3,13 +3,43 @@
 
 // ce qu'il faut : description succinte, les dépendances(si il y en a), comment ça fonctionne, complexité(1 à 5), avantages et inconvéniants  
 ## vmnet de VMware
+**Description :** 
 
+**Dépendances :** 
+
+**Complexité :** 
+
+**Avantages :** 
+
+**Inconvénients :** 
+
+**Comment ça fonctionne :** 
 
 ## libvirt
+**Description :** 
 
+**Dépendances :** 
+
+**Complexité :** 
+
+**Avantages :** 
+
+**Inconvénients :** 
+
+**Comment ça fonctionne :** 
 
 ## LXC
+**Description :** 
 
+**Dépendances :** 
+
+**Complexité :** 
+
+**Avantages :** 
+
+**Inconvénients :** 
+
+**Comment ça fonctionne :** 
 
 ## Fonction TUN/TAP
 **Description :** TUN/TAP est une fonction de réception et de transmission de paquets entre le noyau et les programmes de l'espace utilisateur. 
@@ -17,17 +47,17 @@ Cette fonction peut être vue comme une simple interface point à point ou Ether
 
 **Dépendances :** bridge-utils & uml-utilities
 
-**Comment ça fonctionne :** http://debian-facile.org/doc:reseau:interfaces:tapbridge
-
 **Complexité :** 3
 
 **Avantages :** 
 
-**Inconvéniants :** 
+**Inconvénients :** 
+
+**Comment ça fonctionne :** http://debian-facile.org/doc:reseau:interfaces:tapbridge
 
 
 ## Conclusion
-parler de brctl, choix retenu, avantages et inconvéniants
+parler de brctl, choix retenu, pourquoi
 
 ### Sources
 
