@@ -1,5 +1,7 @@
 # Comparaison des différentes solutions déjà existantes 
 
+
+// ce qu'il faut : description succinte, les dépendances(si il y en a), comment ça fonctionne, complexité(1 à 5), avantages et inconvéniants  
 ## vmnet de VMware
 
 
