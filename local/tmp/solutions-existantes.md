@@ -4,7 +4,7 @@
 
 
 ## libvirt
-'pas compris'
+
 
 ## LXC
 
@@ -12,8 +12,8 @@
 ## Fonction TUN/TAP
 
 
-## Conclusion et solution retenu
-
+## Conclusion
+parler de brctl, choix retenu, avantages et inconvéniants
 
 ### Sources
 
