@@ -17,12 +17,16 @@
 
 ## libvirt
 **Description :** 
+Libvirt est une boite à outil permettant d'interfacer des hyperviseurs, il offre la possibilite de création d'un switch virtuel.
 
 **Dépendances :** 
 
 **Complexité :** 
+Complexité 3 : 
+Facilité de configuration par interface graphique (création du réseau, configuration du DHCP)
 
 **Avantages :** 
+Boite à outils toute en un permettant de configurer le réseau indépendamment de l'hyperviseur
 
 **Inconvénients :** 
 
