@@ -12,13 +12,12 @@ N'oubliez pas de mettre votre nom pour savoir sur quel sujet vous êtes en train
 - Explication sur le fonctionnement du paquet bridge-utils
 - Faire un document résumant l'ensemble des recherches
 - Une réunion pour choisir une solution
-- Réunion 16/02 à 15h pour choisir une solution
+- test de libvirt
+- test de tun/tap
 
 ## DOING
 
-- Recherche sur la carte reseau VirtualBox  **Salecki**
-- Recherche sur les solutions déjà existantes **Gerard**
-- Recheche sur la création du carte réseau **Szymczak**
+- test de lxc-net **Gerard** **Salecki** ** Scymczak**
 
 ## DONE
 
