@@ -1,8 +1,10 @@
 ---
-title : testDiapo
+title : Réseau pour machines virtuelles
 author :
 - Cyril Gerard
-date: 9 février 2018
+- Sczymczak Jerome
+- Salecki Simon
+date: 7 mars 2018
 
 ...
 
@@ -14,13 +16,17 @@ date: 9 février 2018
 
 - L'objectif est de pouvoir effectuer des TP d'administration système utilisant plusieurs machines sur le même réseau.
 
+Mettre l'image du tableau blanc
+
 ## Organisation du projet
 
 - Dépot Git
 
 - Mise en place d'un fichier ToDo
 
-- 
+- Compte rendu hebdomadaire
+
+- Respect d'une convention de nommage
 
 # Recherche
 
@@ -34,7 +40,7 @@ date: 9 février 2018
 
 - [Proxmox](https://www.proxmox.com/en/)
 
-![TeX Friendly Zone](local/tmp/img/comparatif.png){ width=30% }
+![TeX Friendly Zone](local/tmp/img/comparatif.png){ width=20% }
 
 ## Les solutions existantes
 
@@ -52,18 +58,27 @@ date: 9 février 2018
 
 ## Test des différentes solutions existantes
 
+- LXC-net :
+- Tun/TAP :
+- Libvirt :
+- VMnet :
+
 ## Choix pour notre solution
+Pourquoi ? Simplicité ? Libre ou non ? 
 
 # Mise en oeuvre du projet
 
 ## Création d'une interface
+Comment créer notre interface
 
 ## Configuration de Avignon0
+Configuration et notre interface et fichiers à modifier
 
-## Documentation du projet 
+## Documentation du projet
+Readme, Documenter sur comment marche lxc-net
 
 ## Implémentation d'un paquet Debian
+Comment créer un paquet et comment l'installer
 
 # Conclusion
-
 Ce que nous avons appris de ce projet !
