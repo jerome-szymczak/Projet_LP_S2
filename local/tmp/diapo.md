@@ -14,6 +14,14 @@ date: 9 février 2018
 
 - L'objectif est de pouvoir effectuer des TP d'administration système utilisant plusieurs machines sur le même réseau.
 
+## Organisation du projet
+
+- Dépot Git
+
+- Mise en place d'un fichier ToDo
+
+- 
+
 # Recherche
 
 ## Les hyperviseurs
@@ -44,7 +52,7 @@ date: 9 février 2018
 
 ## Test des différentes solutions existantes
 
-## Choix pour notre solutions
+## Choix pour notre solution
 
 # Mise en oeuvre du projet
 
