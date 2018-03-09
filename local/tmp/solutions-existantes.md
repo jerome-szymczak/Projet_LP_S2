@@ -1,19 +1,27 @@
 # Comparaison des différentes solutions déjà existantes 
 
-
-// ce qu'il faut : description succinte, les dépendances(si il y en a), comment ça fonctionne, complexité(1 à 5), avantages et inconvéniants  
 ## vmnet de VMware
 **Description :** 
 
+
 **Dépendances :** 
 
-**Complexité :** 
+**Complexité :** 0
 
 **Avantages :** 
+- Facile à installer
 
 **Inconvénients :** 
+- On doit installer un hyperviseur complet
 
 **Comment ça fonctionne :** 
+- Installation de VMplayer
+- Mettre la machine virtuelle sur l'nterface 'vmnet8'
+- Pas encore tester
+
+
+sources : 
+- http://g.urroz.online.fr/doc/ch03s02.html
 
 ## libvirt
 **Description :** 
@@ -21,63 +29,79 @@ Libvirt est une boite à outil permettant d'interfacer des hyperviseurs, il offr
 
 **Dépendances :** 
 
-**Complexité :** 
-Complexité 3 : 
-Facilité de configuration par interface graphique (création du réseau, configuration du DHCP)
+**Complexité :**
 
 **Avantages :** 
-Boite à outils toute en un permettant de configurer le réseau indépendamment de l'hyperviseur
 
 **Inconvénients :** 
 
 **Comment ça fonctionne :** 
+
+
+sources : 
+- https://libvirt.org/
+- https://wiki.libvirt.org/page/Main_Page
+- https://wiki.libvirt.org/page/VirtualNetworking
 
 ## LXC
 **Description :** 
+LXC est conteneur Linux(ensemble de processus qui sont isolés du reste du système).
+Dans LXC nous avons lxc.network qui est très utile pour pour avoir accès à internet
+Les conteneurs doivent se connecter à une interface bridge sur l'hôte. Celle-ci peut avoir été créée par le paquetage(lxc-net), on pourra donc la créer manuellement.
 
-**Dépendances :** 
-
-**Complexité :** 
-
-**Avantages :** 
-
-**Inconvénients :** 
-
-**Comment ça fonctionne :** 
-
-## Fonction TUN/TAP
-**Description :** TUN/TAP est une fonction de réception et de transmission de paquets entre le noyau et les programmes de l'espace utilisateur. 
-Cette fonction peut être vue comme une simple interface point à point ou Ethernet qui, au lieu de recevoir les paquets d'un média physique, les reçoit du programme de l'espace utilisateur. De même, cette interface au lieu d'envoyer les paquets vers un média physique, les transmet au programme de l'espace utilisateur. Cette fonction permet donc une communication réseau entre le système hôte et des machines virtuelles.
-
-**Dépendances :** bridge-utils & uml-utilities
+**Dépendances :** liblxc1, python3-lxc, libapparmor1, libc6, libcap2, libgnutls30, libseccomp2, libselinux1, python3:any, lsb-base
 
 **Complexité :** 3
 
 **Avantages :** 
+- N’est pas dépendant de l’architecture
+- Est léger en consommation mémoire
+- Simple à utiliser
 
 **Inconvénients :** 
+- Ne marche pas encore
 
-**Comment ça fonctionne :** http://debian-facile.org/doc:reseau:interfaces:tapbridge
+**Comment ça fonctionne :** 
+1. copier le début du code de /usr/lib/x86_64-linux-gnu/lxc/lxc-net dans /etc/default/lxc-net
+2. Relancer le service lxc-net
+3. Mettre la machine virtual en accès par pont sur l'interface 'lxcbr0'
+4. Mais ça marche pas **¯\_(ツ)_/¯**
+
+
+sources :
+- http://www.linuxembedded.fr/2013/07/configuration-reseau-de-lxc/
+- https://wiki.debian.org/fr/LXC
+- https://wiki.debian.org/fr/LXC/SimpleBridge
+
+
+## Fonction TAP
+**Description :** 
+Un dispositif TUN/TAP peut être vu comme une interface réseau qui communique avec un programme utilisateur (dispositif logiciel) au lieu d'une vraie carte matérielle (TUN pour miner un périphérique point à point, TAP pour mimer un périphérique Ethernet).
+
+**Dépendances :** bridge-utils, uml-utilities
+
+**Complexité :** 2
+
+**Avantages :** 
+- Très simple à metre en place
+
+**Inconvénients :**
+- Ne marche pas encore 
+
+**Comment ça fonctionne :** 
+1. Installation des paquets
+2. Modification du fichier /etc/network/interfaces
+3. Mettre la machine en accès par pont sur l'interface 'tap0'
+4. Mais ça marhce pas **¯\_(ツ)_/¯**
+
+
+sources : 
+- http://debian-facile.org/doc:reseau:interfaces:tapbridge
+- https://www.inetdoc.net/guides/vm/vm.network.tun-tap.html
 
 
 ## Conclusion
 parler de brctl, choix retenu, pourquoi
 
-### Sources
 
-**vmnet** 
-- http://g.urroz.online.fr/doc/ch03s02.html
-
-**libvirt**
-- https://libvirt.org/
-- https://wiki.libvirt.org/page/Main_Page
-- https://wiki.libvirt.org/page/VirtualNetworking
-
-**lxc-net** 
-- https://wiki.debian.org/fr/LXC/SimpleBridge 
-- http://tech.novapost.fr/lxc-demystification.html
-
-**TUN/TAP** 
-- https://www.inetdoc.net/guides/vm/vm.network.tun-tap.html
-- http://debian-facile.org/doc:reseau:interfaces:tapbridge
 
