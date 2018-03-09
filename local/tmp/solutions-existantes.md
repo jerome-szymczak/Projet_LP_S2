@@ -22,7 +22,7 @@ Les conteneurs doivent se connecter à une interface bridge sur l'hôte. Celle-c
 1. copier le début du code de /usr/lib/x86_64-linux-gnu/lxc/lxc-net dans /etc/default/lxc-net
 2. Relancer le service lxc-net
 3. Mettre la machine virtual en accès par pont sur l'interface 'lxcbr0'
-4. Mais ça marche pas **¯\_(ツ)_/¯**
+4. Mais ça marche pas **¯\\_(ツ)_/¯**
 
 
 sources :
@@ -49,7 +49,7 @@ Un dispositif TUN/TAP peut être vu comme une interface réseau qui communique a
 1. Installation des paquets
 2. Modification du fichier /etc/network/interfaces
 3. Mettre la machine en accès par pont sur l'interface 'tap0'
-4. Mais ça marhce pas **¯\_(ツ)_/¯**
+4. Mais ça marhce pas **¯\\_(ツ)_/¯**
 
 
 sources : 
