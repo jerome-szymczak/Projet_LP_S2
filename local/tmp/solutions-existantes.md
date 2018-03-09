@@ -1,48 +1,5 @@
 # Comparaison des différentes solutions déjà existantes 
 
-## vmnet de VMware
-**Description :** 
-
-
-**Dépendances :** 
-
-**Complexité :** 0
-
-**Avantages :** 
-- Facile à installer
-
-**Inconvénients :** 
-- On doit installer un hyperviseur complet
-
-**Comment ça fonctionne :** 
-- Installation de VMplayer
-- Mettre la machine virtuelle sur l'nterface 'vmnet8'
-- Pas encore tester
-
-
-sources : 
-- http://g.urroz.online.fr/doc/ch03s02.html
-
-## libvirt
-**Description :** 
-Libvirt est une boite à outil permettant d'interfacer des hyperviseurs, il offre la possibilite de création d'un switch virtuel.
-
-**Dépendances :** 
-
-**Complexité :**
-
-**Avantages :** 
-
-**Inconvénients :** 
-
-**Comment ça fonctionne :** 
-
-
-sources : 
-- https://libvirt.org/
-- https://wiki.libvirt.org/page/Main_Page
-- https://wiki.libvirt.org/page/VirtualNetworking
-
 ## LXC
 **Description :** 
 LXC est conteneur Linux(ensemble de processus qui sont isolés du reste du système).
@@ -98,6 +55,51 @@ Un dispositif TUN/TAP peut être vu comme une interface réseau qui communique a
 sources : 
 - http://debian-facile.org/doc:reseau:interfaces:tapbridge
 - https://www.inetdoc.net/guides/vm/vm.network.tun-tap.html
+
+
+## vmnet de VMware
+**Description :** 
+
+
+**Dépendances :** 
+
+**Complexité :** 0
+
+**Avantages :** 
+- Facile à installer
+
+**Inconvénients :** 
+- On doit installer un hyperviseur complet
+
+**Comment ça fonctionne :** 
+- Installation de VMplayer
+- Mettre la machine virtuelle sur l'nterface 'vmnet8'
+- Pas encore tester
+
+
+sources : 
+- http://g.urroz.online.fr/doc/ch03s02.html
+
+
+## libvirt
+**Description :** 
+Libvirt est une boite à outil permettant d'interfacer des hyperviseurs, il offre la possibilite de création d'un switch virtuel.
+
+**Dépendances :** 
+
+**Complexité :**
+
+**Avantages :** 
+
+**Inconvénients :** 
+
+**Comment ça fonctionne :** 
+
+
+sources : 
+- https://libvirt.org/
+- https://wiki.libvirt.org/page/Main_Page
+- https://wiki.libvirt.org/page/VirtualNetworking
 
 
 ## Conclusion
