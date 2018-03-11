@@ -59,7 +59,9 @@ sources :
 
 ## vmnet de VMware
 **Description :** 
-
+- VMnet0 pour relier les VMs au réseau physique direct (Bridged mode)
+- VMnet1 isole totalement les cartes qui lui sont reliées du reste du monde, mais pas entre elles (Host Only mode)
+- VMnet8 relie les VMs au réseau physique en passant par de la translation d'adresses (NAT mode)
 
 **Dépendances :** 
 
@@ -74,7 +76,7 @@ sources :
 **Comment ça fonctionne :** 
 - Installation de VMplayer
 - Mettre la machine virtuelle sur l'nterface 'vmnet8'
-- Pas encore tester
+- On peut utiliser la carte vmnet8 avec virtuabox.
 
 
 sources : 
