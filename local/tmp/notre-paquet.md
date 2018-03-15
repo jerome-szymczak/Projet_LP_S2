@@ -20,9 +20,9 @@
 
 - usr/
 	- bin/
-		myscript(notre script) : KO
+		- myscript(notre script) : KO
             les commande pour créer et configurer notre interface tap0
 	- share/doc
-		README : comment marche notre paquet(interface)
-		tuto-kvm : OK
-		tuto-virtualbox : 
+		- README : KO
+		- tuto-kvm : OK
+		- tuto-virtualbox : KO
