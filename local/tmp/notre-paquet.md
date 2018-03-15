@@ -16,7 +16,7 @@
 		création du fichier /etc/default/lxc-net
 	- prerm
 		suppression du fichier /etc/default/lxc-net
-	 - postrm
+	- postrm
 
 - usr/
 	- bin/
