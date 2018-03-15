@@ -1,0 +1,2 @@
+#!/bin/bash
+cp ../usr/share/doc/lxc-net /etc/default/lxc-net && echo "Installation réussie !"

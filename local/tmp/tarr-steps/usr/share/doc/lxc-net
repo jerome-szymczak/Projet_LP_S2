@@ -1,0 +1,24 @@
+# Active l'utilisation de lxc-net
+USE_LXC_BRIDGE="true"
+
+# Normalement seul la ligne précédent suffit (les valeurs par défaut sont utilisées)
+
+# Nom de l'interface bridge qui sera créé
+LXC_BRIDGE="lxcbr0"
+# Adresse MAC de l'interface qui sera crée
+LXC_BRIDGE_MAC="00:16:3e:00:00:00"
+# IP de l'interface bridge
+LXC_ADDR="10.0.4.1"
+# Masque de sous-réseau de l'interface bridge
+LXC_NETMASK="255.255.255.0"
+# Utilisé pour les règles iptables
+LXC_NETWORK="10.0.4.0/24"
+# Plage d'IP servies par le DHCP
+LXC_DHCP_RANGE="10.0.4.2,10.0.4.254"
+# Nombre d'IP maximum au sein de la plage définie ci-dessus
+LXC_DHCP_MAX="253"
+# Extension de la configiration de dnsmasq
+LXC_DHCP_CONFILE=""
+# Domaine des conteneurs sur le réseau
+LXC_DOMAIN=""
+
