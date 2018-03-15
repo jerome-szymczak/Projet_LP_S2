@@ -5,22 +5,18 @@
 		- package : OK
 		- version : OK
 		- maintainer : OK 
-		- depends : OK à voir
+		- depends : OK
 		- homepage : OK
         - description : OK
 	
-- preinst : KO
-
 	- postinst : OK
+
 	- prerm : KO
 		suppression du fichier /etc/default/lxc-net
-	- postrm : KO
 
 - usr/
 	- bin/
-		- myscript(notre script) : KO
-            les commande pour créer et configurer notre interface tap0
+		- myscript : OK
 	- share/doc
-		- README : KO
 		- tuto-kvm : OK
 		- tuto-virtualbox : KO
