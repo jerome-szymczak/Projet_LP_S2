@@ -1,7 +1,6 @@
 Package: tarr-steps
 Version: 1.0
 Maintainer: B.Beaufils
-Pre-depends : 
-Depends :
+Depends : lxc
 Homepage : https://www.iut-info.univ-lille1.fr/~beaufils/
-Description : 
+Description : tarr-steps est une architecture réseau IPv4 permettant à des machines virtuelles de communiquer, de manière transparente, entre elles, avec la machine physique qui les héberge ainsi qu'avec les machines du segment réseau sur lequel est intégrée la machine physique

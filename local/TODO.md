@@ -8,16 +8,13 @@ N'oubliez pas de mettre votre nom pour savoir sur quel sujet vous êtes en train
 - DONE : les choses terminé 
 
 ## TODO
-
-- Explication sur le fonctionnement du paquet bridge-utils
-- Faire un document résumant l'ensemble des recherches
-- Une réunion pour choisir une solution
-- test de libvirt
-- test de tun/tap
+- rapport 
+- diapo
+- mettre la machine à zero pour tester si notre paquet fonctionne bien
 
 ## DOING
 
-- test de lxc-net **Gerard** **Salecki** ** Scymczak**
+- mise en place d'un paquet Debian
 
 ## DONE
 
@@ -27,3 +24,6 @@ N'oubliez pas de mettre votre nom pour savoir sur quel sujet vous êtes en train
 - Recherche des différents type de réseau [type-reseau-vbox](local/tmp/type-reseau-vbox.md) **Salecki**
 - [Documentation](local/compte-rendu/cr-2018-02-09-hebdo.md) simple pour la création de paquet(sans dépendance) **Gerard**
 - Création d'un simple paquet Debian[paquet](local/tmp/myecho) **Gerard**
+- test de TUN/TAP **Gerard**
+- test de lxc-net **Gerard** **Salecki** ** Scymczak** 
+- 

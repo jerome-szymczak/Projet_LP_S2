@@ -5,15 +5,13 @@
 		- package : OK
 		- version : OK
 		- maintainer : OK 
-		- description : KO
-		- pre-depends : KO
-		- depends : KO
+		- depends : OK à voir
 		- homepage : OK
+        - description : OK
+	
+- preinst : KO
 
-	- preinst : KO
-
-	- postinst : KO
-		création du fichier /etc/default/lxc-net
+	- postinst : OK
 	- prerm : KO
 		suppression du fichier /etc/default/lxc-net
 	- postrm : KO

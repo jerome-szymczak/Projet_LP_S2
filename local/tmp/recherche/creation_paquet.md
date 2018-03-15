@@ -1,7 +1,10 @@
 # Recherche sur les paquets Debian
 
 Le paquet nécessaire pour faire ses propre paquets est dpkg. Le programme dpkg-deb qui est contenu dans le paquet dpkg est le programme qui construit un fichier .deb . Cependant, ne vous inquiétez pas, le paquet est installé par défaut sur votre Debian.
-
+Pour créer le paquet une fois que tout les fichier sont renseigner il faut faire la commande
+~~~
+dpkg-deb --build monpaquet
+~~~
 
 ## l'Arborescence d'un paquet Debian
 - myscript/
@@ -39,4 +42,5 @@ C'est un fichier principal de contrôle qui contient un certain nombre de champs
 		- homepage : l'adresse du site internet
 
 ## Voici un exemple de paquet simple 
+
 [mon-paquet](local/tmp/myecho)
