@@ -2,26 +2,27 @@
 
 - DEBIAN/
 	- control
-		- package : nom du paquet
-		- version : 1.0
-		- maintainer : B.Beaufils 
-		- description : 
-		- pre-depends : les dépendances qui doivent être installé avant notre paquet
-		- depends : les dépendences du paquet
-		- homepage : https://www.iut-info.univ-lille1.fr/~beaufils/
+		- package : OK
+		- version : OK
+		- maintainer : OK 
+		- description : KO
+		- pre-depends : KO
+		- depends : KO
+		- homepage : OK
 
-	- preinst
+	- preinst : KO
 
-	- postinst
+	- postinst : KO
 		création du fichier /etc/default/lxc-net
-	- prerm
+	- prerm : KO
 		suppression du fichier /etc/default/lxc-net
-	- postrm
+	- postrm : KO
 
 - usr/
 	- bin/
-		myscript(notre script) : les commande pour créer et configurer notre interface tap0
+		myscript(notre script) : KO
+            les commande pour créer et configurer notre interface tap0
 	- share/doc
 		README : comment marche notre paquet(interface)
-		tuto-kvm : 
+		tuto-kvm : OK
 		tuto-virtualbox : 
