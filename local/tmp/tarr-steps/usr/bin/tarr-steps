@@ -1,3 +1,27 @@
 #!/bin/bash
+ERR_INTERFACE=1
+ERR_NB_ARGUMENT=2
+MESS_NB_ARGUMENT="$0 risque de ne pas bien marcher sans argument..."
+MESSAGE_ERR_INTERFACE="Il y a eu un souci lors de la création de l'interface"
+MESSAGE_INTERFACE="L'interface a bien été créée"
+switch="$(head -n 7 /etc/default/lxc-net | tail -1 | cut -d\" -f2)"
 
-ip tuntap add mode tap tap0 && ip link set dev tap0 master lxcbr0 && ip link set tap0 up
+
+if [ $# = 0 ]
+then
+    echo $MESS_NB_ARGUMENT
+    exit $ERR_NB_ARGUMENT 
+fi
+
+case $1 in
+	"--start") 	if ip tuntap add mode tap tap0 && ip link set dev tap0 master $switch && ip link set tap0 up
+				then
+					echo $MESSAGE_INTERFACE
+					exit 0
+				else
+					echo $MESSAGE_ERR_INTERFACE
+					exit $ERR_INTERFACE
+				fi
+	"--rename") 	read -p "Quel nom voulez vous donner au switch ?" nouveauNom 
+				sed -i 's/$switch/$nouveauNom/g' /etc/default/lxc-net
+esac
