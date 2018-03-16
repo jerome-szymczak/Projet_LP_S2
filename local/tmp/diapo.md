@@ -1,5 +1,6 @@
 ---
 title : Réseau pour machines virtuelles
+
 author :
 - Cyril Gerard
 - Sczymczak Jerome
@@ -76,7 +77,10 @@ Un paquet Debian est constitué de deux parties notables :
 **dossier-du-paquet/**
  - DEBIAN/
     - control
-    - post/pre inst/rm
+    - preinst
+    - postinst
+    - prerm
+    - postrm
  - usr/
     - bin/
         - le-programme
