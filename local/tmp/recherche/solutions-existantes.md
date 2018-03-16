@@ -16,14 +16,14 @@ Les conteneurs doivent se connecter à une interface bridge sur l'hôte. Celle-c
 - Simple à utiliser
 
 **Inconvénients :** 
-- Ne marche pas encore
+- Assez dur à comprendre comment le script fonctionne
 
 **Comment ça fonctionne :** 
 1. copier le début du code de /usr/lib/x86_64-linux-gnu/lxc/lxc-net dans /etc/default/lxc-net
 2. Relancer le service lxc-net
-3. Mettre la machine virtual en accès par pont sur l'interface 'lxcbr0'
-4. Mais ça marche pas **¯\\_(ツ)_/¯**
-
+3. Créer une interface tap0
+4. Créer un tunnel entre tap0 et le switch créer par lxc-net
+5. Mettre la machine virtual en accès par pont sur l'interface 'tap0'
 
 sources :
 - http://www.linuxembedded.fr/2013/07/configuration-reseau-de-lxc/
@@ -31,7 +31,7 @@ sources :
 - https://wiki.debian.org/fr/LXC/SimpleBridge
 
 
-## Fonction TAP
+## Fonction TUN/TAP
 **Description :** 
 Un dispositif TUN/TAP peut être vu comme une interface réseau qui communique avec un programme utilisateur (dispositif logiciel) au lieu d'une vraie carte matérielle (TUN pour miner un périphérique point à point, TAP pour mimer un périphérique Ethernet).
 
@@ -43,14 +43,13 @@ Un dispositif TUN/TAP peut être vu comme une interface réseau qui communique a
 - Très simple à metre en place
 
 **Inconvénients :**
-- Ne marche pas encore 
+- Modification des interfaces existantes
 
 **Comment ça fonctionne :** 
 1. Installation des paquets
-2. Modification du fichier /etc/network/interfaces
-3. Mettre la machine en accès par pont sur l'interface 'tap0'
-4. Mais ça marhce pas **¯\\_(ツ)_/¯**
-
+2. création d'une interface bridge
+3. Création d'un tunnel entre le bridge et tap0
+4. Mettre la machine en accès par pont sur l'interface 'tap0'
 
 sources : 
 - http://debian-facile.org/doc:reseau:interfaces:tapbridge
@@ -63,7 +62,7 @@ sources :
 - VMnet1 isole totalement les cartes qui lui sont reliées du reste du monde, mais pas entre elles (Host Only mode)
 - VMnet8 relie les VMs au réseau physique en passant par de la translation d'adresses (NAT mode)
 
-**Dépendances :** 
+**Dépendances :** aucune
 
 **Complexité :** 0
 
@@ -75,9 +74,7 @@ sources :
 
 **Comment ça fonctionne :** 
 - Installation de VMplayer
-- Mettre la machine virtuelle sur l'nterface 'vmnet8'
-- On peut utiliser la carte vmnet8 avec virtuabox.
-
+- Mettre la machine virtuelle en accès par pont sur l'nterface 'vmnet8'
 
 sources : 
 - http://g.urroz.online.fr/doc/ch03s02.html
@@ -102,10 +99,3 @@ sources :
 - https://libvirt.org/
 - https://wiki.libvirt.org/page/Main_Page
 - https://wiki.libvirt.org/page/VirtualNetworking
-
-
-## Conclusion
-parler de brctl, choix retenu, pourquoi
-
-
-
