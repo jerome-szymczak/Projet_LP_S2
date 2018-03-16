@@ -41,7 +41,7 @@ Mettre l'image du tableau blanc
 
 - [Proxmox](https://www.proxmox.com/en/)
 
-![TeX Friendly Zone](local/tmp/img/comparatif.png){ width=20% }
+![TeX Friendly Zone](local/tmp/img/comparatif-virtualisateur.svg){ width=10% }
 
 ## Virtualbox
 les différents réseau de virtualbox :
@@ -64,15 +64,15 @@ Vbox manage :
 - [Bridge-utils](https://wiki.debian.org/fr/BridgeNetworkConnections)
 
 ## Paquet Debian
-**Description : **
+**Description :**
 Un paquet .deb est en fait un dossier compressé contenant les éléments à installer et des informations sur le paquet. 
 Comme l'indique l'extension, un paquet .deb est utilisé sur les systèmes reposant sur Debian.
-**L'arborescence : **
+**L'arborescence :**
 Un paquet Debian est constitué de deux parties notables : 
 - Un dossier contenant le nom du paquet, ses dépendances, etc.
 - Les fichiers du programme.
 
-dossier-du-paquet/
+**dossier-du-paquet/**
  - DEBIAN/
     - control
     - post/pre inst/rm
