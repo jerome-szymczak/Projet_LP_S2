@@ -1,16 +1,18 @@
 
 
-
 # Cadre du projet
-## Intitulé du sujet
+## Intitulé du sujet
 Il s'agit de construire une architecture réseau IPv4 permettant à des machines virtuelles de communiquer, de manière transparente, entre elles, avec la machine physique qui les héberge ainsi qu'avec les machines du segment réseau sur lequel est intégrée la machine physique.
 
 L'objectif est de pouvoir effectuer des TP d'administration système utilisant plusieurs machines (en mode *serveur* ou *poste de travail*) sur le même réseau sans trop de difficulté pour l'étape de construction des machines, mais en conservant un minimum de flexibilité (accès extérieur, manipulation des interfaces des machines de TP).
 
 ## Contrainte
-L'architecture doit être déployable sur une machine physique [Debian](https://www.debian.org) via l'installation d'un paquet au format Debian. Elle doit permettre d'accéder à tous les ports des machines virtuelles sans être obligé de mettre en place des redirections de ports. Les seuls accès `root` qu'elle doit nécessiter sont au moment de son installation et de l'installation des outils de virtualisation. Un utilisateur standard doit être capable de créer et démarrer des machines virtuelles sans droit d'administration.
+L'architecture doit être déployable sur une machine physique [Debian](https://www.debian.org) via l'installation d'un paquet au format Debian. 
+Elle doit permettre d'accéder à tous les ports des machines virtuelles sans être obligé de mettre en place des redirections de ports. Les seuls accès `root` qu'elle doit nécessiter sont au moment de son installation et de l'installation des outils de virtualisation. 
+Un utilisateur standard doit être capable de créer et démarrer des machines virtuelles sans droit d'administration.
 
-Le réseau doit permettre *a minima* de connecter des machines virtuelles gérées par [VirtualBox](https://www.virtualbox.org/). L'objectif étant de permettre au final de pouvoir y connecter des machines virtuelles gérées par [VMware Workstation Player](https://www.vmware.com/products/workstation-player.html), [QEMU](https://www.qemu.org)/[KVM](http://www.linux-kvm.org) ainsi que des containers Linux [LXC](https://linuxcontainers.org).
+Le réseau doit permettre *a minima* de connecter des machines virtuelles gérées par [VirtualBox](https://www.virtualbox.org/). 
+L'objectif étant de permettre au final de pouvoir y connecter des machines virtuelles gérées par [VMware Workstation Player](https://www.vmware.com/products/workstation-player.html), [QEMU](https://www.qemu.org)/[KVM](http://www.linux-kvm.org) ainsi que des containers Linux [LXC](https://linuxcontainers.org).
 
 À défaut d'une automatisation complète par la fourniture de commande de création de machine virtuelle adéquates, des explications simples permettant à un utilisateur de créer et connecter sa machine virtuelle à ce réseau doivent être fournies sous la forme de documentation adaptée à chaque cas géré.
 
@@ -46,7 +48,8 @@ Le réseau doit permettre *a minima* de connecter des machines virtuelles géré
 ### VirtualBox
 
 Oracle VM VirtualBox est un logiciel libre de type II publié par Oracle.
-VirtualBox est libre d'utilisation pour sa partie principale mais les Add-on, quant à eux, sont disponibles uniquement pour un usage privé, à titre privé. En bref, il est interdit d'utiliser les Add-on en entreprise ou en université.
+VirtualBox est libre d'utilisation pour sa partie principale mais les Add-on, quant à eux, sont disponibles uniquement pour un usage privé, à titre privé. 
+En bref, il est interdit d'utiliser les Add-on en entreprise ou en université.
 
 ### VMware Player
 
@@ -60,12 +63,14 @@ KVM est une instance de QEMU, grâce à son module KQEMU, il permet d'exécuter 
 
 ### LXC
 
-LXC (contraction de l'anglais de LinuX Containers) est un système de vitualisation utilisant l'isolation au niveau système d'exploitation comme méthode de cloisonement. Son but et de créer un environement aussi proche que possible d'une installation Linux standard mais sans avoir besoin d'un noyau séparé.
+LXC (contraction de l'anglais de LinuX Containers) est un système de vitualisation utilisant l'isolation au niveau système d'exploitation comme méthode de cloisonement. 
+Son but et de créer un environement aussi proche que possible d'une installation Linux standard mais sans avoir besoin d'un noyau séparé.
 Les conteneurs LXC sont souvent considérés comme quelque chose entre un chroot et une machine virtuelle à part entière.
 
 ### Proxmox
 
-Proxmox Virtual Environment est un logiciel libre de virtualisation, plus précisément un hyperviseur de machines virtuelles. Proxmox permet donc de monter facilement un serveur de virtualisation dont l'administration se fera via une interface web.
+Proxmox Virtual Environment est un logiciel libre de virtualisation, plus précisément un hyperviseur de machines virtuelles. 
+Proxmox permet donc de monter facilement un serveur de virtualisation dont l'administration se fera via une interface web.
 Proxmox VE installe les outils complets du système d'exploitation et de gestion en 3 à 5 minutes (dépend du matériel utilisé).
 C'est une solution de virtualisation "bare metal". Le terme de « bare metal » (metal nu) signifie que vous commencez à partir d'un serveur vide et qu'il n'y a donc nul besoin d'installer un système d'exploitation auparavant.
 
@@ -104,7 +109,8 @@ sources :
 
 ### Fonction TUN/TAP
 **Description :** 
-Un dispositif TUN/TAP peut être vu comme une interface réseau qui communique avec un programme utilisateur (dispositif logiciel) au lieu d'une vraie carte matérielle (TUN pour miner un périphérique point à point, TAP pour mimer un périphérique Ethernet).
+Un dispositif TUN/TAP peut être vu comme une interface réseau qui communique avec un programme utilisateur (dispositif logiciel).
+Au lieu d'une vraie carte matérielle (TUN pour miner un périphérique point à point, TAP pour mimer un périphérique Ethernet).
 
 **Dépendances :** bridge-utils, uml-utilities
 
@@ -153,12 +159,30 @@ sources :
 ## Solution retenu
 
 ## Création du switch virtuel
-
+La création du switch virtuel se fait grâce au script lxc-net compris dans LXC.
+Nous devons tout d'abord copier l'en-tête du script et la mettre dans le fichier /etc/default/lxc-net
+Puis changer les variables utiles(nom du switch, l'ip de l'interface, la plage d'IP servies par le DHCP,...).
+Et nous pouvons ainsi lancer le script :
+~~~
+systemctl restart lxc-net
+~~~
 ## Création et configuration de l'interface tap
-
-## Documentation sur le fonctionnement du réseau
-
+Nous allons créer une interface tap en ligne de commande(dans notre paquet elle se fera grâce à un script)
+Création d'une interface en mode TAP
+~~~
+ip tuntap add mode tap tap0
+~~~
+Connecter cette interface au switch crée par lxc-net
+~~~
+ip link set dev tap0 master lxcbr0
+~~~
+Activer l'interface TAP créée
+~~~
+ip link set tap0 up
+~~~
 ## Implémentation d'un paquet Debian
+
+## Documentation sur le fonctionnement du paquet
 
 ## Difficultés rencontrés
 
