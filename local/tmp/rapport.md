@@ -1,4 +1,3 @@
-
 # Cadre du projet
 ## Intitulé du sujet
 Il s'agit de construire une architecture réseau IPv4 permettant à des machines virtuelles de communiquer, de manière transparente, entre elles, avec la machine physique qui les héberge ainsi qu'avec les machines du segment réseau sur lequel est intégrée la machine physique.
@@ -185,10 +184,10 @@ ip link set tap0 up
 
 ## Difficultés rencontrés
 
-## Installation de notre paquet
-
 # Procédure de test
 ## Test avec Virtualbox
+
+## Installation de notre paquet
 
 ## Test avec QEMU/KVM
 
