@@ -43,6 +43,8 @@ date: 16 mars 2018
 
 - [Proxmox](https://www.proxmox.com/en/)
 
+'logo des hyperviseurs à droite des noms'
+
 ![TeX Friendly Zone](img/comparatif-virtualiseur.svg){ width=10% }
 
 ## Virtualbox
@@ -64,6 +66,8 @@ Vbox manage :
 - [TUN/TAP](https://www.inetdoc.net/guides/vm/vm.network.tun-tap.html)
 
 - [Bridge-utils](https://wiki.debian.org/fr/BridgeNetworkConnections)
+
+'logo des solutions à droites des nnoms'
 
 ## Paquet Debian
 **Description :**
