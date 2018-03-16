@@ -41,7 +41,7 @@ Mettre l'image du tableau blanc
 
 - [Proxmox](https://www.proxmox.com/en/)
 
-![TeX Friendly Zone](local/tmp/img/comparatif-virtualisateur.svg){ width=10% }
+![TeX Friendly Zone](local/tmp/img/comparatif-virtualiseur.svg){ width=10% }
 
 ## Virtualbox
 les différents réseau de virtualbox :
