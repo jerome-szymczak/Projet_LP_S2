@@ -6,7 +6,7 @@
 on va tout d'abord vérifier que votre microprocesseur permet une virtualisation avec KVM.
 ~~~
 user@mamachine: ~
-$ grep -E 'vmx|svm' /proc/cpuinfo &>/dev/null && echo "La virtualisation est possible sur cette machine." || echo "Le microprocesseur de cette machine ne permet pas d'utiliser la virtualisation avec KVM."
+$ grep -E 'vmx|svm' /proc/cpuinfo &>/dev/null && echo "La virtualisation est possible." || echo "Cette machine ne permet pas d'utiliser la virtualisation avec KVM."
 ~~~
 
 ## Installation
