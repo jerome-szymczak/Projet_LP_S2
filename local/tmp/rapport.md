@@ -185,12 +185,13 @@ ip link set tap0 up
 ## Difficultés rencontrés
 
 # Procédure de test
-## Test avec Virtualbox
-
 ## Installation de notre paquet
+
+## Test avec Virtualbox
 
 ## Test avec QEMU/KVM
 
 ## Test avec VMplayer
 
 # Conclusion
+Ce que nous avons appris
