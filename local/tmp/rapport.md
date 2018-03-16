@@ -185,14 +185,15 @@ Le paquet nécessaire pour faire ses propre paquets est dpkg. Le programme dpkg-
 - myscript/
     - DEBIAN/
         - control (fichier décrivant les informations relatives à notre paquet)
+        - preinst (script exécuté après l'installation du paquet)
         - postinst (script exécuté après l'installation du paquet)
+        - prerm (script exécuté après la désinstallation du paquet)
         - postrm (script exécuté après la désinstallation du paquet)
         - md5sums (permet la vérification de l'intégralité des données récupérées)
     - usr/
         - bin/
             - myscript (notre script, exposé ci-dessus)
-        - share/
-            -doc/
+        - share/doc/
                 - README (informations relatives à l'utilisation de myscript)
                 - copyright 
                 - changelog (changements apportés par rapport à la dernière version)
