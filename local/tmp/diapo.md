@@ -41,7 +41,7 @@ date: 7 mars 2018
 
 - [Proxmox](https://www.proxmox.com/en/)
 
-![TeX Friendly Zone](local/tmp/img/comparatif-virtualiseur.svg){ width=10% }
+![TeX Friendly Zone](img/comparatif-virtualiseur.svg){ width=10% }
 
 ## Virtualbox
 les différents réseau de virtualbox :
