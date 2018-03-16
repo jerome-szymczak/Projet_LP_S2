@@ -136,7 +136,7 @@ Déterminer le type d’OS
 	VBoxManage createhd --filename Ubuntu.vdi --size 30000
 ~~~
 -Ajout d’un contrôleur SATA et du disque
-- Ajout d’un controleur SATA
+- Ajout d’un controleur SATAchrome-extension://mpognobbkildjkofajifpdfhcoklimli/components/startpage/startpage.html?section=Speed-dials&activeSpeedDialIndex=0
 ~~~
 	VBoxManage storagectl debian --name "SATA Controller" --add sata --controller IntelAHCI
 ~~~
