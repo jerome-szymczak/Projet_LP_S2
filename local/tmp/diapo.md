@@ -4,6 +4,7 @@ author :
 - Cyril Gerard
 - Sczymczak Jerome
 - Salecki Simon
+- Dusart Clément
 date: 7 mars 2018
 
 ...
@@ -42,6 +43,14 @@ Mettre l'image du tableau blanc
 
 ![TeX Friendly Zone](local/tmp/img/comparatif.png){ width=20% }
 
+## Virtualbox
+les différents réseau de virtualbox :
+- 
+
+Vbox manage :
+- 
+
+
 ## Les solutions existantes
 
 - [VMnet de VMware](http://g.urroz.online.fr/doc/ch03s02.html)
@@ -53,6 +62,26 @@ Mettre l'image du tableau blanc
 - [TUN/TAP](https://www.inetdoc.net/guides/vm/vm.network.tun-tap.html)
 
 - [Bridge-utils](https://wiki.debian.org/fr/BridgeNetworkConnections)
+
+## Paquet Debian
+**Description : **
+Un paquet .deb est en fait un dossier compressé contenant les éléments à installer et des informations sur le paquet. 
+Comme l'indique l'extension, un paquet .deb est utilisé sur les systèmes reposant sur Debian.
+**L'arborescence : **
+Un paquet Debian est constitué de deux parties notables : 
+- Un dossier contenant le nom du paquet, ses dépendances, etc.
+- Les fichiers du programme.
+
+dossier-du-paquet/
+ - DEBIAN/
+    - control
+    - post/pre inst/rm
+ - usr/
+    - bin/
+        - le-programme
+    - share/doc/
+        - README
+        - autres fichiers
 
 # Comparatif
 
