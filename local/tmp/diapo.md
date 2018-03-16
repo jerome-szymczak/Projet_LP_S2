@@ -17,7 +17,7 @@ date: 7 mars 2018
 
 - L'objectif est de pouvoir effectuer des TP d'administration système utilisant plusieurs machines sur le même réseau.
 
-Mettre l'image du tableau blanc
+![TeX Friendly Zone](local/tmp/img/schéma-reseau-projet.svg){ width=10% }
 
 ## Organisation du projet
 
