@@ -5,7 +5,7 @@ author :
 - Sczymczak Jerome
 - Salecki Simon
 - Dusart Clément
-date: 7 mars 2018
+date: 16 mars 2018
 
 ...
 
@@ -17,7 +17,7 @@ date: 7 mars 2018
 
 - L'objectif est de pouvoir effectuer des TP d'administration système utilisant plusieurs machines sur le même réseau.
 
-![TeX Friendly Zone](/img/schéma-reseau-projet.svg){ width=10% }
+![TeX Friendly Zone](img/schéma-reseau-projet.svg){ width=10% }
 
 ## Organisation du projet
 
@@ -44,7 +44,7 @@ date: 7 mars 2018
 ![TeX Friendly Zone](img/comparatif-virtualiseur.svg){ width=10% }
 
 ## Virtualbox
-les différents réseau de virtualbox :
+Les différents réseaux de virtualbox :
 - 
 
 Vbox manage :
@@ -93,14 +93,14 @@ Un paquet Debian est constitué de deux parties notables :
 - VMnet :
 
 ## Choix pour notre solution
-Pourquoi ? Simplicité ? Libre ou non ? 
+
 
 # Mise en oeuvre du projet
 
 ## Création d'une interface
 Comment créer notre interface
 
-## Configuration de Avignon0
+## Configuration de tap0
 Configuration et notre interface et fichiers à modifier
 
 ## Documentation du projet
