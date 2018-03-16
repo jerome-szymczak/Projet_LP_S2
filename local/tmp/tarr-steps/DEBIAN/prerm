@@ -1,0 +1,5 @@
+#/bin/bash
+
+#service lxc-net 
+rm -rf /etc/default/lxc-net
+
