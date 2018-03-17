@@ -134,8 +134,7 @@ VBoxManage :
 ~~~
 	VBoxManage createvm –name debian9
 ~~~
-- Création de VM avec VBoxManage :
- Déterminer le type d’OS
+- Déterminer le type de l’OS:
 ~~~
 	VBoxManage list ostypes
 ~~~
