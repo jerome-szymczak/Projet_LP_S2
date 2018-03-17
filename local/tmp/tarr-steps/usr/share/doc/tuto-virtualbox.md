@@ -147,10 +147,11 @@ pour éviter de ré-installer un système d’exploitation à partir de zéro sa
     VBoxManage internalcommands sethduuid vmfilename
 ~~~
 
-## Cloner une VM
-~~~
+## Cloner une VM:
+- Cette commande permet de dupliquer l'image de disque dur virtuel enregistré avec un nouvel identificateur unique (UUID).
+ ~~~
     VBoxManage clonehd src_vmfilename dst_vmfilename
-~~~
+ ~~~
 
 ## Agrandir le VDI:
 - un disque de 8Go  à 25Go
