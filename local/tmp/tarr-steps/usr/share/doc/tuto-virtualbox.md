@@ -50,6 +50,8 @@ root@mamachine: ~
 user@mamachine: ~
 $ VBoxManage createvm --name debian9.4 --ostype Debian_64 --register
 ~~~
+(--register : ajoute la machine à l’inventaire)
+(--name : spécifie un nouveau nom de machine virtuelle)
 
 2. Création du disque 10G
 ~~~
@@ -74,17 +76,26 @@ $ VBoxManage storagectl debian9 --name "IDE Controller" --add ide
 user@mamachine: ~
 $ VBoxManage storageattach debian9 --storagectl "IDE Controller" --port 0 --device 0 --type dvddrive --medium/home/simon/Documents/ISO/Linux/Debian 9.2.1amd641.iso
 ~~~
+6. Ajout de la carte réseau
+~~~
+user@mamachine: ~
+** En attente ***
+~~~
  
-6. Modification de la taille memoire ram et vidéo:
+7. Modification de la taille memoire ram et vidéo:
 ~~~
 user@mamachine: ~
 $ VBoxManage modifyvm debian9 --memory 1024 --vram 64
 ~~~
 
-**je sais pas ce que c'est en dessous**
- VBoxManage showvminfo debian9.4|less
+8. voir les information de la VM:
+~~~
+user@mamachine: ~
+$  VBoxManage showvminfo debian9.4|less
+~~~
 
-## Commandes supplémentaires
+
+## Commandes supplémentaires et explications de VBoxHeadless et de VBoxManage
 
 VBoxHeadless :
 - VirtualBox est fourni avec une interface appelée VBoxHeadless
@@ -97,9 +108,12 @@ VBoxHeadless :
 	VBoxHeadless - Démarre les vms et gère le VRDP
 	VBoxManage - Toutes opérations sur les vms 
 ~~~
-VBoxManage est l’interface en ligne de commande de VirtualBox.
+
+VBoxManage :
+- Est l’interface en ligne de commande de VirtualBox.
 - Permet de contrôler totalement VirtualBox depuis la ligne de commandes de votre système d’exploitation hôte.
 - VBoxManage supporte toutes les fonctionnalités auxquelles vous donne accès l’interface graphique
+
 - Acceder a l’aide
 ~~~
 	VBoxManage list --help
@@ -121,28 +135,21 @@ VBoxManage est l’interface en ligne de commande de VirtualBox.
 	VBoxManage createvm –name debian9
 ~~~
 - Création de VM avec VBoxManage :
-Déterminer le type d’OS
+ Déterminer le type d’OS
 ~~~
 	VBoxManage list ostypes
 ~~~
-- Création de la VM
+
+## Changer l’UUID d’une VM
+- Cette commande est necessaire si on fait un copier coller de l’image d’un disque virtuel (fichier .vdi)
+pour éviter de ré-installer un système d’exploitation à partir de zéro sans passer par clonehd.
 ~~~
-	VBoxManage createvm --name debian9 --ostype Debian_64 --register
-(--register : ajoute la machine à l’inventaire)
-(--name : spécifie un nouveau nom de machine virtuelle)
+    VBoxManage internalcommands sethduuid vmfilename
 ~~~
-- Création du disque avec VBoxManage:
+
+## Cloner une VM
 ~~~
-	VBoxManage createhd --filename Ubuntu.vdi --size 30000
-~~~
--Ajout d’un contrôleur SATA et du disque
-- Ajout d’un controleur SATAchrome-extension://mpognobbkildjkofajifpdfhcoklimli/components/startpage/startpage.html?section=Speed-dials&activeSpeedDialIndex=0
-~~~
-	VBoxManage storagectl debian --name "SATA Controller" --add sata --controller IntelAHCI
-~~~
--Ajout d’un controleur SATA
-~~~
-	VBoxManage storageattach debian --storagectl "SATA Controller" --port 0 --device 0 --type hdd --medium debian.vdi
+    VBoxManage clonehd src_vmfilename dst_vmfilename
 ~~~
 
 ## Agrandir le VDI:
