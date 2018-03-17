@@ -41,9 +41,14 @@ root@mamachine: ~
 Prise en charge des périphériques USB 2.0 et USB 3.0, VirtualBox RDP, cryptage de disque, démarrage NVMe et PXE pour les cartes Intel.Téléchargement en root
 ~~~
 root@mamachine: ~
-# version=$(VBoxManage --version|cut -dr -f1|cut -d'_' -f1) && wget -c http://download.virtualbox.org/virtualbox/$version/Oracle_VM_VirtualBox_Extension_Pack-$version.vbox-extpack
+ version=$(VBoxManage --version|cut -dr -f1|cut -d'_' -f1) && wget -c http://download.virtualbox.org/virtualbox/$version/Oracle_VM_VirtualBox_Extension_Pack-$version.vbox-extpack
 ~~~
-
+Il faudra ensuite installer le pack dans la VM :
+~~~
+   root@mamachine: ~
+     cd /media/cdrom/
+     sh ./VBoxLinuxAdditions.run
+~~~
 ## Installation d'une VM en ligne de commande
 1. Création d'une machine
 ~~~
