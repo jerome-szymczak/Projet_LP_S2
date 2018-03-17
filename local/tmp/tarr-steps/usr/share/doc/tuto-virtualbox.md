@@ -140,7 +140,8 @@ VBoxManage :
 	VBoxManage list ostypes
 ~~~
 
-## Changer l’UUID d’une VM
+## Changer l’UUID d’une VM:
+
 - Cette commande est necessaire si on fait un copier coller de l’image d’un disque virtuel (fichier .vdi)
 pour éviter de ré-installer un système d’exploitation à partir de zéro sans passer par clonehd.
 ~~~
@@ -148,7 +149,8 @@ pour éviter de ré-installer un système d’exploitation à partir de zéro sa
 ~~~
 
 ## Cloner une VM:
- - Cette commande permet de dupliquer l'image de disque dur virtuel enregistré avec un nouvel identificateur unique (UUID).
+
+- Cette commande permet de dupliquer l'image de disque dur virtuel enregistré avec un nouvel identificateur unique (UUID).
 ~~~
     VBoxManage clonehd src_vmfilename dst_vmfilename
 ~~~
