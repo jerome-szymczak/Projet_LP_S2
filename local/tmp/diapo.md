@@ -19,7 +19,7 @@ date: 16 mars 2018
 
 - L'objectif est de pouvoir effectuer des TP d'administration système utilisant plusieurs machines sur le même réseau.
 
-![TeX Friendly Zone](img/schéma-reseau-projet.svg){ width=10% }
+![TeX Friendly Zone](img/schema-reseau-projet.svg){ width=10% }
 
 ## Organisation du projet
 
@@ -36,6 +36,7 @@ date: 16 mars 2018
 ## Les hyperviseurs
 
 - [VirtualBox](https://www.virtualbox.org/)
+ ![TeX Friendly Zone](img/comparatif-virtualiseur.svg){ width=10% }
 
 - [VMware Player](https://www.vmware.com/products/workstation-player.html)
 
@@ -70,15 +71,19 @@ Vbox manage :
 'logo des solutions à droites des nnoms'
 
 ## Paquet Debian
+
 **Description :**
 Un paquet .deb est en fait un dossier compressé contenant les éléments à installer et des informations sur le paquet. 
 Comme l'indique l'extension, un paquet .deb est utilisé sur les systèmes reposant sur Debian.
+
 **L'arborescence :**
 Un paquet Debian est constitué de deux parties notables : 
+
 - Un dossier contenant le nom du paquet, ses dépendances, etc.
 - Les fichiers du programme.
 
 **dossier-du-paquet/**
+
  - DEBIAN/
     - control
     - preinst

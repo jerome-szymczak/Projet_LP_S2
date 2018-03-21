@@ -7,7 +7,6 @@ Si vous voulez utiliser un système invité en 64 bits, il est nécessaire que l
 ## Prérequis:
 Installation de du transport https
 ~~~
-root@mamachine: ~
 # apt-get install apt-transport-https
 ~~~
 
@@ -15,44 +14,37 @@ root@mamachine: ~
 
 1. Récupération de la clef de signature du dépôt de VirtualBox
 ~~~
-root@mamachine: ~
 # wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
 # wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add -
 ~~~
 
 2. Ajout du dépôt d'Oracle dans /etc/apt/source.list.d/
 ~~~
-root@mamachine: ~
 # echo "deb https://download.virtualbox.org/virtualbox/debian $(lsb_release -sc) contrib"|tee /etc/apt/sources.list.d/virtualbox.list
 ~~~
 Mise à jour de la liste des paquets
 ~~~
-root@mamachine: ~
 # apt-get update
 ~~~
 
 3. Installation de VirtualBox
 ~~~
-root@mamachine: ~
 # apt-get install virtualbox-5.2.8
 ~~~
 
 ## Optimisation de VirtualBox avec le Pack d'extension Oracle VM VirtualBox :
 Prise en charge des périphériques USB 2.0 et USB 3.0, VirtualBox RDP, cryptage de disque, démarrage NVMe et PXE pour les cartes Intel.Téléchargement en root
 ~~~
-root@mamachine: ~
  version=$(VBoxManage --version|cut -dr -f1|cut -d'_' -f1) && wget -c http://download.virtualbox.org/virtualbox/$version/Oracle_VM_VirtualBox_Extension_Pack-$version.vbox-extpack
 ~~~
 Il faudra ensuite installer le pack dans la VM :
 ~~~
-   root@mamachine: ~
      cd /media/cdrom/
      sh ./VBoxLinuxAdditions.run
 ~~~
 ## Installation d'une VM en ligne de commande
 1. Création d'une machine
 ~~~
-user@mamachine: ~
 $ VBoxManage createvm --name debian9.4 --ostype Debian_64 --register
 ~~~
 (--register : ajoute la machine à l’inventaire)
@@ -60,42 +52,35 @@ $ VBoxManage createvm --name debian9.4 --ostype Debian_64 --register
 
 2. Création du disque 10G
 ~~~
-user@mamachine: ~
 $ VBoxManage createhd --filename debian9.4.vdi --size 10000
 ~~~
 
 3. Attacher le disque
 ~~~
-user@mamachine: ~
 $ VBoxManage storagectl debian9.4 --name "SATA Controller" --add sata --controller IntelAHCI
 $ VBoxManage storageattach debian9.4 --storagectl "SATA Controller" --port 0 --device 0 --type hdd --medium debian.vdi
 ~~~
 
 4. Ajouter le lecteur DVD 
 ~~~
-user@mamachine: ~
 $ VBoxManage storagectl debian9 --name "IDE Controller" --add ide
 ~~~
 5. Ajout de l'image iso
 ~~~
-user@mamachine: ~
 $ VBoxManage storageattach debian9 --storagectl "IDE Controller" --port 0 --device 0 --type dvddrive --medium/home/simon/Documents/ISO/Linux/Debian 9.2.1amd641.iso
 ~~~
 6. Ajout de la carte réseau
 ~~~
-user@mamachine: ~
 ** En attente ***
 ~~~
  
 7. Modification de la taille memoire ram et vidéo:
 ~~~
-user@mamachine: ~
 $ VBoxManage modifyvm debian9 --memory 1024 --vram 64
 ~~~
 
 8. voir les information de la VM:
 ~~~
-user@mamachine: ~
 $  VBoxManage showvminfo debian9.4|less
 ~~~
 
