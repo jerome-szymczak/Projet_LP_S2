@@ -41,6 +41,13 @@ L'objectif étant de permettre au final de pouvoir y connecter des machines virt
         - https://manpages.bsd.lv/mdoc.html
         - man(7), mdoc(7), groff(7)
 
+        
+## Plannification du travail
+
+14 mars : solution trouvé
+
+
+
 # Etude des solutions existantes
 ## Recherche sur les différents type d'hyperviseurs
 ### VirtualBox
@@ -218,13 +225,39 @@ C'est un fichier principal de contrôle qui contient un certain nombre de champs
 
 ## Documentation sur le fonctionnement du paquet
 
+README
+comment faire une man page
+notre script
+
+
 ## Difficultés rencontrés
 
 
 # Procédure de test
 ## Installation de notre paquet
+Pour installer notre paquet il suffit de faire la commande suivante :
+~~~
+toto
+~~~
+
+Lors de l'installation de notre paquet, il va créer le fichier /etc/default/lxc-net
+
+Nous avons créer un script permettant de :
+- Démarrer l'interface tap
+- Le nom de l'interface
+- L'adresse IP du switch
+- La plage d'IP servies par le DHCP
+- Le nombre d'IP maximum au sein de la plage IP
 
 ## Test avec Virtualbox
+### Démarrage de deux machines virtuelles
+
+
+### test de la communication entre machines
+1. ping d'une machine virtuelle à l'autre
+2. ping sur la machine physique
+3. ssh 
+
 
 ## Test avec QEMU/KVM
 
