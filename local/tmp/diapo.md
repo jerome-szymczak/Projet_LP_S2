@@ -2,10 +2,11 @@
 title : Réseau pour machines virtuelles
 
 author :
-- Cyril Gerard
-- Sczymczak Jerome
-- Salecki Simon
-- Dusart Clément
+- GERARD Cyril
+- SZYMCZAK Jerome
+- SALECKI Simon
+- DUSART Clément
+- HERBAUT Djezon
 
 date: 16 mars 2018
 
