@@ -13,7 +13,7 @@ N'oubliez pas de mettre votre nom pour savoir sur quel sujet vous êtes en train
 ## DOING
 
 - rapport : lxc/ virtualbox/ OVS/   **Simon**
-- rapport : mise en oeuvre  **Cyril*
+- rapport : mise en oeuvre  **Cyril**
 - rapport : hyperviseurs/ vmware **Jerome**
 
 ## DONE
