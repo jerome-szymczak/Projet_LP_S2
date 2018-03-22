@@ -5,8 +5,8 @@
 ## Règles de gestion du projet
 ## Outils utilisés pour la gestion du projet
 ## Plannification du travail
-# Etude des solutions existantes
-## Recherche sur les différents type d'hyperviseurs
+# Etat de l'art
+## Recherche sur les différents virtualisateurs
 ### VirtualBox
 ### VMware Player
 ### KVM/QEMU
