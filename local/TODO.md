@@ -8,13 +8,13 @@ N'oubliez pas de mettre votre nom pour savoir sur quel sujet vous êtes en train
 - DONE : les choses terminé 
 
 ## TODO
-- rapport 
-- diapo
-- mettre la machine à zero pour tester si notre paquet fonctionne bien
+
 
 ## DOING
 
-- mise en place d'un paquet Debian
+- rapport : lxc/ virtualbox/ OVS/   **Simon**
+- rapport : mise en oeuvre  **Cyril**
+- rapport : hyperviseurs/ vmware **Jerome**
 
 ## DONE
 
@@ -25,5 +25,4 @@ N'oubliez pas de mettre votre nom pour savoir sur quel sujet vous êtes en train
 - [Documentation](local/compte-rendu/cr-2018-02-09-hebdo.md) simple pour la création de paquet(sans dépendance) **Gerard**
 - Création d'un simple paquet Debian[paquet](local/tmp/myecho) **Gerard**
 - test de TUN/TAP **Gerard**
-- test de lxc-net **Gerard** **Salecki** ** Scymczak** 
-- 
+- test de lxc-net **Gerard** **Salecki** **Scymczak** 
