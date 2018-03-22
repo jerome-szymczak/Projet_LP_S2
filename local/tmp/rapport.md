@@ -31,5 +31,4 @@
 ### Démarrage de deux machines virtuelles
 ### test de la communication entre machines
 ## Test avec QEMU/KVM
-## Test avec VMplayer
 # Conclusion
