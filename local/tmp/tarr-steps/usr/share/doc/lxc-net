@@ -4,7 +4,7 @@ USE_LXC_BRIDGE="true"
 # Normalement seul la ligne précédent suffit (les valeurs par défaut sont utilisées)
 
 # Nom de l'interface bridge qui sera créé
-LXC_BRIDGE="lxcbr0"
+LXC_BRIDGE="vswitch0"
 # Adresse MAC de l'interface qui sera crée
 LXC_BRIDGE_MAC="00:16:3e:00:00:00"
 # IP de l'interface bridge

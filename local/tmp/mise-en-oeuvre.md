@@ -28,7 +28,7 @@ Le paquet nécessaire pour faire ses propre paquets est dpkg. Le programme dpkg-
 ### L'arborescence d'un paquet Debian
 - myscript/
     - DEBIAN/
-        - control (fichier décrivant les informations relatives à notre paquet)
+        - control* (fichier décrivant les informations relatives à notre paquet)
         - preinst (script exécuté après l'installation du paquet)
         - postinst (script exécuté après l'installation du paquet)
         - prerm (script exécuté après la désinstallation du paquet)
@@ -43,28 +43,31 @@ Le paquet nécessaire pour faire ses propre paquets est dpkg. Le programme dpkg-
                 - changelog (changements apportés par rapport à la dernière version)
                 - changelog.Debian (idem, mais seulement pour le paquet Debian)
 
-### Le dossier DEBIAN 
-- un fichier control
-C'est un fichier principal de contrôle qui contient un certain nombre de champs. chaque champs commence par une étiquette suivie de ':' et du contenu du champ. 
-    - les informations necessaires
-        - package : le nom du paquet
-        - version : la version du programe
-        - maintainer : le nom et l'email de celui qui s'occupe de la création du .deb
-        - description : desciption du paquet
-    - les informations optionnelles
-        - architecture : les architectures pour lesquelles le paquet est compatible
-        - pre-depends : les dépendances qui doivent être installé avant notre paquet
-        - depends : les dépendences du paquet
-        - conflicts : liste des paquet qui pourraient générer des conflits
-        - suggest : liste des paquets qui pourraient être utile
-        - priority : l'importance du paquet pour le système(pour nous optional)
-        - homepage : l'adresse du site internet
+* *C'est un fichier principal de contrôle qui contient un certain nombre de champs. chaque champs commence par une étiquette suivie de ':' et du contenu du champ.*
 
-## Documentation sur le fonctionnement du paquet
+## Description sur le fonctionnement du paquet
+### Installation et désintallation de notre paquet
+Installation du paquet
+~~~
+apt-get install tarr-steps.deb
+~~~
+Lors de l'installation notre script postinst va s'éxécuter en créant un fichier de configuration de lxc-net, il va aussi démarrer une interface tap.
 
-README
-comment faire une man page
-notre script
+Désintallation du paquet
+~~~
+apt-get remove tarr-steps
+~~~
+Lors de la désintallation, notre script prerm va arreter l'interface tap0 pour permettre ensuite de désinstaller notre paquet et ses dépendances.
+
+### Fonctionnement de notre script
+Notre script peut s'exécuter de deux manière différentes, soit avec des arguments en ligne de commande, soit sous forme de menu.
+Il permet de modifier :
+- L'adresse IP du switch
+- Le masque de sous-réseau du switch
+- La plage d'IP servies par le DHCP
+- Le nombre d'IP maximum au sein du réseau
+
+### 
 
 
 ## Difficultés rencontrés

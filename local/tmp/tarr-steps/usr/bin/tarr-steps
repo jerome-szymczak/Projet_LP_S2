@@ -1,61 +1,44 @@
 #!/bin/bash
-ERR_INTERFACE=1
-MESS_NB_ARGUMENT="$0 risque de ne pas bien marcher sans argument..."
-MESSAGE_ERR_INTERFACE="Il y a eu un souci lors de la création de l'interface"
-MESSAGE_INTERFACE="L'interface a bien été créée"
-PS3="entrer votre choix : "
-switch="$(head -n 7 /etc/default/lxc-net | tail -1 | cut -d\" -f2)"
-options=("demarrer" "renommer" "changer l'ip de l'interface" "changer le masque de sous-reseau" "changer la plage d'ip du DHCP" "quitter")
-NOM_DU_SWITCH="LXC_BRIDGE="
+# Permet de configurer l'interface de l'interface créer par lxc-net
+#
+# usage: tarr-steps [OPTIONS] [VALEUR]
+#
+# OPTIONS
+#
+#     -h, --help           affiche ce message d'aide
+#     -ip, --ip            change l'adresse ip du switch
+#     -p, --plage          permet de modifier la plage d'adresse attribuer aux machines
+#     -n, --nombre         modifie le nombre d'IP maximum au sein du réseau
+#     -l, --liste          liste les informations liées au switch
+#     -c, --check          vérifie que l'interface tap a bien été créer
+#
+
 IP="LXC_ADDR="
-NETMASK="LXC_NETMASK="
 PLAGE="LXC_DHCP_RANGE="
-NETWORK="LXC_NETWORK="
 NBIP="LXC_DHCP_MAX="
-
-rename () {
-	f="/etc/default/lxc-net" #fichier de config
-	sed -i "s@$1\".*\"@$1\"$2\"@g" $f
+NETMASK="LXC_NETMASK="
+NETWORK="LXC_NETWORK="
+toto=$(ip a | grep tap0 | egrep -c "vswitch0|master")
+change (){ sed -i "s@$1\".*\"@$1\"$2\"@g" "/etc/default/lxc-net" ; }
+doc(){ sed -n '2,/^$/ { s/^ *#// ; s/^ //g ; t ok ; d ; :ok ; p }' <$0 ; }
+check(){ 
+if($toto -eq 1)
+then 
+	echo "Votre interface tap0 a bien été créée"
+else
+	echo "Votre interface fait des siennes"
+fi
 }
-
-clear
-select opt in "${options[@]}"
+while [ ! -z "$1" ] ;
 do
-	case $REPLY in
-		1)
-			if ip tuntap add mode tap tap0 && ip link set dev tap0 master $switch && ip link set tap0 up
-			then
-				echo $MESSAGE_INTERFACE
-				exit 0
-			else
-				echo $MESSAGE_ERR_INTERFACE
-				exit $ERR_INTERFACE
-			fi
-			;;
-		2)
-			read -p "Quel nom voulez vous donner au switch ? " nouveauNom 
-			rename $NOM_DU_SWITCH $nouveauNom
-			;;
-		3)
-			read -p "Quel adresse voulez vous donner a votre switch ? " nouvelIp
-			rename $IP $nouvelIp
-			;;
-		4)
-			read -p "Quel masque de sous-reseau voulez vous donner au switch ? " nouveauMask
-			rename $NETMASK $nouveauMask
-			#TODO calculer le nouveau LXC_NETWORK
-			read -p "Entrer le nouveau netmask du reseau : " nouveauNetwork
-			rename $NETWORK $nouveauNetwork
-			;;
-		5)
-			read -p "Quel plage d'adresse IP voulez vous donner au DHCP ? (IP_debut,IP_fin) " nouvellePlage
-			rename $PLAGE $nouvellePlage
-			#TODO calculer le nombre d'ip
-			read -p "Entrer le nombre d'adresse IP disponible : " nb
-			rename $NBIP $nb
-			;;
-		6)
-			break
-			;;
-	esac
+    case "$1" in
+        "-h"|"--help") doc && exit ;;
+		"-ip"|"--ip") change $IP $2 && exit ;;
+		"-p"|"--plage") change $PLAGE $2 && exit ;;
+		"-n"|"--nombre") change $NBIP $2 && exit ;;
+        "-l"|"--list") cat /etc/default/lxc-net && exit ;;
+        "-c"|"--check") check && exit ;;
+        *) break;;
+    esac
+    shift
 done
