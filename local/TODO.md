@@ -25,5 +25,4 @@ N'oubliez pas de mettre votre nom pour savoir sur quel sujet vous êtes en train
 - [Documentation](local/compte-rendu/cr-2018-02-09-hebdo.md) simple pour la création de paquet(sans dépendance) **Gerard**
 - Création d'un simple paquet Debian[paquet](local/tmp/myecho) **Gerard**
 - test de TUN/TAP **Gerard**
-- test de lxc-net **Gerard** **Salecki** ** Scymczak** 
-- 
+- test de lxc-net **Gerard** **Salecki** **Scymczak** 
