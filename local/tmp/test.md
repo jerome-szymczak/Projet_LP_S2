@@ -1,5 +1,5 @@
 ## Installation de notre paquet
-1. Installation du paquet
+- 1. Installation du paquet
 
 - Le paquet a bien été installé mais il manque les dépendances : OK
     ~~~
@@ -17,7 +17,7 @@
     $ ip a
     ~~~
 
-3. L'éxécution de notre script
+- 2. L'éxécution de notre script
 
 - affichage de l'aide à l'éxécution du script : OK
     ~~~
@@ -36,7 +36,7 @@
     $ ip a
     ~~~
 
-3. Désintallation de notre paquet
+- 3. Désintallation de notre paquet
 
 - Le paquet a bien été désintaller
     ~~~
