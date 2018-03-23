@@ -64,8 +64,7 @@ Lors de la désintallation, notre script prerm va arreter l'interface tap0 pour 
 ### Fonctionnement de notre script
 Notre script peut se lancer avec des arguments et permet de configurer de l'interface créer par lxc-net.
 
-usage: tarr-steps [OPTIONS] [VALEUR]
-OPTIONS
+Voici les options qui peuvent être utilisé sur notre script.
 
     -h,  --help           affiche ce message d'aide
     -ip, --ip             change l'adresse ip du switch
