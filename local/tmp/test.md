@@ -2,16 +2,19 @@
 - 1.Installation du paquet
 
  - Le paquet a bien été installé mais il manque les dépendances : OK
-~~~
-# dpkg -i tarr-steps
-~~~
+    
+    ~~~
+    # dpkg -i tarr-steps
+    ~~~
 
  - Les dépendances se sont bien installé : OK
-~~~
-# apt-get install -f
-~~~
+    
+    ~~~
+    # apt-get install -f
+    ~~~
 
  - Vérification que le préinst s'éxécute
+    
     ~~~
     $ cat /etc/default/lxc-net
     $ ip a
@@ -20,6 +23,7 @@
 - 2.L'éxécution de notre script
 
  - affichage de l'aide à l'éxécution du script : OK
+    
     ~~~
     $ tarr-steps -h
     ~~~
