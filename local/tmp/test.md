@@ -1,17 +1,17 @@
 ## Installation de notre paquet
 - 1.Installation du paquet
 
-- Le paquet a bien été installé mais il manque les dépendances : OK
+ - Le paquet a bien été installé mais il manque les dépendances : OK
     ~~~
     # dpkg -i tarr-steps
     ~~~
 
-- Les dépendances se sont bien installé : OK
+ - Les dépendances se sont bien installé : OK
     ~~~
     # apt-get install -f
     ~~~
 
-- Vérification que le préinst s'éxécute
+ - Vérification que le préinst s'éxécute
     ~~~
     $ cat /etc/default/lxc-net
     $ ip a
@@ -19,18 +19,18 @@
 
 - 2.L'éxécution de notre script
 
-- affichage de l'aide à l'éxécution du script : OK
+ - affichage de l'aide à l'éxécution du script : OK
     ~~~
     $ tarr-steps -h
     ~~~
 
-- Configuration de l'dresse du switch et affichage de ces changements : OK
+ - Configuration de l'dresse du switch et affichage de ces changements : OK
     ~~~
     $ tarr-steps -ip 192.168.194.1/24
     $ tarr-steps -l
     ~~~
 
-- Relance du script lxc-net pour mettre à jour le switch virtuel : OK
+ - Relance du script lxc-net pour mettre à jour le switch virtuel : OK
     ~~~
     $ tarr-steps -r 
     $ ip a
@@ -38,13 +38,13 @@
 
 - 3.Désintallation de notre paquet
 
-- Le paquet a bien été désintaller
+ - Le paquet a bien été désintaller
     ~~~
     # apt-get remove tarr-steps
     # dpkg -l tarr-steps
     ~~~
 
-- Vérification que le postrm s'éxécute : OK
+ - Vérification que le postrm s'éxécute : OK
     ~~~
     # cat /etc/default/lxc-net
     $ ip a
