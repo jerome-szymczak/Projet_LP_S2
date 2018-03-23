@@ -29,12 +29,14 @@
     ~~~
 
  - Configuration de l'dresse du switch et affichage de ces changements : OK
+    
     ~~~
     $ tarr-steps -ip 192.168.194.1/24
     $ tarr-steps -l
     ~~~
 
  - Relance du script lxc-net pour mettre à jour le switch virtuel : OK
+    
     ~~~
     $ tarr-steps -r 
     $ ip a
@@ -43,12 +45,14 @@
 - 3.Désintallation de notre paquet
 
  - Le paquet a bien été désintaller
+    
     ~~~
     # apt-get remove tarr-steps
     # dpkg -l tarr-steps
     ~~~
 
  - Vérification que le postrm s'éxécute : OK
+    
     ~~~
     # cat /etc/default/lxc-net
     $ ip a
