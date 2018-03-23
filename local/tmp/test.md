@@ -44,7 +44,7 @@
 
 - 3.Désintallation de notre paquet
 
- - Le paquet a bien été désintaller
+ - Le paquet a bien été désintaller : OK
     
     ~~~
     # apt-get remove tarr-steps
