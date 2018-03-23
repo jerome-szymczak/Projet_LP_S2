@@ -42,6 +42,7 @@
     ~~~
     # apt-get remove tarr-steps
     # dpkg -l tarr-steps
+    ~~~
 
 - Vérification que le postrm s'éxécute : OK
     ~~~
