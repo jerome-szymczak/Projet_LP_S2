@@ -1,15 +1,15 @@
 ## Installation de notre paquet
 1. Installation du paquet
 
-    - Le paquet a bien été installé mais il manque les dépendances : OK
-        ~~~
-        # dpkg -i tarr-steps
-        ~~~
+ - Le paquet a bien été installé mais il manque les dépendances : OK
+    ~~~
+    # dpkg -i tarr-steps
+    ~~~
 
-    - Les dépendances se sont bien installé : OK
-        ~~~
-        # apt-get install -f
-        ~~~
+ - Les dépendances se sont bien installé : OK
+    ~~~
+    # apt-get install -f
+    ~~~
 
 - Vérification que le préinst s'éxécute
     ~~~
