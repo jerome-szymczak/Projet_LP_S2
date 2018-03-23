@@ -1,5 +1,5 @@
 #/bin/bash
 
-#service lxc-net 
-rm -rf /etc/default/lxc-net
-
+ip link set iut0 down && ip link set iut0 nomaster && ip link delete iut0 && echo "l'interface iut0 a bien été effacé"
+ip link set vswitch0 down && ip link delete vswitch0 && echo "le switch créer par lxc a bien été effacé"
+rm -f /etc/default/lxc-net && echo "le fichier lxc-net a bien été effacé"

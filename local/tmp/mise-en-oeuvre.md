@@ -49,26 +49,30 @@ Le paquet nécessaire pour faire ses propre paquets est dpkg. Le programme dpkg-
 ### Installation et désintallation de notre paquet
 Installation du paquet
 ~~~
-apt-get install tarr-steps.deb
+# dpkg -i tarr-steps.deb
+# apt install -f
 ~~~
 Lors de l'installation notre script postinst va s'éxécuter en créant un fichier de configuration de lxc-net, il va aussi démarrer une interface tap.
 
 Désintallation du paquet
 ~~~
-apt-get remove tarr-steps
+# apt remove tarr-steps
 ~~~
 Lors de la désintallation, notre script prerm va arreter l'interface tap0 pour permettre ensuite de désinstaller notre paquet et ses dépendances.
+**Attention** : Lors de la désintallation de notre parquet les dépendances ne seront pas désintaller, il faudra le faire à la main
 
 ### Fonctionnement de notre script
-Notre script peut s'exécuter de deux manière différentes, soit avec des arguments en ligne de commande, soit sous forme de menu.
-Il permet de modifier :
-- L'adresse IP du switch
-- Le masque de sous-réseau du switch
-- La plage d'IP servies par le DHCP
-- Le nombre d'IP maximum au sein du réseau
+Notre script peut se lancer avec des arguments et permet de configurer de l'interface créer par lxc-net.
 
-### 
+usage: tarr-steps [OPTIONS] [VALEUR]
+OPTIONS
 
+    -h,  --help           affiche ce message d'aide
+    -ip, --ip             change l'adresse ip du switch
+    -l,  --liste          liste les informations liées au switch
+    -c,  --check          vérifie que l'interface tap a bien été créer
+    -st, --start          start sur le script lxc-net
+    -sp, --stop           stop sur le script lxc-net
+    -r,  --reload         reload sur le script lxc-net
 
 ## Difficultés rencontrés
-

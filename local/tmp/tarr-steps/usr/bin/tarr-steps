@@ -1,43 +1,78 @@
 #!/bin/bash
-# Permet de configurer l'interface de l'interface créer par lxc-net
+# Permet de configurer de l'interface créer par lxc-net.
 #
 # usage: tarr-steps [OPTIONS] [VALEUR]
 #
 # OPTIONS
 #
-#     -h, --help           affiche ce message d'aide
+#     -h,  --help          affiche ce message d'aide
 #     -ip, --ip            change l'adresse ip du switch
-#     -p, --plage          permet de modifier la plage d'adresse attribuer aux machines
-#     -n, --nombre         modifie le nombre d'IP maximum au sein du réseau
-#     -l, --liste          liste les informations liées au switch
-#     -c, --check          vérifie que l'interface tap a bien été créer
+#     -l,  --liste         liste les informations liées au switch
+#     -c,  --check         vérifie que l'interface tap a bien été créer
+#     -st, --start         start sur le script lxc-net
+#     -sp, --stop          stop sur le script lxc-net
+#     -r,  --reload        reload sur le script lxc-net
+#
+# EXEMPLES
+#
+# Changer l'adresse du switch virtuel 
+#
+#     tarr-steps -ip 192.168.194.1/24
+#
+# Vérifier l'état du fichier de configuration
+#
+#     tarr-steps -l
+#
+# Vérifier que l'interface tap0 est prête à l'utilisation
+#
+#     tarr-steps -c
 #
 
 IP="LXC_ADDR="
-PLAGE="LXC_DHCP_RANGE="
-NBIP="LXC_DHCP_MAX="
+newIP=$(ipcalc $2 | grep "Address" | cut -d\  -f 4)
+
 NETMASK="LXC_NETMASK="
+newMask=$(ipcalc $2 | grep "Netmask" | cut -d\  -f 4)
+
 NETWORK="LXC_NETWORK="
-toto=$(ip a | grep tap0 | egrep -c "vswitch0|master")
-change (){ sed -i "s@$1\".*\"@$1\"$2\"@g" "/etc/default/lxc-net" ; }
+newNetwork=$(ipcalc $2 | grep "Network" | cut -d\  -f 4 | cut -d/ -f1)
+
+PLAGE="LXC_DHCP_RANGE="
+plageIPmin=$(ipcalc $2 | grep "HostMi" | cut -d\  -f 4)
+plageIPmax=$(ipcalc $2 | grep "HostMa" | cut -d\  -f 4)
+
+NBIP="LXC_DHCP_MAX="
+newNbIP=$(ipcalc $2 | grep "Hosts" | cut -d\  -f 2)
+
+veriftap=$(ip a | grep iut0 | egrep -c "vswitch0|master")
+
 doc(){ sed -n '2,/^$/ { s/^ *#// ; s/^ //g ; t ok ; d ; :ok ; p }' <$0 ; }
-check(){ 
-if($toto -eq 1)
+change (){ sed -i "s@$1\".*\"@$1\"$2\"@g" "/etc/default/lxc-net" ; }
+check(){
+if(test $veriftap -eq 1)
 then 
-	echo "Votre interface tap0 a bien été créée"
+    echo "Votre interface iut0 a bien été créée"
 else
-	echo "Votre interface fait des siennes"
+    echo "Votre interface fait des siennes"
 fi
+}
+changertout(){
+    change $IP $newIP
+    change $NETMASK $newMask
+    change $NETWORK $newNetwork
+    change $PLAGE "$plageIPmin,$plageIPmax"
+    change $NBIP $newNbIP
 }
 while [ ! -z "$1" ] ;
 do
     case "$1" in
         "-h"|"--help") doc && exit ;;
-		"-ip"|"--ip") change $IP $2 && exit ;;
-		"-p"|"--plage") change $PLAGE $2 && exit ;;
-		"-n"|"--nombre") change $NBIP $2 && exit ;;
+		"-ip"|"--ip") changertout && exit ;;
         "-l"|"--list") cat /etc/default/lxc-net && exit ;;
         "-c"|"--check") check && exit ;;
+        "-st"|"--start") systemctl start lxc-net && exit ;;
+        "-sp"|"--stop") systemctl stop lxc-net && exit ;;
+        "-r"|"--reload") systemctl stop lxc-net && systemctl start lxc-net && exit ;;
         *) break;;
     esac
     shift
