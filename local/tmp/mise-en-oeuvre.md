@@ -26,6 +26,8 @@ ip link set tap0 up
 Le paquet nécessaire pour faire ses propre paquets est dpkg. Le programme dpkg-deb qui est contenu dans le paquet dpkg est le programme qui construit un fichier .deb.
 
 ### L'arborescence d'un paquet Debian
+Afin de permettre à dpkg de faire un paquet, nous devons respecter une aborescence particulière. En effet, pour la création d'un paquet, l'arborescence à créer est simple( selon les paquets). Voici l'arborescence à créer.
+
 - myscript/
     - DEBIAN/
         - control* (fichier décrivant les informations relatives à notre paquet)
@@ -43,7 +45,7 @@ Le paquet nécessaire pour faire ses propre paquets est dpkg. Le programme dpkg-
                 - changelog (changements apportés par rapport à la dernière version)
                 - changelog.Debian (idem, mais seulement pour le paquet Debian)
 
- * *C'est un fichier principal de contrôle qui contient un certain nombre de champs. chaque champs commence par une étiquette suivie de ':' et du contenu du champ.*
+ \* *C'est un fichier principal de contrôle qui contient un certain nombre de champs. chaque champs commence par une étiquette suivie de ':' et du contenu du champ.*
 
 ## Description sur le fonctionnement du paquet
 ### Installation et désintallation de notre paquet
