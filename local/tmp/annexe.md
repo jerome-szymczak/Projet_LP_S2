@@ -136,7 +136,14 @@ http://infrastructure.smile.eu/Tout-savoir-sur/Virtualisation-et-cloud/Les-princ
  
 
 - 3.QEMU/KVM
- 
+ https://virt.kernelnewbies.org/KVM_Multiuser_Usage?highlight=(kvm)|(usb)
+ https://doc.ubuntu-fr.org/kvm
+ http://debian-facile.org/doc:systeme:kvm
+
+- 4.Proxmox
+ https://www.proxmox.com/en/
+ https://fr.wikipedia.org/wiki/Proxmox_VE
+ http://linuxfr.org/news/proxmox-la-virtualisation-facile
 
 ### Solutions existantes
 - 1.LXC
