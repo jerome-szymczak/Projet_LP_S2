@@ -1,4 +1,25 @@
 ## Recherche sur les différents type d'hyperviseurs
+
+### Qu'est ce que la virtualisation
+
+Par définition la virtualisation consiste en la création d'une version virtuelle (par opposition à réelle) d'un ou de plusieurs éléments, tel qu'un système d'exploitation, un serveur, un dispositif de stockage ou des ressources réseau sur un même système physique.
+
+Le principal objectif est économique. Il y a encore quelques années on séparé chaque services sur une machine physique distinct et l'utilisation moyenne du matériel était de l'ordre de 10%. Aujourd'hui, l'augmentation du nombre de coeurs au sein d'un même processeur et l'augmentation des capacités mémoires nous permettent de faire cohabiter au sein d'un même matériel plusieurs services.
+
+Un autre objectif est celui de la faciliter d'administration, en effet le processus d'installation d'un système est une opération lourde, gourmande en temps, et présente un risque de petites variations de configuration. Ainsi, la virtualisation permet de déplacer un serveur virtuel d’un hôte à un autre de manière très aisée, y compris sur des environnements matériels très hétérogènes, puisque les couches matérielles dans les serveurs virtuels sont le plus souvent génériques.
+
+
+Il faut differencier :
+- L'hyperviseur
+- L'espace noyau, espace utilisateur
+- L'émulateur
+
+Avant toutes choses il est important de parler du principe d'un "système d'exploitation" car c'est celui ci qui gére les ressources matériels disponibles pour les attribuer aux applications qui en ont besoins.
+
+![systemExploitation](jerome.szymczak/ink-diagram-com-sys-exp.svp){ width=5% }
+
+La virtualisation est un procédé informatique qui vise à séparer le matériel et le logiciel. Grace a elle nous pouvons reduire les couts de possession matériels en allouant les resssources physiques a different instance de logiciels
+
 ### VirtualBox
 
 Oracle VM VirtualBox est un logiciel libre de type II publié par Oracle.
