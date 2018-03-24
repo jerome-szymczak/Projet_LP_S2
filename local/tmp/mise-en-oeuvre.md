@@ -43,7 +43,7 @@ Le paquet nécessaire pour faire ses propre paquets est dpkg. Le programme dpkg-
                 - changelog (changements apportés par rapport à la dernière version)
                 - changelog.Debian (idem, mais seulement pour le paquet Debian)
 
-* *C'est un fichier principal de contrôle qui contient un certain nombre de champs. chaque champs commence par une étiquette suivie de ':' et du contenu du champ.*
+ * *C'est un fichier principal de contrôle qui contient un certain nombre de champs. chaque champs commence par une étiquette suivie de ':' et du contenu du champ.*
 
 ## Description sur le fonctionnement du paquet
 ### Installation et désintallation de notre paquet
