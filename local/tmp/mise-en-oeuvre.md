@@ -64,8 +64,8 @@ Lors de la désintallation, notre script prerm va arreter l'interface tap0 pour 
 **Attention** : Lors de la désintallation de notre parquet les dépendances ne seront pas désintaller, il faudra le faire à la main
 
 ### Fonctionnement de notre script
-Notre script peut se lancer avec des arguments et permet de configurer de l'interface créer par lxc-net.
-
+Nous étions tout d'abord parti sur un système de menu pour permettre à tout le monde d'utiliser avec facilité notre script.
+Mais en discutant avec les principaux intéressés(admin de l'IUT), nous avons changé le script pour ainsi répondre au mieux à leurs attentes.
 Voici les options qui peuvent être utilisé sur notre script.
 
     -h,  --help           affiche ce message d'aide
