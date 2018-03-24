@@ -27,7 +27,9 @@ La virtualisation est un procédé informatique qui vise à séparer le matérie
 
 
 ### KVM/QEMU
+**KVM** (Kernel-based Virtual Machine) est un hyperviseur libre de type I pour Linux qui permet la virtualisation simultanée de différents systèmes d'exploitation sur la même machine hôte. KVM est intégré dans le noyau Linux depuis la version 2.6.20. KVM est une instance de QEMU¹ qui lui permet la virtualisation simultanée de différents systèmes d'exploitation sur la même machine hôte.
 
+C'est un système optimisé pour la virtualisation de serveur. Pour virtualiser des systèmes de type desktop, on peut lui préférer virtualbox. KVM semble en effet plus performant en consommation de processeur mais plus lent pour l'émulation du périphérique graphique. L'utilisation d'un bureau virtualisé dans VirtualBox pourra donc laisser une meilleure impression à l'utilisateur. Vous pouvez tout de même préférer KVM pour sa meilleure compatibilité avec des système d'exploitations anciens ou peu populaires.
 
 ### Proxmox
 
@@ -40,8 +42,8 @@ C'est une solution de virtualisation "bare metal". Le terme de « bare metal » 
 
 ## Recherche sur les solutions exitantes
 ### LXC
-**LXC**(contraction de l'anglais de Linux Containers) est un système de virtualisation utilisant l'isolation au niveau système d'exploitation comme méthode de cloisonnement. 
-Son rôle est de créer un environnement aussi proche que possible d'une installation Linux standard, mais sans avoir besoin d'un noyau séparé. Les conteneurs LXC sont souvent considérés comme un compromis entre le mode "chroot*" et une machine virtuelle. LXC est donc un ensemble de processus qui nous permettent d'isolés des éléments du reste du système. 
+**LXC** (contraction de l'anglais de Linux Containers) est un système de virtualisation utilisant l'isolation au niveau système d'exploitation comme méthode de cloisonnement. 
+Son rôle est de créer un environnement aussi proche que possible d'une installation Linux standard, mais sans avoir besoin d'un noyau séparé. Les conteneurs LXC sont souvent considérés comme un compromis entre le mode "chroot²" et une machine virtuelle. LXC est donc un ensemble de processus qui nous permettent d'isolés des éléments du reste du système. 
 Il aura également accès à sa propre interface réseau, sa table de routage. Mais la différence notable, contrairement à Xen et KVM c'est l'absence d'un deuxième noyau. LXC va utiliser le même noyau que la machine hôte (Dom0). Les avantages de cette solution sont un gain de performances en l'absence d'hyperviseur et de noyau intermédiaire. L’autre avantage est la faible occupation de la ressource mémoire.  
 
 Les conteneurs LXC ne fournissent pas une isolation complète, c’est dû au fait que le noyau est partagé entre le Dom0 et les conteneurs. L’autre désavantage est une mise en place plus complexe qu’une installation sur machine virtuelle. 
@@ -50,7 +52,6 @@ Ainsi chaque conteneur aura une interface réseau virtuelle et la connexion au v
 
 Dans un premier temps il faut configurer le fichier lxc-net afin qu’il crée le switch. Puis dans un second temps on crée l’interface virtuelle tap0 et enfin un tunnel entre tap0 et le switch est créé par lxc-net. L'hôte fera donc office de passerelle pour que nos machines virtuelles puissent communiquer avec l'extérieur. 
 
-\* *Cette commande permet d'isoler l'exécution d'un programme.*
 
 
 ### Fonction TUN/TAP
@@ -59,3 +60,6 @@ Dans un premier temps il faut configurer le fichier lxc-net afin qu’il crée l
 ### vmnet de VMware
 
 
+Notes : 
+\1. *QEMU est un logiciel libre de machine virtuelle, pouvant émuler un processeur et, plus généralement, une architecture différente si besoin. Il permet d'exécuter un ou plusieurs systèmes d'exploitation via les hyperviseurs KVM et Xen, ou seulement des binaires, dans l'environnement d'un système d'exploitation déjà installé sur la machine.*
+\2. *Cette commande permet d'isoler l'exécution d'un programme.*
