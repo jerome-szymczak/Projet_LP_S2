@@ -14,7 +14,7 @@ N'oubliez pas de mettre votre nom pour savoir sur quel sujet vous êtes en train
 - Rapport
     - rapport : lxc/ virtualbox/ OVS/  **Simon**
     - rapport : test **Gerard**
-    - rapport : hyperviseurs/ vmware **Jerome**
+   
 
 ## DONE
 
@@ -32,3 +32,5 @@ N'oubliez pas de mettre votre nom pour savoir sur quel sujet vous êtes en train
     - Etat de l'art
         - Hyperviseurs
         - Solutions 
+
+ - rapport : hyperviseurs/ vmware **Jerome**
