@@ -402,8 +402,9 @@ done
 
 ### Comparaison sur les différentes solutions existantes
 
-~~~
-## LXC
+
+#### LXC
+
 **Description :** 
 LXC est conteneur Linux(ensemble de processus qui sont isolés du reste du système).
 Dans LXC nous avons lxc.network qui est très utile pour pour avoir accès à internet
@@ -428,7 +429,8 @@ Les conteneurs doivent se connecter à une interface bridge sur l'hôte. Celle-c
 4. Créer un tunnel entre tap0 et le switch créer par lxc-net
 5. Mettre la machine virtual en accès par pont sur l'interface 'tap0'
 
-## Fonction TUN/TAP
+#### Fonction TUN/TAP
+
 **Description :** 
 Un dispositif TUN/TAP peut être vu comme une interface réseau qui communique avec un programme utilisateur (dispositif logiciel) au lieu d'une vraie carte matérielle (TUN pour miner un périphérique point à point, TAP pour mimer un périphérique Ethernet).
 
@@ -448,7 +450,8 @@ Un dispositif TUN/TAP peut être vu comme une interface réseau qui communique a
 3. Création d'un tunnel entre le bridge et tap0
 4. Mettre la machine en accès par pont sur l'interface 'tap0'
 
-## vmnet de VMware
+#### vmnet de VMware
+
 **Description :** 
 - VMnet0 pour relier les VMs au réseau physique direct (Bridged mode)
 - VMnet1 isole totalement les cartes qui lui sont reliées du reste du monde, mais pas entre elles (Host Only mode)
@@ -467,11 +470,6 @@ Un dispositif TUN/TAP peut être vu comme une interface réseau qui communique a
 **Comment ça fonctionne :** 
 - Installation de VMplayer
 - Mettre la machine virtuelle en accès par pont sur l'nterface 'vmnet8'
-
-sources : 
-- http://g.urroz.online.fr/doc/ch03s02.html
-
-~~~
 
 ## Sources
 
