@@ -44,8 +44,13 @@ L'objectif étant de permettre au final de pouvoir y connecter des machines virt
 
 # Etat de l'art
 include etat-de-lart.md
+
 # Mise en oeuvre du projet
 include mise-en-oeuvre.md *Manque problèmes rencontrés*
+
 # Procédure de test
 include test.md *Manque test sur VM*
+
 # Conclusion
+
+# Annexe
