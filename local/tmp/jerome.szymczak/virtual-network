@@ -1,0 +1,46 @@
+Creation du switch 'br0':
+	
+	# ip link add br0 type bridge
+
+Ajouter la carte physique au switch :
+	
+	# ip link set eth0 master br0
+
+
+Creation d'une carte virtuelle passer en parametre et ajout au switch :
+
+	#!/bin/sh
+	set -x
+
+	switch=br0
+
+	if [ -n "$1" ];then
+		ip tuntap add $1 mode tap user `whoami`
+		ip link set $1 up
+		sleep 0.5s
+		ip link set $1 master $switch
+		exit 0
+	else
+		echo "Error: no interface specified"
+		exit 1
+	fi
+
+Generation d'un adresse MAC :
+
+	#!/bin/sh
+	# generate a random mac address for the qemu nic
+	printf 'DE:AD:BE:EF:%02X:%02X\n' $((RANDOM%256)) $((RANDOM%256))
+
+Routage host: autorisation de faire de l'ipv4 forwarding
+
+	sysctl -w net.ipv4.ip_forward=1                 # allow forwarding of IPv4
+	route add -host <ip-of-client> dev <tap-device> # add route to the client
+
+Routage guest: ajout de la passerelle par defaut si le guest est sur le meme reseau que 'lhote
+
+	route add default gw <ip-of-host>
+
+Routage guest: ajout de la passerelle par defaut si le guest n'est pas sur le meme reseau que 'lhote
+
+	route add -host <ip-of-host> dev <network-interface>
+	route add default gw <ip-of-host>
