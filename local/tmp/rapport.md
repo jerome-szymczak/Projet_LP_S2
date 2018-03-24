@@ -61,7 +61,7 @@ Le principal objectif est économique. Il y a encore quelques années on sépar�
 Un autre objectif est celui de la faciliter d'administration, en effet le processus d'installation d'un système est une opération lourde, gourmande en temps, et présente un risque de petites variations de configuration. Ainsi, la virtualisation permet de déplacer un serveur virtuel d’un hôte à un autre de manière très aisée, y compris sur des environnements matériels très hétérogènes, puisque les couches matérielles dans les serveurs virtuels sont le plus souvent génériques.
 
 
-**Il faut differencier :**
+### Il faut differencier :
 
 - **L'hyperviseur:**
 
@@ -74,7 +74,7 @@ Un autre objectif est celui de la faciliter d'administration, en effet le proces
 - **L'émulateur** : (Ex: QEMU ) : C'est un logiciel qui consiste à simuler l’exécution d’un programme en interprétant chacune des instructions destinées au micro-processeur. Il est possible d’émuler ainsi n’importe quel processeur et l’environnement complet.
 
 
-**Schèma de fonctionnement :**
+### Schèma de fonctionnement :
 
 Système d'exploitation
 ![systemExploitation](local/tmp/jerome.szymczak/ink-diagram-com-sys-exp.pdf){ width=5% }
@@ -280,7 +280,7 @@ Voici les options qui peuvent être utilisé sur notre script.
     # apt-get install -f
     ~~~
 
- - Vérification que le préinst s'éxécute
+ - Vérification que le préinst s'éxécute : OK
     
     ~~~
     $ cat /etc/default/lxc-net
@@ -330,10 +330,9 @@ Lors de la désintallation, les dépendances ne sont pas désintaller.
 On pourrait les désinaller avec un script 'posrrm' qui ferai un apt-get autoremove.
 
 ## Test avec Virtualbox
-### Démarrage de deux machines virtuelles
-
 
 ### Test de la communication entre machines
+
 1. ping d'une machine virtuelle à l'autre
 2. ping sur la machine physique
 3. ssh
@@ -352,7 +351,7 @@ On pourrait les désinaller avec un script 'posrrm' qui ferai un apt-get autorem
 
 ## Documents techniques
 
-### Le cript de notre paquet Debian
+### Le script de notre paquet Debian
 
 ~~~
 #!/bin/bash
@@ -476,38 +475,41 @@ sources :
 
 ## Sources
 
-### Virtualisateurs
+`à étoffer`
 
-http://www.lemagit.fr/definition/Virtualisation
-http://infrastructure.smile.eu/Tout-savoir-sur/Virtualisation-et-cloud/Les-principes-de-la-virtualisation
+- Recherche virtualisateurs
 
+    - http://www.lemagit.fr/definition/Virtualisation
+    - http://infrastructure.smile.eu/Tout-savoir-sur/Virtualisation-et-cloud/Les-principes-de-la-virtualisation
 
-- 1.VirtualBox
- https://www.virtualbox.org/download/testcase/manual/UserManual_fr_FR.pdf
+- VirtualBox
 
-- 2.VMplayer
- 
+    - https://www.virtualbox.org/download/testcase/manual/UserManual_fr_FR.pdf
 
-- 3.QEMU/KVM
- https://virt.kernelnewbies.org/KVM_Multiuser_Usage?highlight=(kvm)|(usb)
- https://doc.ubuntu-fr.org/kvm
- http://debian-facile.org/doc:systeme:kvm
+- QEMU/KVM
 
-- 4.Proxmox
- https://www.proxmox.com/en/
- https://fr.wikipedia.org/wiki/Proxmox_VE
- http://linuxfr.org/news/proxmox-la-virtualisation-facile
+    - https://virt.kernelnewbies.org/KVM_Multiuser_Usage?highlight=(kvm)|(usb)
+    - https://doc.ubuntu-fr.org/kvm
+    - http://debian-facile.org/doc:systeme:kvm
 
-### Solutions existantes
-- 1.LXC
- http://www.linuxembedded.fr/2013/07/configuration-reseau-de-lxc/
- https://wiki.debian.org/fr/LXC
- https://wiki.debian.org/fr/LXC/SimpleBridge
+- Proxmox
 
-- 2.TUN/TAP
- http://debian-facile.org/doc:reseau:interfaces:tapbridge
- https://www.inetdoc.net/guides/vm/vm.network.tun-tap.html
+    - https://www.proxmox.com/en/
+    - https://fr.wikipedia.org/wiki/Proxmox_VE
+    - http://linuxfr.org/news/proxmox-la-virtualisation-facile
 
-- 3.vmnet
- http://g.urroz.online.fr/doc/ch03s02.html
+- LXC
+
+    - http://www.linuxembedded.fr/2013/07/configuration-reseau-de-lxc/
+    - https://wiki.debian.org/fr/LXC
+    - https://wiki.debian.org/fr/LXC/SimpleBridge
+
+- TUN/TAP
+
+    - http://debian-facile.org/doc:reseau:interfaces:tapbridge
+    - https://www.inetdoc.net/guides/vm/vm.network.tun-tap.html
+
+- vmnet
+
+    - http://g.urroz.online.fr/doc/ch03s02.html
 
