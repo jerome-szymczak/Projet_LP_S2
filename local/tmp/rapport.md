@@ -63,11 +63,11 @@ Un autre objectif est celui de la faciliter d'administration, en effet le proces
 
 **Il faut differencier :**
 
-- L'hyperviseur: 
+- **L'hyperviseur:**
 
- - **Hyperviseur Type 1** : (Ex: VMware Vsphere, Oracle VM, Microsoft Hyper-V Server ) : C'est un logiciel qui s’insère entre le matériel et les différents systèmes d’exploitation virtualisés assurant ainsi directement la communication avec ce dernier.
+ - Hyperviseur Type 1 : (Ex: VMware Vsphere, Oracle VM, Microsoft Hyper-V Server ) : C'est un logiciel qui s’insère entre le matériel et les différents systèmes d’exploitation virtualisés assurant ainsi directement la communication avec ce dernier.
 
- - **Hyperviseur Type 2** : (Ex: VMware Workstation, Oracle VirtualBox ) : C'est un logiciel qui s’insère entre le système d'exploitation hote et les différents systèmes d’exploitation vitualisés. c'est le système d'exploitation hote qui assure la communication avec le materiel .
+ - Hyperviseur Type 2 : (Ex: VMware Workstation, Oracle VirtualBox ) : C'est un logiciel qui s’insère entre le système d'exploitation hote et les différents systèmes d’exploitation vitualisés. c'est le système d'exploitation hote qui assure la communication avec le materiel .
 
 - **L'isolateur** : (Ex: chroot, LXC, Docker ) : C'est un logiciel permettant de créer un environnement utilisateur cloisonné au sein d'un système d'exploitation. Cet environnement peut alors exécuter des programmes sans que leur exécution ne perturbe le système d'exploitation de la machine en cas de dysfonctionnement. Ces environnements sont appelés des contextes ou bien des zones d'exécution. 
 
