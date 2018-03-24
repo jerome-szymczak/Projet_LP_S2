@@ -140,7 +140,7 @@ source :"http://www.lemagit.fr"
 
 `blabla`
 
-Notes : 
+### Notes : 
 
 1. *QEMU est un logiciel libre de machine virtuelle, pouvant émuler un processeur et, plus généralement, une architecture différente si besoin. Il permet d'exécuter un ou plusieurs systèmes d'exploitation via les hyperviseurs KVM et Xen, ou seulement des binaires, dans l'environnement d'un système d'exploitation déjà installé sur la machine.*
 
@@ -184,6 +184,7 @@ ip link set tap0 up
 ## Implémentation d'un paquet Debian
 
 Le paquet nécessaire pour faire ses propre paquets est dpkg. Le programme dpkg-deb qui est contenu dans le paquet dpkg est le programme qui construit un fichier .deb.
+`blabla`
 
 ### L'arborescence d'un paquet Debian
 Afin de permettre à dpkg de faire un paquet, nous devons respecter une aborescence particulière. En effet, pour la création d'un paquet, l'arborescence à créer est simple( selon les paquets). Voici l'arborescence à créer.
@@ -250,16 +251,19 @@ Voici les options qui peuvent être utilisé sur notre script.
 - 1.Installation du paquet
 
  - Le paquet a bien été installé mais il manque les dépendances : OK
+
 ~~~
 # dpkg -i tarr-steps
 ~~~
 
  - Les dépendances se sont bien installé : OK
+
 ~~~
 # apt-get install -f
 ~~~
 
- - Vérification que le préinst s'éxécute 
+ - Vérification que le préinst s'éxécute
+
 ~~~
 $ cat /etc/default/lxc-net
 $ ip a
@@ -268,17 +272,20 @@ $ ip a
 - 2.L'éxécution de notre script
 
  - affichage de l'aide à l'éxécution du script : OK
+
 ~~~
 $ tarr-steps -h
 ~~~
 
  - Configuration de l'dresse du switch et affichage de ces changements : OK
+
 ~~~
 $ tarr-steps -ip 192.168.194.1/24
 $ tarr-steps -l
 ~~~
 
  - Relance du script lxc-net pour mettre à jour le switch virtuel : OK
+
 ~~~
 $ tarr-steps -r 
 $ ip a
