@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg8"
+   enable-background="new"
+   inkscape:version="0.92.1 r15371"
+   sodipodi:docname="ink-diagram-com-sys-virt2.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.61549127"
+     inkscape:cx="491.67875"
+     inkscape:cy="503.79112"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer6"
+     showgrid="false"
+     inkscape:pagecheckerboard="false"
+     borderlayer="false"
+     inkscape:showpageshadow="false"
+     inkscape:snap-nodes="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="1056"
+     inkscape:window-x="1920"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:snap-text-baseline="false" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Materiel"
+     inkscape:groupmode="layer"
+     id="layer1"
+     style="display:inline">
+    <rect
+       id="rect10"
+       width="195.19998"
+       height="203.17824"
+       x="7.6425276"
+       y="56.100086"
+       style="fill:#ffff00;stroke:#000000;stroke-width:1.61098874;stroke-miterlimit:4;stroke-dasharray:none"
+       ry="12.074861" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="102.19099"
+       y="233.59966"
+       id="text4510"><tspan
+         sodipodi:role="line"
+         id="tspan4508"
+         x="102.19099"
+         y="233.59966"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;stroke-width:0.26458332">Machine Physique</tspan><tspan
+         sodipodi:role="line"
+         x="102.19099"
+         y="246.82883"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;stroke-width:0.26458332"
+         id="tspan4512">Matèriels</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="98.978073"
+       y="276.5517"
+       id="text4548"><tspan
+         sodipodi:role="line"
+         x="98.978073"
+         y="276.5517"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;stroke-width:0.26458332"
+         id="tspan4550">Machine physique</tspan><tspan
+         sodipodi:role="line"
+         x="98.978073"
+         y="289.78085"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;stroke-width:0.26458332"
+         id="tspan4554">Hyperviseur Type 2</tspan></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer5"
+     inkscape:label="Systeme"
+     style="display:inline">
+    <rect
+       id="rect10-3-6"
+       width="183.17969"
+       height="155.54482"
+       x="13.832898"
+       y="64.256302"
+       style="display:inline;fill:#00ff00;stroke:#000000;stroke-width:1.36546469;stroke-miterlimit:4;stroke-dasharray:none"
+       ry="10.793021" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="41.559196"
+       y="197.28812"
+       id="text4506-2"><tspan
+         sodipodi:role="line"
+         id="tspan4504-9"
+         x="41.559196"
+         y="197.28812"
+         style="stroke-width:0.26458332">Système d'exploitation</tspan></text>
+    <rect
+       id="rect10-3-5-9-11-12"
+       width="82.248688"
+       height="33.175407"
+       x="-164.69044"
+       y="18.292595"
+       style="display:inline;fill:#00ffff;stroke:#000000;stroke-width:0.75;stroke-miterlimit:4;stroke-dasharray:none"
+       ry="6.49084"
+       transform="rotate(-90)" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:11.34285355px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.28357133"
+       x="-141.68639"
+       y="41.182312"
+       id="text4506-9-0-5-70"
+       transform="matrix(0,-1.0821604,0.92407743,0,0,0)"><tspan
+         sodipodi:role="line"
+         id="tspan4504-4-9-9-93"
+         x="-141.68639"
+         y="41.182312"
+         style="stroke-width:0.28357133">Application</tspan></text>
+    <rect
+       id="rect10-3-5-9-11-7-6"
+       width="82.248688"
+       height="33.175407"
+       x="-164.81035"
+       y="53.772522"
+       style="display:inline;fill:#00ffff;stroke:#000000;stroke-width:0.75;stroke-miterlimit:4;stroke-dasharray:none"
+       ry="6.49084"
+       transform="rotate(-90)" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:11.34285355px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.28357133"
+       x="-141.7972"
+       y="79.576378"
+       id="text4506-9-0-5-6-0"
+       transform="matrix(0,-1.0821604,0.92407743,0,0,0)"><tspan
+         sodipodi:role="line"
+         id="tspan4504-4-9-9-7-62"
+         x="-141.7972"
+         y="79.576378"
+         style="stroke-width:0.28357133">Application</tspan></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer6"
+     inkscape:label="Hyperviseur Applicatif"
+     style="display:inline">
+    <rect
+       id="rect10-36"
+       width="102.01727"
+       height="85.301231"
+       x="90.241737"
+       y="79.700485"
+       style="display:inline;fill:#ff00ff;stroke:#000000;stroke-width:0.75462019;stroke-miterlimit:4;stroke-dasharray:none"
+       ry="6.4799128" />
+    <rect
+       id="rect10-3"
+       width="46.047081"
+       height="13.789372"
+       x="93.338112"
+       y="115.34351"
+       style="display:inline;fill:#00ff00;stroke:#000000;stroke-width:0.20383902;stroke-miterlimit:4;stroke-dasharray:none"
+       ry="2.697921" />
+    <rect
+       id="rect10-3-2"
+       width="46.047081"
+       height="13.789372"
+       x="142.35464"
+       y="115.05968"
+       style="display:inline;fill:#00ff00;stroke:#000000;stroke-width:0.20383902;stroke-miterlimit:4;stroke-dasharray:none"
+       ry="2.697921" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:2.87639499px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.07190989"
+       x="153.26527"
+       y="118.77032"
+       id="text4506-9"
+       transform="scale(0.96927912,1.0316946)"><tspan
+         sodipodi:role="line"
+         id="tspan4504-1"
+         x="153.26527"
+         y="118.77032"
+         style="stroke-width:0.07190989">Système d'exploitation</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:2.87639499px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.07190989"
+       x="102.69449"
+       y="119.0454"
+       id="text4506"
+       transform="scale(0.96927912,1.0316946)"><tspan
+         sodipodi:role="line"
+         id="tspan4504"
+         x="102.69449"
+         y="119.0454"
+         style="stroke-width:0.07190989">Système d'exploitation</tspan></text>
+    <rect
+       style="display:inline;fill:none;stroke:#000000;stroke-width:0.43307355;stroke-miterlimit:4;stroke-dasharray:2.59844137, 0.86614712;stroke-dashoffset:0"
+       id="rect4605"
+       width="48.849724"
+       height="49.357708"
+       x="91.808144"
+       y="84.178497"
+       ry="6.9718843" />
+    <rect
+       style="display:inline;fill:none;stroke:#000000;stroke-width:0.43307355;stroke-miterlimit:4;stroke-dasharray:2.59844137, 0.86614712;stroke-dashoffset:0"
+       id="rect4605-9"
+       width="48.849731"
+       height="49.357708"
+       x="141.22684"
+       y="84.139809"
+       ry="6.9718843" />
+    <rect
+       id="rect10-3-5-9-11"
+       width="23.062487"
+       height="8.7395916"
+       x="-113.6777"
+       y="93.410538"
+       style="display:inline;fill:#00ffff;stroke:#000000;stroke-width:0.20383902;stroke-miterlimit:4;stroke-dasharray:none"
+       ry="1.7099202"
+       transform="rotate(-90)" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.08282113px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.07707052"
+       x="-98.965065"
+       y="110.10172"
+       id="text4506-9-0-5"
+       transform="matrix(0,-1.116459,0.89568894,0,0,0)"><tspan
+         sodipodi:role="line"
+         id="tspan4504-4-9-9"
+         x="-98.965065"
+         y="110.10172"
+         style="stroke-width:0.07707052">Application</tspan></text>
+    <rect
+       id="rect10-3-5-9-11-7"
+       width="23.062487"
+       height="8.7395916"
+       x="-113.7113"
+       y="102.75706"
+       style="display:inline;fill:#00ffff;stroke:#000000;stroke-width:0.20383902;stroke-miterlimit:4;stroke-dasharray:none"
+       ry="1.7099202"
+       transform="rotate(-90)" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.08282113px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.07707052"
+       x="-98.995171"
+       y="120.53674"
+       id="text4506-9-0-5-6"
+       transform="matrix(0,-1.116459,0.89568894,0,0,0)"><tspan
+         sodipodi:role="line"
+         id="tspan4504-4-9-9-7"
+         x="-98.995171"
+         y="120.53674"
+         style="stroke-width:0.07707052">Application</tspan></text>
+    <rect
+       id="rect10-3-5-9-11-3"
+       width="23.062487"
+       height="8.7395916"
+       x="-113.7113"
+       y="112.14535"
+       style="display:inline;fill:#00ffff;stroke:#000000;stroke-width:0.20383902;stroke-miterlimit:4;stroke-dasharray:none"
+       ry="1.7099202"
+       transform="rotate(-90)" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.08282113px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.07707052"
+       x="-98.995171"
+       y="131.01834"
+       id="text4506-9-0-5-65"
+       transform="matrix(0,-1.116459,0.89568894,0,0,0)"><tspan
+         sodipodi:role="line"
+         id="tspan4504-4-9-9-6"
+         x="-98.995171"
+         y="131.01834"
+         style="stroke-width:0.07707052">Application</tspan></text>
+    <rect
+       id="rect10-3-5-9-11-39"
+       width="23.062487"
+       height="8.7395916"
+       x="-113.7113"
+       y="121.3955"
+       style="display:inline;fill:#00ffff;stroke:#000000;stroke-width:0.20383902;stroke-miterlimit:4;stroke-dasharray:none"
+       ry="1.7099202"
+       transform="rotate(-90)" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.08282113px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.07707052"
+       x="-98.995171"
+       y="141.34569"
+       id="text4506-9-0-5-4"
+       transform="matrix(0,-1.116459,0.89568894,0,0,0)"><tspan
+         sodipodi:role="line"
+         id="tspan4504-4-9-9-8"
+         x="-98.995171"
+         y="141.34569"
+         style="stroke-width:0.07707052">Application</tspan></text>
+    <rect
+       id="rect10-3-5-9-11-1"
+       width="23.062487"
+       height="8.7395916"
+       x="-113.7113"
+       y="130.64551"
+       style="display:inline;fill:#00ffff;stroke:#000000;stroke-width:0.20383902;stroke-miterlimit:4;stroke-dasharray:none"
+       ry="1.7099202"
+       transform="rotate(-90)" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.08282113px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.07707052"
+       x="-98.995171"
+       y="151.67303"
+       id="text4506-9-0-5-2"
+       transform="matrix(0,-1.116459,0.89568894,0,0,0)"><tspan
+         sodipodi:role="line"
+         id="tspan4504-4-9-9-9"
+         x="-98.995171"
+         y="151.67303"
+         style="stroke-width:0.07707052">Application</tspan></text>
+    <rect
+       id="rect10-3-5-9-11-2"
+       width="23.062487"
+       height="8.7395916"
+       x="-113.39385"
+       y="142.427"
+       style="display:inline;fill:#00ffff;stroke:#000000;stroke-width:0.20383902;stroke-miterlimit:4;stroke-dasharray:none"
+       ry="1.7099202"
+       transform="rotate(-90)" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.08282113px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.07707052"
+       x="-98.710365"
+       y="164.82678"
+       id="text4506-9-0-5-7"
+       transform="matrix(0,-1.116459,0.89568894,0,0,0)"><tspan
+         sodipodi:role="line"
+         id="tspan4504-4-9-9-0"
+         x="-98.710365"
+         y="164.82678"
+         style="stroke-width:0.07707052">Application</tspan></text>
+    <rect
+       id="rect10-3-5-9-11-7-9"
+       width="23.062487"
+       height="8.7395916"
+       x="-113.42747"
+       y="151.77342"
+       style="display:inline;fill:#00ffff;stroke:#000000;stroke-width:0.20383902;stroke-miterlimit:4;stroke-dasharray:none"
+       ry="1.7099202"
+       transform="rotate(-90)" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.08282113px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.07707052"
+       x="-98.740448"
+       y="175.26183"
+       id="text4506-9-0-5-6-3"
+       transform="matrix(0,-1.116459,0.89568894,0,0,0)"><tspan
+         sodipodi:role="line"
+         id="tspan4504-4-9-9-7-6"
+         x="-98.740448"
+         y="175.26183"
+         style="stroke-width:0.07707052">Application</tspan></text>
+    <rect
+       id="rect10-3-5-9-11-3-0"
+       width="23.062487"
+       height="8.7395916"
+       x="-113.42747"
+       y="161.16158"
+       style="display:inline;fill:#00ffff;stroke:#000000;stroke-width:0.20383902;stroke-miterlimit:4;stroke-dasharray:none"
+       ry="1.7099202"
+       transform="rotate(-90)" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.08282113px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.07707052"
+       x="-98.740448"
+       y="185.74345"
+       id="text4506-9-0-5-65-6"
+       transform="matrix(0,-1.116459,0.89568894,0,0,0)"><tspan
+         sodipodi:role="line"
+         id="tspan4504-4-9-9-6-2"
+         x="-98.740448"
+         y="185.74345"
+         style="stroke-width:0.07707052">Application</tspan></text>
+    <rect
+       id="rect10-3-5-9-11-39-6"
+       width="23.062487"
+       height="8.7395916"
+       x="-113.42747"
+       y="170.41168"
+       style="display:inline;fill:#00ffff;stroke:#000000;stroke-width:0.20383902;stroke-miterlimit:4;stroke-dasharray:none"
+       ry="1.7099202"
+       transform="rotate(-90)" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.08282113px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.07707052"
+       x="-98.740448"
+       y="196.0708"
+       id="text4506-9-0-5-4-1"
+       transform="matrix(0,-1.116459,0.89568894,0,0,0)"><tspan
+         sodipodi:role="line"
+         id="tspan4504-4-9-9-8-8"
+         x="-98.740448"
+         y="196.0708"
+         style="stroke-width:0.07707052">Application</tspan></text>
+    <rect
+       id="rect10-3-5-9-11-1-7"
+       width="23.062487"
+       height="8.7395916"
+       x="-113.42747"
+       y="179.66174"
+       style="display:inline;fill:#00ffff;stroke:#000000;stroke-width:0.20383902;stroke-miterlimit:4;stroke-dasharray:none"
+       ry="1.7099202"
+       transform="rotate(-90)" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.08282113px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.07707052"
+       x="-98.740448"
+       y="206.39821"
+       id="text4506-9-0-5-2-9"
+       transform="matrix(0,-1.116459,0.89568894,0,0,0)"><tspan
+         sodipodi:role="line"
+         id="tspan4504-4-9-9-9-2"
+         x="-98.740448"
+         y="206.39821"
+         style="stroke-width:0.07707052">Application</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.11114836px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1527787"
+       x="147.21474"
+       y="142.83307"
+       id="text4510-7"
+       transform="scale(0.94996771,1.0526674)"><tspan
+         sodipodi:role="line"
+         x="147.21474"
+         y="142.83307"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.11114836px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;stroke-width:0.1527787"
+         id="tspan4512-3">Hyperviseur Applicatif</tspan></text>
+  </g>
+</svg>
