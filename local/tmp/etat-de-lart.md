@@ -16,7 +16,7 @@ Il faut differencier :
 
 Avant toutes choses il est important de parler du principe d'un "système d'exploitation" car c'est celui ci qui gére les ressources matériels disponibles pour les attribuer aux applications qui en ont besoins.
 
-![systemExploitation](jerome.szymczak/ink-diagram-com-sys-exp.svp){ width=5% }
+![systemExploitation](local/tmp/jerome.szymczak/ink-diagram-com-sys-exp.svp){ width=5% }
 
 La virtualisation est un procédé informatique qui vise à séparer le matériel et le logiciel. Grace a elle nous pouvons reduire les couts de possession matériels en allouant les resssources physiques a different instance de logiciels
 
