@@ -33,10 +33,10 @@ C'est un système optimisé pour la virtualisation de serveur. Pour virtualiser 
 
 ### Proxmox
 
-Proxmox Virtual Environment est un logiciel libre de virtualisation, plus précisément un hyperviseur de machines virtuelles. 
+**Proxmox** (Proxmox Virtual Environment) est un logiciel libre de virtualisation, plus précisément un hyperviseur de machines virtuelles. 
 Proxmox permet donc de monter facilement un serveur de virtualisation dont l'administration se fera via une interface web.
 Proxmox VE installe les outils complets du système d'exploitation et de gestion en 3 à 5 minutes (dépend du matériel utilisé).
-C'est une solution de virtualisation "bare metal". Le terme de « bare metal » (metal nu) signifie que vous commencez à partir d'un serveur vide et qu'il n'y a donc nul besoin d'installer un système d'exploitation auparavant.
+C'est une solution de virtualisation "bare metal"³.
 
 [Comparatif](local/tmp/img/comparatif-virtualiseur.svg)
 
@@ -63,3 +63,4 @@ Dans un premier temps il faut configurer le fichier lxc-net afin qu’il crée l
 Notes : 
 \1. *QEMU est un logiciel libre de machine virtuelle, pouvant émuler un processeur et, plus généralement, une architecture différente si besoin. Il permet d'exécuter un ou plusieurs systèmes d'exploitation via les hyperviseurs KVM et Xen, ou seulement des binaires, dans l'environnement d'un système d'exploitation déjà installé sur la machine.*
 \2. *Cette commande permet d'isoler l'exécution d'un programme.*
+\3. *Bare metal (metal nu) signifie que vous commencez à partir d'un serveur vide et qu'il n'y a donc nul besoin d'installer un système d'exploitation auparavant.*
