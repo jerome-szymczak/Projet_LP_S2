@@ -138,7 +138,7 @@ Lors de la configuration d'une interface réseau, VMWare Player propose 3 types 
 
 ### OpenVSwitch
 
-Open vswitch est un commutateur logiciel multicouche sous licence open source Apache 2. 
+**Open VSwitch** est un commutateur logiciel multicouche sous licence open source Apache 2. 
 Il est bien adapté pour fonctionner comme un commutateur virtuel, qui fournit des fonctionnalités avancées de commutation, mais également de QoS, 
 d’agrégation de liens, de Vlan, de collecte de données. 
 Il a été conçu pour prendre en charge la distribution sur plusieurs serveurs physiques. Open vswitch prend en charge plusieurs technologies de virtualisation basées sur Linux, 
