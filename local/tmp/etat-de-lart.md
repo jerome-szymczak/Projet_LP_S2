@@ -21,10 +21,10 @@ Avant toutes choses il est important de parler du principe d'un "système d'expl
 La virtualisation est un procédé informatique qui vise à séparer le matériel et le logiciel. Grace a elle nous pouvons reduire les couts de possession matériels en allouant les resssources physiques a different instance de logiciels
 
 ### VirtualBox
-
+include local/tmp/recherche/VirtualBox.md
 
 ### VMware Player
-
+include local/tmp/jerome.szymczak/etat-de-lart-vmware.md
 
 ### KVM/QEMU
 **KVM** (Kernel-based Virtual Machine) est un hyperviseur libre de type I pour Linux qui permet la virtualisation simultanée de différents systèmes d'exploitation sur la même machine hôte. KVM est intégré dans le noyau Linux depuis la version 2.6.20. KVM est une instance de QEMU¹ qui lui permet la virtualisation simultanée de différents systèmes d'exploitation sur la même machine hôte.
@@ -58,7 +58,7 @@ Dans un premier temps il faut configurer le fichier lxc-net afin qu’il crée l
 
 
 ### vmnet de VMware
-
+include local/tmp/jerome.szymczak/etat-de-lart-vmware.md
 
 Notes : 
 
