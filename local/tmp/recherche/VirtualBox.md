@@ -17,6 +17,7 @@ Cela permet entre autres de commander toutes les machines (démarrer,arrêter, s
 Le format d’enregistrement est le VDI(VirtualBox Disk Image) , il peut avoir une forme fixe ou dynamique. 
 
 Le NAT:
+
 Lorsque l’on crée une machine virtuelle pour la première fois, Virtualbox sélectionne le mode “Network address Translation” (NAT), c’est le mode par défaut .
 Cela permet d’accéder au réseau externe à partir d’une machine virtuelle. L'adresse IP était fournie par le DHCP de Virtualbox. 
 Ce mode a un inconvénient de la machine virtuelle est invisible et injoignable depuis le réseau.
