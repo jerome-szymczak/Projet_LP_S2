@@ -43,4 +43,4 @@ C'est un fichier principal de contrôle qui contient un certain nombre de champs
 
 ## Voici un exemple de paquet simple 
 
-[mon-paquet](local/tmp/myecho)
+[mon-paquet](local/tmp/recherche/myecho)
