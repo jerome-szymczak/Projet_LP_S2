@@ -329,7 +329,7 @@ Voici les options qui peuvent être utilisé sur notre script.
     $ tarr-steps -h
     ~~~
 
- - Configuration de l'dresse du switch et affichage de ces changements : OK
+ - Configuration de l'adresse du switch et affichage de ces changements : OK
     
     ~~~
     $ tarr-steps -ip 192.168.194.1/24
