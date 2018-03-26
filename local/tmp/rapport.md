@@ -517,6 +517,12 @@ Un dispositif TUN/TAP peut être vu comme une interface réseau qui communique a
 
     - https://www.virtualbox.org/download/testcase/manual/UserManual_fr_FR.pdf
 
+- VMware
+
+    - http://www.electro-info.ovh/index.php?id=60
+    - https://fr.wikipedia.org/wiki/VMware
+    - http://www.tuto-it.fr/PresentationProduitVMware.php
+
 - QEMU/KVM
 
     - https://virt.kernelnewbies.org/KVM_Multiuser_Usage?highlight=(kvm)|(usb)
