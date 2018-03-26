@@ -189,7 +189,8 @@ source :"http://www.lemagit.fr"
 
 ### TUN/TAP
 
-`blabla`
+TUN/TAP est une fonction de réception et de transmission de paquets entre le noyau et les programmes de l'espace utilisateur. Cette fonction peut être vue comme une simple interface point à point ou Ethernet qui, au lieu de recevoir les paquets d'un média physique, les reçoit du programme de l'espace utilisateur. De même, cette interface au lieu d'envoyer les paquets vers un média physique, les transmet au programme de l'espace utilisateur.
+Dans notre contexte, le programme de l'espace mémoire utilisateur est l'instance virtuelle de système d'exploitation. L'interface réseau TUN/TAP devient un canal de communication réseau entre le système hôte et un système virtualisé.
 
 ### Notes : 
 
@@ -506,8 +507,6 @@ Un dispositif TUN/TAP peut être vu comme une interface réseau qui communique a
 
 ## Sources
 
-`à étoffer`
-
 - Recherche virtualisateurs
 
     - http://www.lemagit.fr/definition/Virtualisation
@@ -543,8 +542,9 @@ Un dispositif TUN/TAP peut être vu comme une interface réseau qui communique a
 
 - TUN/TAP
 
+    - https://www.wikiwand.com/en/TUN/TAP
     - http://debian-facile.org/doc:reseau:interfaces:tapbridge
-    - https://www.inetdoc.net/guides/vm/vm.network.tun-tap.html
+    - https://www.inetdoc.net/guides/vm/vm.choix.html
 
 - vmnet
 
