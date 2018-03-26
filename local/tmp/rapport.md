@@ -90,8 +90,6 @@ Isolateur
 
 ### VirtualBox
 
-### VirtualBox
-
 **Virtualbox** est une application de virtualisation, c’est ce qu’on appelle un hyperviseur “type 2” est un logiciel qui s'exécute à l'intérieur d'un autre système d'exploitation. 
 Alors qu’un hyperviseur “bar-métal” ou du “type 1” se lance directement sur le matériel, Virtualbox a besoin d’être installé sur le système d’exploitation. 
 Il peut alors exécuter toutes les applications sur cet hôte.Virtualbox n’exige pas une architecture processeur complexe. 
