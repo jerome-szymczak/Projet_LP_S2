@@ -24,5 +24,8 @@
     - Mdoc
         - https://manpages.bsd.lv/mdoc.html
         - man(7), mdoc(7), groff(7)
-  
 
+  
+# Règle principal du Projet
+
+Celui qui a le moins de commit paye sa tournée
