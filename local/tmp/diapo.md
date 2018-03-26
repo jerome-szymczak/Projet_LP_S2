@@ -12,29 +12,20 @@ date: 16 mars 2018
 
 ...
 
-# Introduction
+# Cadre du projet
 
-## But du projet
+## Intitulé du sujet
 
-- Il s'agit de construire une architecture réseau IPv4 permettant à des machines virtuelles de communiquer.
 
-- L'objectif est de pouvoir effectuer des TP d'administration système utilisant plusieurs machines sur le même réseau.
+## Contrainte
 
-![TeX Friendly Zone](img/schema-reseau-projet.svg){ width=10% }
 
-## Organisation du projet
+## Gestion du projet
 
-- Dépot Git
 
-- Mise en place d'un fichier ToDo
+# Etat de l'art
 
-- Compte rendu hebdomadaire
-
-- Respect d'une convention de nommage
-
-# Recherche
-
-## Les hyperviseurs
+## Différents virtualisateurs
 
 - [VirtualBox](https://www.virtualbox.org/)
  ![TeX Friendly Zone](img/comparatif-virtualiseur.svg){ width=10% }
@@ -45,16 +36,11 @@ date: 16 mars 2018
 
 - [Proxmox](https://www.proxmox.com/en/)
 
-'logo des hyperviseurs à droite des noms'
+## Comparatif
 
 ![TeX Friendly Zone](img/comparatif-virtualiseur.svg){ width=10% }
 
 ## Virtualbox
-Les différents réseaux de virtualbox :
-- 
-
-Vbox manage :
-- 
 
 
 ## Les solutions existantes
@@ -69,7 +55,7 @@ Vbox manage :
 
 - [Bridge-utils](https://wiki.debian.org/fr/BridgeNetworkConnections)
 
-'logo des solutions à droites des nnoms'
+'logo des solutions à droites des noms'
 
 ## Paquet Debian
 
@@ -98,31 +84,32 @@ Un paquet Debian est constitué de deux parties notables :
         - README
         - autres fichiers
 
-# Comparatif
-
-## Test des différentes solutions existantes
-
-- LXC-net :
-- Tun/TAP :
-- Libvirt :
-- VMnet :
-
-## Choix pour notre solution
+## Solution retenu
 
 
 # Mise en oeuvre du projet
 
-## Création d'une interface
+## Création des fichiers de paquet
+
 Comment créer notre interface
 
-## Configuration de tap0
+
+## Création du script
+
 Configuration et notre interface et fichiers à modifier
 
-## Documentation du projet
-Readme, Documenter sur comment marche lxc-net
 
-## Implémentation d'un paquet Debian
-Comment créer un paquet et comment l'installer
+## Description sur le fonctionnement du paquet
+
+
+# Procédure de Test
+
+## Test d'installation de notre paquet
+
+
+## Test avec les virtualisateurs
+
 
 # Conclusion
-Ce que nous avons appris de ce projet !
+Ce que nous avons appris de ce projet et ce qu'il nous a apporté
+

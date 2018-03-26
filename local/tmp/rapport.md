@@ -380,6 +380,7 @@ On pourrait les désinaller avec un script 'posrrm' qui ferai un apt-get autorem
 # Conclusion
 
 `blabla`
+Ce que nous avons appris de ce projet et ce qu'il nous a apporté
 
 # Annexe
 
