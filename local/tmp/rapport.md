@@ -491,8 +491,6 @@ Un dispositif TUN/TAP peut être vu comme une interface réseau qui communique a
 
 ## Sources
 
-`à étoffer`
-
 - Recherche virtualisateurs
 
     - http://www.lemagit.fr/definition/Virtualisation
