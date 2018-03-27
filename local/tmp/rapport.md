@@ -74,7 +74,7 @@ Un autre objectif est celui de la facilité d'administration. En effet, le proce
 - **L'émulateur** : (Ex: QEMU ) : C'est un logiciel qui consiste à simuler l’exécution d’un programme en interprétant chacune des instructions destinées au micro-processeur. Il est possible d’émuler ainsi n’importe quel processeur et l’environnement complet.
 
 
-### Schèma de fonctionnement :
+### Schéma de fonctionnement :
 
 Système d'exploitation
 ![systemExploitation](local/tmp/img/ink-diagram-com-sys-exp.pdf){ width=5% }
@@ -172,9 +172,9 @@ Dans notre contexte, le programme de l'espace mémoire utilisateur est l'instanc
 
 ## Solution retenue
 
-Pour choisir notre solution, nous avions deux solutions réalisable en respectant les contraintes fixés dans le cahier de charges, soit passer par le biais d'un script existant(lxc-net), soit créer notre propre script permettant la création d'un switch virtuel.
-Les deux solutions retenus passent par le biais du paquet bridge-utils. 
-C’est la première solution que nous avons retenu, car elle comprennait plusieurs avantages tel que ne pas dépendre de l'architecture en place sur la machine, un léger cout en consommation de mémoire et une utilisation assez simple. Pour permettre une connection par pont il nous a fallu créer une interface TAP.
+Pour choisir notre solution, nous avions deux solutions réalisables en respectant les contraintes fixées dans le cahier des charges, soit passer par le biais d'un script existant(lxc-net), soit créer notre propre script permettant la création d'un switch virtuel.Les deux solutions retenues passent par le biais du paquet bridge-utils. 
+
+C’est la première solution que nous avons retenue, car elle comprenait plusieurs avantages tels que ne pas dépendre de l'architecture en place sur la machine, un léger coût en consommation de mémoire et une utilisation assez simple. Pour permettre une connexion par pont il nous a fallu créer une interface TAP.
 
 ## Création du switch virtuel
 
@@ -265,7 +265,12 @@ Voici les options qui peuvent être utilisées sur notre script.
 
 ## Difficultés rencontrées
 
-`blabla`
+## Difficultés rencontréesL'un des premiers obstacles fut la maîtrise d'un dépôt GIT, mais à force d'utilisation et de conflits, nous avons réussi à faire ce qu'il fallait et ainsi apprendre à l'utiliser correctement. Nous avons aussi fait une autre découverte, celle des fichiers Markdown, ça n'a pas été simple au début pour chacun d'entre nous. Ce que nous avons remarqué sur celui-ci c'est le manque visuel, nous avons toujours été habitué à faire de la mise en page. 
+
+Lors de la mise en place de notre projet, nous avions des difficultés à débattre d'une solution viable et simple d'utilisation. Les différentes solutions existantes étaient complexes et plus contraignantes. 
+
+Mais les plus gros problèmes rencontrés lors de notre projet furent liés au réseau. Sur les ordinateurs des salles TP, nous n'étions pas root et donc aucune possibilité de modifier les interfaces, pour régler ce soucie, nous avions eu accès à un ordinateur. Pour utiliser cette machine, nous n'avions aucun accès physique, ce qui nécessite l'intervention des administrateurs systèmes lorsque nous perdions la connexion à celle-ci.
+
 
 # Procédure de test
 ## Installation de notre paquet
@@ -322,9 +327,7 @@ Voici les options qui peuvent être utilisées sur notre script.
 
 Nous permets de vérifier si la configuration est bien enregistrer 
 
-
 $ ip a
-
 	1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1
 	    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
 	    inet 127.0.0.1/8 scope host lo
@@ -426,7 +429,7 @@ Avec l’usage de GIT et de MarkDown(langage de balisage), nous partagions la m�
 L’expérience a été enrichissante autant sur le plan humain que technique. Ce projet nous a permis de mettre en pratique et développer différents aspects vus en cours. Malgré certaines erreurs que nous avons pu commettre, nous avons su apprendre de celles-ci et
 ainsi mieux les appréhender.
 
-Ce projet nous a conforté dans notre choix de carrière. Il nous a permis de développer des qualités telles que la réflexion et d’autonomie afin de nous intégrer au mieux dans le monde du travail.
+Ce projet nous a confortés dans notre choix de carrière. Il nous a permis de développer des qualités telles que la réflexion et d’autonomie afin de nous intégrer au mieux dans le monde du travail.
 
 
 # Annexe
