@@ -19,6 +19,12 @@ date: 16 mars 2018
 
 ## Contrainte
 
+- Déployable sur Debian via un paquet
+- Pas de redirection de port
+- root nécessaire uniquement pour l'installation du paquet
+- Communication entre VM sous Virtualbox obligatoire
+- Le petit +
+     - Faire communiquer des VMs sous VMware, QEMU/KVM, LXC...
 
 ## Gestion du projet
 
