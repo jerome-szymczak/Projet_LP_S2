@@ -85,6 +85,7 @@ Un paquet Debian est constitué de deux parties notables :
 
 ## Solution retenu
 
+'image jerome'
 
 # Mise en oeuvre du projet
 
