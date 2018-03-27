@@ -7,34 +7,47 @@ Gestion parole
 ## Contrainte 
 *Djezon*
     
-## Gestion du projet *Djezon*
+## Gestion du projet 
+*Djezon*
     
 # Etat de l'art
 
-## Différents virtualisateurs *Simon*
+## Différents virtualisateurs 
+*Simon*
     
-## Comparatif *Simon*
+## Comparatif 
+*Simon*
     
-## Virtualbox *Simon*
+## Virtualbox 
+*Simon*
     
-## Les solutions existantes *Jerome*
+## Les solutions existantes 
+*Jerome*
     
-## Paquet Debian *Cyril*
+## Paquet Debian 
+*Cyril*
     
 # Mise en oeuvre du projet
 
-## Solution retenu *Clément*
+## Solution retenu 
+*Clément*
     
-## Création des fichiers de paquet *Cyril*
+## Création des fichiers de paquet 
+*Cyril*
     
-## Création du script *Cyril*
+## Création du script 
+*Cyril*
     
-## Description sur le fonctionnement du paquet *Clément*
+## Description sur le fonctionnement du paquet 
+*Clément*
     
 # Procédure de Test
 
-## Test d'installation de notre paquet *Clément*
+## Test d'installation de notre paquet 
+*Clément*
     
-## Test avec les virtualisateurs *Jerome*
+## Test avec les virtualisateurs 
+*Jerome*
     
-# Conclusion *Jerome*
+# Conclusion 
+*Jerome*
