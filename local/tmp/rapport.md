@@ -92,8 +92,9 @@ Isolateur
 
 **Virtualbox** est une application de virtualisation, c’est un hyperviseur “type 2”. 
 Virtualbox n’exige pas une architecture processeur complexe, il n’a pas besoin des jeux d’instructions tels que Intel VT-x ou AMD-V, contrairement à beaucoup d’autres solutions de virtualisation. 
-Virtualbox fonctionne de manière identique sur toutes les plateformes hôtes, il utilise les mêmes formats de fichiers et d’images. Ceci permet d’exécuter des machines virtuelles créées sur un hôte possédant un système d’exploitation différent. 
-Vous pouvez ainsi créer une machine virtuelle sur Windows et l’utiliser sous Linux. De cette façon, vous pouvez lancer des logiciels écrits pour un système d’exploitation dans un autre. Virtualbox offre une grande souplesse  d’usage, on peut geler, copier, sauvegarder et créer des instantanés. Il peut-être exécuté soit en mode graphique ou ligne de commandes « VboxManage ». 
+Virtualbox fonctionne de manière identique sur toutes les plateformes hôtes, il utilise les mêmes formats de fichiers et d’images. Ceci permet d’exécuter des machines virtuelles créées sur un hôte possédant un système d’exploitation différent.
+Vous pouvez ainsi créer une machine virtuelle sur Windows et l’utiliser sous Linux. De cette façon, vous pouvez lancer des logiciels écrits pour un système d’exploitation dans un autre. Virtualbox offre une grande souplesse  d’usage, on peut geler, copier, sauvegarder et créer des instantanés. 
+Il peut-être exécuté soit en mode graphique ou ligne de commandes « VboxManage ». 
 Il est possible d’installer les suppléments invités «pack d'extension » de Virtualbox afin d’accroître les performances et la communication avec la machine hôte (dossier partage).  Virtualbox offre un bon support matériel cela inclut les contrôleurs de disques (IDE, SCSI, SATA, le support USB 2.0 3.0). Attention cette extension est sous licence (GPL2, CDDL et VPUEL pour Virtualbox Personal use and Evaluation License). 
 Virtualbox est libre d'utilisation pour sa partie principale mais les extensions, quant à elles, sont disponibles uniquement pour un usage privé.  Il est possible d’organiser ces machines virtuelles en créant des groupes en sachant qu’une  machine virtuelle peut appartenir à plusieurs groupes. Cela permet entre autres de commander toutes les machines (démarrer, arrêter, sauvegarder, ...). Le format d’enregistrement est le VDI , il peut avoir une forme fixe ou dynamique. 
 
@@ -122,9 +123,10 @@ C'est une solution de virtualisation "bare metal"³.
 
 **LXC** (contraction de l'anglais de Linux Containers) est un système de virtualisation utilisant l'isolation au niveau système d'exploitation comme méthode de cloisonnement. 
 Son rôle est de créer un environnement aussi proche que possible d'une installation Linux standard, mais sans avoir besoin d'un noyau séparé. Les conteneurs LXC sont souvent considérés comme un compromis entre le mode "chroot²" et une machine virtuelle. LXC est donc un ensemble de processus qui nous permettent d'isoler des éléments du reste du système. 
-Il aura également accès à sa propre interface réseau, sa table de routage. Mais la différence notable, contrairement à Xen et KVM c'est l'absence d'un deuxième noyau. LXC va utiliser le même noyau que la machine hôte (Dom0). Les avantages de cette solution sont un gain de performances en l'absence d'hyperviseur et de noyau intermédiaire. L’autre avantage est la faible occupation de la ressource mémoire.  
+Il aura également accès à sa propre interface réseau, sa table de routage. Mais la différence notable, contrairement à Xen et KVM c'est l'absence d'un deuxième noyau. LXC va utiliser le même noyau que la machine hôte (Dom0). Les avantages de cette solution sont un gain de performances en l'absence d'hyperviseur et de noyau intermédiaire. L’autre avantage est la faible occupation de la ressource mémoire.
+
 Les conteneurs LXC ne fournissent pas une isolation complète, ce qui est un inconvénient. C’est dû au fait que le noyau est partagé entre le Dom0 et les conteneurs. L’autre inconvénient est une mise en place plus complexe qu’une installation sur machine virtuelle. 
-Après la mise en place de quelques prérequis nécessaires au bon fonctionnement, il s'agira de mettre en fonctionnement notre configuration réseau. 
+Après la mise en place de quelques prérequis nécessaires au bon fonctionnement, il s'agira de mettre en fonctionnement notre configuration réseau.
 Ainsi, chaque conteneur aura une interface réseau virtuelle et la connexion au vrai réseau passera par un pont. Il existe deux manières de se connecter à l’interface virtuelle, soit branchée sur l'interface physique de la machine hôte (directement sur le réseau), soit branchée sur une autre interface virtuelle de l'hôte (pourra router le trafic). Les deux solutions passent par le biais du paquet  bridge-utils dont dépend LXC. C’est la seconde solution que nous avons retenue.
 Dans un premier temps, il faut configurer le fichier lxc-net afin qu’il crée le switch. Puis, dans un second temps, on crée l’interface virtuelle tap0 et enfin un tunnel entre tap0 ; le switch est créé par lxc-net. L'hôte fera donc office de passerelle pour que nos machines virtuelles puissent communiquer avec l'extérieur.
 
@@ -167,7 +169,9 @@ Dans notre contexte, le programme de l'espace mémoire utilisateur est l'instanc
 
 ## Solution retenue
 
-`blabla`
+Pour choisir notre solution, nous avions deux solutions réalisable en respectant les contraintes fixés dans le cahier de charges, soit passer par le biais d'un script existant(lxc-net), soit créer notre propre script permettant la création d'un switch virtuel.
+Les deux solutions retenus passent par le biais du paquet bridge-utils. 
+C’est la première solution que nous avons retenu, car elle comprennait plusieurs avantages tel que ne pas dépendre de l'architecture en place sur la machine, un léger cout en consommation de mémoire et une utilisation assez simple. Pour permettre une connection par pont il nous a fallu créer une interface TAP.
 
 ## Création du switch virtuel
 
@@ -342,7 +346,22 @@ On pourrait les désinstaller avec un script 'posrrm' qui ferait un apt-get auto
 
 # Conclusion
 
-`blabla`
+Au terme de ce deuxième projet, nous avons été confrontés à une problématique plus compliquée.
+Il fallut appréhender la complexité des réseaux virtuels et lire une documentation technique pas toujours évidente de prime abord. 
+Nous avons été confrontés à des contraintes techniques lié à l’environnement universitaire (proxy, port réseau « tagged », liaison ssh sur machine distante). 
+En effet la principale problématique a été les pertes de connexion réseau sans possibilités de redémarrer de manière autonome.
+
+Néanmoins nous avons pu démontrer notre capacité d’adaptation et faire face aux difficultés rencontrées. 
+Nous avons su mettre en adéquation nos différentes expériences et de nouvelles connaissances. 
+Notamment avec l’usage de git et de markdown (langage de balisage) afin de communiquer entre nous et M.Beaufils.  
+
+L’expérience a été enrichissante sur le plan humain et technique. Ce projet nous a
+permis de mettre en pratique et développer différents aspects vus en cours. Malgré
+certaines erreurs que nous avons pu commettre, nous avons su apprendre de celles-ci et
+ainsi mieux les appréhender.
+
+Ce projet nous a conforté dans notre choix de carrière. Il nous a permis de développer des qualités telles que la réflexion et d’autonomie afin de nous intégrer au mieux dans le monde du travail.
+
 
 # Annexe
 
