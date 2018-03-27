@@ -265,7 +265,7 @@ Voici les options qui peuvent être utilisées sur notre script.
 
 ## Difficultés rencontrées
 
-## Difficultés rencontréesL'un des premiers obstacles fut la maîtrise d'un dépôt GIT, mais à force d'utilisation et de conflits, nous avons réussi à faire ce qu'il fallait et ainsi apprendre à l'utiliser correctement. Nous avons aussi fait une autre découverte, celle des fichiers Markdown, ça n'a pas été simple au début pour chacun d'entre nous. Ce que nous avons remarqué sur celui-ci c'est le manque visuel, nous avons toujours été habitué à faire de la mise en page. 
+L'un des premiers obstacles fut la maîtrise d'un dépôt GIT, mais à force d'utilisation et de conflits, nous avons réussi à faire ce qu'il fallait et ainsi apprendre à l'utiliser correctement. Nous avons aussi fait une autre découverte, celle des fichiers Markdown, ça n'a pas été simple au début pour chacun d'entre nous. Ce que nous avons remarqué sur celui-ci c'est le manque visuel, nous avons toujours été habitué à faire de la mise en page. 
 
 Lors de la mise en place de notre projet, nous avions des difficultés à débattre d'une solution viable et simple d'utilisation. Les différentes solutions existantes étaient complexes et plus contraignantes. 
 
