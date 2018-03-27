@@ -1,9 +1,11 @@
 Gestion parole 
 
 # Cadre du projet
-## Intitulé du sujet *Djezon*
+## Intitulé du sujet 
+*Djezon*
     
-## Contrainte *Djezon*
+## Contrainte 
+*Djezon*
     
 ## Gestion du projet *Djezon*
     
