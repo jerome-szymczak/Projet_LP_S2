@@ -2,6 +2,8 @@
 
 cp ../usr/share/doc/lxc-net /etc/default/lxc-net && echo "Le fichier lxc-net a bien été créer"
 
+echo 1> /proc/sys/net/ipv4/ip_forward
+
 systemctl restart lxc-net && ip tuntap add mode tap iut0 && ip link set dev iut0 master vswitch0 && ip link set iut0 up && echo "l'interface iut0 a bien été créer"
 
 echo "Installation réussie !"
