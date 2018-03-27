@@ -93,21 +93,6 @@ Un paquet Debian est constitué de deux parties notables :
 
 # Mise en oeuvre du projet
 
-
-## Création des fichiers de paquet
-
-- DEBIAN/
-    - control
-    - postinst
-    - prerm
-- usr/
-    - /bin
-        - tarr-steps.sh
-    - share/doc/
-        - lxc-net
-        - tuto-kvm.md
-        - tuto-virtualbox.md
-
 ## Création du script
 
 Permet de configurer de l'interface créer par lxc-net.
@@ -123,6 +108,20 @@ OPTIONS
     -st, --start         start sur le script lxc-net
     -sp, --stop          stop sur le script lxc-net
     -r,  --reload        reload sur le script lxc-net
+
+## Création des fichiers de paquet
+
+- DEBIAN/
+    - control
+    - postinst
+    - prerm
+- usr/
+    - /bin
+        - tarr-steps.sh
+    - share/doc/
+        - lxc-net
+        - tuto-kvm.md
+        - tuto-virtualbox.md
 
 ## Fonctionnement du paquet
 
