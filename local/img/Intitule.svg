@@ -1,0 +1,1001 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Généré par Microsoft Visio, SVG Export Dessin1.svg Page-1 -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"
+		xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="11.6929in" height="8.26772in"
+		viewBox="0 0 841.89 595.276" xml:space="preserve" color-interpolation-filters="sRGB" class="st14">
+	<v:documentProperties v:langID="1036" v:metric="true" v:viewMarkup="false">
+		<v:userDefs>
+			<v:ud v:nameU="msvNoAutoConnect" v:prompt="" v:val="VT0(0):26"/>
+		</v:userDefs>
+	</v:documentProperties>
+
+	<style type="text/css">
+	<![CDATA[
+		.st1 {stroke:#73ae42;stroke-linecap:round;stroke-linejoin:round;stroke-width:2.25}
+		.st2 {fill:#5b9bd5;stroke:#ffffff;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0;stroke-width:2.25}
+		.st3 {fill:#5b9bd5;stroke:#ffffff;stroke-linecap:round;stroke-linejoin:round;stroke-width:2.25}
+		.st4 {fill:#5b9bd5;stroke:#ffffff;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.5}
+		.st5 {fill:#a5a5a5;stroke:#ffffff;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.5}
+		.st6 {fill:#ffffff}
+		.st7 {fill:none;stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.5}
+		.st8 {fill:#002060;font-family:Calibri;font-size:1.5em}
+		.st9 {stroke:#6ca43d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2.25}
+		.st10 {stroke:#6ca43d;stroke-linecap:round;stroke-linejoin:round;stroke-width:3}
+		.st11 {stroke:#a5a5a5;stroke-dasharray:3.5,2.5;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.5}
+		.st12 {fill:#aad288;stroke:#ffffff;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.5}
+		.st13 {font-size:1em}
+		.st14 {fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
+	]]>
+	</style>
+
+	<g v:mID="0" v:index="1" v:groupContext="foregroundPage">
+		<v:userDefs>
+			<v:ud v:nameU="msvThemeOrder" v:val="VT0(0):26"/>
+		</v:userDefs>
+		<title>Page 1</title>
+		<v:pageProperties v:drawingScale="0.0393701" v:pageScale="0.0393701" v:drawingUnits="24" v:shadowOffsetX="8.50394"
+				v:shadowOffsetY="-8.50394"/>
+		<v:layer v:name="Lien" v:index="0"/>
+		<g id="group93-1" transform="translate(18,-44.1797)" v:mID="93" v:groupContext="group">
+			<v:custProps>
+				<v:cp v:nameU="Manufacturer" v:lbl="Fabricant" v:type="0" v:format="" v:sortKey="Equipment" v:invis="false"
+						v:ask="false" v:langID="1036"/>
+				<v:cp v:nameU="ProductNumber" v:lbl="Numéro de produit" v:type="0" v:format="" v:sortKey="Equipment"
+						v:invis="false" v:ask="false" v:langID="1036"/>
+				<v:cp v:nameU="PartNumber" v:lbl="Numéro de référence" v:type="0" v:format="" v:sortKey="Equipment" v:invis="false"
+						v:ask="false" v:langID="1036"/>
+				<v:cp v:nameU="ProductDescription" v:lbl="Description du produit" v:type="0" v:format="" v:sortKey="Equipment"
+						v:invis="false" v:ask="false" v:langID="1036"/>
+				<v:cp v:nameU="AssetNumber" v:lbl="Numéro d’inventaire" v:type="0" v:format="" v:sortKey="Asset" v:invis="false"
+						v:ask="false" v:langID="1036"/>
+				<v:cp v:nameU="SerialNumber" v:lbl="Numéro de série" v:type="0" v:format="" v:sortKey="Asset" v:invis="false"
+						v:ask="false" v:langID="1036"/>
+				<v:cp v:nameU="Location" v:lbl="Emplacement" v:type="0" v:format="" v:sortKey="Asset" v:invis="false" v:ask="false"
+						v:langID="1036"/>
+				<v:cp v:nameU="Building" v:lbl="Bâtiment" v:type="0" v:format="" v:sortKey="Asset" v:invis="false" v:ask="false"
+						v:langID="1036"/>
+				<v:cp v:nameU="Room" v:lbl="Salle" v:type="0" v:format="" v:sortKey="Asset" v:invis="false" v:ask="false"
+						v:langID="1036"/>
+				<v:cp v:nameU="Department" v:lbl="Service" v:type="0" v:format="" v:sortKey="" v:invis="false" v:ask="false"
+						v:langID="1036"/>
+				<v:cp v:nameU="ShapeClass" v:lbl="ShapeClass" v:type="0" v:format="" v:sortKey="" v:invis="true" v:ask="false"
+						v:langID="1036" v:val="VT4(Connectivité)"/>
+				<v:cp v:nameU="ShapeType" v:lbl="ShapeType" v:type="0" v:format="" v:sortKey="" v:invis="true" v:ask="false"
+						v:langID="1036" v:val="VT4(CâbleEthernet)"/>
+				<v:cp v:nameU="NetworkName" v:lbl="Nom de réseau" v:type="0" v:format="" v:sortKey="Network" v:invis="false"
+						v:ask="false" v:langID="1036"/>
+				<v:cp v:nameU="IPAddress" v:lbl="Adresse IP" v:type="0" v:format="" v:sortKey="Network" v:invis="false"
+						v:ask="false" v:langID="1036"/>
+				<v:cp v:nameU="SubnetMask" v:lbl="Masque de sous-réseau" v:type="0" v:format="" v:sortKey="Network" v:invis="false"
+						v:ask="false" v:langID="1036"/>
+				<v:cp v:nameU="AdminInterface" v:lbl="Interface d’administration" v:type="0" v:format="" v:sortKey="Network"
+						v:invis="false" v:ask="false" v:langID="1036"/>
+				<v:cp v:nameU="NumberofPorts" v:lbl="Nombre de ports" v:type="0" v:format="" v:sortKey="Network" v:invis="false"
+						v:ask="false" v:langID="1036"/>
+				<v:cp v:nameU="MACAddress" v:lbl="Adresse MAC" v:type="0" v:format="" v:sortKey="Network" v:invis="false"
+						v:ask="false" v:langID="1036"/>
+				<v:cp v:nameU="CommunityString" v:lbl="Chaîne de communauté" v:type="0" v:format="" v:sortKey="Network"
+						v:invis="false" v:ask="false" v:langID="1036"/>
+				<v:cp v:nameU="NetworkDescription" v:lbl="Description de réseau" v:type="0" v:format="" v:sortKey="Network"
+						v:invis="false" v:ask="false" v:langID="1036"/>
+			</v:custProps>
+			<v:userDefs>
+				<v:ud v:nameU="Scale" v:val="VT0(1):26"/>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+				<v:ud v:nameU="AntiScale" v:val="VT0(1):26"/>
+				<v:ud v:nameU="ShapeClass" v:val="VT0(5):26"/>
+				<v:ud v:nameU="ShapeType" v:val="VT0(12):26"/>
+				<v:ud v:nameU="SolSH" v:val="VT15({BF0433D9-CD73-4EB5-8390-8653BE590246}):41"/>
+				<v:ud v:nameU="visLegendShape" v:val="VT0(2):26"/>
+			</v:userDefs>
+			<title>Ethernet.93</title>
+			<g id="group94-2" v:mID="94" v:groupContext="group">
+				<title>Feuille.94</title>
+				<g id="shape94-3" v:mID="94" v:groupContext="groupContent">
+					<path d="M152.08 581.1 L152.08 582.84 L402.94 582.84" class="st1"/>
+					<path d="M201.47 582.84 L402.94 582.84" class="st1"/>
+					<path d="M218.69 584.93 L218.69 582.84 L402.94 582.84" class="st1"/>
+					<path d="M402.94 421.56 L402.94 582.84" class="st1"/>
+					<path d="M208.77 581.1 L208.77 582.84 L402.94 582.84" class="st1"/>
+					<path d="M201.47 582.84 L402.94 582.84" class="st1"/>
+					<path d="M604.42 582.84 L402.94 582.84" class="st1"/>
+					<path d="M201.47 582.84 L402.94 582.84" class="st1"/>
+					<path d="M604.42 582.84 L402.94 582.84" class="st1"/>
+					<path d="M201.47 582.84 L402.94 582.84" class="st1"/>
+					<path d="M604.42 582.84 L402.94 582.84" class="st1"/>
+					<path d="M201.47 582.84 L402.94 582.84" class="st1"/>
+					<path d="M604.42 582.84 L402.94 582.84" class="st1"/>
+					<path d="M201.47 582.84 L402.94 582.84" class="st1"/>
+					<path d="M604.42 582.84 L402.94 582.84" class="st1"/>
+					<path d="M201.47 582.84 L402.94 582.84" class="st1"/>
+					<path d="M604.42 582.84 L402.94 582.84" class="st1"/>
+					<path d="M201.47 582.84 L402.94 582.84" class="st1"/>
+					<path d="M604.42 582.84 L402.94 582.84" class="st1"/>
+					<path d="M201.47 582.84 L402.94 582.84" class="st1"/>
+					<path d="M604.42 582.84 L402.94 582.84" class="st1"/>
+					<path d="M201.47 582.84 L402.94 582.84" class="st1"/>
+					<path d="M604.42 582.84 L402.94 582.84" class="st1"/>
+					<path d="M201.47 582.84 L402.94 582.84" class="st1"/>
+					<path d="M604.42 582.84 L402.94 582.84" class="st1"/>
+					<path d="M201.47 582.84 L402.94 582.84" class="st1"/>
+					<path d="M604.42 582.84 L402.94 582.84" class="st1"/>
+					<path d="M201.47 582.84 L402.94 582.84" class="st1"/>
+					<path d="M604.42 582.84 L402.94 582.84" class="st1"/>
+					<path d="M201.47 582.84 L402.94 582.84" class="st1"/>
+					<path d="M604.42 582.84 L402.94 582.84" class="st1"/>
+					<path d="M201.47 582.84 L402.94 582.84" class="st1"/>
+					<path d="M604.42 582.84 L402.94 582.84" class="st1"/>
+					<path d="M201.47 582.84 L402.94 582.84" class="st1"/>
+					<path d="M604.42 582.84 L402.94 582.84" class="st1"/>
+					<path d="M201.47 582.84 L402.94 582.84" class="st1"/>
+					<path d="M604.42 582.84 L402.94 582.84" class="st1"/>
+					<path d="M201.47 582.84 L402.94 582.84" class="st1"/>
+					<path d="M604.42 582.84 L402.94 582.84" class="st1"/>
+					<path d="M201.47 582.84 L402.94 582.84" class="st1"/>
+					<path d="M604.42 582.84 L402.94 582.84" class="st1"/>
+					<path d="M201.47 582.84 L402.94 582.84" class="st1"/>
+					<path d="M604.42 582.84 L402.94 582.84" class="st1"/>
+					<path d="M201.47 582.84 L402.94 582.84" class="st1"/>
+					<path d="M604.42 582.84 L402.94 582.84" class="st1"/>
+					<path d="M201.47 582.84 L402.94 582.84" class="st1"/>
+					<path d="M604.42 582.84 L402.94 582.84" class="st1"/>
+					<path d="M201.47 582.84 L402.94 582.84" class="st1"/>
+					<path d="M604.42 582.84 L402.94 582.84" class="st1"/>
+					<path d="M201.47 582.84 L402.94 582.84" class="st1"/>
+					<path d="M604.42 582.84 L402.94 582.84" class="st1"/>
+					<path d="M201.47 582.84 L402.94 582.84" class="st1"/>
+					<path d="M604.42 582.84 L402.94 582.84" class="st1"/>
+					<path d="M201.47 582.84 L402.94 582.84" class="st1"/>
+					<path d="M604.42 582.84 L402.94 582.84" class="st1"/>
+					<path d="M201.47 582.84 L402.94 582.84" class="st1"/>
+					<path d="M604.42 582.84 L402.94 582.84" class="st1"/>
+					<path d="M201.47 582.84 L402.94 582.84" class="st1"/>
+					<path d="M604.42 582.84 L402.94 582.84" class="st1"/>
+					<path d="M201.47 582.84 L402.94 582.84" class="st1"/>
+					<path d="M604.42 582.84 L402.94 582.84" class="st1"/>
+					<path d="M201.47 582.84 L402.94 582.84" class="st1"/>
+					<path d="M604.42 582.84 L402.94 582.84" class="st1"/>
+					<path d="M201.47 582.84 L402.94 582.84" class="st1"/>
+				</g>
+			</g>
+			<g id="shape95-69" v:mID="95" v:groupContext="shape">
+				<title>Feuille.95</title>
+				<v:userDefs>
+					<v:ud v:nameU="EllipseSize" v:prompt="" v:val="VT0(0.098425196850394):24"/>
+				</v:userDefs>
+				<path d="M155.62 581.1 A3.54331 3.54331 -180 1 0 148.54 581.1 A3.54331 3.54331 -180 1 0 155.62 581.1 ZM205.02 582.84
+							 A3.54331 3.54331 -180 1 0 197.93 582.84 A3.54331 3.54331 -180 1 0 205.02 582.84 ZM222.24 584.93 A3.54331
+							 3.54331 -180 1 0 215.15 584.93 A3.54331 3.54331 -180 1 0 222.24 584.93 ZM406.49 421.56 A3.54331 3.54331
+							 -180 1 0 399.4 421.56 A3.54331 3.54331 -180 1 0 406.49 421.56 ZM212.31 581.1 A3.54331 3.54331 -180 1
+							 0 205.23 581.1 A3.54331 3.54331 -180 1 0 212.31 581.1 ZM205.02 582.84 A3.54331 3.54331 -180 1 0 197.93
+							 582.84 A3.54331 3.54331 -180 1 0 205.02 582.84 ZM607.96 582.84 A3.54331 3.54331 -180 1 0 600.87 582.84
+							 A3.54331 3.54331 -180 1 0 607.96 582.84 ZM205.02 582.84 A3.54331 3.54331 -180 1 0 197.93 582.84 A3.54331
+							 3.54331 -180 1 0 205.02 582.84 ZM607.96 582.84 A3.54331 3.54331 -180 1 0 600.87 582.84 A3.54331 3.54331
+							 -180 1 0 607.96 582.84 ZM205.02 582.84 A3.54331 3.54331 -180 1 0 197.93 582.84 A3.54331 3.54331 -180
+							 1 0 205.02 582.84 ZM607.96 582.84 A3.54331 3.54331 -180 1 0 600.87 582.84 A3.54331 3.54331 -180 1 0
+							 607.96 582.84 ZM205.02 582.84 A3.54331 3.54331 -180 1 0 197.93 582.84 A3.54331 3.54331 -180 1 0 205.02
+							 582.84 ZM607.96 582.84 A3.54331 3.54331 -180 1 0 600.87 582.84 A3.54331 3.54331 -180 1 0 607.96 582.84
+							 ZM205.02 582.84 A3.54331 3.54331 -180 1 0 197.93 582.84 A3.54331 3.54331 -180 1 0 205.02 582.84 ZM607.96
+							 582.84 A3.54331 3.54331 -180 1 0 600.87 582.84 A3.54331 3.54331 -180 1 0 607.96 582.84 ZM205.02 582.84
+							 A3.54331 3.54331 -180 1 0 197.93 582.84 A3.54331 3.54331 -180 1 0 205.02 582.84 ZM607.96 582.84 A3.54331
+							 3.54331 -180 1 0 600.87 582.84 A3.54331 3.54331 -180 1 0 607.96 582.84 ZM205.02 582.84 A3.54331 3.54331
+							 -180 1 0 197.93 582.84 A3.54331 3.54331 -180 1 0 205.02 582.84 ZM607.96 582.84 A3.54331 3.54331 -180
+							 1 0 600.87 582.84 A3.54331 3.54331 -180 1 0 607.96 582.84 ZM205.02 582.84 A3.54331 3.54331 -180 1 0
+							 197.93 582.84 A3.54331 3.54331 -180 1 0 205.02 582.84 ZM607.96 582.84 A3.54331 3.54331 -180 1 0 600.87
+							 582.84 A3.54331 3.54331 -180 1 0 607.96 582.84 ZM205.02 582.84 A3.54331 3.54331 -180 1 0 197.93 582.84
+							 A3.54331 3.54331 -180 1 0 205.02 582.84 ZM607.96 582.84 A3.54331 3.54331 -180 1 0 600.87 582.84 A3.54331
+							 3.54331 -180 1 0 607.96 582.84 ZM205.02 582.84 A3.54331 3.54331 -180 1 0 197.93 582.84 A3.54331 3.54331
+							 -180 1 0 205.02 582.84 ZM607.96 582.84 A3.54331 3.54331 -180 1 0 600.87 582.84 A3.54331 3.54331 -180
+							 1 0 607.96 582.84 ZM205.02 582.84 A3.54331 3.54331 -180 1 0 197.93 582.84 A3.54331 3.54331 -180 1 0
+							 205.02 582.84 ZM607.96 582.84 A3.54331 3.54331 -180 1 0 600.87 582.84 A3.54331 3.54331 -180 1 0 607.96
+							 582.84 ZM205.02 582.84 A3.54331 3.54331 -180 1 0 197.93 582.84 A3.54331 3.54331 -180 1 0 205.02 582.84
+							 ZM607.96 582.84 A3.54331 3.54331 -180 1 0 600.87 582.84 A3.54331 3.54331 -180 1 0 607.96 582.84 ZM205.02
+							 582.84 A3.54331 3.54331 -180 1 0 197.93 582.84 A3.54331 3.54331 -180 1 0 205.02 582.84 ZM607.96 582.84
+							 A3.54331 3.54331 -180 1 0 600.87 582.84 A3.54331 3.54331 -180 1 0 607.96 582.84 ZM205.02 582.84 A3.54331
+							 3.54331 -180 1 0 197.93 582.84 A3.54331 3.54331 -180 1 0 205.02 582.84 ZM607.96 582.84 A3.54331 3.54331
+							 -180 1 0 600.87 582.84 A3.54331 3.54331 -180 1 0 607.96 582.84 ZM205.02 582.84 A3.54331 3.54331 -180
+							 1 0 197.93 582.84 A3.54331 3.54331 -180 1 0 205.02 582.84 ZM607.96 582.84 A3.54331 3.54331 -180 1 0
+							 600.87 582.84 A3.54331 3.54331 -180 1 0 607.96 582.84 ZM205.02 582.84 A3.54331 3.54331 -180 1 0 197.93
+							 582.84 A3.54331 3.54331 -180 1 0 205.02 582.84 ZM607.96 582.84 A3.54331 3.54331 -180 1 0 600.87 582.84
+							 A3.54331 3.54331 -180 1 0 607.96 582.84 ZM205.02 582.84 A3.54331 3.54331 -180 1 0 197.93 582.84 A3.54331
+							 3.54331 -180 1 0 205.02 582.84 ZM607.96 582.84 A3.54331 3.54331 -180 1 0 600.87 582.84 A3.54331 3.54331
+							 -180 1 0 607.96 582.84 ZM205.02 582.84 A3.54331 3.54331 -180 1 0 197.93 582.84 A3.54331 3.54331 -180
+							 1 0 205.02 582.84 ZM607.96 582.84 A3.54331 3.54331 -180 1 0 600.87 582.84 A3.54331 3.54331 -180 1 0
+							 607.96 582.84 ZM205.02 582.84 A3.54331 3.54331 -180 1 0 197.93 582.84 A3.54331 3.54331 -180 1 0 205.02
+							 582.84 ZM607.96 582.84 A3.54331 3.54331 -180 1 0 600.87 582.84 A3.54331 3.54331 -180 1 0 607.96 582.84
+							 ZM205.02 582.84 A3.54331 3.54331 -180 1 0 197.93 582.84 A3.54331 3.54331 -180 1 0 205.02 582.84 ZM607.96
+							 582.84 A3.54331 3.54331 -180 1 0 600.87 582.84 A3.54331 3.54331 -180 1 0 607.96 582.84 ZM205.02 582.84
+							 A3.54331 3.54331 -180 1 0 197.93 582.84 A3.54331 3.54331 -180 1 0 205.02 582.84 ZM607.96 582.84 A3.54331
+							 3.54331 -180 1 0 600.87 582.84 A3.54331 3.54331 -180 1 0 607.96 582.84 ZM205.02 582.84 A3.54331 3.54331
+							 -180 1 0 197.93 582.84 A3.54331 3.54331 -180 1 0 205.02 582.84 ZM607.96 582.84 A3.54331 3.54331 -180
+							 1 0 600.87 582.84 A3.54331 3.54331 -180 1 0 607.96 582.84 ZM205.02 582.84 A3.54331 3.54331 -180 1 0
+							 197.93 582.84 A3.54331 3.54331 -180 1 0 205.02 582.84 ZM607.96 582.84 A3.54331 3.54331 -180 1 0 600.87
+							 582.84 A3.54331 3.54331 -180 1 0 607.96 582.84 ZM205.02 582.84 A3.54331 3.54331 -180 1 0 197.93 582.84
+							 A3.54331 3.54331 -180 1 0 205.02 582.84 ZM607.96 582.84 A3.54331 3.54331 -180 1 0 600.87 582.84 A3.54331
+							 3.54331 -180 1 0 607.96 582.84 ZM205.02 582.84 A3.54331 3.54331 -180 1 0 197.93 582.84 A3.54331 3.54331
+							 -180 1 0 205.02 582.84 ZM607.96 582.84 A3.54331 3.54331 -180 1 0 600.87 582.84 A3.54331 3.54331 -180
+							 1 0 607.96 582.84 ZM205.02 582.84 A3.54331 3.54331 -180 1 0 197.93 582.84 A3.54331 3.54331 -180 1 0
+							 205.02 582.84 ZM607.96 582.84 A3.54331 3.54331 -180 1 0 600.87 582.84 A3.54331 3.54331 -180 1 0 607.96
+							 582.84 ZM205.02 582.84 A3.54331 3.54331 -180 1 0 197.93 582.84 A3.54331 3.54331 -180 1 0 205.02 582.84
+							 ZM607.96 582.84 A3.54331 3.54331 -180 1 0 600.87 582.84 A3.54331 3.54331 -180 1 0 607.96 582.84 ZM205.02
+							 582.84 A3.54331 3.54331 -180 1 0 197.93 582.84 A3.54331 3.54331 -180 1 0 205.02 582.84 ZM607.96 582.84
+							 A3.54331 3.54331 -180 1 0 600.87 582.84 A3.54331 3.54331 -180 1 0 607.96 582.84 ZM205.02 582.84 A3.54331
+							 3.54331 -180 1 0 197.93 582.84 A3.54331 3.54331 -180 1 0 205.02 582.84 ZM607.96 582.84 A3.54331 3.54331
+							 -180 1 0 600.87 582.84 A3.54331 3.54331 -180 1 0 607.96 582.84 ZM205.02 582.84 A3.54331 3.54331 -180
+							 1 0 197.93 582.84 A3.54331 3.54331 -180 1 0 205.02 582.84 Z" class="st2"/>
+			</g>
+			<g id="shape96-71" v:mID="96" v:groupContext="shape">
+				<title>Feuille.96</title>
+				<rect x="0" y="570.409" width="805.89" height="24.8661" class="st3"/>
+			</g>
+		</g>
+		<g id="group1-73" transform="translate(281.783,-315.291)" v:mID="1" v:groupContext="group">
+			<v:custProps>
+				<v:cp v:nameU="Manufacturer" v:lbl="Fabricant" v:type="0" v:format="" v:sortKey="Equipment" v:invis="false"
+						v:ask="false" v:langID="1036"/>
+				<v:cp v:nameU="ProductNumber" v:lbl="Numéro de produit" v:type="0" v:format="" v:sortKey="Equipment"
+						v:invis="false" v:ask="false" v:langID="1036"/>
+				<v:cp v:nameU="PartNumber" v:lbl="Numéro de référence" v:type="0" v:format="" v:sortKey="Equipment" v:invis="false"
+						v:ask="false" v:langID="1036"/>
+				<v:cp v:nameU="ProductDescription" v:lbl="Description du produit" v:type="0" v:format="" v:sortKey="Equipment"
+						v:invis="false" v:ask="false" v:langID="1036"/>
+				<v:cp v:nameU="AssetNumber" v:lbl="Numéro d’inventaire" v:type="0" v:format="" v:sortKey="Asset" v:invis="false"
+						v:ask="false" v:langID="1036"/>
+				<v:cp v:nameU="SerialNumber" v:lbl="Numéro de série" v:type="0" v:format="" v:sortKey="Asset" v:invis="false"
+						v:ask="false" v:langID="1036"/>
+				<v:cp v:nameU="Location" v:lbl="Emplacement" v:type="0" v:format="" v:sortKey="Asset" v:invis="false" v:ask="false"
+						v:langID="1036"/>
+				<v:cp v:nameU="Building" v:lbl="Bâtiment" v:type="0" v:format="" v:sortKey="Asset" v:invis="false" v:ask="false"
+						v:langID="1036"/>
+				<v:cp v:nameU="Room" v:lbl="Salle" v:type="0" v:format="" v:sortKey="Asset" v:invis="false" v:ask="false"
+						v:langID="1036"/>
+				<v:cp v:nameU="Department" v:lbl="Service" v:type="0" v:format="" v:sortKey="" v:invis="false" v:ask="false"
+						v:langID="1036"/>
+				<v:cp v:nameU="ShapeClass" v:lbl="ShapeClass" v:type="0" v:format="" v:sortKey="" v:invis="true" v:ask="false"
+						v:langID="1036" v:val="VT4(Connectivité)"/>
+				<v:cp v:nameU="ShapeType" v:lbl="ShapeType" v:type="0" v:format="" v:sortKey="" v:invis="true" v:ask="false"
+						v:langID="1036" v:val="VT4(CâbleEthernet)"/>
+				<v:cp v:nameU="NetworkName" v:lbl="Nom de réseau" v:type="0" v:format="" v:sortKey="Network" v:invis="false"
+						v:ask="false" v:langID="1036"/>
+				<v:cp v:nameU="IPAddress" v:lbl="Adresse IP" v:type="0" v:format="" v:sortKey="Network" v:invis="false"
+						v:ask="false" v:langID="1036"/>
+				<v:cp v:nameU="SubnetMask" v:lbl="Masque de sous-réseau" v:type="0" v:format="" v:sortKey="Network" v:invis="false"
+						v:ask="false" v:langID="1036"/>
+				<v:cp v:nameU="AdminInterface" v:lbl="Interface d’administration" v:type="0" v:format="" v:sortKey="Network"
+						v:invis="false" v:ask="false" v:langID="1036"/>
+				<v:cp v:nameU="NumberofPorts" v:lbl="Nombre de ports" v:type="0" v:format="" v:sortKey="Network" v:invis="false"
+						v:ask="false" v:langID="1036"/>
+				<v:cp v:nameU="MACAddress" v:lbl="Adresse MAC" v:type="0" v:format="" v:sortKey="Network" v:invis="false"
+						v:ask="false" v:langID="1036"/>
+				<v:cp v:nameU="CommunityString" v:lbl="Chaîne de communauté" v:type="0" v:format="" v:sortKey="Network"
+						v:invis="false" v:ask="false" v:langID="1036"/>
+				<v:cp v:nameU="NetworkDescription" v:lbl="Description de réseau" v:type="0" v:format="" v:sortKey="Network"
+						v:invis="false" v:ask="false" v:langID="1036"/>
+			</v:custProps>
+			<v:userDefs>
+				<v:ud v:nameU="Scale" v:val="VT0(1):26"/>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+				<v:ud v:nameU="AntiScale" v:val="VT0(1):26"/>
+				<v:ud v:nameU="ShapeClass" v:val="VT0(5):26"/>
+				<v:ud v:nameU="ShapeType" v:val="VT0(12):26"/>
+				<v:ud v:nameU="SolSH" v:val="VT15({BF0433D9-CD73-4EB5-8390-8653BE590246}):41"/>
+				<v:ud v:nameU="visLegendShape" v:val="VT0(2):26"/>
+			</v:userDefs>
+			<title>Ethernet</title>
+			<g id="group2-74" v:mID="2" v:groupContext="group">
+				<title>Feuille.2</title>
+				<g id="shape2-75" v:mID="2" v:groupContext="groupContent">
+					<path d="M49.87 578.91 L49.87 582.84 L139.16 582.84" class="st1"/>
+					<path d="M69.58 582.84 L139.16 582.84" class="st1"/>
+					<path d="M139.16 692.67 L139.16 582.84" class="st1"/>
+					<path d="M139.16 510.35 L139.16 582.84" class="st1"/>
+					<path d="M235.54 584.58 L235.54 582.84 L139.16 582.84" class="st1"/>
+					<path d="M69.58 582.84 L139.16 582.84" class="st1"/>
+					<path d="M208.74 582.84 L139.16 582.84" class="st1"/>
+					<path d="M69.58 582.84 L139.16 582.84" class="st1"/>
+					<path d="M208.74 582.84 L139.16 582.84" class="st1"/>
+					<path d="M69.58 582.84 L139.16 582.84" class="st1"/>
+					<path d="M208.74 582.84 L139.16 582.84" class="st1"/>
+					<path d="M69.58 582.84 L139.16 582.84" class="st1"/>
+					<path d="M208.74 582.84 L139.16 582.84" class="st1"/>
+					<path d="M69.58 582.84 L139.16 582.84" class="st1"/>
+					<path d="M208.74 582.84 L139.16 582.84" class="st1"/>
+					<path d="M69.58 582.84 L139.16 582.84" class="st1"/>
+					<path d="M208.74 582.84 L139.16 582.84" class="st1"/>
+					<path d="M69.58 582.84 L139.16 582.84" class="st1"/>
+					<path d="M208.74 582.84 L139.16 582.84" class="st1"/>
+					<path d="M69.58 582.84 L139.16 582.84" class="st1"/>
+					<path d="M208.74 582.84 L139.16 582.84" class="st1"/>
+					<path d="M69.58 582.84 L139.16 582.84" class="st1"/>
+					<path d="M208.74 582.84 L139.16 582.84" class="st1"/>
+					<path d="M69.58 582.84 L139.16 582.84" class="st1"/>
+					<path d="M208.74 582.84 L139.16 582.84" class="st1"/>
+					<path d="M69.58 582.84 L139.16 582.84" class="st1"/>
+					<path d="M208.74 582.84 L139.16 582.84" class="st1"/>
+					<path d="M69.58 582.84 L139.16 582.84" class="st1"/>
+					<path d="M208.74 582.84 L139.16 582.84" class="st1"/>
+					<path d="M69.58 582.84 L139.16 582.84" class="st1"/>
+					<path d="M208.74 582.84 L139.16 582.84" class="st1"/>
+					<path d="M69.58 582.84 L139.16 582.84" class="st1"/>
+					<path d="M208.74 582.84 L139.16 582.84" class="st1"/>
+					<path d="M69.58 582.84 L139.16 582.84" class="st1"/>
+					<path d="M208.74 582.84 L139.16 582.84" class="st1"/>
+					<path d="M69.58 582.84 L139.16 582.84" class="st1"/>
+					<path d="M208.74 582.84 L139.16 582.84" class="st1"/>
+					<path d="M69.58 582.84 L139.16 582.84" class="st1"/>
+					<path d="M208.74 582.84 L139.16 582.84" class="st1"/>
+					<path d="M69.58 582.84 L139.16 582.84" class="st1"/>
+					<path d="M208.74 582.84 L139.16 582.84" class="st1"/>
+					<path d="M69.58 582.84 L139.16 582.84" class="st1"/>
+					<path d="M208.74 582.84 L139.16 582.84" class="st1"/>
+					<path d="M69.58 582.84 L139.16 582.84" class="st1"/>
+					<path d="M208.74 582.84 L139.16 582.84" class="st1"/>
+					<path d="M69.58 582.84 L139.16 582.84" class="st1"/>
+					<path d="M208.74 582.84 L139.16 582.84" class="st1"/>
+					<path d="M69.58 582.84 L139.16 582.84" class="st1"/>
+					<path d="M208.74 582.84 L139.16 582.84" class="st1"/>
+					<path d="M69.58 582.84 L139.16 582.84" class="st1"/>
+					<path d="M208.74 582.84 L139.16 582.84" class="st1"/>
+					<path d="M69.58 582.84 L139.16 582.84" class="st1"/>
+					<path d="M208.74 582.84 L139.16 582.84" class="st1"/>
+					<path d="M69.58 582.84 L139.16 582.84" class="st1"/>
+					<path d="M208.74 582.84 L139.16 582.84" class="st1"/>
+					<path d="M69.58 582.84 L139.16 582.84" class="st1"/>
+					<path d="M208.74 582.84 L139.16 582.84" class="st1"/>
+					<path d="M69.58 582.84 L139.16 582.84" class="st1"/>
+					<path d="M208.74 582.84 L139.16 582.84" class="st1"/>
+					<path d="M69.58 582.84 L139.16 582.84" class="st1"/>
+					<path d="M208.74 582.84 L139.16 582.84" class="st1"/>
+					<path d="M69.58 582.84 L139.16 582.84" class="st1"/>
+					<path d="M208.74 582.84 L139.16 582.84" class="st1"/>
+					<path d="M69.58 582.84 L139.16 582.84" class="st1"/>
+				</g>
+			</g>
+			<g id="shape3-141" v:mID="3" v:groupContext="shape">
+				<title>Feuille.3</title>
+				<v:userDefs>
+					<v:ud v:nameU="EllipseSize" v:prompt="" v:val="VT0(0.098425196850394):24"/>
+				</v:userDefs>
+				<path d="M53.41 578.91 A3.54331 3.54331 -180 1 0 46.33 578.91 A3.54331 3.54331 -180 1 0 53.41 578.91 ZM73.12 582.84
+							 A3.54331 3.54331 -180 1 0 66.04 582.84 A3.54331 3.54331 -180 1 0 73.12 582.84 ZM142.71 692.67 A3.54331
+							 3.54331 -180 1 0 135.62 692.67 A3.54331 3.54331 -180 1 0 142.71 692.67 ZM142.71 510.35 A3.54331 3.54331
+							 -180 1 0 135.62 510.35 A3.54331 3.54331 -180 1 0 142.71 510.35 ZM239.08 584.58 A3.54331 3.54331 -180
+							 1 0 232 584.58 A3.54331 3.54331 -180 1 0 239.08 584.58 ZM73.12 582.84 A3.54331 3.54331 -180 1 0 66.04
+							 582.84 A3.54331 3.54331 -180 1 0 73.12 582.84 ZM212.29 582.84 A3.54331 3.54331 -180 1 0 205.2 582.84
+							 A3.54331 3.54331 -180 1 0 212.29 582.84 ZM73.12 582.84 A3.54331 3.54331 -180 1 0 66.04 582.84 A3.54331
+							 3.54331 -180 1 0 73.12 582.84 ZM212.29 582.84 A3.54331 3.54331 -180 1 0 205.2 582.84 A3.54331 3.54331
+							 -180 1 0 212.29 582.84 ZM73.12 582.84 A3.54331 3.54331 -180 1 0 66.04 582.84 A3.54331 3.54331 -180 1
+							 0 73.12 582.84 ZM212.29 582.84 A3.54331 3.54331 -180 1 0 205.2 582.84 A3.54331 3.54331 -180 1 0 212.29
+							 582.84 ZM73.12 582.84 A3.54331 3.54331 -180 1 0 66.04 582.84 A3.54331 3.54331 -180 1 0 73.12 582.84
+							 ZM212.29 582.84 A3.54331 3.54331 -180 1 0 205.2 582.84 A3.54331 3.54331 -180 1 0 212.29 582.84 ZM73.12
+							 582.84 A3.54331 3.54331 -180 1 0 66.04 582.84 A3.54331 3.54331 -180 1 0 73.12 582.84 ZM212.29 582.84
+							 A3.54331 3.54331 -180 1 0 205.2 582.84 A3.54331 3.54331 -180 1 0 212.29 582.84 ZM73.12 582.84 A3.54331
+							 3.54331 -180 1 0 66.04 582.84 A3.54331 3.54331 -180 1 0 73.12 582.84 ZM212.29 582.84 A3.54331 3.54331
+							 -180 1 0 205.2 582.84 A3.54331 3.54331 -180 1 0 212.29 582.84 ZM73.12 582.84 A3.54331 3.54331 -180 1
+							 0 66.04 582.84 A3.54331 3.54331 -180 1 0 73.12 582.84 ZM212.29 582.84 A3.54331 3.54331 -180 1 0 205.2
+							 582.84 A3.54331 3.54331 -180 1 0 212.29 582.84 ZM73.12 582.84 A3.54331 3.54331 -180 1 0 66.04 582.84
+							 A3.54331 3.54331 -180 1 0 73.12 582.84 ZM212.29 582.84 A3.54331 3.54331 -180 1 0 205.2 582.84 A3.54331
+							 3.54331 -180 1 0 212.29 582.84 ZM73.12 582.84 A3.54331 3.54331 -180 1 0 66.04 582.84 A3.54331 3.54331
+							 -180 1 0 73.12 582.84 ZM212.29 582.84 A3.54331 3.54331 -180 1 0 205.2 582.84 A3.54331 3.54331 -180 1
+							 0 212.29 582.84 ZM73.12 582.84 A3.54331 3.54331 -180 1 0 66.04 582.84 A3.54331 3.54331 -180 1 0 73.12
+							 582.84 ZM212.29 582.84 A3.54331 3.54331 -180 1 0 205.2 582.84 A3.54331 3.54331 -180 1 0 212.29 582.84
+							 ZM73.12 582.84 A3.54331 3.54331 -180 1 0 66.04 582.84 A3.54331 3.54331 -180 1 0 73.12 582.84 ZM212.29
+							 582.84 A3.54331 3.54331 -180 1 0 205.2 582.84 A3.54331 3.54331 -180 1 0 212.29 582.84 ZM73.12 582.84
+							 A3.54331 3.54331 -180 1 0 66.04 582.84 A3.54331 3.54331 -180 1 0 73.12 582.84 ZM212.29 582.84 A3.54331
+							 3.54331 -180 1 0 205.2 582.84 A3.54331 3.54331 -180 1 0 212.29 582.84 ZM73.12 582.84 A3.54331 3.54331
+							 -180 1 0 66.04 582.84 A3.54331 3.54331 -180 1 0 73.12 582.84 ZM212.29 582.84 A3.54331 3.54331 -180 1
+							 0 205.2 582.84 A3.54331 3.54331 -180 1 0 212.29 582.84 ZM73.12 582.84 A3.54331 3.54331 -180 1 0 66.04
+							 582.84 A3.54331 3.54331 -180 1 0 73.12 582.84 ZM212.29 582.84 A3.54331 3.54331 -180 1 0 205.2 582.84
+							 A3.54331 3.54331 -180 1 0 212.29 582.84 ZM73.12 582.84 A3.54331 3.54331 -180 1 0 66.04 582.84 A3.54331
+							 3.54331 -180 1 0 73.12 582.84 ZM212.29 582.84 A3.54331 3.54331 -180 1 0 205.2 582.84 A3.54331 3.54331
+							 -180 1 0 212.29 582.84 ZM73.12 582.84 A3.54331 3.54331 -180 1 0 66.04 582.84 A3.54331 3.54331 -180 1
+							 0 73.12 582.84 ZM212.29 582.84 A3.54331 3.54331 -180 1 0 205.2 582.84 A3.54331 3.54331 -180 1 0 212.29
+							 582.84 ZM73.12 582.84 A3.54331 3.54331 -180 1 0 66.04 582.84 A3.54331 3.54331 -180 1 0 73.12 582.84
+							 ZM212.29 582.84 A3.54331 3.54331 -180 1 0 205.2 582.84 A3.54331 3.54331 -180 1 0 212.29 582.84 ZM73.12
+							 582.84 A3.54331 3.54331 -180 1 0 66.04 582.84 A3.54331 3.54331 -180 1 0 73.12 582.84 ZM212.29 582.84
+							 A3.54331 3.54331 -180 1 0 205.2 582.84 A3.54331 3.54331 -180 1 0 212.29 582.84 ZM73.12 582.84 A3.54331
+							 3.54331 -180 1 0 66.04 582.84 A3.54331 3.54331 -180 1 0 73.12 582.84 ZM212.29 582.84 A3.54331 3.54331
+							 -180 1 0 205.2 582.84 A3.54331 3.54331 -180 1 0 212.29 582.84 ZM73.12 582.84 A3.54331 3.54331 -180 1
+							 0 66.04 582.84 A3.54331 3.54331 -180 1 0 73.12 582.84 ZM212.29 582.84 A3.54331 3.54331 -180 1 0 205.2
+							 582.84 A3.54331 3.54331 -180 1 0 212.29 582.84 ZM73.12 582.84 A3.54331 3.54331 -180 1 0 66.04 582.84
+							 A3.54331 3.54331 -180 1 0 73.12 582.84 ZM212.29 582.84 A3.54331 3.54331 -180 1 0 205.2 582.84 A3.54331
+							 3.54331 -180 1 0 212.29 582.84 ZM73.12 582.84 A3.54331 3.54331 -180 1 0 66.04 582.84 A3.54331 3.54331
+							 -180 1 0 73.12 582.84 ZM212.29 582.84 A3.54331 3.54331 -180 1 0 205.2 582.84 A3.54331 3.54331 -180 1
+							 0 212.29 582.84 ZM73.12 582.84 A3.54331 3.54331 -180 1 0 66.04 582.84 A3.54331 3.54331 -180 1 0 73.12
+							 582.84 ZM212.29 582.84 A3.54331 3.54331 -180 1 0 205.2 582.84 A3.54331 3.54331 -180 1 0 212.29 582.84
+							 ZM73.12 582.84 A3.54331 3.54331 -180 1 0 66.04 582.84 A3.54331 3.54331 -180 1 0 73.12 582.84 ZM212.29
+							 582.84 A3.54331 3.54331 -180 1 0 205.2 582.84 A3.54331 3.54331 -180 1 0 212.29 582.84 ZM73.12 582.84
+							 A3.54331 3.54331 -180 1 0 66.04 582.84 A3.54331 3.54331 -180 1 0 73.12 582.84 ZM212.29 582.84 A3.54331
+							 3.54331 -180 1 0 205.2 582.84 A3.54331 3.54331 -180 1 0 212.29 582.84 ZM73.12 582.84 A3.54331 3.54331
+							 -180 1 0 66.04 582.84 A3.54331 3.54331 -180 1 0 73.12 582.84 ZM212.29 582.84 A3.54331 3.54331 -180 1
+							 0 205.2 582.84 A3.54331 3.54331 -180 1 0 212.29 582.84 ZM73.12 582.84 A3.54331 3.54331 -180 1 0 66.04
+							 582.84 A3.54331 3.54331 -180 1 0 73.12 582.84 ZM212.29 582.84 A3.54331 3.54331 -180 1 0 205.2 582.84
+							 A3.54331 3.54331 -180 1 0 212.29 582.84 ZM73.12 582.84 A3.54331 3.54331 -180 1 0 66.04 582.84 A3.54331
+							 3.54331 -180 1 0 73.12 582.84 ZM212.29 582.84 A3.54331 3.54331 -180 1 0 205.2 582.84 A3.54331 3.54331
+							 -180 1 0 212.29 582.84 ZM73.12 582.84 A3.54331 3.54331 -180 1 0 66.04 582.84 A3.54331 3.54331 -180 1
+							 0 73.12 582.84 ZM212.29 582.84 A3.54331 3.54331 -180 1 0 205.2 582.84 A3.54331 3.54331 -180 1 0 212.29
+							 582.84 ZM73.12 582.84 A3.54331 3.54331 -180 1 0 66.04 582.84 A3.54331 3.54331 -180 1 0 73.12 582.84
+							 Z" class="st2"/>
+			</g>
+			<g id="shape4-143" v:mID="4" v:groupContext="shape">
+				<title>Feuille.4</title>
+				<rect x="0" y="570.409" width="278.324" height="24.8661" class="st3"/>
+			</g>
+		</g>
+		<g id="group9-145" transform="translate(348.419,-145.373)" v:mID="9" v:groupContext="group">
+			<v:custProps>
+				<v:cp v:nameU="AssetNumber" v:lbl="Numéro d’inventaire" v:prompt="" v:type="0" v:format="" v:sortKey="Asset"
+						v:invis="false" v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="SerialNumber" v:lbl="Numéro de série" v:prompt="" v:type="0" v:format="" v:sortKey="Asset"
+						v:invis="false" v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="Location" v:lbl="Emplacement" v:prompt="" v:type="0" v:format="" v:sortKey="Asset" v:invis="false"
+						v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="Building" v:lbl="Bâtiment" v:prompt="" v:type="0" v:format="" v:sortKey="Asset" v:invis="false"
+						v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="Room" v:lbl="Salle" v:prompt="" v:type="0" v:format="" v:sortKey="Asset" v:invis="false"
+						v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="Manufacturer" v:lbl="Fabricant" v:prompt="" v:type="0" v:format="" v:sortKey="Equipment"
+						v:invis="false" v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="ProductNumber" v:lbl="Numéro de produit" v:prompt="" v:type="0" v:format="" v:sortKey="Equipment"
+						v:invis="false" v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="PartNumber" v:lbl="Numéro de référence" v:prompt="" v:type="0" v:format="" v:sortKey="Equipment"
+						v:invis="false" v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="ProductDescription" v:lbl="Description du produit" v:prompt="" v:type="0" v:format=""
+						v:sortKey="Equipment" v:invis="false" v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="NetworkName" v:lbl="Nom de réseau" v:prompt="" v:type="0" v:format="" v:sortKey="Network"
+						v:invis="false" v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="IPAddress" v:lbl="Adresse IP" v:prompt="" v:type="0" v:format="" v:sortKey="Network" v:invis="false"
+						v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="SubnetMask" v:lbl="Masque de sous-réseau" v:prompt="" v:type="0" v:format="" v:sortKey="Network"
+						v:invis="false" v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="AdminInterface" v:lbl="Interface d’administration" v:prompt="" v:type="0" v:format=""
+						v:sortKey="Network" v:invis="false" v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="NumberofPorts" v:lbl="Nombre de ports" v:prompt="" v:type="0" v:format="" v:sortKey="Network"
+						v:invis="false" v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="CommunityString" v:lbl="Chaîne de communauté" v:prompt="" v:type="0" v:format="" v:sortKey="Network"
+						v:invis="false" v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="NetworkDescription" v:lbl="Description de réseau" v:prompt="" v:type="0" v:format=""
+						v:sortKey="Network" v:invis="false" v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="MACAddress" v:lbl="Adresse MAC" v:prompt="" v:type="0" v:format="" v:sortKey="Network"
+						v:invis="false" v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="CPU" v:lbl="UC" v:prompt="" v:type="0" v:format="" v:sortKey="Workstation" v:invis="false"
+						v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="Memory" v:lbl="Mémoire" v:prompt="" v:type="0" v:format="" v:sortKey="Workstation" v:invis="false"
+						v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="OperatingSystem" v:lbl="Système d’exploitation" v:prompt="" v:type="0" v:format=""
+						v:sortKey="Workstation" v:invis="false" v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="HardDriveSize" v:lbl="Capacité du disque dur" v:prompt="" v:type="0" v:format=""
+						v:sortKey="Workstation" v:invis="false" v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="Department" v:lbl="Service" v:prompt="" v:type="0" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="ShapeClass" v:lbl="ShapeClass" v:prompt="" v:type="0" v:format="" v:sortKey="" v:invis="true"
+						v:ask="false" v:langID="1036" v:cal="0" v:val="VT4(Équipement)"/>
+				<v:cp v:nameU="ShapeType" v:lbl="ShapeType" v:prompt="" v:type="0" v:format="" v:sortKey="" v:invis="true"
+						v:ask="false" v:langID="1036" v:cal="0" v:val="VT4(Ordinateur)"/>
+				<v:cp v:nameU="SubShapeType" v:lbl="SubShapeType" v:prompt="" v:type="0" v:format="" v:sortKey="" v:invis="true"
+						v:ask="false" v:langID="1036" v:cal="0" v:val="VT4(Bureau)"/>
+				<v:cp v:nameU="BelongsTo" v:lbl="Propriétaire" v:prompt="" v:type="0" v:format="" v:sortKey="" v:invis="true"
+						v:ask="false" v:langID="1036" v:cal="0"/>
+			</v:custProps>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="ShapeClass" v:prompt="" v:val="VT0(5):26"/>
+				<v:ud v:nameU="SolSH" v:prompt="" v:val="VT15({BF0433D9-CD73-4EB5-8390-8653BE590246}):41"/>
+				<v:ud v:nameU="visLegendShape" v:prompt="" v:val="VT0(2):26"/>
+			</v:userDefs>
+			<title>PC</title>
+			<g id="shape10-146" v:mID="10" v:groupContext="shape" transform="translate(0,-9.67377)">
+				<title>Feuille.10</title>
+				<path d="M98.26 559.65 L98.26 571.9 L105.67 571.9 L112.66 580.67 L145.05 580.67 L145.05 469.57 L98.26 469.57 L98.26
+							 485.51 L118.33 485.51 L118.33 559.65 L98.26 559.65 ZM118.33 485.51 L7.23 485.51 L7.23 559.65 L118.33
+							 559.65 L118.33 485.51 ZM124.31 595.28 L105.67 571.9 L18.65 571.9 L0 595.28 L124.31 595.28 ZM71.92 559.65
+							 L52.39 559.65 L52.39 571.9 L71.92 571.9 L71.92 559.65 Z" class="st4"/>
+			</g>
+			<g id="shape11-148" v:mID="11" v:groupContext="shape" transform="translate(14.4361,-51.9756)">
+				<title>Feuille.11</title>
+				<v:userDefs>
+					<v:ud v:nameU="SurroundingRegionColor" v:prompt="" v:val="VT5(1)"/>
+					<v:ud v:nameU="SurroundingRegionColor" v:prompt="" v:val="VT5(#5b9bd5)"/>
+				</v:userDefs>
+				<path d="M96.85 535.16 L0 535.16 L0 595.28 L96.85 595.28 L96.85 535.16 Z" class="st5"/>
+			</g>
+			<g id="shape12-150" v:mID="12" v:groupContext="shape" transform="translate(16.9178,-14.4991)">
+				<title>Feuille.12</title>
+				<v:userDefs>
+					<v:ud v:nameU="SurroundingRegionColor" v:prompt="" v:val="VT5(1)"/>
+					<v:ud v:nameU="SurroundingRegionColor" v:prompt="" v:val="VT5(#5b9bd5)"/>
+				</v:userDefs>
+				<path d="M109.4 486.83 L119.41 486.83 L119.41 482.94 L109.4 482.94 L109.4 486.83 ZM109.4 493.79 L119.41 493.79 L119.41
+							 489.89 L109.4 489.89 L109.4 493.79 ZM84.89 586.21 L79.37 586.21 L82.46 589.64 L88.41 589.64 L84.89 586.21
+							 ZM78.64 580.11 L73.88 580.11 L77.21 583.81 L82.43 583.81 L78.64 580.11 ZM76.39 586.21 L70.87 586.21
+							 L73.29 589.64 L79.25 589.64 L76.39 586.21 ZM71.32 580.11 L66.56 580.11 L69.17 583.81 L74.39 583.81 L71.32
+							 580.11 ZM67.89 586.21 L62.36 586.21 L64.13 589.64 L70.09 589.64 L67.89 586.21 ZM64.01 580.11 L59.25
+							 580.11 L61.16 583.88 L66.39 583.88 L64.01 580.11 ZM59.39 586.21 L53.87 586.21 L54.97 589.64 L60.93 589.64
+							 L59.39 586.21 ZM56.79 580.37 L52 580.37 L53.12 583.88 L58.36 583.88 L56.79 580.37 ZM50.9 586.21 L45.37
+							 586.21 L45.81 589.64 L51.77 589.64 L50.9 586.21 ZM49.5 580.66 L44.67 580.66 L45.1 584.1 L50.36 584.1
+							 L49.5 580.66 ZM42.07 580.66 L37.24 580.66 L37.01 584.1 L42.27 584.1 L42.07 580.66 ZM42.4 586.21 L36.87
+							 586.21 L36.65 589.64 L42.6 589.64 L42.4 586.21 ZM34.64 580.66 L29.81 580.66 L28.92 584.1 L34.18 584.1
+							 L34.64 580.66 ZM33.9 586.21 L28.37 586.21 L27.48 589.64 L33.44 589.64 L33.9 586.21 ZM64.21 591.84 L25.22
+							 591.84 L24.21 595.28 L65.9 595.28 L64.21 591.84 ZM27.22 580.66 L22.39 580.66 L20.83 584.1 L26.09 584.1
+							 L27.22 580.66 ZM25.4 586.21 L19.88 586.21 L18.32 589.64 L24.28 589.64 L25.4 586.21 ZM19.79 580.66 L14.96
+							 580.66 L12.74 584.1 L18 584.1 L19.79 580.66 ZM16.91 586.21 L11.38 586.21 L9.16 589.64 L15.12 589.64
+							 L16.91 586.21 ZM12.36 580.66 L7.53 580.66 L4.65 584.1 L9.91 584.1 L12.36 580.66 ZM8.41 586.21 L2.88
+							 586.21 L0 589.64 L5.96 589.64 L8.41 586.21 Z" class="st6"/>
+			</g>
+		</g>
+		<g id="shape97-153" v:mID="97" v:groupContext="shape" transform="translate(357.165,-44.1797)">
+			<title>Feuille.97</title>
+			<desc>Réseau IUT</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="63.7795" cy="582.843" width="127.56" height="24.8661"/>
+			<rect x="0" y="570.409" width="127.559" height="24.8661" class="st7"/>
+			<text x="22.91" y="588.24" class="st8" v:langID="1036"><v:paragraph v:horizAlign="1"/><v:tabList/>Réseau IUT</text>		</g>
+		<g id="shape100-156" v:mID="100" v:groupContext="shape" transform="translate(344.945,-315.291)">
+			<title>Feuille.100</title>
+			<desc>Réseau Virtuel</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="76" cy="582.843" width="152.01" height="24.8661"/>
+			<rect x="0" y="570.409" width="152" height="24.8661" class="st7"/>
+			<text x="22.97" y="588.24" class="st8" v:langID="1036"><v:paragraph v:horizAlign="1"/><v:tabList/>Réseau Virtuel</text>		</g>
+		<g id="shape108-159" v:mID="108" v:groupContext="shape" v:layerMember="0" transform="translate(328.023,-506.515)">
+			<title>Lien dynamique</title>
+			<path d="M0 595.28 L0 701.57 L92.92 701.57" class="st9"/>
+		</g>
+		<g id="shape109-162" v:mID="109" v:groupContext="shape" v:layerMember="0" transform="translate(413.858,-506.515)">
+			<title>Lien dynamique.109</title>
+			<path d="M7.09 595.28 L7.09 701.57" class="st9"/>
+		</g>
+		<g id="shape110-165" v:mID="110" v:groupContext="shape" v:layerMember="0" transform="translate(513.866,-506.515)">
+			<title>Lien dynamique.110</title>
+			<path d="M0 595.28 L0 701.57 L-92.92 701.57" class="st10"/>
+		</g>
+		<g id="group13-168" transform="translate(281.783,-460.275)" v:mID="13" v:groupContext="group">
+			<v:custProps>
+				<v:cp v:nameU="AssetNumber" v:lbl="Numéro d’inventaire" v:prompt="" v:type="0" v:format="" v:sortKey="Asset"
+						v:invis="false" v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="SerialNumber" v:lbl="Numéro de série" v:prompt="" v:type="0" v:format="" v:sortKey="Asset"
+						v:invis="false" v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="Location" v:lbl="Emplacement" v:prompt="" v:type="0" v:format="" v:sortKey="Asset" v:invis="false"
+						v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="Building" v:lbl="Bâtiment" v:prompt="" v:type="0" v:format="" v:sortKey="Asset" v:invis="false"
+						v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="Room" v:lbl="Salle" v:prompt="" v:type="0" v:format="" v:sortKey="Asset" v:invis="false"
+						v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="Manufacturer" v:lbl="Fabricant" v:prompt="" v:type="0" v:format="" v:sortKey="Equipment"
+						v:invis="false" v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="ProductNumber" v:lbl="Numéro de produit" v:prompt="" v:type="0" v:format="" v:sortKey="Equipment"
+						v:invis="false" v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="PartNumber" v:lbl="Numéro de référence" v:prompt="" v:type="0" v:format="" v:sortKey="Equipment"
+						v:invis="false" v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="ProductDescription" v:lbl="Description du produit" v:prompt="" v:type="0" v:format=""
+						v:sortKey="Equipment" v:invis="false" v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="NetworkName" v:lbl="Nom de réseau" v:prompt="" v:type="0" v:format="" v:sortKey="Network"
+						v:invis="false" v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="IPAddress" v:lbl="Adresse IP" v:prompt="" v:type="0" v:format="" v:sortKey="Network" v:invis="false"
+						v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="SubnetMask" v:lbl="Masque de sous-réseau" v:prompt="" v:type="0" v:format="" v:sortKey="Network"
+						v:invis="false" v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="AdminInterface" v:lbl="Interface d’administration" v:prompt="" v:type="0" v:format=""
+						v:sortKey="Network" v:invis="false" v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="NumberofPorts" v:lbl="Nombre de ports" v:prompt="" v:type="0" v:format="" v:sortKey="Network"
+						v:invis="false" v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="CommunityString" v:lbl="Chaîne de communauté" v:prompt="" v:type="0" v:format="" v:sortKey="Network"
+						v:invis="false" v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="NetworkDescription" v:lbl="Description de réseau" v:prompt="" v:type="0" v:format=""
+						v:sortKey="Network" v:invis="false" v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="MACAddress" v:lbl="Adresse MAC" v:prompt="" v:type="0" v:format="" v:sortKey="Network"
+						v:invis="false" v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="CPU" v:lbl="UC" v:prompt="" v:type="0" v:format="" v:sortKey="Workstation" v:invis="false"
+						v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="Memory" v:lbl="Mémoire" v:prompt="" v:type="0" v:format="" v:sortKey="Workstation" v:invis="false"
+						v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="OperatingSystem" v:lbl="Système d’exploitation" v:prompt="" v:type="0" v:format=""
+						v:sortKey="Workstation" v:invis="false" v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="HardDriveSize" v:lbl="Capacité du disque dur" v:prompt="" v:type="0" v:format=""
+						v:sortKey="Workstation" v:invis="false" v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="Department" v:lbl="Service" v:prompt="" v:type="0" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="ShapeClass" v:lbl="ShapeClass" v:prompt="" v:type="0" v:format="" v:sortKey="" v:invis="true"
+						v:ask="false" v:langID="1036" v:cal="0" v:val="VT4(Équipement)"/>
+				<v:cp v:nameU="ShapeType" v:lbl="ShapeType" v:prompt="" v:type="0" v:format="" v:sortKey="" v:invis="true"
+						v:ask="false" v:langID="1036" v:cal="0" v:val="VT4(Ordinateur)"/>
+				<v:cp v:nameU="SubShapeType" v:lbl="SubShapeType" v:prompt="" v:type="0" v:format="" v:sortKey="" v:invis="true"
+						v:ask="false" v:langID="1036" v:cal="0" v:val="VT4(Bureau)"/>
+				<v:cp v:nameU="BelongsTo" v:lbl="Propriétaire" v:prompt="" v:type="0" v:format="" v:sortKey="" v:invis="true"
+						v:ask="false" v:langID="1036" v:cal="0"/>
+			</v:custProps>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="ShapeClass" v:prompt="" v:val="VT0(5):26"/>
+				<v:ud v:nameU="SolSH" v:prompt="" v:val="VT15({BF0433D9-CD73-4EB5-8390-8653BE590246}):41"/>
+				<v:ud v:nameU="visLegendShape" v:prompt="" v:val="VT0(2):26"/>
+			</v:userDefs>
+			<title>Virtual PC</title>
+			<g id="shape14-169" v:mID="14" v:groupContext="shape" transform="translate(6.84071,-10.5591)">
+				<title>Feuille.14</title>
+				<path d="M55.78 575.05 L55.78 582 L59.99 582 L63.96 586.98 L82.35 586.98 L82.35 523.91 L55.78 523.91 L55.78 532.96
+							 L67.18 532.96 L67.18 575.05 L55.78 575.05 ZM67.18 532.96 L4.11 532.96 L4.11 575.05 L67.18 575.05 L67.18
+							 532.96 ZM70.57 595.28 L59.99 582 L10.59 582 L0 595.28 L70.57 595.28 ZM40.83 575.05 L29.74 575.05 L29.74
+							 582 L40.83 582 L40.83 575.05 Z" class="st4"/>
+			</g>
+			<g id="shape15-171" v:mID="15" v:groupContext="shape" transform="translate(15.0361,-34.5739)">
+				<title>Feuille.15</title>
+				<v:userDefs>
+					<v:ud v:nameU="SurroundingRegionColor" v:prompt="" v:val="VT5(1)"/>
+					<v:ud v:nameU="SurroundingRegionColor" v:prompt="" v:val="VT5(#5b9bd5)"/>
+				</v:userDefs>
+				<path d="M54.98 561.15 L0 561.15 L0 595.28 L54.98 595.28 L54.98 561.15 Z" class="st5"/>
+			</g>
+			<g id="shape16-173" v:mID="16" v:groupContext="shape" transform="translate(16.445,-13.2985)">
+				<title>Feuille.16</title>
+				<v:userDefs>
+					<v:ud v:nameU="SurroundingRegionColor" v:prompt="" v:val="VT5(1)"/>
+					<v:ud v:nameU="SurroundingRegionColor" v:prompt="" v:val="VT5(#5b9bd5)"/>
+				</v:userDefs>
+				<path d="M62.1 533.71 L67.79 533.71 L67.79 531.5 L62.1 531.5 L62.1 533.71 ZM62.1 537.66 L67.79 537.66 L67.79 535.45
+							 L62.1 535.45 L62.1 537.66 ZM48.19 590.13 L45.06 590.13 L46.81 592.08 L50.19 592.08 L48.19 590.13 ZM44.64
+							 586.67 L41.94 586.67 L43.83 588.76 L46.79 588.76 L44.64 586.67 ZM43.37 590.13 L40.23 590.13 L41.61 592.08
+							 L44.99 592.08 L43.37 590.13 ZM40.49 586.67 L37.79 586.67 L39.27 588.76 L42.23 588.76 L40.49 586.67 ZM38.54
+							 590.13 L35.4 590.13 L36.41 592.08 L39.79 592.08 L38.54 590.13 ZM36.34 586.67 L33.64 586.67 L34.72 588.81
+							 L37.69 588.81 L36.34 586.67 ZM33.72 590.13 L30.58 590.13 L31.21 592.08 L34.59 592.08 L33.72 590.13 ZM32.24
+							 586.81 L29.52 586.81 L30.16 588.81 L33.13 588.81 L32.24 586.81 ZM28.89 590.13 L25.76 590.13 L26.01 592.08
+							 L29.39 592.08 L28.89 590.13 ZM28.1 586.98 L25.36 586.98 L25.61 588.93 L28.59 588.93 L28.1 586.98 ZM23.88
+							 586.98 L21.14 586.98 L21.01 588.93 L24 588.93 L23.88 586.98 ZM24.07 590.13 L20.93 590.13 L20.8 592.08
+							 L24.19 592.08 L24.07 590.13 ZM19.67 586.98 L16.92 586.98 L16.42 588.93 L19.41 588.93 L19.67 586.98 ZM19.25
+							 590.13 L16.11 590.13 L15.6 592.08 L18.99 592.08 L19.25 590.13 ZM36.45 593.32 L14.32 593.32 L13.75 595.28
+							 L37.41 595.28 L36.45 593.32 ZM15.45 586.98 L12.71 586.98 L11.83 588.93 L14.81 588.93 L15.45 586.98 ZM14.42
+							 590.13 L11.28 590.13 L10.4 592.08 L13.78 592.08 L14.42 590.13 ZM11.23 586.98 L8.49 586.98 L7.23 588.93
+							 L10.22 588.93 L11.23 586.98 ZM9.6 590.13 L6.46 590.13 L5.2 592.08 L8.58 592.08 L9.6 590.13 ZM7.02 586.98
+							 L4.28 586.98 L2.64 588.93 L5.63 588.93 L7.02 586.98 ZM4.77 590.13 L1.64 590.13 L0 592.08 L3.38 592.08
+							 L4.77 590.13 Z" class="st6"/>
+			</g>
+			<g id="shape17-176" v:mID="17" v:groupContext="shape" transform="translate(0,-7.26524)">
+				<title>Feuille.17</title>
+				<path d="M59.33 526.37 L7.65 526.37 L7.65 575.05 L16.13 575.06 L0 595.28 L84.25 595.28 L77.64 586.98 L92.48 586.98
+							 L92.48 517.33 L59.33 517.33 L59.33 526.37" class="st11"/>
+			</g>
+		</g>
+		<g id="group32-179" transform="translate(374.704,-460.275)" v:mID="32" v:groupContext="group">
+			<v:custProps>
+				<v:cp v:nameU="AssetNumber" v:lbl="Numéro d’inventaire" v:prompt="" v:type="0" v:format="" v:sortKey="Asset"
+						v:invis="false" v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="SerialNumber" v:lbl="Numéro de série" v:prompt="" v:type="0" v:format="" v:sortKey="Asset"
+						v:invis="false" v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="Location" v:lbl="Emplacement" v:prompt="" v:type="0" v:format="" v:sortKey="Asset" v:invis="false"
+						v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="Building" v:lbl="Bâtiment" v:prompt="" v:type="0" v:format="" v:sortKey="Asset" v:invis="false"
+						v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="Room" v:lbl="Salle" v:prompt="" v:type="0" v:format="" v:sortKey="Asset" v:invis="false"
+						v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="Manufacturer" v:lbl="Fabricant" v:prompt="" v:type="0" v:format="" v:sortKey="Equipment"
+						v:invis="false" v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="ProductNumber" v:lbl="Numéro de produit" v:prompt="" v:type="0" v:format="" v:sortKey="Equipment"
+						v:invis="false" v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="PartNumber" v:lbl="Numéro de référence" v:prompt="" v:type="0" v:format="" v:sortKey="Equipment"
+						v:invis="false" v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="ProductDescription" v:lbl="Description du produit" v:prompt="" v:type="0" v:format=""
+						v:sortKey="Equipment" v:invis="false" v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="NetworkName" v:lbl="Nom de réseau" v:prompt="" v:type="0" v:format="" v:sortKey="Network"
+						v:invis="false" v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="IPAddress" v:lbl="Adresse IP" v:prompt="" v:type="0" v:format="" v:sortKey="Network" v:invis="false"
+						v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="SubnetMask" v:lbl="Masque de sous-réseau" v:prompt="" v:type="0" v:format="" v:sortKey="Network"
+						v:invis="false" v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="AdminInterface" v:lbl="Interface d’administration" v:prompt="" v:type="0" v:format=""
+						v:sortKey="Network" v:invis="false" v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="NumberofPorts" v:lbl="Nombre de ports" v:prompt="" v:type="0" v:format="" v:sortKey="Network"
+						v:invis="false" v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="CommunityString" v:lbl="Chaîne de communauté" v:prompt="" v:type="0" v:format="" v:sortKey="Network"
+						v:invis="false" v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="NetworkDescription" v:lbl="Description de réseau" v:prompt="" v:type="0" v:format=""
+						v:sortKey="Network" v:invis="false" v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="MACAddress" v:lbl="Adresse MAC" v:prompt="" v:type="0" v:format="" v:sortKey="Network"
+						v:invis="false" v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="CPU" v:lbl="UC" v:prompt="" v:type="0" v:format="" v:sortKey="Workstation" v:invis="false"
+						v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="Memory" v:lbl="Mémoire" v:prompt="" v:type="0" v:format="" v:sortKey="Workstation" v:invis="false"
+						v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="OperatingSystem" v:lbl="Système d’exploitation" v:prompt="" v:type="0" v:format=""
+						v:sortKey="Workstation" v:invis="false" v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="HardDriveSize" v:lbl="Capacité du disque dur" v:prompt="" v:type="0" v:format=""
+						v:sortKey="Workstation" v:invis="false" v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="Department" v:lbl="Service" v:prompt="" v:type="0" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="ShapeClass" v:lbl="ShapeClass" v:prompt="" v:type="0" v:format="" v:sortKey="" v:invis="true"
+						v:ask="false" v:langID="1036" v:cal="0" v:val="VT4(Équipement)"/>
+				<v:cp v:nameU="ShapeType" v:lbl="ShapeType" v:prompt="" v:type="0" v:format="" v:sortKey="" v:invis="true"
+						v:ask="false" v:langID="1036" v:cal="0" v:val="VT4(Ordinateur)"/>
+				<v:cp v:nameU="SubShapeType" v:lbl="SubShapeType" v:prompt="" v:type="0" v:format="" v:sortKey="" v:invis="true"
+						v:ask="false" v:langID="1036" v:cal="0" v:val="VT4(Bureau)"/>
+				<v:cp v:nameU="BelongsTo" v:lbl="Propriétaire" v:prompt="" v:type="0" v:format="" v:sortKey="" v:invis="true"
+						v:ask="false" v:langID="1036" v:cal="0"/>
+			</v:custProps>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="ShapeClass" v:prompt="" v:val="VT0(5):26"/>
+				<v:ud v:nameU="SolSH" v:prompt="" v:val="VT15({BF0433D9-CD73-4EB5-8390-8653BE590246}):41"/>
+				<v:ud v:nameU="visLegendShape" v:prompt="" v:val="VT0(2):26"/>
+			</v:userDefs>
+			<title>Virtual PC.32</title>
+			<g id="shape33-180" v:mID="33" v:groupContext="shape" transform="translate(6.84071,-10.5591)">
+				<title>Feuille.33</title>
+				<path d="M55.78 575.05 L55.78 582 L59.99 582 L63.96 586.98 L82.35 586.98 L82.35 523.91 L55.78 523.91 L55.78 532.96
+							 L67.18 532.96 L67.18 575.05 L55.78 575.05 ZM67.18 532.96 L4.11 532.96 L4.11 575.05 L67.18 575.05 L67.18
+							 532.96 ZM70.57 595.28 L59.99 582 L10.59 582 L0 595.28 L70.57 595.28 ZM40.83 575.05 L29.74 575.05 L29.74
+							 582 L40.83 582 L40.83 575.05 Z" class="st4"/>
+			</g>
+			<g id="shape34-182" v:mID="34" v:groupContext="shape" transform="translate(15.0361,-34.5739)">
+				<title>Feuille.34</title>
+				<v:userDefs>
+					<v:ud v:nameU="SurroundingRegionColor" v:prompt="" v:val="VT5(1)"/>
+					<v:ud v:nameU="SurroundingRegionColor" v:prompt="" v:val="VT5(#5b9bd5)"/>
+				</v:userDefs>
+				<path d="M54.98 561.15 L0 561.15 L0 595.28 L54.98 595.28 L54.98 561.15 Z" class="st5"/>
+			</g>
+			<g id="shape35-184" v:mID="35" v:groupContext="shape" transform="translate(16.445,-13.2985)">
+				<title>Feuille.35</title>
+				<v:userDefs>
+					<v:ud v:nameU="SurroundingRegionColor" v:prompt="" v:val="VT5(1)"/>
+					<v:ud v:nameU="SurroundingRegionColor" v:prompt="" v:val="VT5(#5b9bd5)"/>
+				</v:userDefs>
+				<path d="M62.1 533.71 L67.79 533.71 L67.79 531.5 L62.1 531.5 L62.1 533.71 ZM62.1 537.66 L67.79 537.66 L67.79 535.45
+							 L62.1 535.45 L62.1 537.66 ZM48.19 590.13 L45.06 590.13 L46.81 592.08 L50.19 592.08 L48.19 590.13 ZM44.64
+							 586.67 L41.94 586.67 L43.83 588.76 L46.79 588.76 L44.64 586.67 ZM43.37 590.13 L40.23 590.13 L41.61 592.08
+							 L44.99 592.08 L43.37 590.13 ZM40.49 586.67 L37.79 586.67 L39.27 588.76 L42.23 588.76 L40.49 586.67 ZM38.54
+							 590.13 L35.4 590.13 L36.41 592.08 L39.79 592.08 L38.54 590.13 ZM36.34 586.67 L33.64 586.67 L34.72 588.81
+							 L37.69 588.81 L36.34 586.67 ZM33.72 590.13 L30.58 590.13 L31.21 592.08 L34.59 592.08 L33.72 590.13 ZM32.24
+							 586.81 L29.52 586.81 L30.16 588.81 L33.13 588.81 L32.24 586.81 ZM28.89 590.13 L25.76 590.13 L26.01 592.08
+							 L29.39 592.08 L28.89 590.13 ZM28.1 586.98 L25.36 586.98 L25.61 588.93 L28.59 588.93 L28.1 586.98 ZM23.88
+							 586.98 L21.14 586.98 L21.01 588.93 L24 588.93 L23.88 586.98 ZM24.07 590.13 L20.93 590.13 L20.8 592.08
+							 L24.19 592.08 L24.07 590.13 ZM19.67 586.98 L16.92 586.98 L16.42 588.93 L19.41 588.93 L19.67 586.98 ZM19.25
+							 590.13 L16.11 590.13 L15.6 592.08 L18.99 592.08 L19.25 590.13 ZM36.45 593.32 L14.32 593.32 L13.75 595.28
+							 L37.41 595.28 L36.45 593.32 ZM15.45 586.98 L12.71 586.98 L11.83 588.93 L14.81 588.93 L15.45 586.98 ZM14.42
+							 590.13 L11.28 590.13 L10.4 592.08 L13.78 592.08 L14.42 590.13 ZM11.23 586.98 L8.49 586.98 L7.23 588.93
+							 L10.22 588.93 L11.23 586.98 ZM9.6 590.13 L6.46 590.13 L5.2 592.08 L8.58 592.08 L9.6 590.13 ZM7.02 586.98
+							 L4.28 586.98 L2.64 588.93 L5.63 588.93 L7.02 586.98 ZM4.77 590.13 L1.64 590.13 L0 592.08 L3.38 592.08
+							 L4.77 590.13 Z" class="st6"/>
+			</g>
+			<g id="shape36-187" v:mID="36" v:groupContext="shape" transform="translate(0,-7.26524)">
+				<title>Feuille.36</title>
+				<path d="M59.33 526.37 L7.65 526.37 L7.65 575.05 L16.13 575.06 L0 595.28 L84.25 595.28 L77.64 586.98 L92.48 586.98
+							 L92.48 517.33 L59.33 517.33 L59.33 526.37" class="st11"/>
+			</g>
+		</g>
+		<g id="group37-190" transform="translate(467.626,-460.275)" v:mID="37" v:groupContext="group">
+			<v:custProps>
+				<v:cp v:nameU="AssetNumber" v:lbl="Numéro d’inventaire" v:prompt="" v:type="0" v:format="" v:sortKey="Asset"
+						v:invis="false" v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="SerialNumber" v:lbl="Numéro de série" v:prompt="" v:type="0" v:format="" v:sortKey="Asset"
+						v:invis="false" v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="Location" v:lbl="Emplacement" v:prompt="" v:type="0" v:format="" v:sortKey="Asset" v:invis="false"
+						v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="Building" v:lbl="Bâtiment" v:prompt="" v:type="0" v:format="" v:sortKey="Asset" v:invis="false"
+						v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="Room" v:lbl="Salle" v:prompt="" v:type="0" v:format="" v:sortKey="Asset" v:invis="false"
+						v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="Manufacturer" v:lbl="Fabricant" v:prompt="" v:type="0" v:format="" v:sortKey="Equipment"
+						v:invis="false" v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="ProductNumber" v:lbl="Numéro de produit" v:prompt="" v:type="0" v:format="" v:sortKey="Equipment"
+						v:invis="false" v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="PartNumber" v:lbl="Numéro de référence" v:prompt="" v:type="0" v:format="" v:sortKey="Equipment"
+						v:invis="false" v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="ProductDescription" v:lbl="Description du produit" v:prompt="" v:type="0" v:format=""
+						v:sortKey="Equipment" v:invis="false" v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="NetworkName" v:lbl="Nom de réseau" v:prompt="" v:type="0" v:format="" v:sortKey="Network"
+						v:invis="false" v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="IPAddress" v:lbl="Adresse IP" v:prompt="" v:type="0" v:format="" v:sortKey="Network" v:invis="false"
+						v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="SubnetMask" v:lbl="Masque de sous-réseau" v:prompt="" v:type="0" v:format="" v:sortKey="Network"
+						v:invis="false" v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="AdminInterface" v:lbl="Interface d’administration" v:prompt="" v:type="0" v:format=""
+						v:sortKey="Network" v:invis="false" v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="NumberofPorts" v:lbl="Nombre de ports" v:prompt="" v:type="0" v:format="" v:sortKey="Network"
+						v:invis="false" v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="CommunityString" v:lbl="Chaîne de communauté" v:prompt="" v:type="0" v:format="" v:sortKey="Network"
+						v:invis="false" v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="NetworkDescription" v:lbl="Description de réseau" v:prompt="" v:type="0" v:format=""
+						v:sortKey="Network" v:invis="false" v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="MACAddress" v:lbl="Adresse MAC" v:prompt="" v:type="0" v:format="" v:sortKey="Network"
+						v:invis="false" v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="CPU" v:lbl="UC" v:prompt="" v:type="0" v:format="" v:sortKey="Workstation" v:invis="false"
+						v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="Memory" v:lbl="Mémoire" v:prompt="" v:type="0" v:format="" v:sortKey="Workstation" v:invis="false"
+						v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="OperatingSystem" v:lbl="Système d’exploitation" v:prompt="" v:type="0" v:format=""
+						v:sortKey="Workstation" v:invis="false" v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="HardDriveSize" v:lbl="Capacité du disque dur" v:prompt="" v:type="0" v:format=""
+						v:sortKey="Workstation" v:invis="false" v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="Department" v:lbl="Service" v:prompt="" v:type="0" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="ShapeClass" v:lbl="ShapeClass" v:prompt="" v:type="0" v:format="" v:sortKey="" v:invis="true"
+						v:ask="false" v:langID="1036" v:cal="0" v:val="VT4(Équipement)"/>
+				<v:cp v:nameU="ShapeType" v:lbl="ShapeType" v:prompt="" v:type="0" v:format="" v:sortKey="" v:invis="true"
+						v:ask="false" v:langID="1036" v:cal="0" v:val="VT4(Ordinateur)"/>
+				<v:cp v:nameU="SubShapeType" v:lbl="SubShapeType" v:prompt="" v:type="0" v:format="" v:sortKey="" v:invis="true"
+						v:ask="false" v:langID="1036" v:cal="0" v:val="VT4(Bureau)"/>
+				<v:cp v:nameU="BelongsTo" v:lbl="Propriétaire" v:prompt="" v:type="0" v:format="" v:sortKey="" v:invis="true"
+						v:ask="false" v:langID="1036" v:cal="0"/>
+			</v:custProps>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="ShapeClass" v:prompt="" v:val="VT0(5):26"/>
+				<v:ud v:nameU="SolSH" v:prompt="" v:val="VT15({BF0433D9-CD73-4EB5-8390-8653BE590246}):41"/>
+				<v:ud v:nameU="visLegendShape" v:prompt="" v:val="VT0(2):26"/>
+			</v:userDefs>
+			<title>Virtual PC.37</title>
+			<g id="shape38-191" v:mID="38" v:groupContext="shape" transform="translate(6.84071,-10.5591)">
+				<title>Feuille.38</title>
+				<path d="M55.78 575.05 L55.78 582 L59.99 582 L63.96 586.98 L82.35 586.98 L82.35 523.91 L55.78 523.91 L55.78 532.96
+							 L67.18 532.96 L67.18 575.05 L55.78 575.05 ZM67.18 532.96 L4.11 532.96 L4.11 575.05 L67.18 575.05 L67.18
+							 532.96 ZM70.57 595.28 L59.99 582 L10.59 582 L0 595.28 L70.57 595.28 ZM40.83 575.05 L29.74 575.05 L29.74
+							 582 L40.83 582 L40.83 575.05 Z" class="st4"/>
+			</g>
+			<g id="shape39-193" v:mID="39" v:groupContext="shape" transform="translate(15.0361,-34.5739)">
+				<title>Feuille.39</title>
+				<v:userDefs>
+					<v:ud v:nameU="SurroundingRegionColor" v:prompt="" v:val="VT5(1)"/>
+					<v:ud v:nameU="SurroundingRegionColor" v:prompt="" v:val="VT5(#5b9bd5)"/>
+				</v:userDefs>
+				<path d="M54.98 561.15 L0 561.15 L0 595.28 L54.98 595.28 L54.98 561.15 Z" class="st5"/>
+			</g>
+			<g id="shape40-195" v:mID="40" v:groupContext="shape" transform="translate(16.445,-13.2985)">
+				<title>Feuille.40</title>
+				<v:userDefs>
+					<v:ud v:nameU="SurroundingRegionColor" v:prompt="" v:val="VT5(1)"/>
+					<v:ud v:nameU="SurroundingRegionColor" v:prompt="" v:val="VT5(#5b9bd5)"/>
+				</v:userDefs>
+				<path d="M62.1 533.71 L67.79 533.71 L67.79 531.5 L62.1 531.5 L62.1 533.71 ZM62.1 537.66 L67.79 537.66 L67.79 535.45
+							 L62.1 535.45 L62.1 537.66 ZM48.19 590.13 L45.06 590.13 L46.81 592.08 L50.19 592.08 L48.19 590.13 ZM44.64
+							 586.67 L41.94 586.67 L43.83 588.76 L46.79 588.76 L44.64 586.67 ZM43.37 590.13 L40.23 590.13 L41.61 592.08
+							 L44.99 592.08 L43.37 590.13 ZM40.49 586.67 L37.79 586.67 L39.27 588.76 L42.23 588.76 L40.49 586.67 ZM38.54
+							 590.13 L35.4 590.13 L36.41 592.08 L39.79 592.08 L38.54 590.13 ZM36.34 586.67 L33.64 586.67 L34.72 588.81
+							 L37.69 588.81 L36.34 586.67 ZM33.72 590.13 L30.58 590.13 L31.21 592.08 L34.59 592.08 L33.72 590.13 ZM32.24
+							 586.81 L29.52 586.81 L30.16 588.81 L33.13 588.81 L32.24 586.81 ZM28.89 590.13 L25.76 590.13 L26.01 592.08
+							 L29.39 592.08 L28.89 590.13 ZM28.1 586.98 L25.36 586.98 L25.61 588.93 L28.59 588.93 L28.1 586.98 ZM23.88
+							 586.98 L21.14 586.98 L21.01 588.93 L24 588.93 L23.88 586.98 ZM24.07 590.13 L20.93 590.13 L20.8 592.08
+							 L24.19 592.08 L24.07 590.13 ZM19.67 586.98 L16.92 586.98 L16.42 588.93 L19.41 588.93 L19.67 586.98 ZM19.25
+							 590.13 L16.11 590.13 L15.6 592.08 L18.99 592.08 L19.25 590.13 ZM36.45 593.32 L14.32 593.32 L13.75 595.28
+							 L37.41 595.28 L36.45 593.32 ZM15.45 586.98 L12.71 586.98 L11.83 588.93 L14.81 588.93 L15.45 586.98 ZM14.42
+							 590.13 L11.28 590.13 L10.4 592.08 L13.78 592.08 L14.42 590.13 ZM11.23 586.98 L8.49 586.98 L7.23 588.93
+							 L10.22 588.93 L11.23 586.98 ZM9.6 590.13 L6.46 590.13 L5.2 592.08 L8.58 592.08 L9.6 590.13 ZM7.02 586.98
+							 L4.28 586.98 L2.64 588.93 L5.63 588.93 L7.02 586.98 ZM4.77 590.13 L1.64 590.13 L0 592.08 L3.38 592.08
+							 L4.77 590.13 Z" class="st6"/>
+			</g>
+			<g id="shape41-198" v:mID="41" v:groupContext="shape" transform="translate(0,-7.26524)">
+				<title>Feuille.41</title>
+				<path d="M59.33 526.37 L7.65 526.37 L7.65 575.05 L16.13 575.06 L0 595.28 L84.25 595.28 L77.64 586.98 L92.48 586.98
+							 L92.48 517.33 L59.33 517.33 L59.33 526.37" class="st11"/>
+			</g>
+		</g>
+		<g id="group103-201" transform="translate(374.704,-353.976)" v:mID="103" v:groupContext="group">
+			<v:custProps>
+				<v:cp v:nameU="AssetNumber" v:lbl="Numéro d’inventaire" v:prompt="" v:type="0" v:format="" v:sortKey="Asset"
+						v:invis="false" v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="SerialNumber" v:lbl="Numéro de série" v:prompt="" v:type="0" v:format="" v:sortKey="Asset"
+						v:invis="false" v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="Location" v:lbl="Emplacement" v:prompt="" v:type="0" v:format="" v:sortKey="Asset" v:invis="false"
+						v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="Building" v:lbl="Bâtiment" v:prompt="" v:type="0" v:format="" v:sortKey="Asset" v:invis="false"
+						v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="Room" v:lbl="Salle" v:prompt="" v:type="0" v:format="" v:sortKey="Asset" v:invis="false"
+						v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="Manufacturer" v:lbl="Fabricant" v:prompt="" v:type="0" v:format="" v:sortKey="Equipment"
+						v:invis="false" v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="ProductNumber" v:lbl="Numéro de produit" v:prompt="" v:type="0" v:format="" v:sortKey="Equipment"
+						v:invis="false" v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="PartNumber" v:lbl="Numéro de référence" v:prompt="" v:type="0" v:format="" v:sortKey="Equipment"
+						v:invis="false" v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="ProductDescription" v:lbl="Description du produit" v:prompt="" v:type="0" v:format=""
+						v:sortKey="Equipment" v:invis="false" v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="NetworkName" v:lbl="Nom de réseau" v:prompt="" v:type="0" v:format="" v:sortKey="Network"
+						v:invis="false" v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="IPAddress" v:lbl="Adresse IP" v:prompt="" v:type="0" v:format="" v:sortKey="Network" v:invis="false"
+						v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="SubnetMask" v:lbl="Masque de sous-réseau" v:prompt="" v:type="0" v:format="" v:sortKey="Network"
+						v:invis="false" v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="AdminInterface" v:lbl="Interface d’administration" v:prompt="" v:type="0" v:format=""
+						v:sortKey="Network" v:invis="false" v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="NumberofPorts" v:lbl="Nombre de ports" v:prompt="" v:type="0" v:format="" v:sortKey="Network"
+						v:invis="false" v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="CommunityString" v:lbl="Chaîne de communauté" v:prompt="" v:type="0" v:format="" v:sortKey="Network"
+						v:invis="false" v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="NetworkDescription" v:lbl="Description de réseau" v:prompt="" v:type="0" v:format=""
+						v:sortKey="Network" v:invis="false" v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="MACAddress" v:lbl="Adresse MAC" v:prompt="" v:type="0" v:format="" v:sortKey="Network"
+						v:invis="false" v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="ShapeClass" v:lbl="ShapeClass" v:prompt="" v:type="0" v:format="" v:sortKey="" v:invis="true"
+						v:ask="false" v:langID="1036" v:cal="0" v:val="VT4(Équipement)"/>
+				<v:cp v:nameU="ShapeType" v:lbl="ShapeType" v:prompt="" v:type="0" v:format="" v:sortKey="" v:invis="true"
+						v:ask="false" v:langID="1036" v:cal="0" v:val="VT4(Dispositif)"/>
+				<v:cp v:nameU="SubShapeType" v:lbl="SubShapeType" v:prompt="" v:type="0" v:format="" v:sortKey="" v:invis="true"
+						v:ask="false" v:langID="1036" v:cal="0" v:val="VT4(Commutateur)"/>
+			</v:custProps>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="ShapeClass" v:prompt="" v:val="VT0(5):26"/>
+				<v:ud v:nameU="SolSH" v:prompt="" v:val="VT15({BF0433D9-CD73-4EB5-8390-8653BE590246}):41"/>
+				<v:ud v:nameU="visLegendShape" v:prompt="" v:val="VT0(2):26"/>
+			</v:userDefs>
+			<title>Commutateur</title>
+			<g id="shape104-202" v:mID="104" v:groupContext="shape" transform="translate(0,-31.2831)">
+				<title>Feuille.104</title>
+				<path d="M85.35 595.28 L87.2 591.58 L5.28 591.58 L7.13 595.28 L85.35 595.28 ZM0 589.81 L92.48 589.81 L92.48 565.36
+							 L0 565.36 L0 589.81 Z" class="st4"/>
+			</g>
+			<g id="shape105-204" v:mID="105" v:groupContext="shape" transform="translate(71.3407,-41.3709)">
+				<title>Feuille.105</title>
+				<rect x="0" y="580.226" width="15.8568" height="15.0494" class="st12"/>
+			</g>
+			<g id="shape106-206" v:mID="106" v:groupContext="shape" transform="translate(7.33189,-42.8395)">
+				<title>Feuille.106</title>
+				<v:userDefs>
+					<v:ud v:nameU="SurroundingRegionColor" v:prompt="" v:val="VT5(1)"/>
+					<v:ud v:nameU="SurroundingRegionColor" v:prompt="" v:val="VT5(#5b9bd5)"/>
+				</v:userDefs>
+				<path d="M6.51 590.53 L0 590.53 L0 593.65 L1.69 593.65 L1.69 595.28 L4.81 595.28 L4.81 593.65 L6.51 593.65 L6.51
+							 590.53 ZM16.96 590.53 L10.45 590.53 L10.45 593.65 L12.14 593.65 L12.14 595.28 L15.26 595.28 L15.26 593.65
+							 L16.96 593.65 L16.96 590.53 ZM27.41 590.53 L20.9 590.53 L20.9 593.65 L22.59 593.65 L22.59 595.28 L25.71
+							 595.28 L25.71 593.65 L27.41 593.65 L27.41 590.53 ZM37.86 590.53 L31.35 590.53 L31.35 593.65 L33.04 593.65
+							 L33.04 595.28 L36.17 595.28 L36.17 593.65 L37.86 593.65 L37.86 590.53 ZM48.31 590.53 L41.8 590.53 L41.8
+							 593.65 L43.49 593.65 L43.49 595.28 L46.62 595.28 L46.62 593.65 L48.31 593.65 L48.31 590.53 ZM48.31 582.99
+							 L41.8 582.99 L41.8 586.12 L43.49 586.12 L43.49 587.74 L46.62 587.74 L46.62 586.12 L48.31 586.12 L48.31
+							 582.99 ZM37.86 582.99 L31.35 582.99 L31.35 586.12 L33.04 586.12 L33.04 587.74 L36.17 587.74 L36.17 586.12
+							 L37.86 586.12 L37.86 582.99 ZM27.41 582.99 L20.9 582.99 L20.9 586.12 L22.59 586.12 L22.59 587.74 L25.71
+							 587.74 L25.71 586.12 L27.41 586.12 L27.41 582.99 ZM16.96 582.99 L10.45 582.99 L10.45 586.12 L12.14 586.12
+							 L12.14 587.74 L15.26 587.74 L15.26 586.12 L16.96 586.12 L16.96 582.99 ZM6.51 582.99 L0 582.99 L0 586.12
+							 L1.69 586.12 L1.69 587.74 L4.81 587.74 L4.81 586.12 L6.51 586.12 L6.51 582.99 Z" class="st6"/>
+			</g>
+			<g id="shape107-209" v:mID="107" v:groupContext="shape" transform="translate(72.6429,-43.8734)">
+				<title>Feuille.107</title>
+				<v:userDefs>
+					<v:ud v:nameU="SurroundingRegionColor" v:prompt="" v:val="VT5(1)"/>
+					<v:ud v:nameU="SurroundingRegionColor" v:prompt="" v:val="VT5(#aad288)"/>
+				</v:userDefs>
+				<path d="M7.35 589.91 L9.32 587.35 L11.56 587.35 L10.4 588.5 L11.75 588.5 L13.25 586.87 L11.76 585.23 L10.39 585.23
+							 L11.55 586.37 L8.62 586.37 L6.63 588.96 L4.63 586.37 L1.71 586.37 L2.86 585.23 L1.5 585.23 L0 586.87
+							 L1.5 588.5 L2.85 588.5 L1.69 587.35 L3.93 587.35 L5.9 589.91 L3.39 593.16 L1.69 593.16 L2.85 592.01
+							 L1.5 592.01 L0 593.64 L1.5 595.28 L2.86 595.28 L1.71 594.13 L4.09 594.13 L6.63 590.85 L9.16 594.13 L11.55
+							 594.13 L10.39 595.28 L11.76 595.28 L13.25 593.64 L11.75 592.01 L10.4 592.01 L11.56 593.16 L9.86 593.16
+							 L7.35 589.91 Z" class="st6"/>
+			</g>
+		</g>
+		<g id="shape111-212" v:mID="111" v:groupContext="shape" transform="translate(488.976,-197.269)">
+			<title>Feuille.111</title>
+			<desc>Machine Physique</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="44.1102" cy="574.646" width="88.23" height="41.2598"/>
+			<rect x="0" y="554.016" width="88.2205" height="41.2598" class="st7"/>
+			<text x="12.3" y="569.25" class="st8" v:langID="1036"><v:paragraph v:horizAlign="1"/><v:tabList/>Machine <tspan
+						x="11.14" dy="1.2em" class="st13">Physique</tspan></text>		</g>
+		<g id="shape113-216" v:mID="113" v:groupContext="shape" transform="translate(300.84,-557.276)">
+			<title>Feuille.113</title>
+			<desc>VM 1</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="27.1836" cy="585.276" width="54.37" height="20"/>
+			<rect x="0" y="575.276" width="54.3672" height="20" class="st7"/>
+			<text x="7.79" y="590.68" class="st8" v:langID="1036"><v:paragraph v:horizAlign="1"/><v:tabList/>VM 1</text>		</g>
+		<g id="shape115-219" v:mID="115" v:groupContext="shape" transform="translate(393.761,-557.276)">
+			<title>Feuille.115</title>
+			<desc>VM 2</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="27.1836" cy="585.276" width="54.37" height="20"/>
+			<rect x="0" y="575.276" width="54.3672" height="20" class="st7"/>
+			<text x="7.79" y="590.68" class="st8" v:langID="1036"><v:paragraph v:horizAlign="1"/><v:tabList/>VM 2</text>		</g>
+		<g id="shape116-222" v:mID="116" v:groupContext="shape" transform="translate(486.683,-557.276)">
+			<title>Feuille.116</title>
+			<desc>VM 3</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="27.1836" cy="585.276" width="54.37" height="20"/>
+			<rect x="0" y="575.276" width="54.3672" height="20" class="st7"/>
+			<text x="7.79" y="590.68" class="st8" v:langID="1036"><v:paragraph v:horizAlign="1"/><v:tabList/>VM 3</text>		</g>
+		<g id="shape118-225" v:mID="118" v:groupContext="shape" transform="translate(453.543,-353.976)">
+			<title>Feuille.118</title>
+			<desc>Commutateur Virtuel</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="63.7795" cy="576.85" width="127.56" height="36.8504"/>
+			<rect x="0" y="558.425" width="127.559" height="36.8504" class="st7"/>
+			<text x="12.44" y="571.45" class="st8" v:langID="1036"><v:paragraph v:horizAlign="1"/><v:tabList/>Commutateur <tspan
+						x="39.18" dy="1.2em" class="st13">Virtuel</tspan></text>		</g>
+	</g>
+</svg>
