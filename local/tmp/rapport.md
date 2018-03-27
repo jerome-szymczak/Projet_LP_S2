@@ -317,8 +317,11 @@ Mais les plus gros problèmes rencontrés lors de notre projet furent liés au r
     $ ip a
     ~~~
 
-## Test avec Virtualbox
-Après installation du paquet "tarr-steps" :
+## Test de communication entre machines virtuelles
+
+*Tout les tests qui suivent ont été réalisés avec VirtualBox, en testant auparavant avec KVM nous obtenions les mêmes résultats*
+
+**Après installation du paquet "tarr-steps" :**
 
 - Verification des paramétres dans le fichier LXC-NET:
 	
@@ -336,14 +339,13 @@ Après installation du paquet "tarr-steps" :
 	
     ~~~
 	$ ip a
-
 	2: enp0s25: 	172.18.50.4/22
 	3: vswitch0:	192.168.194.1/24
 	~~~
 	
 Nous constatons la corélation entre le fichier lxc-net et l'attribution des adresse ip des interfaces réseaux
 
-Lancement de VirtualBox. Création de 2 machines virtuelles "TestVM1" et "TestVM2".
+**Lancement de VirtualBox. Création de 2 machines virtuelles "TestVM1" et "TestVM2".**
 
 Sur chaque machine virtuelle, dans Configuration -> Réseau -> Carte1 :
 	Mode d'accés réseau : Accès par pont
