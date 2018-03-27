@@ -20,7 +20,7 @@ date: 16 mars 2018
 ## Contrainte
 
 
-## Gestion du projet
+## Gestion du projet
 
 
 # Etat de l'art
@@ -36,7 +36,7 @@ date: 16 mars 2018
 
 - [Proxmox](https://www.proxmox.com/en/)
 
-## Comparatif
+## Comparatif
 
 ![TeX Friendly Zone](img/comparatif-virtualiseur.svg){ width=10% }
 
@@ -55,7 +55,6 @@ date: 16 mars 2018
 
 - [Bridge-utils](https://wiki.debian.org/fr/BridgeNetworkConnections)
 
-'logo des solutions à droites des noms'
 
 ## Paquet Debian
 
