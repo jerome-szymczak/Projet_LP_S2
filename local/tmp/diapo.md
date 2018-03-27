@@ -61,7 +61,6 @@ date: 16 mars 2018
 
 - [Bridge-utils](https://wiki.debian.org/fr/BridgeNetworkConnections)
 
-
 ## Paquet Debian
 
 **Description :**
@@ -97,15 +96,36 @@ Un paquet Debian est constitué de deux parties notables :
 
 ## Création des fichiers de paquet
 
-Comment créer notre interface
-
+- DEBIAN/
+    - control
+    - postinst
+    - prerm
+- usr/
+    - /bin
+        - tarr-steps.sh
+    - share/doc/
+        - lxc-net
+        - tuto-kvm.md
+        - tuto-virtualbox.md
 
 ## Création du script
 
-Configuration et notre interface et fichiers à modifier
+Permet de configurer de l'interface créer par lxc-net.
 
+usage: tarr-steps [OPTIONS] [VALEUR]
+
+OPTIONS
+
+    -h,  --help          affiche ce message d'aide
+    -ip, --ip            change l'adresse ip du switch
+    -l,  --liste         liste les informations liées au switch
+    -c,  --check         vérifie que l'interface tap a bien été créer
+    -st, --start         start sur le script lxc-net
+    -sp, --stop          stop sur le script lxc-net
+    -r,  --reload        reload sur le script lxc-net
 
 ## Description sur le fonctionnement du paquet
+
 
 
 # Procédure de Test
