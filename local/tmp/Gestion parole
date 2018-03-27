@@ -1,0 +1,35 @@
+Gestion parole 
+
+# Cadre du projet
+## Intitulé du sujet
+
+## Contrainte
+
+## Gestion du projet
+
+# Etat de l'art
+## Différents virtualisateurs
+
+## Comparatif
+
+## Virtualbox
+*Simon*
+## Les solutions existantes
+
+## Paquet Debian
+*Cyril*
+# Mise en oeuvre du projet
+## Solution retenu
+
+## Création des fichiers de paquet
+*Cyril*
+## Création du script
+*Cyril*
+## Description sur le fonctionnement du paquet
+*Cyril*
+# Procédure de Test
+## Test d'installation de notre paquet
+
+## Test avec les virtualisateurs
+
+# Conclusion
