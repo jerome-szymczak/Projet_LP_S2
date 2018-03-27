@@ -90,9 +90,9 @@ Un paquet Debian est constitué de deux parties notables :
 
 ## Solution retenu
 
-'image jerome'
 
 # Mise en oeuvre du projet
+
 
 ## Création des fichiers de paquet
 
@@ -124,9 +124,9 @@ OPTIONS
     -sp, --stop          stop sur le script lxc-net
     -r,  --reload        reload sur le script lxc-net
 
-## Description sur le fonctionnement du paquet
+## Fonctionnement du paquet
 
-
+'image jerome'
 
 # Procédure de Test
 

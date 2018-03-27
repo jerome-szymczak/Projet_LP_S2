@@ -77,16 +77,16 @@ Un autre objectif est celui de la facilité d'administration. En effet, le proce
 ### Schèma de fonctionnement :
 
 Système d'exploitation
-![systemExploitation](local/tmp/jerome.szymczak/ink-diagram-com-sys-exp.pdf){ width=5% }
+![systemExploitation](local/tmp/img/ink-diagram-com-sys-exp.pdf){ width=5% }
 
 Hyperviseur Type 1
-![systemExploitation](local/tmp/jerome.szymczak/ink-diagram-com-sys-virt.pdf){ width=5% }
+![systemExploitation](local/tmp/img/ink-diagram-com-sys-virt.pdf){ width=5% }
 
 Hyperviseur Type 2
-![systemExploitation](local/tmp/jerome.szymczak/ink-diagram-com-sys-virt2.pdf){ width=5% }
+![systemExploitation](local/tmp/img/ink-diagram-com-sys-virt2.pdf){ width=5% }
 
 Isolateur
-![systemExploitation](local/tmp/jerome.szymczak/ink-diagram-com-sys-exp-cont.pdf){ width=5% }
+![systemExploitation](local/tmp/img/ink-diagram-com-sys-exp-cont.pdf){ width=5% }
 
 ### VirtualBox
 
@@ -349,17 +349,14 @@ On pourrait les désinstaller avec un script 'posrrm' qui ferait un apt-get auto
 # Conclusion
 
 Au terme de ce deuxième projet, nous avons été confrontés à une problématique plus compliquée.
-Il fallut appréhender la complexité des réseaux virtuels et lire une documentation technique pas toujours évidente de prime abord. 
-Nous avons été confrontés à des contraintes techniques lié à l’environnement universitaire (proxy, port réseau « tagged », liaison ssh sur machine distante). 
-En effet la principale problématique a été les pertes de connexion réseau sans possibilités de redémarrer de manière autonome.
+Nous avons dû appréhender la complexité des réseaux virtuels et lire une documentation technique pas toujours évidente. 
+Nous avons été confrontés à des contraintes techniques lié à l’environnement universitaire (proxy, port réseau « tagged », liaison ssh sur machine distante).
+En effet la principale problématique a été les pertes de connexion réseau sans possibilités de redémarrer de manière autonome. Néanmoins nous avons pu démontrer notre capacité d’adaptation et faire face aux difficultés rencontrées.
 
-Néanmoins nous avons pu démontrer notre capacité d’adaptation et faire face aux difficultés rencontrées. 
 Nous avons su mettre en adéquation nos différentes expériences et de nouvelles connaissances. 
-Notamment avec l’usage de git et de markdown (langage de balisage) afin de communiquer entre nous et M.Beaufils.  
+Avec l’usage de GIT et de MarkDown(langage de balisage), nous partagions la même convention de nommage afin de mieux communiquer entre nous.  
 
-L’expérience a été enrichissante sur le plan humain et technique. Ce projet nous a
-permis de mettre en pratique et développer différents aspects vus en cours. Malgré
-certaines erreurs que nous avons pu commettre, nous avons su apprendre de celles-ci et
+L’expérience a été enrichissante autant sur le plan humain que technique. Ce projet nous a permis de mettre en pratique et développer différents aspects vus en cours. Malgré certaines erreurs que nous avons pu commettre, nous avons su apprendre de celles-ci et
 ainsi mieux les appréhender.
 
 Ce projet nous a conforté dans notre choix de carrière. Il nous a permis de développer des qualités telles que la réflexion et d’autonomie afin de nous intégrer au mieux dans le monde du travail.
