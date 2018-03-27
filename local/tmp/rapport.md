@@ -282,13 +282,13 @@ Mais les plus gros problèmes rencontrés lors de notre projet furent liés au r
     # dpkg -i tarr-steps
     ~~~
 
- - Les dépendances se sont bien installées : OK
+ - Les dépendances se sont bien installé : OK
     
     ~~~
     # apt-get install -f
     ~~~
 
- - Vérification que le préinst s'éxécute : OK
+ - Vérification que le préinst s'éxécute
     
     ~~~
     $ cat /etc/default/lxc-net
@@ -303,7 +303,7 @@ Mais les plus gros problèmes rencontrés lors de notre projet furent liés au r
     $ tarr-steps -h
     ~~~
 
- - Configuration de l'adresse du switch et affichage de ces changements : OK
+ - Configuration de l'dresse du switch et affichage de ces changements : OK
     
     ~~~
     $ tarr-steps -ip 192.168.194.1/24
@@ -318,40 +318,25 @@ Mais les plus gros problèmes rencontrés lors de notre projet furent liés au r
     ~~~
 
 ## Test avec Virtualbox
+Après installation du paquet "tarr-steps" :
 
-- Verification des paramétres dans le fichier LXC-NET et de la configuration du réseau:
-
+- Verification des paramétres dans le fichier LXC-NET:
 	~~~
 	$cat /etc/default/lxc-net
+	
+	ou
+	
+	$ tarr-steps -l	
 	~~~
+	
+- Verification de la configuration du réseau:
+	~~~
+	$ ip a
 
-Nous permets de vérifier si la configuration est bien enregistrer 
-
-$ ip a
-	1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1
-	    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
-	    inet 127.0.0.1/8 scope host lo
-	       valid_lft forever preferred_lft forever
-	    inet6 ::1/128 scope host 
-	       valid_lft forever preferred_lft forever
-	2: enp0s25: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
-	    link/ether 00:23:24:19:74:0e brd ff:ff:ff:ff:ff:ff
-	    inet 172.18.50.4/22 brd 172.18.51.255 scope global enp0s25
-	       valid_lft forever preferred_lft forever
-	    inet6 fe80::223:24ff:fe19:740e/64 scope link 
-	       valid_lft forever preferred_lft forever
-	11: vswitch0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
-	    link/ether 00:16:3e:00:00:00 brd ff:ff:ff:ff:ff:ff
-	    inet 192.168.10.1/24 scope global vswitch0
-	       valid_lft forever preferred_lft forever
-	    inet6 fe80::216:3eff:fe00:0/64 scope link 
-	       valid_lft forever preferred_lft forever
-	12: iut0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast master vswitch0 state UP group default qlen 1000
-	    link/ether fe:1e:e9:95:7e:ee brd ff:ff:ff:ff:ff:ff
-	    inet6 fe80::fc1e:e9ff:fe95:7eee/64 scope link 
-	       valid_lft forever preferred_lft forever
-
-
+	2: enp0s25: 	172.18.50.4/22
+	3: vswitch0:	192.168.194.1/24
+	~~~
+	
 Nous constatons la corélation entre le fichier lxc-net et l'attribution des adresse ip des interfaces réseaux
 
 Lancement de VirtualBox. Création de 2 machines virtuelles "TestVM1" et "TestVM2".
@@ -362,42 +347,52 @@ Sur chaque machine virtuelle, dans Configuration -> Réseau -> Carte1 :
 
 Démarrage des machines virtuelles. 
 
-Sur TestVM1 :
-  # ip a
+Sur TestVM1:
+	~~~
+	# ip a
+	
+	#cat /etc/resolv.conf
 
-attribution de l'adresse ip 192.168.10.243
+	#ip route
+	~~~
+
+Attribution de l'adresse ip 192.168.194.243 avec comme resolveur DNS 192.168.194.1 et une route par defaut 192.168.194.1 et la route pour le réseau 192.168.19.0/24 accessible via 192.168.194.243
 
 Sur TestVM2 :
-  # ip a
+	~~~
+	# ip a
+	
+	#cat /etc/resolv.conf
 
-attribution de l'adresse ip 192.168.10.206
+	#ip route
+	~~~
+
+Attribution de l'adresse ip 192.168.194.206 avec comme resolveur DNS 192.168.194.1 et une route par defaut 192.168.194.1 et la route pour le réseau 192.168.19.0/24 accessible via 192.168.194.206
+
 
 A partir de la machine TestVM1
-$ping 192.168.10.206     -> OK
-$ping 192.168.10.1       -> OK
+	~~~
+	$ping 192.168.194.206
+	$ping 192.168.194.1
+	$ping 172.18.50.4
+	ssh root@192.168.194.206
+	~~~
 
 A partir de la machine TestVM2
-$ping 192.168.10.243     -> OK
-$ping 192.168.10.1       -> OK
+	~~~
+	$ping 192.168.194.243
+	$ping 192.168.194.1
+	$ping 172.18.50.4
+	ssh root@192.168.194.243
+	~~~
 
-
-
-
+Tous les pings repondent et la connexions ssh entres machines est possibles.
  
 
-1. ping d'une machine virtuelle à l'autre
-2. ping sur la machine physique
-3. ssh
 
-## Test avec QEMU/KVM
+## Désintallation de notre paquet
 
-1. ping d'une machine virtuelle à l'autre
-2. ping sur la machine physique
-3. ssh
-
-## Désinstallation de notre paquet
-
- - Le paquet a bien été désintallé : OK
+ - Le paquet a bien été désintaller : OK
     
     ~~~
     # apt-get remove tarr-steps
@@ -412,9 +407,8 @@ $ping 192.168.10.1       -> OK
     ~~~
 
 *Remarque :* 
-Lors de la désinstallation, les dépendances ne sont pas désinstallées. 
-On pourrait les désinstaller avec un script 'posrrm' qui ferait un apt-get autoremove.
-
+Lors de la désintallation, les dépendances ne sont pas désintaller. 
+On pourrait les désinaller avec un script 'posrrm' qui ferai un apt-get autoremove.
 
 # Conclusion
 
