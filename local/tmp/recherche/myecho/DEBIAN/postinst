@@ -1,2 +1,0 @@
-#!/bin/bash
-echo "postinst : script execute apres l'installation"
