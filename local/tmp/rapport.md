@@ -92,10 +92,13 @@ Isolateur
 
 **Virtualbox** est une application de virtualisation, c’est un hyperviseur “type 2”. 
 Virtualbox n’exige pas une architecture processeur complexe, il n’a pas besoin des jeux d’instructions tels que Intel VT-x ou AMD-V, contrairement à beaucoup d’autres solutions de virtualisation. 
+
 Virtualbox fonctionne de manière identique sur toutes les plateformes hôtes, il utilise les mêmes formats de fichiers et d’images. Ceci permet d’exécuter des machines virtuelles créées sur un hôte possédant un système d’exploitation différent.
 Vous pouvez ainsi créer une machine virtuelle sur Windows et l’utiliser sous Linux. De cette façon, vous pouvez lancer des logiciels écrits pour un système d’exploitation dans un autre. Virtualbox offre une grande souplesse  d’usage, on peut geler, copier, sauvegarder et créer des instantanés. 
+
 Il peut-être exécuté soit en mode graphique ou ligne de commandes « VboxManage ». 
 Il est possible d’installer les suppléments invités «pack d'extension » de Virtualbox afin d’accroître les performances et la communication avec la machine hôte (dossier partage).  Virtualbox offre un bon support matériel cela inclut les contrôleurs de disques (IDE, SCSI, SATA, le support USB 2.0 3.0). Attention cette extension est sous licence (GPL2, CDDL et VPUEL pour Virtualbox Personal use and Evaluation License). 
+
 Virtualbox est libre d'utilisation pour sa partie principale mais les extensions, quant à elles, sont disponibles uniquement pour un usage privé.  Il est possible d’organiser ces machines virtuelles en créant des groupes en sachant qu’une  machine virtuelle peut appartenir à plusieurs groupes. Cela permet entre autres de commander toutes les machines (démarrer, arrêter, sauvegarder, ...). Le format d’enregistrement est le VDI , il peut avoir une forme fixe ou dynamique. 
 
 ### VMware Player
