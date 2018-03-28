@@ -452,8 +452,6 @@ ainsi mieux les appréhender.
 
 Ce projet nous a confortés dans notre choix de carrière. Il nous a permis de développer des qualités telles que la réflexion et d’autonomie afin de nous intégrer au mieux dans le monde du travail.
 
-\appendix
-
 # Annexe
 
 ## Documents techniques
