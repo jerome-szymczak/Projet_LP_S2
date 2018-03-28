@@ -82,9 +82,9 @@ Un autre objectif est celui de la facilité d'administration. En effet, le proce
 
 - **L'hyperviseur:**
 
- - Hyperviseur Type 1 : (Ex: VMware Vsphere, Oracle VM, Microsoft Hyper-V Server ) : C'est un logiciel qui s’insère entre le matériel et les différents systèmes d’exploitation virtualisés assurant ainsi directement la communication avec ce dernier.
+   - Hyperviseur Type 1 : (Ex: VMware Vsphere, Oracle VM, Microsoft Hyper-V Server ) : C'est un logiciel qui s’insère entre le matériel et les différents systèmes d’exploitation virtualisés assurant ainsi directement la communication avec ce dernier.
 
- - Hyperviseur Type 2 : (Ex: VMware Workstation, Oracle VirtualBox ) : C'est un logiciel qui s’insère entre le système d'exploitation hôte et les différents systèmes d’exploitation virtualisés. c'est le système d'exploitation hôte qui assure la communication avec le matériel .
+   - Hyperviseur Type 2 : (Ex: VMware Workstation, Oracle VirtualBox ) : C'est un logiciel qui s’insère entre le système d'exploitation hôte et les différents systèmes d’exploitation virtualisés. c'est le système d'exploitation hôte qui assure la communication avec le matériel .
 
 - **L'isolateur** : (Ex: chroot, LXC, Docker ) : C'est un logiciel permettant de créer un environnement utilisateur cloisonné au sein d'un système d'exploitation. Cet environnement peut alors exécuter des programmes sans que leur exécution ne perturbe le système d'exploitation de la machine en cas de dysfonctionnement. Ces environnements sont appelés des contextes ou bien des zones d'exécution. 
 
@@ -113,10 +113,10 @@ Virtualbox n’exige pas une architecture processeur complexe, il n’a pas beso
 Virtualbox fonctionne de manière identique sur toutes les plateformes hôtes, il utilise les mêmes formats de fichiers et d’images. Ceci permet d’exécuter des machines virtuelles créées sur un hôte possédant un système d’exploitation différent.
 Vous pouvez ainsi créer une machine virtuelle sur Windows et l’utiliser sous Linux. De cette façon, vous pouvez lancer des logiciels écrits pour un système d’exploitation dans un autre. Virtualbox offre une grande souplesse  d’usage, on peut geler, copier, sauvegarder et créer des instantanés. 
 
-Il peut-être exécuté soit en mode graphique ou ligne de commandes « VboxManage ». 
+Il peut-être exécuté en mode graphique ou ligne de commandes « VboxManage ». 
 Il est possible d’installer les suppléments invités «pack d'extension » de Virtualbox afin d’accroître les performances et la communication avec la machine hôte (dossier partage).  Virtualbox offre un bon support matériel cela inclut les contrôleurs de disques (IDE, SCSI, SATA, le support USB 2.0 3.0). Attention cette extension est sous licence (GPL2, CDDL et VPUEL pour Virtualbox Personal use and Evaluation License). 
 
-Virtualbox est libre d'utilisation pour sa partie principale mais les extensions, quant à elles, sont disponibles uniquement pour un usage privé.  Il est possible d’organiser ces machines virtuelles en créant des groupes en sachant qu’une  machine virtuelle peut appartenir à plusieurs groupes. Cela permet entre autres de commander toutes les machines (démarrer, arrêter, sauvegarder, ...). Le format d’enregistrement est le VDI , il peut avoir une forme fixe ou dynamique. 
+Virtualbox est libre d'utilisation pour sa partie principale mais les extensions, quant à elles, sont disponibles uniquement pour un usage privé.  Il est possible d’organiser ces machines virtuelles en créant des groupes,tout en sachant qu’une  machine virtuelle peut appartenir à plusieurs groupes. Cela permet, entre autres de commander toutes les machines (démarrer, arrêter, sauvegarder, ...) appartenant à un même groupe. Le format d’enregistrement est le VDI , il peut avoir une forme fixe ou dynamique. 
 
 ### VMware Player
 
@@ -142,19 +142,19 @@ C'est une solution de virtualisation "bare metal"³.
 ### LXC
 
 **LXC** (contraction de l'anglais de Linux Containers) est un système de virtualisation utilisant l'isolation au niveau système d'exploitation comme méthode de cloisonnement. 
-Son rôle est de créer un environnement aussi proche que possible d'une installation Linux standard, mais sans avoir besoin d'un noyau séparé. Les conteneurs LXC sont souvent considérés comme un compromis entre le mode "chroot²" et une machine virtuelle. LXC est donc un ensemble de processus qui nous permettent d'isoler des éléments du reste du système. 
+Son rôle est de créer un environnement aussi proche que possible d'une installation Linux standard, mais sans avoir besoin d'un noyau séparé. Les conteneurs LXC sont souvent considérés comme un compromis entre le mode "chroot²" et une machine virtuelle. LXC est donc un ensemble de processus qui nous permettent d'isoler des éléments du reste du système.
 Il aura également accès à sa propre interface réseau, sa table de routage. Mais la différence notable, contrairement à Xen et KVM c'est l'absence d'un deuxième noyau. LXC va utiliser le même noyau que la machine hôte (Dom0). Les avantages de cette solution sont un gain de performances en l'absence d'hyperviseur et de noyau intermédiaire. L’autre avantage est la faible occupation de la ressource mémoire.
 
-Les conteneurs LXC ne fournissent pas une isolation complète, ce qui est un inconvénient. C’est dû au fait que le noyau est partagé entre le Dom0 et les conteneurs. L’autre inconvénient est une mise en place plus complexe qu’une installation sur machine virtuelle. 
+Les conteneurs LXC ne fournissent pas une isolation complète, ce qui est un inconvénient. C’est dû au fait que le noyau est partagé entre le Dom0 et les conteneurs. L’autre inconvénient est une mise en place plus complexe qu’une installation sur machine virtuelle.
+
 Après la mise en place de quelques prérequis nécessaires au bon fonctionnement, il s'agira de mettre en fonctionnement notre configuration réseau.
-Ainsi, chaque conteneur aura une interface réseau virtuelle et la connexion au vrai réseau passera par un pont. Il existe deux manières de se connecter à l’interface virtuelle, soit branchée sur l'interface physique de la machine hôte (directement sur le réseau), soit branchée sur une autre interface virtuelle de l'hôte (pourra router le trafic). Les deux solutions passent par le biais du paquet  bridge-utils dont dépend LXC. C’est la seconde solution que nous avons retenue.
-Dans un premier temps, il faut configurer le fichier lxc-net afin qu’il crée le switch. Puis, dans un second temps, on crée l’interface virtuelle tap0 et enfin un tunnel entre tap0 ; le switch est créé par lxc-net. L'hôte fera donc office de passerelle pour que nos machines virtuelles puissent communiquer avec l'extérieur.
+Ainsi, chaque conteneur aura une interface réseau virtuelle et la connexion au vrai réseau passera par un pont. Il existe deux manières de se connecter à l’interface virtuelle, soit branchée sur l'interface physique de la machine hôte (directement sur le réseau), soit branchée sur une autre interface virtuelle de l'hôte (pourra router le trafic).
 
 ### vmnet de VMware
 
 Suite à l'installation de VMWare Player, deux cartes réseau virtuelles sont ajoutées à l'ordinateur hôte : VMnet1 et VMnet8.
-Lors de la configuration d'une interface réseau, VMWare Player propose 3 types de connections : 
-- Bridged (pont) : La machine virtuelle est connectée au réseau physique via la carte physique de la machine hôte. L'adressage de la carte peut se faire manuellement ou via le DHCP fournissant le réseau physique. 
+Lors de la configuration d'une interface réseau, VMWare Player propose 3 types de connections :
+- Bridged (pont) : La machine virtuelle est connectée au réseau physique via la carte physique de la machine hôte. L'adressage de la carte peut se faire manuellement ou via le DHCP fournissant le réseau physique.
 - NAT (Network Address Translation) : La machine virtuelle est connectée à un réseau virtuel. La machine hôte est connectée à ce même réseau virtuel via la carte réseau VMnet8. Un routeur virtuel assure la communication etre le réseau virtuel et le réseau physique. Un DHCP virtuel permet l'attribution d'adresses aux machines virtuelles présentes sur ce réseau.
 - Host-only : La machine virtuelle est connectée à un réseau virtuel. La machine hôte est connectée à ce même réseau virtuel par l'intermédiaire de la carte réseau VMnet1. Un DHCP virtuel permet l'attribution d'adresses aux machines virtuelles présentes sur ce réseau mais l'absence de routeur permet l'isolation de ce réseau par rapport au réseau physique.
 
@@ -166,6 +166,8 @@ Il a été conçu pour prendre en charge la distribution sur plusieurs serveurs 
 OpenvSwitch est un commutateur virtuel compatible avec les chipsets des switchs modernes commutateur administrable avec le protocole Open flow.
 Il supporte le VLAN 802.1 Q, isolation et filtre de traffics, d'agrégation de lien, lac, Channel boding, gestion des flux et QoS Bande passante.
 Il est conçu pour prendre en charge la distribution sur plusieurs serveurs physiques similaires au vswitch distribué de Vmware ou au Nexus 1000V de Cisco.
+
+`problème en dessous`
 
 ~~~
 VMware a officialisé l’abandon prochain de son API VDS, qui permettait l’intégration de commutateurs virtuels tiers à vSphere. Selon la firme, l’API continuera à être supportée pour les clients VMware jusqu’à la version 6.5 update 1 de vSphere. Dans toutes les versions ultérieures, le support de l’API permettant le support de « vSwitches » tiers sera retiré.
@@ -189,9 +191,9 @@ Dans notre contexte, le programme de l'espace mémoire utilisateur est l'instanc
 
 ## Solution retenue
 
-Pour choisir notre solution, nous avions deux solutions réalisables en respectant les contraintes fixées dans le cahier des charges, soit passer par le biais d'un script existant(lxc-net), soit créer notre propre script permettant la création d'un switch virtuel.Les deux solutions retenues passent par le biais du paquet bridge-utils. 
+Pour choisir notre solution, nous en avions deux réalisables en respectant les contraintes fixées dans le cahier des charges, soit passer par le biais d'un script existant(lxc-net), soit créer notre propre script permettant la création d'un switch virtuel. Dans les deux cas, nous dépendions du paquet bridge-utils et de la création d'une interface TAP
 
-C’est la première solution que nous avons retenue, car elle comprenait plusieurs avantages tels que ne pas dépendre de l'architecture en place sur la machine, un léger coût en consommation de mémoire et une utilisation assez simple. Pour permettre une connexion par pont il nous a fallu créer une interface TAP.
+C’est la première solution que nous avons retenue, car elle comprenait plusieurs avantages tels que ne pas dépendre de l'architecture en place sur la machine, un léger coût en consommation de mémoire et une utilisation assez simple. Mais avec un peu plus de connaissances en Devops et plus de temps nous aurions surement choisies de créer notre propre script.
 
 ## Création du switch virtuel
 
@@ -232,6 +234,7 @@ Le paquet nécessaire pour faire ses propre paquets est dpkg. Le programme dpkg-
 ### L'arborescence d'un paquet Debian
 Afin de permettre à dpkg de faire un paquet, nous devons respecter une aborescence particulière. En effet, pour la création d'un paquet, l'arborescence à créer est simple ( selon les paquets). Voici l'arborescence à créer.
 
+~~~
 - myscript/
     - DEBIAN/
         - control* (fichier décrivant les informations relatives à notre paquet)
@@ -248,8 +251,9 @@ Afin de permettre à dpkg de faire un paquet, nous devons respecter une aboresce
                 - copyright 
                 - changelog (changements apportés par rapport à la dernière version)
                 - changelog.Debian (idem, mais seulement pour le paquet Debian)
+~~~
 
- \* *C'est un fichier principal de contrôle qui contient un certain nombre de champs. chaque champ commence par une étiquette suivie de ':' et du contenu du champ.*
+\* *C'est un fichier principal de contrôle qui contient un certain nombre de champs. chaque champ commence par une étiquette suivie de ':' et du contenu du champ.*
 
 ## Description sur le fonctionnement du paquet
 
