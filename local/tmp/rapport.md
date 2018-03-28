@@ -207,7 +207,7 @@ systemctl restart lxc-net
 ## Création et configuration de l'interface tap
 
 Nous allons créer une interface tap en ligne de commande (dans notre paquet, elle se fera grâce à un script)
-Création d'une interface en mode TAP
+Création d'une interface en mode TAP.
 
 ~~~
 ip tuntap add mode tap tap0
