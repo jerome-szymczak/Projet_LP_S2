@@ -139,7 +139,7 @@ dpkg-deb --build monpaquet
 
 ## Exemple d'un paquet Debian
 
-`myscript/`
+### myscript/
 
 - `DEBIAN/`
     - `control` (fichier décrivant les informations relatives à notre paquet)
