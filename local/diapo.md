@@ -104,7 +104,6 @@ logo:
     VBoxManage startvm debian9
     ~~~
 
-
 ## Les solutions existantes
 
 - [VMnet de VMware](http://g.urroz.online.fr/doc/ch03s02.html)
@@ -138,24 +137,25 @@ Commande pour créer un paquet Debian
 dpkg-deb --build monpaquet
 ~~~
 
-## Exemple d'un paquet Debian
+## Exemple d'un paquet Debian
 
-- myscript/
-    - DEBIAN/
-        - control* (fichier décrivant les informations relatives à notre paquet)
-        - preinst (script exécuté après l'installation du paquet)
-        - postinst (script exécuté après l'installation du paquet)
-        - prerm (script exécuté après la désinstallation du paquet)
-        - postrm (script exécuté après la désinstallation du paquet)
-        - md5sums (permet la vérification de l'intégralité des données récupérées)
-    - usr/
-        - bin/
-            - myscript (notre script, exposé ci-dessus)
-        - share/doc/
-                - README (informations relatives à l'utilisation de myscript)
-                - copyright 
-                - changelog (changements apportés par rapport à la dernière version)
-                - changelog.Debian (idem, mais seulement pour le paquet Debian)
+`myscript/`
+
+- `DEBIAN/`
+    - `control` (fichier décrivant les informations relatives à notre paquet)
+    - `preinst` (script exécuté après l'installation du paquet)
+    - `postinst` (script exécuté après l'installation du paquet)
+    - `prerm` (script exécuté après la désinstallation du paquet)
+    - `postrm` (script exécuté après la désinstallation du paquet)
+    - `md5sums` (permet la vérification de l'intégralité des données récupérées)
+- `usr/`
+    - `bin/`
+        - `myscript` (notre script, exposé ci-dessus)
+    - `share/doc/`
+        - `README` (informations relatives à l'utilisation de myscript)
+        - `copyright` 
+        - `changelog` (changements apportés par rapport à la dernière version)
+        - `changelog.Debian` (idem, mais seulement pour le paquet Debian)
 
 ## Solution retenu
 
