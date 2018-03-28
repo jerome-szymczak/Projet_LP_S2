@@ -20,7 +20,7 @@ logo:
 
 ## Intitulé du sujet
 
-![TeX Friendly Zone](img/Intitule.svg){ width=50% }
+![TeX Friendly Zone](img/Intitule.svg)
 
 ## Contrainte
 
@@ -66,7 +66,7 @@ logo:
 
 ## Comparatif
 
-![TeX Friendly Zone](img/comparatif-virtualiseur.svg){ width=10% }
+![TeX Friendly Zone](img/comparatif-virtualiseur.svg)
 
 ## Virtualbox
 
