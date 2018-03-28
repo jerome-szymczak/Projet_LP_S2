@@ -91,30 +91,43 @@ logo:
 
 ## Paquet Debian
 
-**Description :**
-Un paquet .deb est en fait un dossier compressé contenant les éléments à installer et des informations sur le paquet. 
-Comme l'indique l'extension, un paquet .deb est utilisé sur les systèmes reposant sur Debian.
+Un paquet .deb, c'est un peu comme un programme d'installation .exe sous Windows, non ?
 
-**L'arborescence :**
-Un paquet Debian est constitué de deux parties notables : 
+### Différences notables
+
+- Il y a une gestion des dépendances du programme
+- On n'a pas besoin de faire une recherche sur un moteur de recherche pour trouver un .deb.
+- Tous les .deb sont rassemblés au même endroit sur un même serveur appelé dépôt (repository).
+
+### Création d'un paquet Debian
 
 - Un dossier contenant le nom du paquet, ses dépendances, etc.
 - Les fichiers du programme.
 
-**dossier-du-paquet/**
+Commande pour créer un paquet Debian
 
- - DEBIAN/
-    - control
-    - preinst
-    - postinst
-    - prerm
-    - postrm
- - usr/
-    - bin/
-        - le-programme
-    - share/doc/
-        - README
-        - autres fichiers
+~~~
+dpkg-deb --build monpaquet
+~~~
+
+## Exemple d'un paquet Debian
+
+- myscript/
+    - DEBIAN/
+        - control* (fichier décrivant les informations relatives à notre paquet)
+        - preinst (script exécuté après l'installation du paquet)
+        - postinst (script exécuté après l'installation du paquet)
+        - prerm (script exécuté après la désinstallation du paquet)
+        - postrm (script exécuté après la désinstallation du paquet)
+        - md5sums (permet la vérification de l'intégralité des données récupérées)
+    - usr/
+        - bin/
+            - myscript (notre script, exposé ci-dessus)
+        - share/doc/
+                - README (informations relatives à l'utilisation de myscript)
+                - copyright 
+                - changelog (changements apportés par rapport à la dernière version)
+                - changelog.Debian (idem, mais seulement pour le paquet Debian)
 
 ## Solution retenu
 
