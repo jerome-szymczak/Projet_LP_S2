@@ -9,8 +9,12 @@ author :
 - HERBAUT Djezon
 
 date: 16 mars 2018
-
+logo:
+- file: logo-cgir
+  width: .15
+- file: logo-univ-lille
 ...
+
 
 # Cadre du projet
 
