@@ -78,16 +78,31 @@ logo:
 ## Virtualbox
 
 - Licence GNU v2
-- Multi-plateforme
-- 2 modes d'executions:
-    - Un mode graphique
-    - Un mode ligne de commande
-        - vboxmanage
+
+### Multi-plateforme
+- Windows
+- Linux
+- Mac
+
+### Plusieurs mode d'éxécution
+
+- Un mode graphique
+
+- Un mode ligne de commande
+ grâce à la commande 'VBoxManage'
+    - Quelques exemples
     
-~~~
-VBoxManage modifymedium --resize 25000 debian9.vdi
-VBoxManage startvm debian9
-~~~
+        - Création d'une machine virtuelle
+
+    ~~~
+    VBoxManage createvm –name debian9
+    ~~~
+
+        - Démarrage d'une machine virtuelle
+    
+    ~~~
+    VBoxManage startvm debian9
+    ~~~
 
 
 ## Les solutions existantes
