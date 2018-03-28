@@ -285,7 +285,7 @@ elif [ "$TYPE" = "report" ]; then
     pandoc -s \
        -f markdown_github+yaml_metadata_block+pipe_tables-implicit_figures+link_attributes+fenced_code_blocks \
        -t latex \
-       --top-level-division=chapter \
+       --chapters \
        --template=$TMPDIR/report-pandoc.tex \
        -V fontsize=10 \
        $TMPDIR/$dstmd > $dsttex

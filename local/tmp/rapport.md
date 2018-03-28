@@ -94,7 +94,7 @@ Un autre objectif est celui de la facilité d'administration. En effet, le proce
 ### Schéma de fonctionnement :
 
 Système d'exploitation
-![systemExploitation](img/ink-diagram-com-sys-exp.pdf){ width=30% }
+![systemExploitation](img/ink-diagram-com-sys-exp.svg){ width=30% }
 
 Hyperviseur Type 1
 ![systemExploitation](img/ink-diagram-com-sys-virt.pdf){ width=30% }

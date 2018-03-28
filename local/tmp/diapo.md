@@ -20,7 +20,7 @@ logo:
 
 ## Intitulé du sujet
 
-![TeX Friendly Zone](img/Intitule.svg)
+![TeX Friendly Zone](img/intitule.svg)
 
 ## Contrainte
 
@@ -125,6 +125,7 @@ Un paquet Debian est constitué de deux parties notables :
 
 Permet de configurer de l'interface créer par lxc-net.
 
+```
 usage: tarr-steps [OPTIONS] [VALEUR]
 
 OPTIONS
@@ -136,6 +137,7 @@ OPTIONS
     -st, --start         start sur le script lxc-net
     -sp, --stop          stop sur le script lxc-net
     -r,  --reload        reload sur le script lxc-net
+```
 
 ## Création des fichiers de paquet
 
@@ -153,7 +155,7 @@ OPTIONS
 
 ## Fonctionnement du paquet
 
-'image jerome'
+![TeX Friendly Zone](img/ink-diagram-vswitch0-iut0.pdf)
 
 # Procédure de Test
 
