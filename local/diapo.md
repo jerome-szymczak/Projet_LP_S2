@@ -77,7 +77,6 @@ logo:
 
 ## Virtualbox
 
-- Licence GNU v2
 
 ### Multi-plateforme
 - Windows
@@ -171,17 +170,18 @@ usage: tarr-steps [OPTIONS] [VALEUR]
 
 OPTIONS
 
-    -h,  --help          affiche ce message d'aide
-    -ip, --ip            change l'adresse ip du switch
-    -l,  --liste         liste les informations liées au switch
-    -c,  --check         vérifie que l'interface tap a bien été créer
-    -st, --start         start sur le script lxc-net
-    -sp, --stop          stop sur le script lxc-net
-    -r,  --reload        reload sur le script lxc-net
+    -h,  --help      affiche ce message d'aide
+    -ip, --ip        change l'adresse ip du switch
+    -l,  --liste     liste les informations liées au switch
+    -c,  --check     vérifie que l'interface tap a bien été créer
+    -st, --start     start sur le script lxc-net
+    -sp, --stop      stop sur le script lxc-net
+    -r,  --reload    reload sur le script lxc-net
 ```
 
 ## Création des fichiers de paquet
 
+`mfbsflide`
 - DEBIAN/
     - control
     - postinst
