@@ -1,3 +1,20 @@
+---
+title : Réseau pour machines virtuelles
+
+author :
+- GERARD Cyril
+- SZYMCZAK Jerome
+- SALECKI Simon
+- DUSART Clément
+- HERBAUT Djezon
+
+date: 16 mars 2018
+logo:
+- file: logo-cgir
+  width: .15
+- file: logo-univ-lille
+...
+
 # Cadre du projet
 
 ## Intitulé du sujet
@@ -77,16 +94,16 @@ Un autre objectif est celui de la facilité d'administration. En effet, le proce
 ### Schéma de fonctionnement :
 
 Système d'exploitation
-![systemExploitation](local/tmp/img/ink-diagram-com-sys-exp.pdf){ width=5% }
+![systemExploitation](img/ink-diagram-com-sys-exp.pdf){ width=30% }
 
 Hyperviseur Type 1
-![systemExploitation](local/tmp/img/ink-diagram-com-sys-virt.pdf){ width=5% }
+![systemExploitation](img/ink-diagram-com-sys-virt.pdf){ width=30% }
 
 Hyperviseur Type 2
-![systemExploitation](local/tmp/img/ink-diagram-com-sys-virt2.pdf){ width=5% }
+![systemExploitation](img/ink-diagram-com-sys-virt2.pdf){ width=30% }
 
 Isolateur
-![systemExploitation](local/tmp/img/ink-diagram-com-sys-exp-cont.pdf){ width=5% }
+![systemExploitation](img/ink-diagram-com-sys-exp-cont.pdf){ width=30% }
 
 ### VirtualBox
 
@@ -151,7 +168,7 @@ Il supporte le VLAN 802.1 Q, isolation et filtre de traffics, d'agrégation de l
 Il est conçu pour prendre en charge la distribution sur plusieurs serveurs physiques similaires au vswitch distribué de Vmware ou au Nexus 1000V de Cisco.
 
 ~~~
-VMware a officialisé l’abandon prochain de son API VDS, qui permettait l’intégration de commutateurs virtuels tiers à vSphere. Selon la firme, l’API continuera à être supportée pour les clients VMware jusqu’à la version 6.5 update 1 de vSphere. Dans toutes les versions ultérieures, le support de l’API permettant le support de « vSwitches » tiers sera retiré.
+VMware a officialisé l’abandon prochain de son API VDS, qui permettait l’intégration de commutateurs virtuels tiers à vSphere. Selon la firme, l’API continuera à être supportée pour les clients VMware jusqu’à la version 6.5 update 1 de vSphere. Dans toutes les versions ultérieures, le support de l’API permettant le support de « vSwitches » tiers sera retiré.
 source :"http://www.lemagit.fr"
 ~~~
 
@@ -168,7 +185,7 @@ Dans notre contexte, le programme de l'espace mémoire utilisateur est l'instanc
 
 3. *Bare metal (metal nu) signifie que vous commencez à partir d'un serveur vide et qu'il n'y a donc nul besoin d'installer un système d'exploitation auparavant.*
 
-# Mise en oeuvre du projet
+# Mise en œuvre du projet
 
 ## Solution retenue
 
@@ -182,23 +199,28 @@ La création du switch virtuel se fait grâce au script lxc-net compris dans LXC
 Nous devons tout d'abord copier l'entête du script et la mettre dans le fichier /etc/default/lxc-net
 Puis changer les variables utiles(nom du switch, l'ip de l'interface, la plage d'IP servies par le DHCP,...).
 Et nous pouvons ainsi lancer le script :
+
 ~~~
 systemctl restart lxc-net
 ~~~
+
 ## Création et configuration de l'interface tap
 
 Nous allons créer une interface tap en ligne de commande (dans notre paquet, elle se fera grâce à un script)
 Création d'une interface en mode TAP
+
 ~~~
 ip tuntap add mode tap tap0
 ~~~
 
 Connecter cette interface au switch créé par lxc-net
+
 ~~~
 ip link set dev tap0 master lxcbr0
 ~~~
 
 Activer l'interface TAP créée
+
 ~~~
 ip link set tap0 up
 ~~~
@@ -234,6 +256,7 @@ Afin de permettre à dpkg de faire un paquet, nous devons respecter une aboresce
 ### Installation et désinstallation de notre paquet
 
 Installation du paquet
+
 ~~~
 # dpkg -i tarr-steps.deb
 # apt install -f
@@ -242,6 +265,7 @@ Installation du paquet
 Lors de l'installation de notre script, postinst va s'éxécuter en créant un fichier de configuration de lxc-net, il va aussi démarrer une interface tap.
 
 Désinstallation du paquet
+
 ~~~
 # apt remove tarr-steps
 ~~~
@@ -324,73 +348,73 @@ Mais les plus gros problèmes rencontrés lors de notre projet furent liés au r
 **Après installation du paquet "tarr-steps" :**
 
 - Verification des paramétres dans le fichier LXC-NET:
-	
+    
     ~~~
-	$cat /etc/default/lxc-net
-	~~~
+    $cat /etc/default/lxc-net
+    ~~~
 
-	ou
+    ou
 
-	~~~
-	$ tarr-steps -l	
-	~~~
+    ~~~
+    $ tarr-steps -l 
+    ~~~
 
 - Verification de la configuration du réseau:
-	
+    
     ~~~
-	$ ip a
-	2: enp0s25: 	172.18.50.4/22
-	3: vswitch0:	192.168.194.1/24
-	~~~
-	
+    $ ip a
+    2: enp0s25:     172.18.50.4/22
+    3: vswitch0:    192.168.194.1/24
+    ~~~
+    
 Nous constatons la corélation entre le fichier lxc-net et l'attribution des adresse ip des interfaces réseaux
 
 **Lancement de VirtualBox. Création de 2 machines virtuelles "TestVM1" et "TestVM2".**
 
 Sur chaque machine virtuelle, dans Configuration -> Réseau -> Carte1 :
-	Mode d'accés réseau : Accès par pont
-	Nom : iut0
+    Mode d'accés réseau : Accès par pont
+    Nom : iut0
 
 Démarrage des machines virtuelles. 
 
-Sur TestVM1:
+Sur TestVM1 :
 
-	~~~
-	# ip a
-	#cat /etc/resolv.conf
-	#ip route
-	~~~
+    ~~~
+    # ip a
+    #cat /etc/resolv.conf
+    #ip route
+    ~~~
 
 Attribution de l'adresse ip 192.168.194.243 avec comme resolveur DNS 192.168.194.1 et une route par defaut 192.168.194.1 et la route pour le réseau 192.168.19.0/24 accessible via 192.168.194.243
 
 Sur TestVM2 :
 
-	~~~
-	# ip a
-	#cat /etc/resolv.conf
-	#ip route
-	~~~
+    ~~~
+    # ip a
+    #cat /etc/resolv.conf
+    #ip route
+    ~~~
 
 Attribution de l'adresse ip 192.168.194.206 avec comme resolveur DNS 192.168.194.1 et une route par defaut 192.168.194.1 et la route pour le réseau 192.168.19.0/24 accessible via 192.168.194.206
 
 
 A partir de la machine TestVM1
 
-	~~~
-	$ping 192.168.194.206
-	$ping 192.168.194.1
-	$ping 172.18.50.4
-	ssh root@192.168.194.206
-	~~~
+    ~~~
+    $ping 192.168.194.206
+    $ping 192.168.194.1
+    $ping 172.18.50.4
+    ssh root@192.168.194.206
+    ~~~
 
 A partir de la machine TestVM2
 
-	~~~
-	$ping 192.168.194.243
-	$ping 192.168.194.1
-	$ping 172.18.50.4
-	ssh root@192.168.194.243
-	~~~
+    ~~~
+    $ping 192.168.194.243
+    $ping 192.168.194.1
+    $ping 172.18.50.4
+    ssh root@192.168.194.243
+    ~~~
 
 Tous les pings repondent et la connexions ssh entres machines est possibles.
 
@@ -430,6 +454,7 @@ ainsi mieux les appréhender.
 
 Ce projet nous a confortés dans notre choix de carrière. Il nous a permis de développer des qualités telles que la réflexion et d’autonomie afin de nous intégrer au mieux dans le monde du travail.
 
+\appendix
 
 # Annexe
 
@@ -507,7 +532,7 @@ while [ ! -z "$1" ] ;
 do
     case "$1" in
         "-h"|"--help") doc && exit ;;
-		"-ip"|"--ip") changertout && exit ;;
+        "-ip"|"--ip") changertout && exit ;;
         "-l"|"--list") cat /etc/default/lxc-net && exit ;;
         "-c"|"--check") check && exit ;;
         "-st"|"--start") systemctl start lxc-net && exit ;;
