@@ -350,7 +350,7 @@ Mais les plus gros problèmes rencontrés lors de notre projet furent liés au r
 - Verification des paramétres dans le fichier LXC-NET:
     
     ~~~
-    $cat /etc/default/lxc-net
+    $ cat /etc/default/lxc-net
     ~~~
 
     ou
@@ -380,16 +380,16 @@ Démarrage des machines virtuelles.
 Sur TestVM1 :
 
     # ip a
-    #cat /etc/resolv.conf
-    #ip route
+    # cat /etc/resolv.conf
+    # ip route
 
 Attribution de l'adresse ip 192.168.194.243 avec comme resolveur DNS 192.168.194.1 et une route par defaut 192.168.194.1 et la route pour le réseau 192.168.19.0/24 accessible via 192.168.194.243
 
 Sur TestVM2 :
 
     # ip a
-    #cat /etc/resolv.conf
-    #ip route
+    # cat /etc/resolv.conf
+    # ip route
 
 Attribution de l'adresse ip 192.168.194.206 avec comme resolveur DNS 192.168.194.1 et une route par defaut 192.168.194.1 et la route pour le réseau 192.168.19.0/24 accessible via 192.168.194.206
 
