@@ -20,6 +20,7 @@ logo:
 
 ## Intitulé du sujet
 
+![TeX Friendly Zone](img/Intitule.svg){ width=50% }
 
 ## Contrainte
 
@@ -27,11 +28,26 @@ logo:
 - Pas de redirection de port
 - root nécessaire uniquement pour l'installation du paquet
 - Communication entre VM sous Virtualbox obligatoire
-- Le petit +
-     - Faire communiquer des VMs sous VMware, QEMU/KVM, LXC...
+- Faire communiquer des VMs sous VMware, QEMU/KVM, LXC...
+- Fournir une documentation
 
 ## Gestion du projet
 
+### Règles
+
+- Dépôt GIT
+     - dépôt particulier fait référence pour l'avancement du projet
+     - rapport quotidien de chaque membre du projet
+- Compte-rendu d'activité hebdomadaire chaque fin de semaine sur le dépôt
+     - détaille les tâches effectuées et leur responsable
+     - liste les éventuels points bloquants
+     - liste sommairement les tâches planifiées pour la semaine suivante
+     - précise la date et le lieu de la prochaine rencontre avec les tuteurs
+
+### Outils utilisés
+- GIT
+- Markdown
+- Mdoc
 
 # Etat de l'art
 
