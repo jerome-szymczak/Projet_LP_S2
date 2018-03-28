@@ -79,9 +79,15 @@ logo:
 
 - Licence GNU v2
 - Multi-plateforme
-- Un mode graphique
-- Un mode ligne de commande/
-    - vboxmanage
+- 2 modes d'executions:
+    - Un mode graphique
+    - Un mode ligne de commande
+        - vboxmanage
+    
+~~~
+VBoxManage modifymedium --resize 25000 debian9.vdi
+VBoxManage startvm debian9
+~~~
 
 
 ## Les solutions existantes
