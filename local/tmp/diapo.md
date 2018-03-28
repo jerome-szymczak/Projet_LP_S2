@@ -37,14 +37,16 @@ logo:
 
 ## Différents virtualisateurs
 
-- [VirtualBox](https://www.virtualbox.org/)
- ![TeX Friendly Zone](img/comparatif-virtualiseur.svg){ width=10% }
-
-- [VMware Player](https://www.vmware.com/products/workstation-player.html)
-
-- [KVM/QEMU](https://www.linux-kvm.org/page/Main_Page)
-
-- [Proxmox](https://www.proxmox.com/en/)
+- Définition de la virtualisation
+- Les hyperviseurs
+    - type 1:
+        - Xen, ESX, Hyper V
+    - type 2:
+        - VirtualBox, VmWare player
+- Les isolateurs
+    - Docker,LXC,chroot
+- Les émalateurs
+    - QEMU
 
 ## Comparatif
 
