@@ -54,15 +54,22 @@ logo:
 ## Différents virtualisateurs
 
 - Définition de la virtualisation
+    1. cloisonement
+    2. transparence
+    3. performances
+    
 - Les hyperviseurs
     - type 1:
         - Xen, ESX, Hyper V
     - type 2:
         - VirtualBox, VmWare player
+        
 - Les isolateurs
     - Docker,LXC,chroot
-- Les émalateurs
-    - QEMU
+    
+- Les émulateurs
+    - QEMU/KVM
+
 
 ## Comparatif
 
