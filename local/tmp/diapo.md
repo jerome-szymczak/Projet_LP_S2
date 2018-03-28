@@ -48,6 +48,12 @@ date: 16 mars 2018
 
 ## Virtualbox
 
+- Licence GNU v2
+- Multi-plateforme
+- Un mode graphique
+- Un mode ligne de commande/
+    - vboxmanage
+
 
 ## Les solutions existantes
 
