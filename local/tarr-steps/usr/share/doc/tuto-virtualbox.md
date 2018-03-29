@@ -1,4 +1,4 @@
-# Installation de Virtaulbox
+# Installation de Virtualbox
 **Attention** Si vous avez des machines VirtualBox en route, KVM ne voudra pas lancer de VM.
 
 Si vous voulez utiliser un système invité en 64 bits, il est nécessaire que l'ordinateur supporte la virtualisation matérielle (VT-x [vmx] ou AMD-V [svm])
@@ -69,17 +69,13 @@ $ VBoxManage storagectl debian9 --name "IDE Controller" --add ide
 ~~~
 $ VBoxManage storageattach debian9 --storagectl "IDE Controller" --port 0 --device 0 --type dvddrive --medium/home/simon/Documents/ISO/Linux/Debian 9.2.1amd641.iso
 ~~~
-6. Ajout de la carte réseau
-~~~
-** En attente ***
-~~~
  
-7. Modification de la taille memoire ram et vidéo:
+6. Modification de la taille memoire ram et vidéo:
 ~~~
 $ VBoxManage modifyvm debian9 --memory 1024 --vram 64
 ~~~
 
-8. voir les information de la VM:
+7. Voir les information de la VM:
 ~~~
 $  VBoxManage showvminfo debian9.4|less
 ~~~

@@ -10,9 +10,9 @@ author :
 - Djezon HERBAUT
 logo:
 - file: logo-univ-lille
-  width: 2
-- file: logo-cgir
   width: .15
+- file: logo-cgir
+  width: .18
 
 date: 2017/2018
 ...
@@ -21,18 +21,18 @@ date: 2017/2018
 
 ## Intitulé du sujet
 
-Il s'agit de construire une architecture réseau IPv4 permettant à des machines virtuelles de communiquer, de manière transparente, entre elles, avec la machine physique qui les héberge ainsi qu'avec les machines du segment réseau sur lequel est intégrée la machine physique.
+Il s'agit de construire une architecture réseau IPv4 permettant à des machines virtuelles de communiquer, de manière transparente, entre elles, aussi bien avec la machine physique qui les héberge qu'avec les machines du segment réseau sur lequel elle est intégrée.
 
 L'objectif est de pouvoir effectuer des TP d'administration système utilisant plusieurs machines (en mode *serveur* ou *poste de travail*) sur le même réseau sans trop de difficultés pour l'étape de construction des machines, mais en conservant un minimum de flexibilité (accès extérieur, manipulation des interfaces des machines de TP).
 
 ## Contraintes
 
 L'architecture doit être déployable sur une machine physique [Debian](https://www.debian.org) via l'installation d'un paquet au format Debian. 
-Elle doit permettre d'accéder à tous les ports des machines virtuelles sans être obligé de mettre en place des redirections de ports. Les seuls accès `root` qu'elle doit nécessiter sont, au moment de son installation et de l'installation, des outils de virtualisation. 
+Elle doit permettre d'accéder à tous les ports des machines virtuelles sans être obligé de mettre en place des redirections de ports. Les seuls accès `root` nécessaires, au moment de installation du paquet et des outils de virtualisation. 
 Un utilisateur standard doit être capable de créer et démarrer des machines virtuelles sans droit d'administration.
 
 Le réseau doit permettre *à minima* de connecter des machines virtuelles gérées par [VirtualBox](https://www.virtualbox.org/).
-l'objectif étant de permettre au final de pouvoir y connecter des machines virtuelles gérées par [VMware Workstation Player](https://www.vmware.com/products/workstation-player.html), [QEMU](https://www.qemu.org)/[KVM](http://www.linux-kvm.org) ainsi que des containers Linux [LXC](https://linuxcontainers.org).
+l'objectif final étant de pouvoir connecter des machines virtuelles gérées par [VMware Workstation Player](https://www.vmware.com/products/workstation-player.html), [QEMU](https://www.qemu.org)/[KVM](http://www.linux-kvm.org) ainsi que des containers Linux [LXC](https://linuxcontainers.org).
 
 À défaut d'une automatisation complète par la fourniture de commandes de création de machines virtuelles adéquates, des explications simples, permettant à un utilisateur de créer et connecter sa machine virtuelle à ce réseau, doivent être fournies sous la forme de documentation adaptée à chaque cas géré.
 
@@ -71,7 +71,7 @@ l'objectif étant de permettre au final de pouvoir y connecter des machines virt
 
 ### Qu'est-ce que la virtualisation ?
 
-Par définition, la virtualisation consiste en la création d'une version virtuelle (par opposition à réelle) d'un ou de plusieurs éléments, tel qu'un système d'exploitation, un serveur, un dispositif de stockage ou des ressources réseau sur un même système physique.
+Par définition, la virtualisation consiste en la création d'une version virtuelle (par opposition à réelle) d'un ou plusieurs éléments, tel qu'un système d'exploitation, un serveur, un dispositif de stockage ou des ressources réseau sur un même système physique.
 
 ### But d'une virtualisation
 
@@ -80,7 +80,7 @@ Le principal objectif est économique. Il y a encore quelques années, on sépar
 Un autre objectif est celui de la facilité d'administration. En effet, le processus d'installation d'un système est une opération lourde, gourmande en temps, et présente un risque de petites variations de configurations. Ainsi, la virtualisation permet de déplacer un serveur virtuel d’un hôte à un autre de manière très aisée, y compris sur des environnements matériels très hétérogènes, puisque les couches matérielles dans les serveurs virtuels sont le plus souvent génériques.
 
 
-### Il faut differencier :
+### Il faut différencier :
 
 - **L'hyperviseur:**
 
@@ -90,7 +90,7 @@ Un autre objectif est celui de la facilité d'administration. En effet, le proce
 
 - **L'isolateur** : (Ex: chroot, LXC, Docker ) : C'est un logiciel permettant de créer un environnement utilisateur cloisonné au sein d'un système d'exploitation. Cet environnement peut alors exécuter des programmes sans que leur exécution ne perturbe le système d'exploitation de la machine en cas de dysfonctionnement. Ces environnements sont appelés des contextes ou bien des zones d'exécution. 
 
-- **L'émulateur** : (Ex: QEMU ) : C'est un logiciel qui consiste à simuler l’exécution d’un programme en interprétant chacune des instructions destinées au micro-processeur. Il est possible d’émuler ainsi n’importe quel processeur et l’environnement complet.
+- **L'émulateur** : (Ex: QEMU ) : C'est un logiciel qui consiste à simuler l’exécution d’un programme en interprétant chacune des instructions destinées au microprocesseur. Il est possible d’émuler ainsi n’importe quel processeur et l’environnement complet.
 
 
 ### Schéma de fonctionnement :
@@ -113,9 +113,9 @@ Isolateur
 Virtualbox n’exige pas une architecture processeur complexe, il n’a pas besoin des jeux d’instructions tels que Intel VT-x ou AMD-V, contrairement à beaucoup d’autres solutions de virtualisation. 
 
 Virtualbox fonctionne de manière identique sur toutes les plateformes hôtes, il utilise les mêmes formats de fichiers et d’images. Ceci permet d’exécuter des machines virtuelles créées sur un hôte possédant un système d’exploitation différent.
-Vous pouvez ainsi créer une machine virtuelle sur Windows et l’utiliser sous Linux. De cette façon, vous pouvez lancer des logiciels écrits pour un système d’exploitation dans un autre. Virtualbox offre une grande souplesse  d’usage, on peut geler, copier, sauvegarder et créer des instantanés. 
+Vous pouvez ainsi créer une machine virtuelle sur Windows et l’utiliser sous Linux. Grâce à ça, vous pourrez lancer des machines virtuelles créer avec un système d’exploitation, pour pouvoir les utiliser dans un autre. Virtualbox offre une grande souplesse  d’usage, on peut geler, copier, sauvegarder et créer des instantanés. 
 
-Il peut-être exécuté en mode graphique ou ligne de commandes « VboxManage ». 
+Il peut-être exécuté en mode graphique ou ligne de commande « VboxManage ». 
 Il est possible d’installer les suppléments invités «pack d'extension » de Virtualbox afin d’accroître les performances et la communication avec la machine hôte (dossier partage).  Virtualbox offre un bon support matériel cela inclut les contrôleurs de disques (IDE, SCSI, SATA, le support USB 2.0 3.0). Attention cette extension est sous licence (GPL2, CDDL et VPUEL pour Virtualbox Personal use and Evaluation License). 
 
 Virtualbox est libre d'utilisation pour sa partie principale mais les extensions, quant à elles, sont disponibles uniquement pour un usage privé.  Il est possible d’organiser ces machines virtuelles en créant des groupes,tout en sachant qu’une  machine virtuelle peut appartenir à plusieurs groupes. Cela permet, entre autres de commander toutes les machines (démarrer, arrêter, sauvegarder, ...) appartenant à un même groupe. Le format d’enregistrement est le VDI , il peut avoir une forme fixe ou dynamique. 
@@ -143,21 +143,21 @@ C'est une solution de virtualisation "bare metal"³.
 
 ### LXC
 
-**LXC** (contraction de l'anglais de Linux Containers) est un système de virtualisation utilisant l'isolation au niveau système d'exploitation comme méthode de cloisonnement. 
+**LXC** (contraction de l'anglais de LinuX Containers) est un système de virtualisation utilisant l'isolation au niveau système d'exploitation comme méthode de cloisonnement. 
 Son rôle est de créer un environnement aussi proche que possible d'une installation Linux standard, mais sans avoir besoin d'un noyau séparé. Les conteneurs LXC sont souvent considérés comme un compromis entre le mode "chroot²" et une machine virtuelle. LXC est donc un ensemble de processus qui nous permettent d'isoler des éléments du reste du système.
 Il aura également accès à sa propre interface réseau, sa table de routage. Mais la différence notable, contrairement à Xen et KVM c'est l'absence d'un deuxième noyau. LXC va utiliser le même noyau que la machine hôte (Dom0). Les avantages de cette solution sont un gain de performances en l'absence d'hyperviseur et de noyau intermédiaire. L’autre avantage est la faible occupation de la ressource mémoire.
 
 Les conteneurs LXC ne fournissent pas une isolation complète, ce qui est un inconvénient. C’est dû au fait que le noyau est partagé entre le Dom0 et les conteneurs. L’autre inconvénient est une mise en place plus complexe qu’une installation sur machine virtuelle.
 
-Après la mise en place de quelques prérequis nécessaires au bon fonctionnement, il s'agira de mettre en fonctionnement notre configuration réseau.
-Ainsi, chaque conteneur aura une interface réseau virtuelle et la connexion au vrai réseau passera par un pont. Il existe deux manières de se connecter à l’interface virtuelle, soit branchée sur l'interface physique de la machine hôte (directement sur le réseau), soit branchée sur une autre interface virtuelle de l'hôte (pourra router le trafic).
+Après la mise en place des dépendances requises au bon fonctionnement, il s'agira de mettre en service la configuration réseau.
+Ainsi, chaque conteneur aura une interface réseau virtuelle, il existe deux manières de se connecter à l’interface virtuelle, soit branchée sur l'interface de la machine hôte (directement sur le réseau), soit branchée sur une interface virtuelle de l'hôte (switch/routeur).
 
 ### vmnet de VMware
 
 Suite à l'installation de VMWare Player, deux cartes réseau virtuelles sont ajoutées à l'ordinateur hôte : VMnet1 et VMnet8.
-Lors de la configuration d'une interface réseau, VMWare Player propose 3 types de connections :
+Lors de la configuration d'une interface réseau, VMWare Player propose 3 types de connexion :
 - Bridged (pont) : La machine virtuelle est connectée au réseau physique via la carte physique de la machine hôte. L'adressage de la carte peut se faire manuellement ou via le DHCP fournissant le réseau physique.
-- NAT (Network Address Translation) : La machine virtuelle est connectée à un réseau virtuel. La machine hôte est connectée à ce même réseau virtuel via la carte réseau VMnet8. Un routeur virtuel assure la communication etre le réseau virtuel et le réseau physique. Un DHCP virtuel permet l'attribution d'adresses aux machines virtuelles présentes sur ce réseau.
+- NAT (Network Address Translation) : La machine virtuelle est connectée à un réseau virtuel. La machine hôte est connectée à ce même réseau virtuel via la carte réseau VMnet8. Un routeur virtuel assure la communication entre le réseau virtuel et le réseau physique. Un DHCP virtuel permet l'attribution d'adresses aux machines virtuelles présentes sur ce réseau.
 - Host-only : La machine virtuelle est connectée à un réseau virtuel. La machine hôte est connectée à ce même réseau virtuel par l'intermédiaire de la carte réseau VMnet1. Un DHCP virtuel permet l'attribution d'adresses aux machines virtuelles présentes sur ce réseau mais l'absence de routeur permet l'isolation de ce réseau par rapport au réseau physique.
 
 ### OpenVSwitch
@@ -166,13 +166,13 @@ Lors de la configuration d'une interface réseau, VMWare Player propose 3 types 
 Il est bien adapté pour fonctionner comme un commutateur virtuel, qui fournit des fonctionnalités avancées de commutation, mais également de QoS, d’agrégation de liens, de Vlan, de collecte de données. 
 Il a été conçu pour prendre en charge la distribution sur plusieurs serveurs physiques. Open vswitch prend en charge plusieurs technologies de virtualisation basées sur Linux, notamment Xen / Xen Server, KVM et Virtualbox. La majeure partie du code est écrite en C, indépendant de la plate-forme, et peut-être facilement transférée vers d'autres environnements.
 OpenvSwitch est un commutateur virtuel compatible avec les chipsets des switchs modernes commutateur administrable avec le protocole Open flow.
-Il supporte le VLAN 802.1 Q, isolation et filtre de traffics, d'agrégation de lien, lac, Channel boding, gestion des flux et QoS Bande passante.
+Il supporte le VLAN 802.1 Q, isolation et filtre de trafics, d'agrégation de lien, lac, Channel boding, gestion des flux et QoS Bande passante.
 Il est conçu pour prendre en charge la distribution sur plusieurs serveurs physiques similaires au vswitch distribué de Vmware ou au Nexus 1000V de Cisco.
 
-`problème en dessous`
-
 ~~~
-VMware a officialisé l’abandon prochain de son API VDS, qui permettait l’intégration de commutateurs virtuels tiers à vSphere. Selon la firme, l’API continuera à être supportée pour les clients VMware jusqu’à la version 6.5 update 1 de vSphere. Dans toutes les versions ultérieures, le support de l’API permettant le support de « vSwitches » tiers sera retiré.
+VMware a officialisé l’abandon prochain de son API VDS, qui permettait l’intégration de commutateurs virtuels tiers à vSphere. 
+Selon la firme, l’API continuera à être supportée pour les clients VMware jusqu’à la version 6.5 update 1 de vSphere. 
+Dans toutes les versions ultérieures, le support de l’API permettant le support de « vSwitches » tiers sera retiré.
 source :"http://www.lemagit.fr"
 ~~~
 
@@ -187,7 +187,7 @@ Dans notre contexte, le programme de l'espace mémoire utilisateur est l'instanc
 
 2. *Cette commande permet d'isoler l'exécution d'un programme.*
 
-3. *Bare metal (metal nu) signifie que vous commencez à partir d'un serveur vide et qu'il n'y a donc nul besoin d'installer un système d'exploitation auparavant.*
+3. *Bare metal (métal nu) signifie que vous commencez à partir d'un serveur vide et qu'il n'y a donc nul besoin d'installer un système d'exploitation auparavant.*
 
 # Mise en œuvre du projet
 
@@ -295,12 +295,11 @@ Voici les options qui peuvent être utilisées sur notre script.
 
 ## Difficultés rencontrées
 
-L'un des premiers obstacles fut la maîtrise d'un dépôt GIT, mais à force d'utilisation et de conflits, nous avons réussi à faire ce qu'il fallait et ainsi apprendre à l'utiliser correctement. Nous avons aussi fait une autre découverte, celle des fichiers Markdown, ça n'a pas été simple au début pour chacun d'entre nous. Ce que nous avons remarqué sur celui-ci c'est le manque visuel, nous avons toujours été habitué à faire de la mise en page. 
+L'un des premiers obstacles fut la maîtrise d'un dépôt GIT, mais à force d'utilisation, conflits et de partage avec ceux ayant déjà une expérience significative sur l'outil, nous avons réussi à faire ce qu'il fallait et ainsi apprendre à l'utiliser correctement. Nous avons aussi fait une autre découverte, celle des fichiers Markdown, ça n'a pas été simple au début pour chacun d'entre nous. Ce que nous avons remarqué sur celui-ci c'est le manque visuel, nous avons toujours été habitués à faire de la mise en page. 
 
 Lors de la mise en place de notre projet, nous avions des difficultés à débattre d'une solution viable et simple d'utilisation. Les différentes solutions existantes étaient complexes et plus contraignantes. 
 
 Mais les plus gros problèmes rencontrés lors de notre projet furent liés au réseau. Sur les ordinateurs des salles TP, nous n'étions pas root et donc aucune possibilité de modifier les interfaces, pour régler ce soucie, nous avions eu accès à un ordinateur. Pour utiliser cette machine, nous n'avions aucun accès physique, ce qui nécessite l'intervention des administrateurs systèmes lorsque nous perdions la connexion à celle-ci.
-
 
 # Procédure de test
 ## Installation de notre paquet
@@ -443,14 +442,13 @@ On pourrait les désinaller avec un script 'posrrm' qui ferai un apt-get autorem
 
 Au terme de ce deuxième projet, nous avons été confrontés à une problématique plus compliquée.
 Nous avons dû appréhender la complexité des réseaux virtuels et lire une documentation technique pas toujours évidente. 
-Nous avons été confrontés à des contraintes techniques lié à l’environnement universitaire (proxy, port réseau « tagged », liaison ssh sur machine distante).
+Nous avons été confrontés à des contraintes techniques liées à l’environnement universitaire (proxy, port réseau « tagged », liaison ssh sur machine distante).
 En effet la principale problématique a été les pertes de connexion réseau sans possibilités de redémarrer de manière autonome. Néanmoins nous avons pu démontrer notre capacité d’adaptation et faire face aux difficultés rencontrées.
 
 Nous avons su mettre en adéquation nos différentes expériences et de nouvelles connaissances. 
-Avec l’usage de GIT et de MarkDown(langage de balisage), nous partagions la même convention de nommage afin de mieux communiquer entre nous.  
+Avec l’usage de GIT et de MarkDown (langage de balisage), nous partagions la même convention de nommage afin de mieux communiquer entre nous.  
 
-L’expérience a été enrichissante autant sur le plan humain que technique. Ce projet nous a permis de mettre en pratique et développer différents aspects vus en cours. Malgré certaines erreurs que nous avons pu commettre, nous avons su apprendre de celles-ci et
-ainsi mieux les appréhender.
+L’expérience a été enrichissante autant sur le plan humain que technique. Ce projet nous a permis de mettre en pratique et développer différents aspects vus en cours. Malgré certaines erreurs que nous avons pu commettre, nous avons su apprendre de celles-ci.
 
 Ce projet nous a confortés dans notre choix de carrière. Il nous a permis de développer des qualités telles que la réflexion et d’autonomie afin de nous intégrer au mieux dans le monde du travail.
 
@@ -612,6 +610,216 @@ Un dispositif TUN/TAP peut être vu comme une interface réseau qui communique a
 **Comment ça fonctionne :** 
 - Installation de VMplayer
 - Mettre la machine virtuelle en accès par pont sur l'interface 'vmnet8'
+
+### Installation de Virtualbox
+**Attention** Si vous avez des machines KVM en route, VirtualBox ne voudra pas lancer de VM.
+
+Si vous voulez utiliser un système invité en 64 bits, il est nécessaire que l'ordinateur supporte la virtualisation matérielle (VT-x [vmx] ou AMD-V [svm])
+
+
+#### Prérequis:
+Installation de du transport https
+~~~
+# apt-get install apt-transport-https
+~~~
+
+#### Installation de VirtualBox
+
+1. Récupération de la clef de signature du dépôt de VirtualBox
+~~~
+# wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
+# wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add -
+~~~
+
+2. Ajout du dépôt d'Oracle dans /etc/apt/source.list.d/
+~~~
+# echo "deb https://download.virtualbox.org/virtualbox/debian $(lsb_release -sc) contrib"|tee /etc/apt/sources.list.d/virtualbox.list
+~~~
+Mise à jour de la liste des paquets
+~~~
+# apt-get update
+~~~
+
+3. Installation de VirtualBox
+~~~
+# apt-get install virtualbox-5.2.8
+~~~
+
+#### Optimisation de VirtualBox avec le Pack d'extension Oracle VM VirtualBox :
+Prise en charge des périphériques USB 2.0 et USB 3.0, VirtualBox RDP, cryptage de disque, démarrage NVMe et PXE pour les cartes Intel.Téléchargement en root
+~~~
+ version=$(VBoxManage --version|cut -dr -f1|cut -d'_' -f1) && wget -c http://download.virtualbox.org/virtualbox/$version/Oracle_VM_VirtualBox_Extension_Pack-$version.vbox-extpack
+~~~
+Il faudra ensuite installer le pack dans la VM :
+~~~
+     cd /media/cdrom/
+     sh ./VBoxLinuxAdditions.run
+~~~
+#### Installation d'une VM en ligne de commande
+1. Création d'une machine
+~~~
+$ VBoxManage createvm --name debian9.4 --ostype Debian_64 --register
+~~~
+(--register : ajoute la machine à l’inventaire)
+(--name : spécifie un nouveau nom de machine virtuelle)
+
+2. Création du disque 10G
+~~~
+$ VBoxManage createhd --filename debian9.4.vdi --size 10000
+~~~
+
+3. Attacher le disque
+~~~
+$ VBoxManage storagectl debian9.4 --name "SATA Controller" --add sata --controller IntelAHCI
+$ VBoxManage storageattach debian9.4 --storagectl "SATA Controller" --port 0 --device 0 --type hdd --medium debian.vdi
+~~~
+
+4. Ajouter le lecteur DVD 
+~~~
+$ VBoxManage storagectl debian9 --name "IDE Controller" --add ide
+~~~
+5. Ajout de l'image iso
+~~~
+$ VBoxManage storageattach debian9 --storagectl "IDE Controller" --port 0 --device 0 --type dvddrive --medium/home/simon/Documents/ISO/Linux/Debian 9.2.1amd641.iso
+~~~
+ 
+6. Modification de la taille memoire ram et vidéo:
+~~~
+$ VBoxManage modifyvm debian9 --memory 1024 --vram 64
+~~~
+
+7. Voir les information de la VM:
+~~~
+$  VBoxManage showvminfo debian9.4|less
+~~~
+
+
+#### Commandes supplémentaires et explications de VBoxHeadless et de VBoxManage
+
+VBoxHeadless :
+- VirtualBox est fourni avec une interface appelée VBoxHeadless
+- VirtualBox sans tête, VirtualBox sans interface graphique GUI
+- VirtualBox démarre les machines en fond de taches
+- Les machines sont accessibles via le VRDP ou ssh sous Linux et RDP,Remote Shell sous MS Windows.
+- Toutes les opérations possibles avec l’interfaces graphique sont disponibles avec VBoxHeadless et même plus avec VBoxManage
+- Deux commandes pour manipuler les vms :
+~~~
+    VBoxHeadless - Démarre les vms et gère le VRDP
+    VBoxManage - Toutes opérations sur les vms 
+~~~
+
+VBoxManage :
+- Est l’interface en ligne de commande de VirtualBox.
+- Permet de contrôler totalement VirtualBox depuis la ligne de commandes de votre système d’exploitation hôte.
+- VBoxManage supporte toutes les fonctionnalités auxquelles vous donne accès l’interface graphique
+
+- Acceder a l’aide
+
+~~~
+    VBoxManage list --help
+~~~ 
+- Lister les vms
+
+~~~
+    VBoxManage list vms
+~~~
+- Démarrer une vms
+
+~~~
+    VBoxManage startvm debian9
+~~~
+- Arréter une vm
+
+~~~
+    VBoxManage controlvm debian9 apcipowerbutton
+~~~
+- Créer une vm
+
+~~~
+    VBoxManage createvm –name debian9
+~~~
+- Déterminer le type de l’OS:
+
+~~~
+    VBoxManage list ostypes
+~~~
+
+#### Changer l’UUID d’une VM:
+
+- Cette commande est necessaire si on fait un copier coller de l’image d’un disque virtuel (fichier .vdi)
+pour éviter de ré-installer un système d’exploitation à partir de zéro sans passer par clonehd.
+
+~~~
+    VBoxManage internalcommands sethduuid vmfilename
+~~~
+
+#### Cloner une VM:
+
+- Cette commande permet de dupliquer l'image de disque dur virtuel enregistré avec un nouvel identificateur unique (UUID).
+
+~~~
+    VBoxManage clonehd src_vmfilename dst_vmfilename
+~~~
+
+#### Agrandir le VDI:
+
+ - un disque de 8Go  à 25Go
+
+~~~
+    VBoxManage modifymedium --resize 25000 debian.vdi
+~~~
+
+### Installation de KVM
+**Attention** Si vous avez des machines VirtualBox en route, KVM ne voudra pas lancer de VM.
+
+
+#### Verification 
+on va tout d'abord vérifier que votre microprocesseur permet une virtualisation avec KVM.
+~~~
+$ grep -E 'vmx|svm' /proc/cpuinfo &>/dev/null && echo "La virtualisation est possible." || echo "Cette machine ne permet pas d'utiliser la virtualisation avec KVM."
+~~~
+
+#### Installation
+On va maintenant les paquets.
+~~~
+# apt-get update && apt-get install qemu-kvm libvirt-daemon-system libvirt-dev libvirt-clients
+~~~
+
+#### Ajout des utilisateurs aux groupes
+Nous allons ajouter des utilisateurs aux groupes kvm et libvirt
+~~~
+# adduser user kvm && adduser user libvirt
+~~~
+*user* est le nom de l'utilisateur qui va créer des machines virtuelles
+
+#### Création d'une image disque
+Nous allons créer une image disque qui va nous servir de disque dur
+~~~
+$ qemu-img create -f qcow2 monImage 10G
+~~~
+*monImage* est le nom que vous donnerez à votre image
+*10G* est la taille alloué au disque
+
+#### Installation d'un système d'exploitation
+Nous allons installer le système d'exploitation grâce à un fichier image ISO
+~~~
+$ kvm -m 2G -cpu host monImage -cdrom NomDuFichierTéléchargé.iso -boot d
+~~~
+*monImage* l'image que vous aurez créer précédement
+*NomDuFichierTéléchargé.iso* fichier iso servant à l'installation
+
+**Sur un PC à distance**
+ajouter ça *--vnc :0 -k fr* à la fin de la ligne
+il faut que vous possèdiez vncviewver sur votre PC
+
+#### Lancement de la VM
+Vérifier que tap0 existe bien
+Pour lancer votre VM sur notre réseau super génial.
+~~~
+$ kvm -net nic,model=rtl8139,vlan=0,macaddr=00:11:22:33:44:55 -net tap,vlan=0,ifname=tap0,script=no -enable-kvm -m 512 monImage
+~~~
+
+
 
 ## Sources
 
