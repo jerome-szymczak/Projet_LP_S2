@@ -612,7 +612,7 @@ Un dispositif TUN/TAP peut être vu comme une interface réseau qui communique a
 - Mettre la machine virtuelle en accès par pont sur l'interface 'vmnet8'
 
 ### Installation de Virtualbox
-**Attention** Si vous avez des machines VirtualBox en route, KVM ne voudra pas lancer de VM.
+**Attention** Si vous avez des machines KVM en route, VirtualBox ne voudra pas lancer de VM.
 
 Si vous voulez utiliser un système invité en 64 bits, il est nécessaire que l'ordinateur supporte la virtualisation matérielle (VT-x [vmx] ou AMD-V [svm])
 
