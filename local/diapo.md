@@ -176,20 +176,6 @@ OPTIONS
     -r,  --reload    reload sur le script lxc-net
 ```
 
-## Création des fichiers de paquet
-
-- DEBIAN/
-    - control
-    - postinst
-    - prerm
-- usr/
-    - /bin
-        - tarr-steps.sh
-    - share/doc/
-        - lxc-net
-        - tuto-kvm.md
-        - tuto-virtualbox.md
-
 ## Fonctionnement du paquet
 
 ![TeX Friendly Zone](img/ink-diagram-vswitch0-iut0.pdf)
@@ -197,6 +183,13 @@ OPTIONS
 # Procédure de Test
 
 ## Test d'installation de notre paquet
+
+1. Installation du paquet
+
+2. Execution du script
+ 
+3. Désintallation du paquet
+
 
 ## Test avec les virtualisateurs
 
