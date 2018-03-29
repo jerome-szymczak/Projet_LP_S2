@@ -10,9 +10,9 @@ author :
 - Djezon HERBAUT
 logo:
 - file: logo-univ-lille
-  width: 2
-- file: logo-cgir
   width: .15
+- file: logo-cgir
+  width: .18
 
 date: 2017/2018
 ...
@@ -704,8 +704,8 @@ VBoxHeadless :
 - Toutes les opérations possibles avec l’interfaces graphique sont disponibles avec VBoxHeadless et même plus avec VBoxManage
 - Deux commandes pour manipuler les vms :
 ~~~
-	VBoxHeadless - Démarre les vms et gère le VRDP
-	VBoxManage - Toutes opérations sur les vms 
+    VBoxHeadless - Démarre les vms et gère le VRDP
+    VBoxManage - Toutes opérations sur les vms 
 ~~~
 
 VBoxManage :
@@ -716,32 +716,32 @@ VBoxManage :
 - Acceder a l’aide
 
 ~~~
-	VBoxManage list --help
-~~~	
+    VBoxManage list --help
+~~~ 
 - Lister les vms
 
 ~~~
-	VBoxManage list vms
+    VBoxManage list vms
 ~~~
 - Démarrer une vms
 
 ~~~
-	VBoxManage startvm debian9
+    VBoxManage startvm debian9
 ~~~
 - Arréter une vm
 
 ~~~
-	VBoxManage controlvm debian9 apcipowerbutton
+    VBoxManage controlvm debian9 apcipowerbutton
 ~~~
 - Créer une vm
 
 ~~~
-	VBoxManage createvm –name debian9
+    VBoxManage createvm –name debian9
 ~~~
 - Déterminer le type de l’OS:
 
 ~~~
-	VBoxManage list ostypes
+    VBoxManage list ostypes
 ~~~
 
 #### Changer l’UUID d’une VM:
@@ -766,7 +766,7 @@ pour éviter de ré-installer un système d’exploitation à partir de zéro sa
  - un disque de 8Go  à 25Go
 
 ~~~
-	VBoxManage modifymedium --resize 25000 debian.vdi
+    VBoxManage modifymedium --resize 25000 debian.vdi
 ~~~
 
 ### Installation de KVM
