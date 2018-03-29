@@ -2,13 +2,13 @@
 title : Réseau pour machines virtuelles
 
 author :
-- GERARD Cyril
-- SZYMCZAK Jerome
-- SALECKI Simon
-- DUSART Clément
-- HERBAUT Djezon
+- Cyril GERARD
+- Jérome SZYMCKAK
+- Simon SALECKI
+- Clément DUSART
+- Djezon HERBAUT
 
-date: 16 mars 2018
+date: 29 mars 2018
 logo:
 - file: logo-cgir
   width: .15
