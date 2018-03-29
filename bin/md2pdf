@@ -305,11 +305,9 @@ _sed -i \
      -- $dsttex
 
 # centrage des images seules sur une ligne sur la diapo
-if [ "$TYPE" = "beamer" ]; then
-    _sed -i \
-         -e '/\\begin\{document\}/,$ s!(^ *\\includegraphics(\[[^]]*\]|)\{[^}]*\} *$)!\\centerline{\1}!g' \
-         -- $dsttex
-fi
+_sed -i \
+     -e '/\\begin\{document\}/,$ s!(^ *\\includegraphics(\[[^]]*\]|)\{[^}]*\} *$)!\\centerline{\1}!g' \
+     -- $dsttex
 
 # compilation (ou pas)
 if ! $LATEX_ONLY ; then
