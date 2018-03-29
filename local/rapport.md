@@ -80,7 +80,7 @@ Le principal objectif est économique. Il y a encore quelques années, on sépar
 Un autre objectif est celui de la facilité d'administration. En effet, le processus d'installation d'un système est une opération lourde, gourmande en temps, et présente un risque de petites variations de configurations. Ainsi, la virtualisation permet de déplacer un serveur virtuel d’un hôte à un autre de manière très aisée, y compris sur des environnements matériels très hétérogènes, puisque les couches matérielles dans les serveurs virtuels sont le plus souvent génériques.
 
 
-### Il faut differencier :
+### Il faut différencier :
 
 - **L'hyperviseur:**
 
@@ -90,7 +90,7 @@ Un autre objectif est celui de la facilité d'administration. En effet, le proce
 
 - **L'isolateur** : (Ex: chroot, LXC, Docker ) : C'est un logiciel permettant de créer un environnement utilisateur cloisonné au sein d'un système d'exploitation. Cet environnement peut alors exécuter des programmes sans que leur exécution ne perturbe le système d'exploitation de la machine en cas de dysfonctionnement. Ces environnements sont appelés des contextes ou bien des zones d'exécution. 
 
-- **L'émulateur** : (Ex: QEMU ) : C'est un logiciel qui consiste à simuler l’exécution d’un programme en interprétant chacune des instructions destinées au micro-processeur. Il est possible d’émuler ainsi n’importe quel processeur et l’environnement complet.
+- **L'émulateur** : (Ex: QEMU ) : C'est un logiciel qui consiste à simuler l’exécution d’un programme en interprétant chacune des instructions destinées au microprocesseur. Il est possible d’émuler ainsi n’importe quel processeur et l’environnement complet.
 
 
 ### Schéma de fonctionnement :
@@ -115,7 +115,7 @@ Virtualbox n’exige pas une architecture processeur complexe, il n’a pas beso
 Virtualbox fonctionne de manière identique sur toutes les plateformes hôtes, il utilise les mêmes formats de fichiers et d’images. Ceci permet d’exécuter des machines virtuelles créées sur un hôte possédant un système d’exploitation différent.
 Vous pouvez ainsi créer une machine virtuelle sur Windows et l’utiliser sous Linux. De cette façon, vous pouvez lancer des logiciels écrits pour un système d’exploitation dans un autre. Virtualbox offre une grande souplesse  d’usage, on peut geler, copier, sauvegarder et créer des instantanés. 
 
-Il peut-être exécuté en mode graphique ou ligne de commandes « VboxManage ». 
+Il peut-être exécuté en mode graphique ou ligne de commande « VboxManage ». 
 Il est possible d’installer les suppléments invités «pack d'extension » de Virtualbox afin d’accroître les performances et la communication avec la machine hôte (dossier partage).  Virtualbox offre un bon support matériel cela inclut les contrôleurs de disques (IDE, SCSI, SATA, le support USB 2.0 3.0). Attention cette extension est sous licence (GPL2, CDDL et VPUEL pour Virtualbox Personal use and Evaluation License). 
 
 Virtualbox est libre d'utilisation pour sa partie principale mais les extensions, quant à elles, sont disponibles uniquement pour un usage privé.  Il est possible d’organiser ces machines virtuelles en créant des groupes,tout en sachant qu’une  machine virtuelle peut appartenir à plusieurs groupes. Cela permet, entre autres de commander toutes les machines (démarrer, arrêter, sauvegarder, ...) appartenant à un même groupe. Le format d’enregistrement est le VDI , il peut avoir une forme fixe ou dynamique. 
@@ -155,9 +155,9 @@ Ainsi, chaque conteneur aura une interface réseau virtuelle et la connexion au 
 ### vmnet de VMware
 
 Suite à l'installation de VMWare Player, deux cartes réseau virtuelles sont ajoutées à l'ordinateur hôte : VMnet1 et VMnet8.
-Lors de la configuration d'une interface réseau, VMWare Player propose 3 types de connections :
+Lors de la configuration d'une interface réseau, VMWare Player propose 3 types de connexion :
 - Bridged (pont) : La machine virtuelle est connectée au réseau physique via la carte physique de la machine hôte. L'adressage de la carte peut se faire manuellement ou via le DHCP fournissant le réseau physique.
-- NAT (Network Address Translation) : La machine virtuelle est connectée à un réseau virtuel. La machine hôte est connectée à ce même réseau virtuel via la carte réseau VMnet8. Un routeur virtuel assure la communication etre le réseau virtuel et le réseau physique. Un DHCP virtuel permet l'attribution d'adresses aux machines virtuelles présentes sur ce réseau.
+- NAT (Network Address Translation) : La machine virtuelle est connectée à un réseau virtuel. La machine hôte est connectée à ce même réseau virtuel via la carte réseau VMnet8. Un routeur virtuel assure la communication entre le réseau virtuel et le réseau physique. Un DHCP virtuel permet l'attribution d'adresses aux machines virtuelles présentes sur ce réseau.
 - Host-only : La machine virtuelle est connectée à un réseau virtuel. La machine hôte est connectée à ce même réseau virtuel par l'intermédiaire de la carte réseau VMnet1. Un DHCP virtuel permet l'attribution d'adresses aux machines virtuelles présentes sur ce réseau mais l'absence de routeur permet l'isolation de ce réseau par rapport au réseau physique.
 
 ### OpenVSwitch
@@ -166,13 +166,15 @@ Lors de la configuration d'une interface réseau, VMWare Player propose 3 types 
 Il est bien adapté pour fonctionner comme un commutateur virtuel, qui fournit des fonctionnalités avancées de commutation, mais également de QoS, d’agrégation de liens, de Vlan, de collecte de données. 
 Il a été conçu pour prendre en charge la distribution sur plusieurs serveurs physiques. Open vswitch prend en charge plusieurs technologies de virtualisation basées sur Linux, notamment Xen / Xen Server, KVM et Virtualbox. La majeure partie du code est écrite en C, indépendant de la plate-forme, et peut-être facilement transférée vers d'autres environnements.
 OpenvSwitch est un commutateur virtuel compatible avec les chipsets des switchs modernes commutateur administrable avec le protocole Open flow.
-Il supporte le VLAN 802.1 Q, isolation et filtre de traffics, d'agrégation de lien, lac, Channel boding, gestion des flux et QoS Bande passante.
+Il supporte le VLAN 802.1 Q, isolation et filtre de trafics, d'agrégation de lien, lac, Channel boding, gestion des flux et QoS Bande passante.
 Il est conçu pour prendre en charge la distribution sur plusieurs serveurs physiques similaires au vswitch distribué de Vmware ou au Nexus 1000V de Cisco.
 
 `problème en dessous`
 
 ~~~
-VMware a officialisé l’abandon prochain de son API VDS, qui permettait l’intégration de commutateurs virtuels tiers à vSphere. Selon la firme, l’API continuera à être supportée pour les clients VMware jusqu’à la version 6.5 update 1 de vSphere. Dans toutes les versions ultérieures, le support de l’API permettant le support de « vSwitches » tiers sera retiré.
+VMware a officialisé l’abandon prochain de son API VDS, qui permettait l’intégration de commutateurs virtuels tiers à vSphere. 
+Selon la firme, l’API continuera à être supportée pour les clients VMware jusqu’à la version 6.5 update 1 de vSphere. 
+Dans toutes les versions ultérieures, le support de l’API permettant le support de « vSwitches » tiers sera retiré.
 source :"http://www.lemagit.fr"
 ~~~
 
@@ -187,7 +189,7 @@ Dans notre contexte, le programme de l'espace mémoire utilisateur est l'instanc
 
 2. *Cette commande permet d'isoler l'exécution d'un programme.*
 
-3. *Bare metal (metal nu) signifie que vous commencez à partir d'un serveur vide et qu'il n'y a donc nul besoin d'installer un système d'exploitation auparavant.*
+3. *Bare metal (métal nu) signifie que vous commencez à partir d'un serveur vide et qu'il n'y a donc nul besoin d'installer un système d'exploitation auparavant.*
 
 # Mise en œuvre du projet
 
@@ -295,7 +297,7 @@ Voici les options qui peuvent être utilisées sur notre script.
 
 ## Difficultés rencontrées
 
-L'un des premiers obstacles fut la maîtrise d'un dépôt GIT, mais à force d'utilisation et de conflits, nous avons réussi à faire ce qu'il fallait et ainsi apprendre à l'utiliser correctement. Nous avons aussi fait une autre découverte, celle des fichiers Markdown, ça n'a pas été simple au début pour chacun d'entre nous. Ce que nous avons remarqué sur celui-ci c'est le manque visuel, nous avons toujours été habitué à faire de la mise en page. 
+L'un des premiers obstacles fut la maîtrise d'un dépôt GIT, mais à force d'utilisation et de conflits, nous avons réussi à faire ce qu'il fallait et ainsi apprendre à l'utiliser correctement. Nous avons aussi fait une autre découverte, celle des fichiers Markdown, ça n'a pas été simple au début pour chacun d'entre nous. Ce que nous avons remarqué sur celui-ci c'est le manque visuel, nous avons toujours été habitués à faire de la mise en page. 
 
 Lors de la mise en place de notre projet, nous avions des difficultés à débattre d'une solution viable et simple d'utilisation. Les différentes solutions existantes étaient complexes et plus contraignantes. 
 
@@ -443,14 +445,13 @@ On pourrait les désinaller avec un script 'posrrm' qui ferai un apt-get autorem
 
 Au terme de ce deuxième projet, nous avons été confrontés à une problématique plus compliquée.
 Nous avons dû appréhender la complexité des réseaux virtuels et lire une documentation technique pas toujours évidente. 
-Nous avons été confrontés à des contraintes techniques lié à l’environnement universitaire (proxy, port réseau « tagged », liaison ssh sur machine distante).
+Nous avons été confrontés à des contraintes techniques liées à l’environnement universitaire (proxy, port réseau « tagged », liaison ssh sur machine distante).
 En effet la principale problématique a été les pertes de connexion réseau sans possibilités de redémarrer de manière autonome. Néanmoins nous avons pu démontrer notre capacité d’adaptation et faire face aux difficultés rencontrées.
 
 Nous avons su mettre en adéquation nos différentes expériences et de nouvelles connaissances. 
-Avec l’usage de GIT et de MarkDown(langage de balisage), nous partagions la même convention de nommage afin de mieux communiquer entre nous.  
+Avec l’usage de GIT et de MarkDown (langage de balisage), nous partagions la même convention de nommage afin de mieux communiquer entre nous.  
 
-L’expérience a été enrichissante autant sur le plan humain que technique. Ce projet nous a permis de mettre en pratique et développer différents aspects vus en cours. Malgré certaines erreurs que nous avons pu commettre, nous avons su apprendre de celles-ci et
-ainsi mieux les appréhender.
+L’expérience a été enrichissante autant sur le plan humain que technique. Ce projet nous a permis de mettre en pratique et développer différents aspects vus en cours. Malgré certaines erreurs que nous avons pu commettre, nous avons su apprendre de celles-ci.
 
 Ce projet nous a confortés dans notre choix de carrière. Il nous a permis de développer des qualités telles que la réflexion et d’autonomie afin de nous intégrer au mieux dans le monde du travail.
 
