@@ -620,29 +620,29 @@ Si vous voulez utiliser un système invité en 64 bits, il est nécessaire que l
 #### Prérequis:
 Installation de du transport https
 ~~~
-# apt-get install apt-transport-https
+ # apt-get install apt-transport-https
 ~~~
 
 #### Installation de VirtualBox
 
 1. Récupération de la clef de signature du dépôt de VirtualBox
 ~~~
-# wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
-# wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add -
+ # wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
+ # wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add -
 ~~~
 
 2. Ajout du dépôt d'Oracle dans /etc/apt/source.list.d/
 ~~~
-# echo "deb https://download.virtualbox.org/virtualbox/debian $(lsb_release -sc) contrib"|tee /etc/apt/sources.list.d/virtualbox.list
+ # echo "deb https://download.virtualbox.org/virtualbox/debian $(lsb_release -sc) contrib"|tee /etc/apt/sources.list.d/virtualbox.list
 ~~~
 Mise à jour de la liste des paquets
 ~~~
-# apt-get update
+ # apt-get update
 ~~~
 
 3. Installation de VirtualBox
 ~~~
-# apt-get install virtualbox-5.2.8
+ # apt-get install virtualbox-5.2.8
 ~~~
 
 #### Optimisation de VirtualBox avec le Pack d'extension Oracle VM VirtualBox :
@@ -787,24 +787,30 @@ On va maintenant les paquets.
 
 #### Ajout des utilisateurs aux groupes
 Nous allons ajouter des utilisateurs aux groupes kvm et libvirt
+
 ~~~
 # adduser user kvm && adduser user libvirt
 ~~~
+
 *user* est le nom de l'utilisateur qui va créer des machines virtuelles
 
 #### Création d'une image disque
 Nous allons créer une image disque qui va nous servir de disque dur
+
 ~~~
 $ qemu-img create -f qcow2 monImage 10G
 ~~~
+
 *monImage* est le nom que vous donnerez à votre image
 *10G* est la taille alloué au disque
 
 #### Installation d'un système d'exploitation
 Nous allons installer le système d'exploitation grâce à un fichier image ISO
+
 ~~~
 $ kvm -m 2G -cpu host monImage -cdrom NomDuFichierTéléchargé.iso -boot d
 ~~~
+
 *monImage* l'image que vous aurez créer précédement
 *NomDuFichierTéléchargé.iso* fichier iso servant à l'installation
 
