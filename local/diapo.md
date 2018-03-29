@@ -87,31 +87,30 @@ logo:
 
 - Un mode graphique
 
-- Un mode ligne de commande
- grâce à la commande 'VBoxManage'
+- Un mode ligne de commande grâce à la commande `VBoxManage` 
     - Quelques exemples
     
         - Création d'une machine virtuelle
-
-    ~~~
-    VBoxManage createvm –name debian9
-    ~~~
+        
+            ~~~
+            VBoxManage createvm –name debian9
+            ~~~
 
         - Démarrage d'une machine virtuelle
     
-    ~~~
-    VBoxManage startvm debian9
-    ~~~
+            ~~~
+            VBoxManage startvm debian9
+            ~~~
 
 ## Les solutions existantes
 
-	- LXC
+    - LXC
 
-	- VMnet
+    - VMnet
 
-	- Open VSwitch
+    - Open VSwitch
 
-	- TUN/TAP
+    - TUN/TAP
 
 ## Paquet Debian
 
@@ -199,22 +198,22 @@ OPTIONS
 
 ## Test d'installation de notre paquet
 
-
 ## Test avec les virtualisateurs
 
-	- Par réponse au ping
+- Par réponse au ping
 
-	- Par réponse au ping FQDN
+- Par réponse au ping FQDN
 
-	- Mise à jour
+- Mise à jour
 
-	- Connexion ssh
+- Connexion ssh
 
-# Conclusion
-	- Difficultés rencontrées
+## Conclusion
 
-	- Améliorations possibles
+- Difficultés rencontrées
 
-	- Bénéfices
+- Améliorations possibles
 
-	- Remerciements
+- Bénéfices
+
+- Remerciements
