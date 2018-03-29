@@ -58,16 +58,16 @@ logo:
     2. transparence
     3. performances
     
-- Le hyperviseur
+- L'hyperviseur
     - type 1:
         - Xen, ESX, Hyper V
     - type 2:
         - VirtualBox, VmWare player
         
-- Le isolateur
+- L'isolateur
     - Docker,LXC,chroot
     
-- Le émulateur
+- L'émulateur
     - QEMU
 
 
