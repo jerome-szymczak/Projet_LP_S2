@@ -619,6 +619,7 @@ Si vous voulez utiliser un système invité en 64 bits, il est nécessaire que l
 
 #### Prérequis:
 Installation de du transport https
+
 ~~~
  # apt-get install apt-transport-https
 ~~~
@@ -626,69 +627,87 @@ Installation de du transport https
 #### Installation de VirtualBox
 
 1. Récupération de la clef de signature du dépôt de VirtualBox
+
 ~~~
  # wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
  # wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add -
 ~~~
 
 2. Ajout du dépôt d'Oracle dans /etc/apt/source.list.d/
+
 ~~~
  # echo "deb https://download.virtualbox.org/virtualbox/debian $(lsb_release -sc) contrib"|tee /etc/apt/sources.list.d/virtualbox.list
 ~~~
+
 Mise à jour de la liste des paquets
+
 ~~~
  # apt-get update
 ~~~
 
 3. Installation de VirtualBox
+
 ~~~
  # apt-get install virtualbox-5.2.8
 ~~~
 
 #### Optimisation de VirtualBox avec le Pack d'extension Oracle VM VirtualBox :
 Prise en charge des périphériques USB 2.0 et USB 3.0, VirtualBox RDP, cryptage de disque, démarrage NVMe et PXE pour les cartes Intel.Téléchargement en root
+
 ~~~
  version=$(VBoxManage --version|cut -dr -f1|cut -d'_' -f1) && wget -c http://download.virtualbox.org/virtualbox/$version/Oracle_VM_VirtualBox_Extension_Pack-$version.vbox-extpack
 ~~~
+
 Il faudra ensuite installer le pack dans la VM :
+
 ~~~
      cd /media/cdrom/
      sh ./VBoxLinuxAdditions.run
 ~~~
+
 #### Installation d'une VM en ligne de commande
 1. Création d'une machine
+
 ~~~
 $ VBoxManage createvm --name debian9.4 --ostype Debian_64 --register
 ~~~
+
 (--register : ajoute la machine à l’inventaire)
 (--name : spécifie un nouveau nom de machine virtuelle)
 
 2. Création du disque 10G
+
 ~~~
 $ VBoxManage createhd --filename debian9.4.vdi --size 10000
 ~~~
 
 3. Attacher le disque
+
 ~~~
 $ VBoxManage storagectl debian9.4 --name "SATA Controller" --add sata --controller IntelAHCI
 $ VBoxManage storageattach debian9.4 --storagectl "SATA Controller" --port 0 --device 0 --type hdd --medium debian.vdi
 ~~~
 
 4. Ajouter le lecteur DVD 
+
 ~~~
 $ VBoxManage storagectl debian9 --name "IDE Controller" --add ide
 ~~~
+
 5. Ajout de l'image iso
+
 ~~~
 $ VBoxManage storageattach debian9 --storagectl "IDE Controller" --port 0 --device 0 --type dvddrive --medium/home/simon/Documents/ISO/Linux/Debian 9.2.1amd641.iso
 ~~~
  
 6. Modification de la taille memoire ram et vidéo:
+
 ~~~
 $ VBoxManage modifyvm debian9 --memory 1024 --vram 64
 ~~~
 
 7. Voir les information de la VM:
+
 ~~~
 $  VBoxManage showvminfo debian9.4|less
 ~~~
@@ -703,6 +722,7 @@ VBoxHeadless :
 - Les machines sont accessibles via le VRDP ou ssh sous Linux et RDP,Remote Shell sous MS Windows.
 - Toutes les opérations possibles avec l’interfaces graphique sont disponibles avec VBoxHeadless et même plus avec VBoxManage
 - Deux commandes pour manipuler les vms :
+
 ~~~
     VBoxHeadless - Démarre les vms et gère le VRDP
     VBoxManage - Toutes opérations sur les vms 
@@ -775,21 +795,23 @@ pour éviter de ré-installer un système d’exploitation à partir de zéro sa
 
 #### Verification 
 on va tout d'abord vérifier que votre microprocesseur permet une virtualisation avec KVM.
+
 ~~~
 $ grep -E 'vmx|svm' /proc/cpuinfo &>/dev/null && echo "La virtualisation est possible." || echo "Cette machine ne permet pas d'utiliser la virtualisation avec KVM."
 ~~~
 
 #### Installation
 On va maintenant les paquets.
+
 ~~~
-# apt-get update && apt-get install qemu-kvm libvirt-daemon-system libvirt-dev libvirt-clients
+ # apt-get update && apt-get install qemu-kvm libvirt-daemon-system libvirt-dev libvirt-clients
 ~~~
 
 #### Ajout des utilisateurs aux groupes
 Nous allons ajouter des utilisateurs aux groupes kvm et libvirt
 
 ~~~
-# adduser user kvm && adduser user libvirt
+ # adduser user kvm && adduser user libvirt
 ~~~
 
 *user* est le nom de l'utilisateur qui va créer des machines virtuelles
@@ -821,6 +843,7 @@ il faut que vous possèdiez vncviewver sur votre PC
 #### Lancement de la VM
 Vérifier que tap0 existe bien
 Pour lancer votre VM sur notre réseau super génial.
+
 ~~~
 $ kvm -net nic,model=rtl8139,vlan=0,macaddr=00:11:22:33:44:55 -net tap,vlan=0,ifname=tap0,script=no -enable-kvm -m 512 monImage
 ~~~
