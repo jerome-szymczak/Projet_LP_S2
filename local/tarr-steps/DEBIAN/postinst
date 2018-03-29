@@ -2,7 +2,11 @@
 
 head -23 ../usr/share/doc/config > /etc/default/lxc-net
 
+# ça ne marche pas
 tail -5 ../usr/share/doc/config >> /etc/network/interfaces
+
+# il faudrait faire un script dans init.d qui lance les commandes suivantes
+# ip tuntap add mode tap iut0 && ip link set dev iut0 master vswitch0 && ip link set iut0 up
 
 echo "net.ipv4.ip_forward=1" > /etc/sysctl.d/ipv4forward
 
