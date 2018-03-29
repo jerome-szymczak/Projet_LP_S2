@@ -84,9 +84,9 @@ Un autre objectif est celui de la facilité d'administration. En effet, le proce
 
 - **L'hyperviseur:**
 
-   - Hyperviseur Type 1 : (Ex: VMware Vsphere, Oracle VM, Microsoft Hyper-V Server ) : C'est un logiciel qui s’insère entre le matériel et les différents systèmes d’exploitation virtualisés assurant ainsi directement la communication avec ce dernier.
+    - Hyperviseur Type 1 : (Ex: VMware Vsphere, Oracle VM, Microsoft Hyper-V Server ) : C'est un logiciel qui s’insère entre le matériel et les différents systèmes d’exploitation virtualisés assurant ainsi directement la communication avec ce dernier.
 
-   - Hyperviseur Type 2 : (Ex: VMware Workstation, Oracle VirtualBox ) : C'est un logiciel qui s’insère entre le système d'exploitation hôte et les différents systèmes d’exploitation virtualisés. c'est le système d'exploitation hôte qui assure la communication avec le matériel .
+    - Hyperviseur Type 2 : (Ex: VMware Workstation, Oracle VirtualBox ) : C'est un logiciel qui s’insère entre le système d'exploitation hôte et les différents systèmes d’exploitation virtualisés. c'est le système d'exploitation hôte qui assure la communication avec le matériel .
 
 - **L'isolateur** : (Ex: chroot, LXC, Docker ) : C'est un logiciel permettant de créer un environnement utilisateur cloisonné au sein d'un système d'exploitation. Cet environnement peut alors exécuter des programmes sans que leur exécution ne perturbe le système d'exploitation de la machine en cas de dysfonctionnement. Ces environnements sont appelés des contextes ou bien des zones d'exécution. 
 
@@ -96,16 +96,16 @@ Un autre objectif est celui de la facilité d'administration. En effet, le proce
 ### Schéma de fonctionnement :
 
 Système d'exploitation
-![systemExploitation](img/ink-diagram-com-sys-exp.svg){ width=30% }
+![Système d'exploitationa](img/ink-diagram-com-sys-exp.svg){ width=30% }
 
 Hyperviseur Type 1
-![systemExploitation](img/ink-diagram-com-sys-virt.pdf){ width=30% }
+![Hyperviseur type 1](img/ink-diagram-com-sys-virt.pdf){ width=30% }
 
 Hyperviseur Type 2
-![systemExploitation](img/ink-diagram-com-sys-virt2.pdf){ width=30% }
+![Hyperviseur type 2](img/ink-diagram-com-sys-virt2.pdf){ width=30% }
 
 Isolateur
-![systemExploitation](img/ink-diagram-com-sys-exp-cont.pdf){ width=30% }
+![Isolateur](img/ink-diagram-com-sys-exp-cont.pdf){ width=30% }
 
 ### VirtualBox
 
@@ -170,9 +170,12 @@ Il supporte le VLAN 802.1 Q, isolation et filtre de trafics, d'agrégation de li
 Il est conçu pour prendre en charge la distribution sur plusieurs serveurs physiques similaires au vswitch distribué de Vmware ou au Nexus 1000V de Cisco.
 
 ~~~
-VMware a officialisé l’abandon prochain de son API VDS, qui permettait l’intégration de commutateurs virtuels tiers à vSphere. 
-Selon la firme, l’API continuera à être supportée pour les clients VMware jusqu’à la version 6.5 update 1 de vSphere. 
-Dans toutes les versions ultérieures, le support de l’API permettant le support de « vSwitches » tiers sera retiré.
+VMware a officialisé l’abandon prochain de son API VDS, qui permettait
+l’intégration de commutateurs virtuels tiers à vSphere.  Selon la firme, l’API
+continuera à être supportée pour les clients VMware jusqu’à la version 6.5
+update 1 de vSphere.  Dans toutes les versions ultérieures, le support de
+l’API permettant le support de « vSwitches » tiers sera retiré.
+
 source :"http://www.lemagit.fr"
 ~~~
 
@@ -231,7 +234,7 @@ ip link set tap0 up
 
 ## Implémentation d'un paquet Debian
 
-Le paquet nécessaire pour faire ses propre paquets est dpkg. Le programme dpkg-deb qui est contenu dans le paquet dpkg est le programme qui construit un fichier .deb.
+Le paquet nécessaire pour faire ses propre paquets est dpkg. Le programme `dpkg-deb` qui est contenu dans le paquet dpkg est le programme qui construit un fichier .deb.
 
 ### L'arborescence d'un paquet Debian
 Afin de permettre à dpkg de faire un paquet, nous devons respecter une aborescence particulière. En effet, pour la création d'un paquet, l'arborescence à créer est simple ( selon les paquets). Voici l'arborescence à créer.
@@ -303,43 +306,43 @@ Mais les plus gros problèmes rencontrés lors de notre projet furent liés au r
 
 # Procédure de test
 ## Installation de notre paquet
-- 1.Installation du paquet
 
- - Le paquet a bien été installé mais il manque les dépendances : OK
+1. Installation du paquet
+    - Le paquet a bien été installé mais il manque les dépendances : OK
     
     ~~~
     # dpkg -i tarr-steps
     ~~~
 
- - Les dépendances se sont bien installé : OK
+    - Les dépendances se sont bien installé : OK
     
     ~~~
     # apt-get install -f
     ~~~
 
- - Vérification que le préinst s'éxécute
+    - Vérification que le préinst s'éxécute
     
     ~~~
     $ cat /etc/default/lxc-net
     $ ip a
     ~~~
 
-- 2.L'éxécution de notre script
+2. L'éxécution de notre script
 
- - affichage de l'aide à l'éxécution du script : OK
+    - affichage de l'aide à l'éxécution du script : OK
     
     ~~~
     $ tarr-steps -h
     ~~~
 
- - Configuration de l'dresse du switch et affichage de ces changements : OK
+    - Configuration de l'dresse du switch et affichage de ces changements : OK
     
     ~~~
     $ tarr-steps -ip 192.168.194.1/24
     $ tarr-steps -l
     ~~~
 
- - Relance du script lxc-net pour mettre à jour le switch virtuel : OK
+    - Relance du script lxc-net pour mettre à jour le switch virtuel : OK
     
     ~~~
     $ tarr-steps -r 
@@ -452,13 +455,13 @@ L’expérience a été enrichissante autant sur le plan humain que technique. C
 
 Ce projet nous a confortés dans notre choix de carrière. Il nous a permis de développer des qualités telles que la réflexion et d’autonomie afin de nous intégrer au mieux dans le monde du travail.
 
-# Annexe
+\appendix
 
-## Documents techniques
+# Documents techniques
 
-### Le script de notre paquet Debian
+## Le script de notre paquet Debian
 
-~~~
+~~~sh
 #!/bin/bash
 # Permet de configurer de l'interface créer par lxc-net.
 #
@@ -540,10 +543,10 @@ do
 done
 ~~~
 
-### Comparaison sur les différentes solutions existantes
+## Comparaison sur les différentes solutions existantes
 
 
-#### LXC
+### LXC
 
 **Description :** 
 LXC est conteneur Linux (ensemble de processus qui sont isolés du reste du système).
@@ -569,7 +572,7 @@ Les conteneurs doivent se connecter à une interface bridge sur l'hôte. Celle-c
 4. Créer un tunnel entre tap0 et le switch créé par lxc-net
 5. Mettre la machine virtuelle en accès par pont sur l'interface 'tap0'
 
-#### Fonction TUN/TAP
+### Fonction TUN/TAP
 
 **Description :** 
 Un dispositif TUN/TAP peut être vu comme une interface réseau qui communique avec un programme utilisateur (dispositif logiciel) au lieu d'une vraie carte matérielle (TUN pour mimer un périphérique point à point, TAP pour mimer un périphérique Ethernet).
@@ -590,7 +593,7 @@ Un dispositif TUN/TAP peut être vu comme une interface réseau qui communique a
 3. Création d'un tunnel entre le bridge et tap0
 4. Mettre la machine en accès par pont sur l'interface 'tap0'
 
-#### vmnet de VMware
+### vmnet de VMware
 
 **Description :** 
 - VMnet0 pour relier les VMs au réseau physique direct (Bridged mode)
@@ -611,51 +614,54 @@ Un dispositif TUN/TAP peut être vu comme une interface réseau qui communique a
 - Installation de VMplayer
 - Mettre la machine virtuelle en accès par pont sur l'interface 'vmnet8'
 
-### Installation de Virtualbox
+## Installation de Virtualbox
 **Attention** Si vous avez des machines KVM en route, VirtualBox ne voudra pas lancer de VM.
 
 Si vous voulez utiliser un système invité en 64 bits, il est nécessaire que l'ordinateur supporte la virtualisation matérielle (VT-x [vmx] ou AMD-V [svm])
 
 
-#### Prérequis:
+### Prérequis:
 Installation de du transport https
 
 ~~~
  # apt-get install apt-transport-https
 ~~~
 
-#### Installation de VirtualBox
+### Installation de VirtualBox
 
 1. Récupération de la clef de signature du dépôt de VirtualBox
 
-~~~
- # wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
- # wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add -
-~~~
+    ~~~
+    # wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
+    # wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add -
+    ~~~
 
 2. Ajout du dépôt d'Oracle dans /etc/apt/source.list.d/
 
-~~~
- # echo "deb https://download.virtualbox.org/virtualbox/debian $(lsb_release -sc) contrib"|tee /etc/apt/sources.list.d/virtualbox.list
-~~~
-
-Mise à jour de la liste des paquets
-
-~~~
- # apt-get update
-~~~
+    ~~~
+     # echo "deb https://download.virtualbox.org/virtualbox/debian $(lsb_release -sc) contrib" \
+	   | tee /etc/apt/sources.list.d/virtualbox.list
+    ~~~
+    
+    Mise à jour de la liste des paquets
+    
+    ~~~
+     # apt-get update
+    ~~~
 
 3. Installation de VirtualBox
 
-~~~
- # apt-get install virtualbox-5.2.8
-~~~
+    ~~~
+     # apt-get install virtualbox-5.2.8
+    ~~~
 
-#### Optimisation de VirtualBox avec le Pack d'extension Oracle VM VirtualBox :
+### Optimisation de VirtualBox avec le Pack d'extension Oracle VM VirtualBox :
+
 Prise en charge des périphériques USB 2.0 et USB 3.0, VirtualBox RDP, cryptage de disque, démarrage NVMe et PXE pour les cartes Intel.Téléchargement en root
 
 ~~~
- version=$(VBoxManage --version|cut -dr -f1|cut -d'_' -f1) && wget -c http://download.virtualbox.org/virtualbox/$version/Oracle_VM_VirtualBox_Extension_Pack-$version.vbox-extpack
+ version=$(VBoxManage --version|cut -dr -f1|cut -d'_' -f1) \
+ && wget -c http://download.virtualbox.org/virtualbox/$version/Oracle_VM_VirtualBox_Extension_Pack-$version.vbox-extpack
 ~~~
 
 Il faudra ensuite installer le pack dans la VM :
@@ -665,57 +671,62 @@ Il faudra ensuite installer le pack dans la VM :
      sh ./VBoxLinuxAdditions.run
 ~~~
 
-#### Installation d'une VM en ligne de commande
+### Installation d'une VM en ligne de commande
+
 1. Création d'une machine
 
-~~~
-$ VBoxManage createvm --name debian9.4 --ostype Debian_64 --register
-~~~
-
-(--register : ajoute la machine à l’inventaire)
-(--name : spécifie un nouveau nom de machine virtuelle)
+    ~~~
+    $ VBoxManage createvm --name debian9.4 --ostype Debian_64 --register
+    ~~~
+    
+    (--register : ajoute la machine à l’inventaire)
+    (--name : spécifie un nouveau nom de machine virtuelle)
 
 2. Création du disque 10G
 
-~~~
-$ VBoxManage createhd --filename debian9.4.vdi --size 10000
-~~~
+    ~~~
+    $ VBoxManage createhd --filename debian9.4.vdi --size 10000
+    ~~~
 
 3. Attacher le disque
 
-~~~
-$ VBoxManage storagectl debian9.4 --name "SATA Controller" --add sata --controller IntelAHCI
-$ VBoxManage storageattach debian9.4 --storagectl "SATA Controller" --port 0 --device 0 --type hdd --medium debian.vdi
-~~~
+    ~~~
+    $ VBoxManage storagectl debian9.4 --name "SATA Controller" --add sata --controller IntelAHCI
+    $ VBoxManage storageattach debian9.4 \
+	             --storagectl "SATA Controller" --port 0 --device 0 --type hdd --medium debian.vdi
+    ~~~
 
 4. Ajouter le lecteur DVD 
 
-~~~
-$ VBoxManage storagectl debian9 --name "IDE Controller" --add ide
-~~~
+    ~~~
+    $ VBoxManage storagectl debian9 --name "IDE Controller" --add ide
+    ~~~
 
 5. Ajout de l'image iso
 
-~~~
-$ VBoxManage storageattach debian9 --storagectl "IDE Controller" --port 0 --device 0 --type dvddrive --medium/home/simon/Documents/ISO/Linux/Debian 9.2.1amd641.iso
-~~~
+    ~~~
+    $ VBoxManage storageattach debian9 \
+	             --storagectl "IDE Controller" --port 0 --device 0 \
+				 --type dvddrive --medium/home/simon/Documents/ISO/Linux/Debian 9.2.1amd641.iso
+    ~~~
  
 6. Modification de la taille memoire ram et vidéo:
 
-~~~
-$ VBoxManage modifyvm debian9 --memory 1024 --vram 64
-~~~
+    ~~~
+    $ VBoxManage modifyvm debian9 --memory 1024 --vram 64
+    ~~~
 
 7. Voir les information de la VM:
 
-~~~
-$  VBoxManage showvminfo debian9.4|less
-~~~
+    ~~~
+    $  VBoxManage showvminfo debian9.4 | less
+    ~~~
 
 
-#### Commandes supplémentaires et explications de VBoxHeadless et de VBoxManage
+### Commandes supplémentaires et explications de VBoxHeadless et de VBoxManage
 
 VBoxHeadless :
+
 - VirtualBox est fourni avec une interface appelée VBoxHeadless
 - VirtualBox sans tête, VirtualBox sans interface graphique GUI
 - VirtualBox démarre les machines en fond de taches
@@ -724,99 +735,110 @@ VBoxHeadless :
 - Deux commandes pour manipuler les vms :
 
 ~~~
-    VBoxHeadless - Démarre les vms et gère le VRDP
-    VBoxManage - Toutes opérations sur les vms 
+VBoxHeadless - Démarre les vms et gère le VRDP
+VBoxManage - Toutes opérations sur les vms 
 ~~~
 
 VBoxManage :
+
 - Est l’interface en ligne de commande de VirtualBox.
 - Permet de contrôler totalement VirtualBox depuis la ligne de commandes de votre système d’exploitation hôte.
 - VBoxManage supporte toutes les fonctionnalités auxquelles vous donne accès l’interface graphique
 
-- Acceder a l’aide
+- Accéder a l’aide
 
-~~~
+    ~~~
     VBoxManage list --help
-~~~ 
+    ~~~ 
+
 - Lister les vms
 
-~~~
+    ~~~
     VBoxManage list vms
-~~~
+    ~~~
+
 - Démarrer une vms
 
-~~~
+    ~~~
     VBoxManage startvm debian9
-~~~
+    ~~~
+
 - Arréter une vm
 
-~~~
+    ~~~
     VBoxManage controlvm debian9 apcipowerbutton
-~~~
+    ~~~
+
 - Créer une vm
 
-~~~
+    ~~~
     VBoxManage createvm –name debian9
-~~~
-- Déterminer le type de l’OS:
+    ~~~
 
-~~~
+- Déterminer le type de l’OS :
+
+    ~~~
     VBoxManage list ostypes
-~~~
+    ~~~
 
-#### Changer l’UUID d’une VM:
+### Changer l’UUID d’une VM:
 
 - Cette commande est necessaire si on fait un copier coller de l’image d’un disque virtuel (fichier .vdi)
 pour éviter de ré-installer un système d’exploitation à partir de zéro sans passer par clonehd.
 
-~~~
+    ~~~
     VBoxManage internalcommands sethduuid vmfilename
-~~~
+    ~~~
 
-#### Cloner une VM:
+### Cloner une VM:
 
 - Cette commande permet de dupliquer l'image de disque dur virtuel enregistré avec un nouvel identificateur unique (UUID).
 
-~~~
+    ~~~
     VBoxManage clonehd src_vmfilename dst_vmfilename
-~~~
+    ~~~
 
-#### Agrandir le VDI:
+### Agrandir le VDI:
 
  - un disque de 8Go  à 25Go
 
-~~~
+    ~~~
     VBoxManage modifymedium --resize 25000 debian.vdi
-~~~
+    ~~~
 
-### Installation de KVM
+## Installation de KVM
+
 **Attention** Si vous avez des machines VirtualBox en route, KVM ne voudra pas lancer de VM.
 
 
-#### Verification 
-on va tout d'abord vérifier que votre microprocesseur permet une virtualisation avec KVM.
+### Verification 
+
+On va tout d'abord vérifier que votre microprocesseur permet une virtualisation avec KVM.
 
 ~~~
-$ grep -E 'vmx|svm' /proc/cpuinfo &>/dev/null && echo "La virtualisation est possible." || echo "Cette machine ne permet pas d'utiliser la virtualisation avec KVM."
+$ grep -E 'vmx|svm' /proc/cpuinfo &>/dev/null && echo "La virtualisation est possible." \
+  || echo "Cette machine ne permet pas d'utiliser la virtualisation avec KVM."
 ~~~
 
-#### Installation
+### Installation
+
 On va maintenant les paquets.
 
 ~~~
- # apt-get update && apt-get install qemu-kvm libvirt-daemon-system libvirt-dev libvirt-clients
+# apt-get update && apt-get install qemu-kvm libvirt-daemon-system libvirt-dev libvirt-clients
 ~~~
 
-#### Ajout des utilisateurs aux groupes
+### Ajout des utilisateurs aux groupes
+
 Nous allons ajouter des utilisateurs aux groupes kvm et libvirt
 
 ~~~
- # adduser user kvm && adduser user libvirt
+# adduser user kvm && adduser user libvirt
 ~~~
 
 *user* est le nom de l'utilisateur qui va créer des machines virtuelles
 
-#### Création d'une image disque
+### Création d'une image disque
 Nous allons créer une image disque qui va nous servir de disque dur
 
 ~~~
@@ -826,7 +848,8 @@ $ qemu-img create -f qcow2 monImage 10G
 *monImage* est le nom que vous donnerez à votre image
 *10G* est la taille alloué au disque
 
-#### Installation d'un système d'exploitation
+### Installation d'un système d'exploitation
+
 Nous allons installer le système d'exploitation grâce à un fichier image ISO
 
 ~~~
@@ -840,17 +863,19 @@ $ kvm -m 2G -cpu host monImage -cdrom NomDuFichierTéléchargé.iso -boot d
 ajouter ça *--vnc :0 -k fr* à la fin de la ligne
 il faut que vous possèdiez vncviewver sur votre PC
 
-#### Lancement de la VM
+### Lancement de la VM
+
 Vérifier que tap0 existe bien
 Pour lancer votre VM sur notre réseau super génial.
 
 ~~~
-$ kvm -net nic,model=rtl8139,vlan=0,macaddr=00:11:22:33:44:55 -net tap,vlan=0,ifname=tap0,script=no -enable-kvm -m 512 monImage
+$ kvm -net nic,model=rtl8139,vlan=0,macaddr=00:11:22:33:44:55 \
+      -net tap,vlan=0,ifname=tap0,script=no -enable-kvm -m 512 monImage
 ~~~
 
 
 
-## Sources
+# Sources
 
 - Recherche virtualisateurs
 
