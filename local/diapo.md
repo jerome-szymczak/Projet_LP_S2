@@ -181,7 +181,6 @@ OPTIONS
 
 ## Création des fichiers de paquet
 
-`mfbsflide`
 - DEBIAN/
     - control
     - postinst
