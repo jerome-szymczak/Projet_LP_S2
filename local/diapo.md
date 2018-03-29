@@ -20,7 +20,7 @@ logo:
 
 ## Intitulé du sujet
 
-![TeX Friendly Zone](img/intitule.svg)
+![TeX Friendly Zone](img/Diagramme_reseau.pdf)
 
 ## Contrainte
 
