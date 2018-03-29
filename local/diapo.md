@@ -105,15 +105,13 @@ logo:
 
 ## Les solutions existantes
 
-- [VMnet de VMware](http://g.urroz.online.fr/doc/ch03s02.html)
+	- LXC
 
-- [Libvirt](https://libvirt.org/)
+	- VMnet
 
-- [LXC](https://wiki.debian.org/fr/LXC/SimpleBridge)
+	- Open VSwitch
 
-- [TUN/TAP](https://www.inetdoc.net/guides/vm/vm.network.tun-tap.html)
-
-- [Bridge-utils](https://wiki.debian.org/fr/BridgeNetworkConnections)
+	- TUN/TAP
 
 ## Paquet Debian
 
@@ -205,7 +203,19 @@ OPTIONS
 
 ## Test avec les virtualisateurs
 
+	- Par réponse au ping
+
+	- Par réponse au ping FQDN
+
+	- Mise à jour
+
+	- Connexion ssh
 
 # Conclusion
-Ce que nous avons appris de ce projet et ce qu'il nous a apporté
+	- Difficultés rencontrées
 
+	- Améliorations possibles
+
+	- Bénéfices
+
+	- Remerciements
