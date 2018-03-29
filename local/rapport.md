@@ -1,18 +1,20 @@
 ---
 title : Réseau pour machines virtuelles
-
+subtitle: Projet de second semestre de licence professionnelle CGIR
+img: intitule
 author :
-- GERARD Cyril
-- SZYMCZAK Jerome
-- SALECKI Simon
-- DUSART Clément
-- HERBAUT Djezon
-
-date: 16 mars 2018
+- Cyril GERARD
+- Jérôme SZYMCZAK
+- Simon SALECKI
+- Clément DUSART
+- Djezon HERBAUT
 logo:
+- file: logo-univ-lille
+  width: 2
 - file: logo-cgir
   width: .15
-- file: logo-univ-lille
+
+date: 2017/2018
 ...
 
 # Cadre du projet
