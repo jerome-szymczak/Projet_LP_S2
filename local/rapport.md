@@ -21,18 +21,18 @@ date: 2017/2018
 
 ## Intitulé du sujet
 
-Il s'agit de construire une architecture réseau IPv4 permettant à des machines virtuelles de communiquer, de manière transparente, entre elles, avec la machine physique qui les héberge ainsi qu'avec les machines du segment réseau sur lequel est intégrée la machine physique.
+Il s'agit de construire une architecture réseau IPv4 permettant à des machines virtuelles de communiquer, de manière transparente, entre elles, aussi bien avec la machine physique qui les héberge qu'avec les machines du segment réseau sur lequel elle est intégrée.
 
 L'objectif est de pouvoir effectuer des TP d'administration système utilisant plusieurs machines (en mode *serveur* ou *poste de travail*) sur le même réseau sans trop de difficultés pour l'étape de construction des machines, mais en conservant un minimum de flexibilité (accès extérieur, manipulation des interfaces des machines de TP).
 
 ## Contraintes
 
 L'architecture doit être déployable sur une machine physique [Debian](https://www.debian.org) via l'installation d'un paquet au format Debian. 
-Elle doit permettre d'accéder à tous les ports des machines virtuelles sans être obligé de mettre en place des redirections de ports. Les seuls accès `root` qu'elle doit nécessiter sont, au moment de son installation et de l'installation, des outils de virtualisation. 
+Elle doit permettre d'accéder à tous les ports des machines virtuelles sans être obligé de mettre en place des redirections de ports. Les seuls accès `root` nécessaires, au moment de installation du paquet et des outils de virtualisation. 
 Un utilisateur standard doit être capable de créer et démarrer des machines virtuelles sans droit d'administration.
 
 Le réseau doit permettre *à minima* de connecter des machines virtuelles gérées par [VirtualBox](https://www.virtualbox.org/).
-l'objectif étant de permettre au final de pouvoir y connecter des machines virtuelles gérées par [VMware Workstation Player](https://www.vmware.com/products/workstation-player.html), [QEMU](https://www.qemu.org)/[KVM](http://www.linux-kvm.org) ainsi que des containers Linux [LXC](https://linuxcontainers.org).
+l'objectif final étant de pouvoir connecter des machines virtuelles gérées par [VMware Workstation Player](https://www.vmware.com/products/workstation-player.html), [QEMU](https://www.qemu.org)/[KVM](http://www.linux-kvm.org) ainsi que des containers Linux [LXC](https://linuxcontainers.org).
 
 À défaut d'une automatisation complète par la fourniture de commandes de création de machines virtuelles adéquates, des explications simples, permettant à un utilisateur de créer et connecter sa machine virtuelle à ce réseau, doivent être fournies sous la forme de documentation adaptée à chaque cas géré.
 
@@ -71,7 +71,7 @@ l'objectif étant de permettre au final de pouvoir y connecter des machines virt
 
 ### Qu'est-ce que la virtualisation ?
 
-Par définition, la virtualisation consiste en la création d'une version virtuelle (par opposition à réelle) d'un ou de plusieurs éléments, tel qu'un système d'exploitation, un serveur, un dispositif de stockage ou des ressources réseau sur un même système physique.
+Par définition, la virtualisation consiste en la création d'une version virtuelle (par opposition à réelle) d'un ou plusieurs éléments, tel qu'un système d'exploitation, un serveur, un dispositif de stockage ou des ressources réseau sur un même système physique.
 
 ### But d'une virtualisation
 
@@ -113,7 +113,7 @@ Isolateur
 Virtualbox n’exige pas une architecture processeur complexe, il n’a pas besoin des jeux d’instructions tels que Intel VT-x ou AMD-V, contrairement à beaucoup d’autres solutions de virtualisation. 
 
 Virtualbox fonctionne de manière identique sur toutes les plateformes hôtes, il utilise les mêmes formats de fichiers et d’images. Ceci permet d’exécuter des machines virtuelles créées sur un hôte possédant un système d’exploitation différent.
-Vous pouvez ainsi créer une machine virtuelle sur Windows et l’utiliser sous Linux. De cette façon, vous pouvez lancer des logiciels écrits pour un système d’exploitation dans un autre. Virtualbox offre une grande souplesse  d’usage, on peut geler, copier, sauvegarder et créer des instantanés. 
+Vous pouvez ainsi créer une machine virtuelle sur Windows et l’utiliser sous Linux. Grâce à ça, vous pourrez lancer des machines virtuelles créer avec un système d’exploitation, pour pouvoir les utiliser dans un autre. Virtualbox offre une grande souplesse  d’usage, on peut geler, copier, sauvegarder et créer des instantanés. 
 
 Il peut-être exécuté en mode graphique ou ligne de commande « VboxManage ». 
 Il est possible d’installer les suppléments invités «pack d'extension » de Virtualbox afin d’accroître les performances et la communication avec la machine hôte (dossier partage).  Virtualbox offre un bon support matériel cela inclut les contrôleurs de disques (IDE, SCSI, SATA, le support USB 2.0 3.0). Attention cette extension est sous licence (GPL2, CDDL et VPUEL pour Virtualbox Personal use and Evaluation License). 
@@ -143,14 +143,14 @@ C'est une solution de virtualisation "bare metal"³.
 
 ### LXC
 
-**LXC** (contraction de l'anglais de Linux Containers) est un système de virtualisation utilisant l'isolation au niveau système d'exploitation comme méthode de cloisonnement. 
+**LXC** (contraction de l'anglais de LinuX Containers) est un système de virtualisation utilisant l'isolation au niveau système d'exploitation comme méthode de cloisonnement. 
 Son rôle est de créer un environnement aussi proche que possible d'une installation Linux standard, mais sans avoir besoin d'un noyau séparé. Les conteneurs LXC sont souvent considérés comme un compromis entre le mode "chroot²" et une machine virtuelle. LXC est donc un ensemble de processus qui nous permettent d'isoler des éléments du reste du système.
 Il aura également accès à sa propre interface réseau, sa table de routage. Mais la différence notable, contrairement à Xen et KVM c'est l'absence d'un deuxième noyau. LXC va utiliser le même noyau que la machine hôte (Dom0). Les avantages de cette solution sont un gain de performances en l'absence d'hyperviseur et de noyau intermédiaire. L’autre avantage est la faible occupation de la ressource mémoire.
 
 Les conteneurs LXC ne fournissent pas une isolation complète, ce qui est un inconvénient. C’est dû au fait que le noyau est partagé entre le Dom0 et les conteneurs. L’autre inconvénient est une mise en place plus complexe qu’une installation sur machine virtuelle.
 
-Après la mise en place de quelques prérequis nécessaires au bon fonctionnement, il s'agira de mettre en fonctionnement notre configuration réseau.
-Ainsi, chaque conteneur aura une interface réseau virtuelle et la connexion au vrai réseau passera par un pont. Il existe deux manières de se connecter à l’interface virtuelle, soit branchée sur l'interface physique de la machine hôte (directement sur le réseau), soit branchée sur une autre interface virtuelle de l'hôte (pourra router le trafic).
+Après la mise en place des dépendances requises au bon fonctionnement, il s'agira de mettre en service la configuration réseau.
+Ainsi, chaque conteneur aura une interface réseau virtuelle, il existe deux manières de se connecter à l’interface virtuelle, soit branchée sur l'interface de la machine hôte (directement sur le réseau), soit branchée sur une interface virtuelle de l'hôte (switch/routeur).
 
 ### vmnet de VMware
 
@@ -168,8 +168,6 @@ Il a été conçu pour prendre en charge la distribution sur plusieurs serveurs 
 OpenvSwitch est un commutateur virtuel compatible avec les chipsets des switchs modernes commutateur administrable avec le protocole Open flow.
 Il supporte le VLAN 802.1 Q, isolation et filtre de trafics, d'agrégation de lien, lac, Channel boding, gestion des flux et QoS Bande passante.
 Il est conçu pour prendre en charge la distribution sur plusieurs serveurs physiques similaires au vswitch distribué de Vmware ou au Nexus 1000V de Cisco.
-
-`problème en dessous`
 
 ~~~
 VMware a officialisé l’abandon prochain de son API VDS, qui permettait l’intégration de commutateurs virtuels tiers à vSphere. 
@@ -297,12 +295,11 @@ Voici les options qui peuvent être utilisées sur notre script.
 
 ## Difficultés rencontrées
 
-L'un des premiers obstacles fut la maîtrise d'un dépôt GIT, mais à force d'utilisation et de conflits, nous avons réussi à faire ce qu'il fallait et ainsi apprendre à l'utiliser correctement. Nous avons aussi fait une autre découverte, celle des fichiers Markdown, ça n'a pas été simple au début pour chacun d'entre nous. Ce que nous avons remarqué sur celui-ci c'est le manque visuel, nous avons toujours été habitués à faire de la mise en page. 
+L'un des premiers obstacles fut la maîtrise d'un dépôt GIT, mais à force d'utilisation, conflits et de partage avec ceux ayant déjà une expérience significative sur l'outil, nous avons réussi à faire ce qu'il fallait et ainsi apprendre à l'utiliser correctement. Nous avons aussi fait une autre découverte, celle des fichiers Markdown, ça n'a pas été simple au début pour chacun d'entre nous. Ce que nous avons remarqué sur celui-ci c'est le manque visuel, nous avons toujours été habitués à faire de la mise en page. 
 
 Lors de la mise en place de notre projet, nous avions des difficultés à débattre d'une solution viable et simple d'utilisation. Les différentes solutions existantes étaient complexes et plus contraignantes. 
 
 Mais les plus gros problèmes rencontrés lors de notre projet furent liés au réseau. Sur les ordinateurs des salles TP, nous n'étions pas root et donc aucune possibilité de modifier les interfaces, pour régler ce soucie, nous avions eu accès à un ordinateur. Pour utiliser cette machine, nous n'avions aucun accès physique, ce qui nécessite l'intervention des administrateurs systèmes lorsque nous perdions la connexion à celle-ci.
-
 
 # Procédure de test
 ## Installation de notre paquet
