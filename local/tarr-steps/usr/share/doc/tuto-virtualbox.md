@@ -105,26 +105,32 @@ VBoxManage :
 - VBoxManage supporte toutes les fonctionnalités auxquelles vous donne accès l’interface graphique
 
 - Acceder a l’aide
+
 ~~~
 	VBoxManage list --help
 ~~~	
 - Lister les vms
+
 ~~~
 	VBoxManage list vms
 ~~~
 - Démarrer une vms
+
 ~~~
 	VBoxManage startvm debian9
 ~~~
 - Arréter une vm
+
 ~~~
 	VBoxManage controlvm debian9 apcipowerbutton
 ~~~
 - Créer une vm
+
 ~~~
 	VBoxManage createvm –name debian9
 ~~~
 - Déterminer le type de l’OS:
+
 ~~~
 	VBoxManage list ostypes
 ~~~
@@ -133,6 +139,7 @@ VBoxManage :
 
 - Cette commande est necessaire si on fait un copier coller de l’image d’un disque virtuel (fichier .vdi)
 pour éviter de ré-installer un système d’exploitation à partir de zéro sans passer par clonehd.
+
 ~~~
     VBoxManage internalcommands sethduuid vmfilename
 ~~~
@@ -140,12 +147,15 @@ pour éviter de ré-installer un système d’exploitation à partir de zéro sa
 ## Cloner une VM:
 
 - Cette commande permet de dupliquer l'image de disque dur virtuel enregistré avec un nouvel identificateur unique (UUID).
+
 ~~~
     VBoxManage clonehd src_vmfilename dst_vmfilename
 ~~~
 
 ## Agrandir le VDI:
+
  - un disque de 8Go  à 25Go
+
 ~~~
 	VBoxManage modifymedium --resize 25000 debian.vdi
 ~~~
